@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<link rel="stylesheet" href="./styles/format.css">
+  	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<title>mindlevelup</title>
+</head>
+
+<body>
+	<div class="grid">
+		<div class="grid-spacer"></div>
+		<div class="container">
+			{% for p in posts %}
+			<div class="post-link">
+				<a href="{{ './%s.html'%p.anchor }}" class="post-title">{{ p.title }}</a>
+				<p class="post-summary">{{ p.summary }}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="grid-spacer"></div>
+	</div>
+
+</body>
+
+</html>

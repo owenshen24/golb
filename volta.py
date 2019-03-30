@@ -59,7 +59,8 @@ for post in os.listdir(CONTENTS_DIR):
         'date': datetime.fromtimestamp(
         file_update).strftime('%Y-%m-%d %H:%M'),
         'last-updated': file_update,
-        'anchor': anchor
+        'anchor': anchor,
+        'summary': summary
       }
       POSTS_DICT['POSTS'][str(post_id)] = data.copy()
 
@@ -77,3 +78,11 @@ for post in os.listdir(CONTENTS_DIR):
 POSTS_DICT['ID_COUNT'] = ID_COUNT
 with open(METADATA_DIR + POSTS_DICT_FILE, 'w') as outfile:
   json.dump(POSTS_DICT, outfile)
+
+# Update Posts Index with all posts
+env = Environment(loader=FileSystemLoader('templates')) 
+
+index_html = env.get_template('index-template.html').render(
+  posts = POSTS_DICT['POSTS'].values())
+with open (OUTPUT_DIR + 'index.html', 'w') as output:
+	output.write(index_html)
