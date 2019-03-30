@@ -1,0 +1,59 @@
+/*Adaptive sizing*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Phone width */
+.container {
+  width: 100%;
+}
+
+/* For tablet width */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* For normal computer width */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+}
+
+
+
+/* Font stylings */
+.title, .date, .content {
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+}
+.title {
+  font-size: 3em;
+  font-weight: bold;
+}
+.date {
+  color: rgb(110, 110, 110);
+}
+.content {
+  font-size: 1.1em;
+}
+
+/* Link stylings */
+a {
+  color: rgb(135, 32, 64);
+}
+a:hover {
+  color: rgb(198, 77, 115);
+}
+
+
+/* List stylings */
+li:not(:first-child) {
+  padding-top: 1em;
+}

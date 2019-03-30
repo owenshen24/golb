@@ -1,61 +1,63 @@
 title: Fading Novelty
-summary: When exposed to the same stimulus over and over, our response becomes dulled. Echoing this, people often say the “novelty faded”. Along with strong evolutionary roots, I think this phenomenon presents challenges for habit formation and learning. I outline the two potential remedies: either changing up the stimulus or changing our attitude towards it
+summary: Humans have a natural tendency to get less and less out of repeated experiences. We seek variety, and this urge appears to underlie many practical considerations, as well as a few philosophical ones. I outline some main parts of the phenomenon and look for ways to live more mindfully with this urge.
 
-A core aspect of human experience is our pursuit of novelty. There is something tantalizing about seeking out new pleasures, new sensations, and new experiences. It feels hard-coded into how we operate. “Variety is the spice of life” and a dozen more adages drive home the point.
+A core aspect of human experience is our pursuit of novelty. There is something tantalizing about seeking out new pleasures, new sensations, and new experiences. “Variety is the spice of life” and a dozen more adages drive this point home.
 
-Yet, it seems that everything which was once new will eventually lose its shine. Over time, their luster fades, and we are once again thrust into our search for novelty. Things which once enamored us are left by the wayside as our attention is captured by shinier, newer things. “The novelty has faded” and all that.
+Yet, it's not just that we like chasing after things which are new. We stop chasing after things which are old. And, with time, everything becomes old; they lose the luster they once had when they were new. We find ourselves back where we started, dissatisfied with the state of affairs and itching for something *newer* to engage with. 
 
-Here are a three examples which point to what I mean:
+In response, people will often say that "the novelty has faded", hence the title of this post. 
 
-1. Songs which sounded so entrancing upon the first few listenings become dull after being put on repeat.
-2. Foods which were so delicious during the first few tastings become bland after being eaten day after day.
-3. Clothes which looked so beautiful when initially worn fade into yet another outfit after being worn over and over.
+Here are three more everyday examples:
 
-Repetition dulls us.
+1. Songs which sounded so entrancing upon the first few listenings become dull after being put on repeat. Today's pop hits are unlikely to be next year's top hits, as we grow accustomed to the same tune. There is always much excitement when a band is releasing new music.
+2. Foods which were so delicious during the first few tastings become bland after being eaten day after day. "No, we had sushi yesterday. Let's go somewhere different." Such a sentiment is commonplace; we plan around the fact that our palate becomes adjusted to the same food.
+3. Clothes which looked so beautiful when initially worn fade into "just another outfit" after being worn over and over. Like the music industry, the fashion industry thrives off of being able to offer time-sensitive goods. 
 
-In psychology, this phenomenon whereby repeated exposure to a stimulus leads to a decreased response is typically referred to as satiation or habituation. (This is rather unfortunate, as I’ve become accustomed to using “habituate” to refer to the act of making something a habit, which makes searching for papers on Google Scholar confusing.) This general pattern of a reduced response is quite ubiquitous across nature. For example, animals which leap into a prepared state upon hearing a loud noise soon grow to ignore it if the noise isn’t paired with actual danger.
+When on this topic, it's easy to dive too deep and draw grand conclusions about the futility of desire, or the transience of pleasure, or the fleetingness of happiness. Before we get into any philosophizing at all, though, I want to look at why novelty fades at all in the first place.
 
-In short, it’s a basic form of learning.
+First off, repetition dulls us.
+
+In psychology, this phenomenon whereby repeated exposure to a stimulus leads to a decreased response is typically referred to as satiation or habituation. This general pattern of a reduced response is quite ubiquitous across nature. For example, animals which leap into a prepared state upon hearing a loud noise soon grow to ignore it if the noise isn’t paired with actual danger. This sort of response can be thought of as a basic form of learning.
 
 From a survival standpoint, a bias towards newness is reasonable. Things in our environment which did not change, e.g. trees, shrubs, or familiar tribe members, likely presented less of a threat than new additions, e.g. fresh tracks, gathering storm clouds, or a stranger in our midst. Had we not had such a filter for newness, our thoughts might have looked like:
 
 *“Oh wow, that’s new! Look at that majestic tree! It looks just as good as it did yesterday! Oh wow, that’s new! Look at that lush grass! It’s so fluffy! Oh wow, that’s new! Look at that tiger. It’s so— ”*
 
-[Proceeds to get chomped on by the tiger.]
+(Proceeds to get chomped on by the tiger.)
 
-Constantly taking note of everything in your environment is costly; focusing on just what’s new is an effective optimization that often doesn’t require much of a trade-off.
-
-Yet, despite its useful roots, I think that fading novelty is also responsible for many of the difficulties we experience with learning and self-improvement.
+Constantly taking note of everything in your environment is costly. Focusing on just what’s new is a way to optimize for our limited attention that has been selected for, over time.Yet, despite its useful roots, I think that fading novelty is also responsible for many of the difficulties we experience with learning and self-improvement.
 
 On the self-improvement side of things, I think fading novelty makes practicing rationality skills more difficult because it hampers habit creation and contributes to the illusion of understanding.
 
 Consider the process of creating a new habit:
 
-When starting a new regimen, be it a new diet, productivity app, or exercise, there is often an initial burst of success. Our undertaker in question may have such thoughts as:
+When starting a new regimen, be it a new diet, productivity app, or exercise, there is often an initial burst of success. We might have thoughts like:
 
-*“Yes, finally!* This *is the Thing that will work for me! Look at how well things have been going! This is effective in all the ways that previous Thing have not! This time, it’ll be different!”*
+*“Yes, finally!* This *is the One True Thing that will work for me! Look at how well things have been going! This is effective in all the ways that previous Thing have not! This time, it’ll be different!”*
 
 I’ve personally thought things along these lines when switching up my productivity app of choice, from Google Keep to Workflowy to Google Drive to Dynalist to Evernote. Each time, despite a mounting history of evidence to the contrary, I convince myself that I've found the Holy Grail of productivity apps. 
 
-And, to an extent, I *have*; my enthusiasm is partially warranted. There often is a marked improvement in productivity--at least at first.
+And, to an extent, I *have*; my enthusiasm is partially warranted. There often is a marked improvement in productivity—at least at first.
 
-But I think that the initial excitement / effectiveness of switching something new has little to do with the actual merits of the new thing compared to the old. The real difference is the change itself--by swapping to something new, you're getting your brain more interested. "Out with the old, in with the new" and all that.
+But I think that the initial excitement / effectiveness of switching something new has little to do with the actual merits of the new thing compared to the old. The real difference is the change itself—by swapping to something new, you're getting your brain more interested in the task at hand.
 
 Now, I don’t mean to necessarily knock this initial burst of excitement. I’m glad that humans have the ability to jump-start new projects, and switching to something novel seems to be one of the easiest motivation hacks we have at our disposal. However, I think that this decay over time (from our initial excitement) is often not factored in when people start new regimens. The mountain of abandoned resolutions (New Year's or otherwise) lies testament to his.
 
-Novelty fades, and it seems to do so at a rate faster than the rough baseline of [two months needed to form a habit](https://mindlevelup.wordpress.com/mindlevelup-the-book/habits-101/). This leads to an overall negative cycle where someone might try out a new rationality skill or productivity app, experience an initial surge of success, and then, after having become acclimated, give up too easily. This can lead someone to switch constantly, never sticking with something long enough for it to become a habit.
+Novelty fades, and it seems to do so at a rate faster than the rough baseline of [two months needed to form a habit](https://mindlevelup.wordpress.com/mindlevelup-the-book/habits-101/). This leads to an overall negative cycle where someone might try out a new rationality skill or productivity app, experience an initial surge of success, and then, after having become acclimated, give up too easily. This can lead someone to switch tactics constantly, never sticking with something long enough for it to become a habit.
 
-Taken to extremes, you’ll look like the rationality junkie described in In Defense of The Obvious, where you’re compelled to seek out ever-more radical solutions because you’ve exhausted the benefit provided to you by more “normal” or “obvious” interventions.
+Taken to extremes, you’ll be a "productivity junkie" where you’re compelled to seek out ever-more radical solutions because you’ve exhausted the benefit provided to you by more “normal” or “obvious” interventions.
 
 Cue someone reviewing a topic they’ve seen before:
 
-The decreased response we get from the same stimulus plays a pernicious role in learning where I think it contributes to a sense of false understanding. In the same way that a song heard over and over becomes easy to recognize, something analogous with books that we read over and over, as well as concepts we review over and over. Fading novelty leads us to think we understand something, when we really might not.
+The decreased response we get from the same stimulus plays a pernicious role in learning. Here, it contributes to a sense of false understanding. In the same way that a song heard over and over becomes easy to recognize and categorize, something analogous happens with concepts that we see over and over again. The issue is that recognition can kick in a lot faster than actual comprehension. Our familiarity (i.e. lack of novelty) scales roughly proportionally with time— the longer we spend staring at something, the more familiar it seems. But our comprehension does *not* necessarily scale proportionally with time; if we spent 10 hours just highlighting keywords without doing any real self-testing or active learning, the time was largely wasted. 
 
-Because novelty fades, subjects we try to learn might start to look dull before we’ve actually mastered them, and this dullness could be interpreted as understanding. Thus, when trying to review, you might think “This doesn’t seem new to me. Of course I already know this”, except that “know” has been substituted to mean one of the easier recognition-based checks for understanding, rather than one of the harder actionable-based checks.
+Subjects we try to learn might start to look dull before we’ve actually mastered them, and this dullness could be interpreted as understanding. Thus, when trying to review, we might think “This doesn’t seem new to me. Of course I already know this”, except that “know” has been substituted to mean one of the easier recognition-based checks for understanding (EX: "Have I seen these equations before?"), rather than one of the harder actionable-based checks (EX: "If I cover up this page, can I reproduce the proof myself?").
 
-Compare the previous thought with:
+If we were smarter about it, we might think something like: 
 
-“Huh. This looks familiar, but I don’t think I could have come up with this idea by myself, nor could I explain it to someone else. So even though it doesn't seem new, I think I need more review.”
+*“Huh. This looks familiar, but I don’t think I could have come up with this idea by myself, nor could I explain it to someone else. So even though it doesn't seem new, I think I need more review.”*
+
+But we usually don't do that!
 
 Here are some more examples where substitution happens:
 
