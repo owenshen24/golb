@@ -50,17 +50,20 @@ for post in os.listdir(CONTENTS_DIR):
     
     # Parse file
     with open(file_path, 'r+') as f:
-      parsed_file = markdown(f.read(), extras=['metadata'])
+      post_text = f.read()
+      parsed_file = markdown(post_text, extras=['metadata'])
       title = parsed_file.metadata['title']
       summary = parsed_file.metadata['summary']
       anchor = title.replace(' ', '-')
+      word_count = len(post_text.split(' '))
       data = {
         'title': title,
         'date': datetime.fromtimestamp(
         file_update).strftime('%Y-%m-%d %H:%M'),
         'last-updated': file_update,
         'anchor': anchor,
-        'summary': summary
+        'summary': summary,
+        'word_count': word_count
       }
       POSTS_DICT['POSTS'][str(post_id)] = data.copy()
 
