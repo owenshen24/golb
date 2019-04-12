@@ -19,7 +19,8 @@ with open(METADATA_DIR + POSTS_DICT_FILE, 'r') as infile:
 ID_COUNT = POSTS_DICT['ID_COUNT']
 
 # Get last updated time for template
-template_update = int(os.path.getmtime(TEMPLATE_DIR + 'post.html'))
+template_update1 = int(os.path.getmtime(TEMPLATE_DIR + 'post.html'))
+template_update2 = int(os.path.getmtime(TEMPLATE_DIR + 'index-template.html'))
 
 # Iterate through all posts
 for post in os.listdir(CONTENTS_DIR):
@@ -40,7 +41,8 @@ for post in os.listdir(CONTENTS_DIR):
     post_id = int(post[post.find('_')+1:post.find('.md')])
  
   # Update/Create the HTML file
-  if (template_update > file_update 
+  if (template_update1 > file_update 
+      or template_update2 > file_update
       or post_id not in POSTS_DICT['POSTS'].keys()
       or file_update > POSTS_DICT['POSTS'][str(post_id)]['last-updated']):
     

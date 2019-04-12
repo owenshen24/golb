@@ -30,12 +30,17 @@
 
 
 /* Font stylings */
+
+/* Post stylings */
 .title, .container {
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
 }
 .title {
   font-size: 3em;
   font-weight: bold;
+  line-height: 1.15;
+  padding-top: 0.25em;
 }
 .date {
   color: rgb(110, 110, 110);
@@ -43,20 +48,28 @@
 .content{
   font-size: 1.1em;
 }
-.post-summary {
-  font-size: 1.1em;
-  margin-top: -0.25em;
-  line-height: 1.3;
-  color: rgb(50, 50, 50);
-}
-.post-title {
+
+/* Index stylings */
+.post-title a {
   font-size: 2.0em;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
-.post-title:hover {
-  color: rgb(80,80,80);
+.post-title:hover a {
+  color: gray;
+}
+.post-summary {
+  font-size: 1em;
+  margin-top: -0.25em;
+  line-height: 1.3;
+  color: rgb(50, 50, 50);
+}
+.word-count {
+  font-size: 0.95em;
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+  padding-bottom: 0.5em;
 }
 
 /* Link stylings */
