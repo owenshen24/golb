@@ -1,3 +1,12 @@
+/* Fonts: */
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('fonts/CenturyGothic.woff2') format('woff2'),
+      url('fonts/CenturyGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -36,28 +45,53 @@
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
   font-display: auto;
 }
+.title, .date {
+  text-align: center;
+}
 .title {
   font-size: 3rem;
   font-weight: bold;
-  line-height: 1.15;
-  padding-top: 1rem;
+  line-height: 1.25;
+  color: rgb(10, 10, 10);
 }
 .date {
-  color: rgb(110, 110, 110);
+  color: rgb(135, 32, 64);
+  font-weight: 500;
 }
 .content{
   font-size: 1.1rem;
 }
 
+/* Home logo on post.html */
+.home-logo {
+  width: 4rem;
+  height: auto;
+  padding: 0.75rem;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+
+
 /* Index stylings */
+.home-title {
+  display: flex;
+  justify-content: center;
+}
+.home-title-logo {
+  height: 6rem;
+  width: auto;
+  padding: 1rem;
+}
 .post-title a {
   font-size: 2.0rem;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: rgb(41, 41, 41);
 }
-.post-title:hover a {
-  color: gray;
+.post-title a:hover  {
+  color: rgb(135, 32, 64);
 }
 .post-summary {
   font-size: 1rem;
