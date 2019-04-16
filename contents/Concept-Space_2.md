@@ -1,25 +1,59 @@
 title: Concept Space vs Action Space
-summary: test
+summary: PLACEHOLDER
 
-In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, it's important to keep track of objects and our representations of objects as two distinct things. When you don't respect the distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
+In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). That is to say, it's important to note that our representations of objects and the objects themselves are two distinct things. When you don't respect such a distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
 
-Concretely, we can refer to time-inconsistent preferences, the well-documented phenomenon where we’ll relent to in-the-moment urges, often for a temptation we will later regret. For example, a student might put off studying until the last moment, choosing instead to read a riveting novel. Or a partygoer might drink far too much they can handle, knowing they’ll soon end up regretting it.
+Here's a concrete example of where this confusion might arise: 
 
-In both of these cases, there is indeed something we can abstract from the nature of each of these situations—a human considers doing X and soon regrets it, instead wishing they had done Y. My claim here is that “time-inconsistent preferences”  form a type of descriptive classification because they can help us see the larger shape of what’s going on, but they don’t tell us how to solve the general problem.
+First, let's consider the space of things that fall under [time inconsistent preferences](https://en.wikipedia.org/wiki/Dynamic_inconsistency). Like the name suggests, time consistent preferences arise in situations where we make a decision and then, later on, wish we had acted differently. One instance of this is **temporal discounting**, where we see people value the present much more than the future.
 
-Or, more specifically, I claim that in these situations where you’ve got a descriptive classification, it’s actually the specific details (and not the ability to recognize that you’re engaging in a general phenomenon) which provide the most leverage towards solving your problem.
+Some places where we might exhibit temporal discounting include:
 
-In the above two examples, it might be that our struggling student needs to reexamine their priorities. Perhaps the regret is misplaced and actually doing poorly on the upcoming test isn’t even that big of a deal. Or perhaps our student could rearrange their schedule around and study with a friend to shave off some of the aversion.
+1. A student puts off studying until the last moment. Instead, they choose to read a fun novel in the interim.
+2. A partygoer drinks more than they can handle, leaving their future self to deal with the resulting hangover.
+3. A dieter opts for yet another dessert during a meal, leaving the exercise for later.
 
-The point is, this ends up looking quite different from what our overzealous partygoer might want to do. Our partygoer may want to consider the sort of circumstances which brought them to said party in the first place; it might be the case that avoiding certain triggers means they could sidestep potential binge opportunities entirely.
+In all three of these cases, there is indeed a commonality we can abstract—a human considers doing X and later regrets it, instead wishing they had done Y. Given our definition for temporal discounting, it *does* make sense to categorize all three cases as such. 
 
-The point is, there’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. But the two are very much independent, as the generalized principle is, in these cases, a descriptive classification and not one that focuses on actions or implementation.
+However, does knowing that all three cases are instances of the same category lend itself to a common solution? 
 
-It might seem like I’m splitting hairs here—there’s a sort of argument that the above might represent, the sort of thing where I argue that well technically everything is implementation-specific because at some point, you’ll always need to get specific. After all, you can’t actually directly act on advice to “remove triggering environmental cues” (unless you’ve got a weird set of billiard firearm fauna).
+I think the answer is mostly "no", and I'll try to explain why:
 
-And I’m not trying to be the person who’s trying to win by technicalities or definitions. Having the sense of the general shape of the sort of problem you’re facing can be helpful. Knowing what sorts of general solutions tend to work can provide a helpful template you can fill in with your environment-specific details. It can provide a good springboard for brainstorming ways forward.
+First off, what does knowing about the general case of temporal discounting tell us? Well, we know that this whole phenomenon relates to when our future selves regret an action that we take in the present. Maybe we could try to create a heuristic like "When you're about to do something that you're going to regret...don't."
 
-EX: “Okay, I know that habit formation works best with strong, related sensory cue. What’s something related to flossing that I could use…?”
+...
+
+That doesn't seem like enough, does it? 
+
+Instead, consider this:
+
+For our student, it might be that our struggling student needs to reexamine their priorities. Perhaps the regret is misplaced and actually doing poorly on the upcoming test isn’t even that big of a deal. Or perhaps our student could rearrange their schedule around and study with a friend to shave off some of the aversion.
+
+For our partygoer, they may want to consider the sort of circumstances which brought them to said party in the first place. Perhaps avoiding certain problematic friends would allow them to sidestep potential binge opportunities entirely. Or perhaps they could stick to non-alcoholic drinks and still have fun at the party.
+
+For the dieter, it could be the case that planning out their meals in advance would allow them to avoid restaurants with unhealthy desserts. Or perhaps filling up before going out to eat with friends can help curb their desire for desserts.
+
+In all three cases, the point I want to get across is that, when looking for a solution, one might consider dramatically different factors, even though all three situations can be part of the same phenomenon. The initial issue here is that temporal discounting is a *descriptive* category, not a prescriptive one. It was designed to help us see a common pattern between different situations, not necessarily act on them accordingly.
+
+I'm not saying we ought not to use descriptive categories when thinking about self-help. However, in these situations where you’ve got a descriptive classification, it’s actually the specific details (and not the ability to recognize that you’re engaging in a more general phenomenon) which provide the most leverage towards solving your problem.
+
+In other words, it's the considerations like "What led me, in this case, to this situation?" rather than "If this is a temporal discounting situation, what do I do?" that lead to the most useful insights.
+
+Caveat: Thinking about the general concept *can* be useful as a springboard for what to do next. 
+
+For example, say you want to start flossing regularly and correctly recognize that you are trying to form a habit. Then, based on what you know about habit formation in general, you would know that you need a strong context cue to start off the habit. From there, you can think about what items in your bathroom or daily routine could act as a good trigger.
+
+(And indeed, this is how some rationality techniques, like []TAPs](https://www.lesswrong.com/posts/v4nNuJBZWPkMkgQRb/making-intentions-concrete-trigger-action-planning),  are created.)
+
+But note that the majority of the work comes after noticing what to do. Once you've identified the template, most of the work comes in putting in the mental effort to fill it out.
+
+A corollary to this distinction is that the factors constraining actionability are much tighter than those which constrain concepts. When we care about finding ways to cluster items such that their solutions are similar, we are importing a bunch of additional real-world constraints. Concepts live in our head and have no such requirement. As such, we can think of many, many more ways to categorize objects such that they share a common trait. (See: [overfitting](https://en.wikipedia.org/wiki/Overfitting)). 
+
+As a general rule, then, I think it's important to always hone in on the specifics of a situation, even if you recognize a larger pattern. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. And it's this misstep that I want to caution against.
+
+
+
+==============
 
 But I still do think that this sort of conceptual muddling can be pernicious, especially in the related case where two tasks seem similar, despite having vastly different effects. So let’s pivot a little bit to a slightly different situation: situations where your brain, when faced with an apparent conceptual similarity, assumes their actionable similarity, and then defaults to the easier one.
 
