@@ -11,6 +11,8 @@
 /* Phone width */
 .container {
   width: 100%;
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
 }
 
 /* For tablet width */
@@ -27,52 +29,20 @@
   }
 }
 
-
-
-/* Font stylings */
-
-/* Post stylings */
-.title, .container {
-  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-  font-display: auto;
+/* Link stylings */
+a {
+  color: rgb(135, 32, 64);
 }
-.title, .date {
+a:hover {
+  color: rgb(198, 77, 115);
+}
+
+.home-title {
   text-align: center;
 }
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: rgb(10, 10, 10);
-}
-.date {
-  color: rgb(135, 32, 64);
-  font-weight: 500;
-}
-.content{
-  font-size: 1.1rem;
-}
-
-/* Home logo on post.html */
-.home-logo {
-  width: 4rem;
-  height: auto;
-  padding: 0.75rem;
-  cursor: pointer;
-  display: block;
-  margin: auto;
-}
-
-
-
-/* Index stylings */
-.home-title {
-  display: flex;
-  justify-content: center;
-}
 .home-title-logo {
-  height: 6rem;
-  width: auto;
+  width: 6rem;
+  height: auto;
   padding: 1rem;
 }
 .post-link {
@@ -99,16 +69,6 @@
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-
-/* Link stylings */
-a {
-  color: rgb(135, 32, 64);
-}
-a:hover {
-  color: rgb(198, 77, 115);
-}
-
-
 /* List stylings */
 li:not(:first-child) {
   padding-top: 1rem;

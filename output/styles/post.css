@@ -1,0 +1,65 @@
+/*Adaptive sizing*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Phone width */
+.container {
+  width: 100%;
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
+}
+
+/* For tablet width */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* For normal computer width */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+}
+
+/* Link stylings */
+a {
+  color: rgb(135, 32, 64);
+}
+a:hover {
+  color: rgb(198, 77, 115);
+}
+
+.title, .date {
+  text-align: center;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: rgb(10, 10, 10);
+}
+.date {
+  color: rgb(135, 32, 64);
+  font-weight: 500;
+}
+.content{
+  font-size: 1.1rem;
+}
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.home-logo {
+  width: 4rem;
+  height: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
