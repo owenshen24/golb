@@ -47,11 +47,13 @@ For example, say you want to start flossing regularly and correctly recognize th
 
 But note that the majority of the work comes after noticing what to do. Once you've identified the template, most of the work comes in putting in the mental effort to fill it out.
 
-A corollary to this distinction is that the factors constraining actionability are much tighter than those which constrain concepts. When we care about finding ways to cluster items such that their solutions are similar, we are importing a bunch of additional real-world constraints. Concepts live in our head and have no such requirement. As such, we can think of many, many more ways to categorize objects such that they share a common trait. (See: [overfitting](https://en.wikipedia.org/wiki/Overfitting)). 
+A corollary to this distinction is that the factors constraining actionability are much tighter than those which constrain concepts. When we care about finding ways to cluster items such that their solutions are similar, we are importing a bunch of additional real-world constraints. Concepts, on the other hand, live in our head and have no such requirement. As such, we can think of many, many more ways to categorize objects such that they share a common trait. (See, more generally: [overfitting](https://en.wikipedia.org/wiki/Overfitting)). 
+
+* something about how concepts can lead you to *just* categorize, and leave it at that. giving you a sense of false insight.
+
+==============
 
 As a general rule, then, I think it's important to always hone in on the specifics of a situation, even if you recognize a larger pattern. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. And it's this misstep that I want to caution against.
-
-
 
 ==============
 

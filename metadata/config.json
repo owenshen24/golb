@@ -1,0 +1,13 @@
+{
+    "posts" : {
+        "CONTENTS_DIR" : "contents/",
+        "METADATA_DIR" : "metadata/",
+        "METADATA_DICT" : "POSTS_DICT.json",
+        "OUTPUT_DIR" : "output/",
+        "POST_TEMPLATE_PATH" : "templates/post.html",
+        "INDEX_TEMPLATE_PATH" : "templates/index-template.html"
+    },
+    "muse" : {
+
+    }
+}
