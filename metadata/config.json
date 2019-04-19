@@ -1,13 +1,23 @@
 {
-    "posts" : {
-        "CONTENTS_DIR" : "contents/",
-        "METADATA_DIR" : "metadata/",
-        "METADATA_DICT" : "POSTS_DICT.json",
-        "OUTPUT_DIR" : "output/",
-        "POST_TEMPLATE_PATH" : "templates/post.html",
-        "INDEX_TEMPLATE_PATH" : "templates/index-template.html"
+    "config": {
+        "posts": {
+            "CONTENTS_DIR": "contents/",
+            "METADATA_DIR": "metadata/",
+            "METADATA_DICT": "POSTS_DICT.json",
+            "OUTPUT_DIR": "output/",
+            "TEMPLATE_DIR": "templates/",
+            "POST_TEMPLATE_PATH": "post.html",
+            "INDEX_TEMPLATE_PATH": "index-template.html"
+        },
+        "muse": {
+            "CONTENTS_DIR": "contents/muse/",
+            "METADATA_DIR": "metadata/",
+            "METADATA_DICT": "MUSE_POSTS_DICT.json",
+            "OUTPUT_DIR": "output/muse/",
+            "TEMPLATE_DIR": "templates/",
+            "POST_TEMPLATE_PATH": "post.html",
+            "INDEX_TEMPLATE_PATH": "index-template.html"
+        }
     },
-    "muse" : {
-
-    }
+    "last-updated": 1555711487.2384174
 }

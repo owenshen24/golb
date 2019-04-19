@@ -1,1 +1,21 @@
-{"ID_COUNT": 1, "POSTS": {"1": {"title": "Fading Novelty", "date": "2019-04-02 10:52", "last-updated": 1554227572, "anchor": "Fading-Novelty", "summary": "Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations, as well as a few philosophical ones. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.", "word_count": 2229}, "2": {"title": "Concept Space vs Action Space", "date": "2019-04-15 18:20", "last-updated": 1555377655, "anchor": "Concept-Space-vs-Action-Space", "summary": "PLACEHOLDER", "word_count": 1566}}}
+{
+    "ID_COUNT": 1,
+    "POSTS": {
+        "1": {
+            "title": "Fading Novelty",
+            "date": "2019-04-19 15:04",
+            "last-updated": 1555711475,
+            "anchor": "Fading-Novelty",
+            "summary": "Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.",
+            "word_count": 2222
+        },
+        "2": {
+            "title": "Concept Space vs Action Space",
+            "date": "2019-04-19 14:44",
+            "last-updated": 1555710242,
+            "anchor": "Concept-Space-vs-Action-Space",
+            "summary": "PLACEHOLDER",
+            "word_count": 1594
+        }
+    }
+}
