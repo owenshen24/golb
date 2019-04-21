@@ -43,7 +43,7 @@ Caveat: Thinking about the general concept *can* be useful as a springboard for 
 
 For example, say you want to start flossing regularly and correctly recognize that you are trying to form a habit. Then, based on what you know about habit formation in general, you would know that you need a strong context cue to start off the habit. From there, you can think about what items in your bathroom or daily routine could act as a good trigger.
 
-(And indeed, this is how some rationality techniques, like []TAPs](https://www.lesswrong.com/posts/v4nNuJBZWPkMkgQRb/making-intentions-concrete-trigger-action-planning),  are created.)
+(And indeed, this is how some rationality techniques, like [TAPs](https://www.lesswrong.com/posts/v4nNuJBZWPkMkgQRb/making-intentions-concrete-trigger-action-planning),  are created.)
 
 But note that the majority of the work comes after noticing what to do. Once you've identified the template, most of the work comes in putting in the mental effort to fill it out.
 

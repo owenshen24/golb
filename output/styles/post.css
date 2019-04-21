@@ -48,7 +48,8 @@ a:hover {
 }
 .date {
   color: rgb(135, 32, 64);
-  font-weight: 500;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
 }
 .content{
   font-size: 1.1rem;

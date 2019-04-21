@@ -2,6 +2,7 @@ import os
 import json
 import time
 import re
+from urllib.parse import quote
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
@@ -117,7 +118,7 @@ def parsePosts(sort_date=False):
                     text = extractText(post_text)
                     summary = text[0:100] + '…'
 
-                anchor = title.replace(' ', '-')
+                anchor = quote(title.replace(' ', '-'))
                 word_count = len(post_text.split(' '))
                 data = {
                     'title': title,
@@ -176,7 +177,10 @@ POSTS_LIST = [{
 # TODO: go through all options and build site
 if __name__ == "__main__":
     updateTime()
-    #loadConfig(OPTIONS[0])
-    #parsePosts()
+    # Parse MLU
+    loadConfig(OPTIONS[0])
+    parsePosts()
+
+    # Parse Muse
     loadConfig(OPTIONS[1])
     parsePosts(sort_date=True)
