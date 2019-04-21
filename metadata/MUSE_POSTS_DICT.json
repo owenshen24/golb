@@ -1,4 +1,173 @@
 {
-    "ID_COUNT": 0,
-    "POSTS": {}
+    "ID_COUNT": 21,
+    "POSTS": {
+        "1": {
+            "title": "Speediness 1",
+            "date": "2018-09-26 18:49",
+            "last-updated": 1538012974,
+            "anchor": "Speediness-1",
+            "summary": "It's now my second year of college. I suppose that Muse works more as a place for me to be far more \u2026",
+            "word_count": 226
+        },
+        "2": {
+            "title": "Controlling vs Controlled Attention",
+            "date": "2018-09-06 15:10",
+            "last-updated": 1536271832,
+            "anchor": "Controlling-vs-Controlled-Attention",
+            "summary": "I often think about activities we can engage in as one of two types: activities in which we're direc\u2026",
+            "word_count": 349
+        },
+        "3": {
+            "title": "The Surprising Effectiveness of Doing Literally Anything",
+            "date": "2018-12-21 16:04",
+            "last-updated": 1545437054,
+            "anchor": "The-Surprising-Effectiveness-of-Doing-Literally-Anything",
+            "summary": "So I've been using Todoist as my to-do list of choice for over a year now. This feels pretty good an\u2026",
+            "word_count": 175
+        },
+        "4": {
+            "title": "Caring About Literally Anything",
+            "date": "2018-11-13 20:18",
+            "last-updated": 1542169107,
+            "anchor": "Caring-About-Literally-Anything",
+            "summary": "I have this gut feeling that games should have some degree of *depth* to them. There should be lots \u2026",
+            "word_count": 328
+        },
+        "5": {
+            "title": "Reward Loops",
+            "date": "2018-09-07 19:10",
+            "last-updated": 1536372622,
+            "anchor": "Reward-Loops",
+            "summary": "Sometimes, when I'm on Facebook, I'll get a notification. I'll click on it, and then someone has sen\u2026",
+            "word_count": 212
+        },
+        "6": {
+            "title": "Black-box Explanations For Productivity Stuff",
+            "date": "2018-10-03 17:21",
+            "last-updated": 1538612473,
+            "anchor": "Black-box-Explanations-For-Productivity-Stuff",
+            "summary": "You know how sometimes you're staring at a problem or a math proof, and you know that you *could* fi\u2026",
+            "word_count": 96
+        },
+        "7": {
+            "title": "Happiness and Meaningness",
+            "date": "2018-09-12 21:05",
+            "last-updated": 1536811533,
+            "anchor": "Happiness-and-Meaningness",
+            "summary": "I used to think that happiness was pretty important. Now, though, it looks like I didn't do a good j\u2026",
+            "word_count": 387
+        },
+        "8": {
+            "title": "Titles are Evil",
+            "date": "2018-09-14 21:49",
+            "last-updated": 1536986992,
+            "anchor": "Titles-are-Evil",
+            "summary": "[Malcolm Ocean gets it](https://malcolmocean.com/2016/02/sparkly-pink-purple-ball-thing/). There's a\u2026",
+            "word_count": 103
+        },
+        "9": {
+            "title": "Important Stuff in Romance",
+            "date": "2018-10-02 07:29",
+            "last-updated": 1538490567,
+            "anchor": "Important-Stuff-in-Romance",
+            "summary": "Everyone kinda knows that some mixture of love and affection doesn't cut it in relationships. I've b\u2026",
+            "word_count": 103
+        },
+        "10": {
+            "title": "Acceptance, Analogies, and Asymmetries",
+            "date": "2018-09-11 07:54",
+            "last-updated": 1536677686,
+            "anchor": "Acceptance,-Analogies,-and-Asymmetries",
+            "summary": "Three concepts that I seem to be using a lot lately are acceptance, analogies, and asymmetries. They\u2026",
+            "word_count": 217
+        },
+        "11": {
+            "title": "Self-Discovery vs Self-Modification",
+            "date": "2018-09-09 17:30",
+            "last-updated": 1536539457,
+            "anchor": "Self-Discovery-vs-Self-Modification",
+            "summary": "In [Normative vs Descriptive Confusions](https://mindlevelup.wordpress.com/2018/08/31/normative-vs-d\u2026",
+            "word_count": 580
+        },
+        "12": {
+            "title": "Why Does Self-Help Work?",
+            "date": "2018-12-22 08:02",
+            "last-updated": 1545494528,
+            "anchor": "Why-Does-Self-Help-Work?",
+            "summary": "One thing I've been thinking about is why self-help works at all. In conjunction with the blog right\u2026",
+            "word_count": 223
+        },
+        "13": {
+            "title": "Anticipated Fear in Mental Explorations",
+            "date": "2018-09-07 19:31",
+            "last-updated": 1536373889,
+            "anchor": "Anticipated-Fear-in-Mental-Explorations",
+            "summary": "There's this weird thing that's been happening lately where I generally feel okay, and I'm noting th\u2026",
+            "word_count": 173
+        },
+        "14": {
+            "title": "Attention vs Effort",
+            "date": "2018-09-10 21:05",
+            "last-updated": 1536638701,
+            "anchor": "Attention-vs-Effort",
+            "summary": "I think I missed the memo on this, but apparently 2x2 squares have been the sexy thing to do when ta\u2026",
+            "word_count": 229
+        },
+        "15": {
+            "title": "Ascetic Aesthetic",
+            "date": "2018-09-07 19:13",
+            "last-updated": 1536372839,
+            "anchor": "Ascetic-Aesthetic",
+            "summary": "I have a Mood or a Feel that I care a lot about. It's a little like minimalism. It's a little like p\u2026",
+            "word_count": 274
+        },
+        "16": {
+            "title": "Waning Attention",
+            "date": "2018-11-29 17:00",
+            "last-updated": 1543539615,
+            "anchor": "Waning-Attention",
+            "summary": "I've been worried lately at my ability to do work and to focus and do work. Not Deep Work in the Cal\u2026",
+            "word_count": 464
+        },
+        "17": {
+            "title": "Sliding Windows of Experience",
+            "date": "2018-11-13 20:27",
+            "last-updated": 1542169646,
+            "anchor": "Sliding-Windows-of-Experience",
+            "summary": "Maybe because it's one of the algorithms that's been showing up lately, but I've been thinking about\u2026",
+            "word_count": 195
+        },
+        "18": {
+            "title": "Feeling Less Scared of Apocalypses",
+            "date": "2018-10-03 17:28",
+            "last-updated": 1538612889,
+            "anchor": "Feeling-Less-Scared-of-Apocalypses",
+            "summary": "A few years ago, I was viscerally scared by the thought of the world ending. It felt a lot closer th\u2026",
+            "word_count": 162
+        },
+        "19": {
+            "title": "Blogging Redux",
+            "date": "2019-04-09 21:25",
+            "last-updated": 1554870313,
+            "anchor": "Blogging-Redux",
+            "summary": "Hey, yo, so I'm back to writing stuff for now. Or, sort of. I mentioned that I'd be taking a break f\u2026",
+            "word_count": 375
+        },
+        "20": {
+            "title": "Creators vs Consumers",
+            "date": "2018-09-15 07:53",
+            "last-updated": 1537023234,
+            "anchor": "Creators-vs-Consumers",
+            "summary": "It feels like there's been a push towards getting people to start creating their own content. Platfo\u2026",
+            "word_count": 296
+        },
+        "21": {
+            "title": "Experience Is Compounding",
+            "date": "2018-09-14 21:35",
+            "last-updated": 1536986136,
+            "anchor": "Experience-Is-Compounding",
+            "summary": "I've been on a real not-learning kick lately. By that, I mean a long stretch of not feeling like I'v\u2026",
+            "word_count": 400
+        }
+    }
 }

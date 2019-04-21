@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import re
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
@@ -8,7 +9,7 @@ from markdown2 import markdown
 
 # TODO:
 '''
-There is a counting issue. I'll need to go through and re-copy Muse and fix things
+Fix sentence snippets
 '''
 
 
@@ -37,7 +38,19 @@ def loadConfig(options):
         CONFIG = json.load(infile)["config"][options]
 
 
-def parsePosts():
+def extractText(text):
+    _meta_data_newline = re.compile("^\n", re.MULTILINE)
+    _meta_data_pattern = re.compile(r'^(?:---[\ \t]*\n)?(.*:\s+>\n\s+[\S\s]+?)(?=\n\w+\s*:\s*\w+\n|\Z)|([\S\w]+\s*:(?! >)[ \t]*.*\n?)(?:---[\ \t]*\n)?', re.MULTILINE)
+    metadata_split = re.split(_meta_data_newline, text, maxsplit=1)
+    metadata_content = metadata_split[0]
+    match = re.findall(_meta_data_pattern, metadata_content)
+    if not match:
+        return text
+    tail = metadata_split[1]
+    return tail
+
+
+def parsePosts(sort_date=False):
     # Define path variables
     CONTENTS_DIR = CONFIG['CONTENTS_DIR']
     METADATA_DIR = CONFIG['METADATA_DIR']
@@ -99,8 +112,10 @@ def parsePosts():
                 # Note: the found sentence might be incomplete
                 if 'summary' in parsed_file.metadata.keys():
                     summary = parsed_file.metadata['summary']
+                # TODO: fix this to be something good
                 else:
-                    summary = parsed_file[0:parsed_file.find('. ')]
+                    text = extractText(post_text)
+                    summary = text[0:100] + '…'
 
                 anchor = title.replace(' ', '-')
                 word_count = len(post_text.split(' '))
@@ -134,18 +149,34 @@ def parsePosts():
         json.dump(POSTS_DICT, outfile, indent=4)
 
     # Update Posts Index with all posts
+    POSTS_LIST = POSTS_DICT["POSTS"].values()
+    if (sort_date):
+        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
+            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
+            reverse=True
+        )]
+
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
     index_html = env.get_template(INDEX_TEMPLATE).render(
-    posts = POSTS_DICT['POSTS'].values())
+    posts = POSTS_LIST)
     with open (OUTPUT_DIR + 'index.html', 'w') as output:
         output.write(index_html)
+
+'''
+POSTS_LIST = [{
+        p : POSTS_DICT["POSTS"][p] for p in sorted(
+            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
+            reverse=True
+        )
+    }]
+'''
 
 
 # Run script as main
 # TODO: go through all options and build site
 if __name__ == "__main__":
     updateTime()
-    loadConfig(OPTIONS[0])
-    parsePosts()
-    #loadConfig(OPTIONS[1])
+    #loadConfig(OPTIONS[0])
     #parsePosts()
+    loadConfig(OPTIONS[1])
+    parsePosts(sort_date=True)
