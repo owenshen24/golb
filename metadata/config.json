@@ -15,9 +15,9 @@
             "METADATA_DICT": "MUSE_POSTS_DICT.json",
             "OUTPUT_DIR": "output/muse/",
             "TEMPLATE_DIR": "templates/",
-            "POST_TEMPLATE_PATH": "post.html",
-            "INDEX_TEMPLATE_PATH": "index-template.html"
+            "POST_TEMPLATE_PATH": "muse-post.html",
+            "INDEX_TEMPLATE_PATH": "muse-index-template.html"
         }
     },
-    "last-updated": 1555711487.2384174
+    "last-updated": 1555818546.4748769
 }

@@ -6,6 +6,12 @@ from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 
 
+# TODO:
+'''
+There is a counting issue. I'll need to go through and re-copy Muse and fix things
+'''
+
+
 CONFIG_PATH = "metadata/config.json"
 OPTIONS = [
     "posts",
@@ -54,20 +60,25 @@ def parsePosts():
 
     # Iterate through all posts
     for post in os.listdir(CONTENTS_DIR):
+
         file_path = os.path.join(CONTENTS_DIR, post)
         file_update = int(os.path.getmtime(file_path))
         post_id = None
         new_file_path = None
 
+        # Skip subdirectories:
+        if os.path.isdir(file_path):
+            continue
+
         # Create new entry in POSTS_DICT and rename file if new
         # Otherwise, get existing post_id
-        if '_' not in file_path:
+        if '#' not in file_path:
             ID_COUNT += 1
             post_id = ID_COUNT
-            new_file_path = file_path[:file_path.find('.md')] + '_' + str(ID_COUNT) + '.md'
+            new_file_path = file_path[:file_path.find('.md')] + '#' + str(ID_COUNT) + '.md'
             os.rename(file_path, new_file_path)
         else:
-            post_id = int(post[post.find('_')+1:post.find('.md')])
+            post_id = int(post[post.find('#')+1:post.find('.md')])
 
         # Parse the post into HTML if we updated the template or the post
         # since the last time we ran the script
@@ -83,7 +94,14 @@ def parsePosts():
                 post_text = f.read()
                 parsed_file = markdown(post_text, extras=['metadata'])
                 title = parsed_file.metadata['title']
-                summary = parsed_file.metadata['summary']
+
+                # Get provided character or first sentence
+                # Note: the found sentence might be incomplete
+                if 'summary' in parsed_file.metadata.keys():
+                    summary = parsed_file.metadata['summary']
+                else:
+                    summary = parsed_file[0:parsed_file.find('. ')]
+
                 anchor = title.replace(' ', '-')
                 word_count = len(post_text.split(' '))
                 data = {
@@ -123,10 +141,11 @@ def parsePosts():
         output.write(index_html)
 
 
-# If script is run:
+# Run script as main
+# TODO: go through all options and build site
 if __name__ == "__main__":
     updateTime()
     loadConfig(OPTIONS[0])
     parsePosts()
-    loadConfig(OPTIONS[1])
+    #loadConfig(OPTIONS[1])
     #parsePosts()

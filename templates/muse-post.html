@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Note the Muse templates need to go one directory above to access
+the image, style, and js files -->
+
+<head>
+	<title>{{post.title}}</title>
+  <link rel="stylesheet" href="../styles/post.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="grid">
+    <div class="grid-spacer">
+    </div>
+    <div class="container">
+      <div class="home-logo-container">
+        <a href="index.html">
+          <img src="../images/muse-logo.svg" class="home-logo">
+        </a>
+      </div>
+      <div class="title">{{post.title}}</div>
+      <div class="date">Last Updated: {{post.date}}</div>
+      <div class="content">{{post.content}}</div>
+    </div>
+    <div class="grid-spacer"></div>
+  </div>
+
+</body>
+
+</html>

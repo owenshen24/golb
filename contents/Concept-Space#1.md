@@ -1,5 +1,5 @@
 title: Concept Space vs Action Space
-summary: PLACEHOLDER
+summary: test
 
 In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). That is to say, it's important to note that our representations of objects and the objects themselves are two distinct things. When you don't respect such a distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
 

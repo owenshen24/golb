@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="174.814mm"
+   height="174.81398mm"
+   viewBox="0 0 174.814 174.81398"
+   version="1.1"
+   id="svg853"
+   inkscape:version="0.92.4 (unknown)"
+   sodipodi:docname="Muse Logo.svg">
+  <defs
+     id="defs847" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="383.03065"
+     inkscape:cy="234.76153"
+     inkscape:document-units="px"
+     inkscape:current-layer="g5608"
+     showgrid="false"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1380"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false" />
+  <metadata
+     id="metadata850">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.2604115,-7.2812584)">
+    <g
+       style="fill:#aa0000;fill-opacity:1"
+       id="g848"
+       transform="matrix(0.28781277,0,0,0.28783528,-17.675846,-20.954202)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         transform="rotate(47.441117,409.60394,441.05703)"
+         id="g5608">
+        <ellipse
+           style="opacity:1;fill:#780b0b;fill-opacity:1;stroke:none;stroke-width:4.59626913;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path944"
+           transform="rotate(-47.441117)"
+           cx="-60.160786"
+           cy="560.72406"
+           rx="303.69397"
+           ry="303.6702" />
+        <ellipse
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.21774197;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path944-3"
+           cx="-60.160786"
+           cy="560.72406"
+           rx="278.68317"
+           ry="278.66129"
+           transform="rotate(-47.441117)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:176.57754517px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#780b0b;fill-opacity:1;stroke:none;stroke-width:4.41443872"
+           x="-268.76651"
+           y="623.51379"
+           id="text963"
+           transform="matrix(0.676374,-0.73661145,0.73655384,0.67632111,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan961"
+             x="-268.76651"
+             y="623.51379"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,  Bold Condensed';fill:#780b0b;fill-opacity:1;stroke-width:4.41443872">MUSE</tspan></text>
+      </g>
+      <g
+         id="g5434" />
+    </g>
+  </g>
+</svg>
