@@ -102,6 +102,12 @@ def parsePosts(sort_date=False):
                 parsed_file = markdown(post_text, extras=['metadata'])
                 title = parsed_file.metadata['title']
 
+                # Remove the old HTML file if it exists:
+                if str(post_id) in POSTS_DICT['POSTS'].keys():
+                    anchor = POSTS_DICT['POSTS'][str(post_id)]['anchor']
+                    old_file = OUTPUT_DIR + anchor +'.html'
+                    os.remove(old_file)
+
                 # Get provided character or first sentence
                 # Note: the found sentence might be incomplete
                 if 'summary' in parsed_file.metadata.keys():
@@ -169,6 +175,7 @@ POSTS_LIST = [{
 # TODO: go through all options and build site
 if __name__ == "__main__":
     updateTime()
+    
     # Parse MLU
     loadConfig(OPTIONS[0])
     parsePosts()

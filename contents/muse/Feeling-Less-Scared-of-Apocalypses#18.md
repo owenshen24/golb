@@ -1,4 +1,4 @@
-title: Feeling Less Scared of Apocalypses
+title: I Think I'm Feeling Less Scared of Apocalypses Now
 tags: gcr, effective-altruism, introspection
 
 A few years ago, I was viscerally scared by the thought of the world ending. It felt a lot closer than it does now. Also, since a few years ago, I've become a few years older. It's scary to think that this is probably one of the things that happens to you when you become more of an adult.
