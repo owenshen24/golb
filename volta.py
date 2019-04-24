@@ -7,13 +7,6 @@ from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 
-
-# TODO:
-'''
-Fix sentence snippets
-'''
-
-
 CONFIG_PATH = "metadata/config.json"
 OPTIONS = [
     "posts",
@@ -113,7 +106,6 @@ def parsePosts(sort_date=False):
                 # Note: the found sentence might be incomplete
                 if 'summary' in parsed_file.metadata.keys():
                     summary = parsed_file.metadata['summary']
-                # TODO: fix this to be something good
                 else:
                     text = extractText(post_text)
                     summary = text[0:100] + '…'
