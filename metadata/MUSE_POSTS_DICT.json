@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 21,
+    "ID_COUNT": 22,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -7,7 +7,7 @@
             "last-updated": 1538012974,
             "anchor": "Speediness-1",
             "summary": "It's now my second year of college. I suppose that Muse works more as a place for me to be far more \u2026",
-            "word_count": 226
+            "word_count": 222
         },
         "2": {
             "title": "Controlling vs Controlled Attention",
@@ -15,7 +15,7 @@
             "last-updated": 1536271832,
             "anchor": "Controlling-vs-Controlled-Attention",
             "summary": "I often think about activities we can engage in as one of two types: activities in which we're direc\u2026",
-            "word_count": 349
+            "word_count": 344
         },
         "3": {
             "title": "The Surprising Effectiveness of Doing Literally Anything",
@@ -23,7 +23,7 @@
             "last-updated": 1545437054,
             "anchor": "The-Surprising-Effectiveness-of-Doing-Literally-Anything",
             "summary": "So I've been using Todoist as my to-do list of choice for over a year now. This feels pretty good an\u2026",
-            "word_count": 175
+            "word_count": 166
         },
         "4": {
             "title": "Caring About Literally Anything",
@@ -31,7 +31,7 @@
             "last-updated": 1542169107,
             "anchor": "Caring-About-Literally-Anything",
             "summary": "I have this gut feeling that games should have some degree of *depth* to them. There should be lots \u2026",
-            "word_count": 328
+            "word_count": 323
         },
         "5": {
             "title": "Reward Loops",
@@ -39,7 +39,7 @@
             "last-updated": 1536372622,
             "anchor": "Reward-Loops",
             "summary": "Sometimes, when I'm on Facebook, I'll get a notification. I'll click on it, and then someone has sen\u2026",
-            "word_count": 212
+            "word_count": 210
         },
         "6": {
             "title": "Black-box Explanations For Productivity Stuff",
@@ -47,7 +47,7 @@
             "last-updated": 1538612473,
             "anchor": "Black-box-Explanations-For-Productivity-Stuff",
             "summary": "You know how sometimes you're staring at a problem or a math proof, and you know that you *could* fi\u2026",
-            "word_count": 96
+            "word_count": 89
         },
         "7": {
             "title": "Happiness and Meaningness",
@@ -55,7 +55,7 @@
             "last-updated": 1536811533,
             "anchor": "Happiness-and-Meaningness",
             "summary": "I used to think that happiness was pretty important. Now, though, it looks like I didn't do a good j\u2026",
-            "word_count": 387
+            "word_count": 381
         },
         "8": {
             "title": "Titles are Evil",
@@ -63,7 +63,7 @@
             "last-updated": 1536986992,
             "anchor": "Titles-are-Evil",
             "summary": "[Malcolm Ocean gets it](https://malcolmocean.com/2016/02/sparkly-pink-purple-ball-thing/). There's a\u2026",
-            "word_count": 103
+            "word_count": 99
         },
         "9": {
             "title": "Important Stuff in Romance",
@@ -71,7 +71,7 @@
             "last-updated": 1538490567,
             "anchor": "Important-Stuff-in-Romance",
             "summary": "Everyone kinda knows that some mixture of love and affection doesn't cut it in relationships. I've b\u2026",
-            "word_count": 103
+            "word_count": 97
         },
         "10": {
             "title": "Acceptance, Analogies, and Asymmetries",
@@ -79,7 +79,7 @@
             "last-updated": 1536677686,
             "anchor": "Acceptance%2C-Analogies%2C-and-Asymmetries",
             "summary": "Three concepts that I seem to be using a lot lately are acceptance, analogies, and asymmetries. They\u2026",
-            "word_count": 217
+            "word_count": 211
         },
         "11": {
             "title": "Self-Discovery vs Self-Modification",
@@ -87,7 +87,7 @@
             "last-updated": 1536539457,
             "anchor": "Self-Discovery-vs-Self-Modification",
             "summary": "In [Normative vs Descriptive Confusions](https://mindlevelup.wordpress.com/2018/08/31/normative-vs-d\u2026",
-            "word_count": 580
+            "word_count": 575
         },
         "12": {
             "title": "Why Does Self-Help Work?",
@@ -95,7 +95,7 @@
             "last-updated": 1545494528,
             "anchor": "Why-Does-Self-Help-Work%3F",
             "summary": "One thing I've been thinking about is why self-help works at all. In conjunction with the blog right\u2026",
-            "word_count": 223
+            "word_count": 218
         },
         "13": {
             "title": "Anticipated Fear in Mental Explorations",
@@ -103,7 +103,7 @@
             "last-updated": 1536373889,
             "anchor": "Anticipated-Fear-in-Mental-Explorations",
             "summary": "There's this weird thing that's been happening lately where I generally feel okay, and I'm noting th\u2026",
-            "word_count": 173
+            "word_count": 166
         },
         "14": {
             "title": "Attention vs Effort",
@@ -111,7 +111,7 @@
             "last-updated": 1536638701,
             "anchor": "Attention-vs-Effort",
             "summary": "I think I missed the memo on this, but apparently 2x2 squares have been the sexy thing to do when ta\u2026",
-            "word_count": 229
+            "word_count": 222
         },
         "15": {
             "title": "Ascetic Aesthetic",
@@ -119,7 +119,7 @@
             "last-updated": 1536372839,
             "anchor": "Ascetic-Aesthetic",
             "summary": "I have a Mood or a Feel that I care a lot about. It's a little like minimalism. It's a little like p\u2026",
-            "word_count": 274
+            "word_count": 271
         },
         "16": {
             "title": "Waning Attention",
@@ -127,7 +127,7 @@
             "last-updated": 1543539615,
             "anchor": "Waning-Attention",
             "summary": "I've been worried lately at my ability to do work and to focus and do work. Not Deep Work in the Cal\u2026",
-            "word_count": 464
+            "word_count": 459
         },
         "17": {
             "title": "Sliding Windows of Experience",
@@ -135,7 +135,7 @@
             "last-updated": 1542169646,
             "anchor": "Sliding-Windows-of-Experience",
             "summary": "Maybe because it's one of the algorithms that's been showing up lately, but I've been thinking about\u2026",
-            "word_count": 195
+            "word_count": 189
         },
         "18": {
             "title": "I Think I'm Feeling Less Scared of Apocalypses Now",
@@ -143,7 +143,7 @@
             "last-updated": 1556141029,
             "anchor": "I-Think-I%27m-Feeling-Less-Scared-of-Apocalypses-Now",
             "summary": "A few years ago, I was viscerally scared by the thought of the world ending. It felt a lot closer th\u2026",
-            "word_count": 166
+            "word_count": 154
         },
         "19": {
             "title": "Blogging Redux",
@@ -151,7 +151,7 @@
             "last-updated": 1554870313,
             "anchor": "Blogging-Redux",
             "summary": "Hey, yo, so I'm back to writing stuff for now. Or, sort of. I mentioned that I'd be taking a break f\u2026",
-            "word_count": 375
+            "word_count": 373
         },
         "20": {
             "title": "Creators vs Consumers",
@@ -159,7 +159,7 @@
             "last-updated": 1537023234,
             "anchor": "Creators-vs-Consumers",
             "summary": "It feels like there's been a push towards getting people to start creating their own content. Platfo\u2026",
-            "word_count": 296
+            "word_count": 292
         },
         "21": {
             "title": "Experience Is Compounding",
@@ -167,7 +167,15 @@
             "last-updated": 1536986136,
             "anchor": "Experience-Is-Compounding",
             "summary": "I've been on a real not-learning kick lately. By that, I mean a long stretch of not feeling like I'v\u2026",
-            "word_count": 400
+            "word_count": 396
+        },
+        "22": {
+            "title": "Working on MLU 2.0",
+            "date": "2019-04-26 10:05",
+            "last-updated": 1556298300,
+            "anchor": "Working-on-MLU-2.0",
+            "summary": "So I finally got around to updating my site. It's been my goal for a while ot have a nice place wher\u2026",
+            "word_count": 378
         }
     }
 }

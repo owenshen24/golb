@@ -99,6 +99,7 @@ def parsePosts(sort_date=False):
             # Parse file
             with open(file_path, 'r+') as f:
                 post_text = f.read()
+                post_only = extractText(post_text)
                 parsed_file = markdown(post_text, extras=['metadata'])
                 title = parsed_file.metadata['title']
 
@@ -113,11 +114,10 @@ def parsePosts(sort_date=False):
                 if 'summary' in parsed_file.metadata.keys():
                     summary = parsed_file.metadata['summary']
                 else:
-                    text = extractText(post_text)
-                    summary = text[0:100] + '…'
+                    summary = post_only[0:100] + '…'
 
                 anchor = quote(title.replace(' ', '-'))
-                word_count = len(post_text.split(' '))
+                word_count = len(post_only.split(' '))
                 data = {
                     'title': title,
                     'date': datetime.fromtimestamp(

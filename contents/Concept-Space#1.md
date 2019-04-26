@@ -1,7 +1,7 @@
 title: Concept Space vs Action Space
 summary: test
 
-In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). That is to say, it's important to note that our representations of objects and the objects themselves are two distinct things. When you don't respect such a distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
+In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, it's important to note that our representations of objects are distinct from the objects themselves. When you don't respect such a distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
 
 Here's a concrete example of where this confusion might arise: 
 
@@ -19,7 +19,7 @@ However, does knowing that all three cases are instances of the same category le
 
 I think the answer is mostly "no", and I'll try to explain why:
 
-First off, what does knowing about the general case of temporal discounting tell us? Well, we know that this whole phenomenon relates to when our future selves regret an action that we take in the present. Maybe we could try to create a heuristic like "When you're about to do something that you're going to regret...don't."
+First off, what does knowing about the general case of temporal discounting tell us? Well, we know that this whole phenomenon relates to when our future selves regret an action that we take in the present. Maybe we could try to create a heuristic like, "When you're about to do something that you're going to regret...don't."
 
 ...
 
@@ -37,7 +37,7 @@ In all three cases, the point I want to get across is that, when looking for a s
 
 I'm not saying we ought not to use descriptive categories when thinking about self-help. However, in these situations where you’ve got a descriptive classification, it’s actually the specific details (and not the ability to recognize that you’re engaging in a more general phenomenon) which provide the most leverage towards solving your problem.
 
-In other words, it's the considerations like "What led me, in this case, to this situation?" rather than "If this is a temporal discounting situation, what do I do?" that lead to the most useful insights.
+In other words, it's the considerations like "What led me, specifically in this case, to this situation?" rather than "If this is a temporal discounting situation, what do I do?" that lead to the most useful insights.
 
 Caveat: Thinking about the general concept *can* be useful as a springboard for what to do next. 
 
@@ -48,6 +48,8 @@ For example, say you want to start flossing regularly and correctly recognize th
 But note that the majority of the work comes after noticing what to do. Once you've identified the template, most of the work comes in putting in the mental effort to fill it out.
 
 A corollary to this distinction is that the factors constraining actionability are much tighter than those which constrain concepts. When we care about finding ways to cluster items such that their solutions are similar, we are importing a bunch of additional real-world constraints. Concepts, on the other hand, live in our head and have no such requirement. As such, we can think of many, many more ways to categorize objects such that they share a common trait. (See, more generally: [overfitting](https://en.wikipedia.org/wiki/Overfitting)). 
+
+Overall, I think the emphasis should be placed on the actionables of the specific situation. Categorization, at least for me, often comes with a sense of insight. And this insight often cues finality for me. In other words, after recognizing what concept is relevant to my situation, 
 
 * something about how concepts can lead you to *just* categorize, and leave it at that. giving you a sense of false insight.
 
