@@ -13,7 +13,7 @@ the image, style, and js files -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 	
-	<title>MUSE</title>
+	<title>Muse</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@ the image, style, and js files -->
 			{% for p in posts %}
 			<div class="post-link">
 				<div class="post-title">
-					<a href="{{ './%s.html'%p.anchor }}">{{ p.title }}</a>
+					<a href="{{ './%s.html'%p.id }}">{{ p.title }}</a>
 				</div>
 				<div class="word-count">{{ p.word_count }} words</div>
 				<div class="post-summary">{{ p.summary }}</div>

@@ -1,13 +1,13 @@
 {
-    "ID_COUNT": 2,
+    "ID_COUNT": 3,
     "POSTS": {
         "1": {
             "title": "Concept Space vs Action Space",
-            "date": "2019-04-25 23:27",
-            "last-updated": 1556260050,
+            "date": "2019-04-26 16:56",
+            "last-updated": 1556322977,
             "anchor": "Concept-Space-vs-Action-Space",
-            "summary": "test",
-            "word_count": 1633
+            "summary": "A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.",
+            "word_count": 1163
         },
         "2": {
             "title": "Fading Novelty",
@@ -16,6 +16,14 @@
             "anchor": "Fading-Novelty",
             "summary": "Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.",
             "word_count": 2167
+        },
+        "3": {
+            "title": "Recognizing vs Generating",
+            "date": "2019-04-27 21:03",
+            "last-updated": 1556424184,
+            "anchor": "Recognizing-vs-Generating",
+            "summary": "In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/w\u2026",
+            "word_count": 1600
         }
     }
 }

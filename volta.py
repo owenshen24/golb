@@ -44,7 +44,7 @@ def extractText(text):
     return tail
 
 
-def parsePosts(sort_date=False):
+def parsePosts(sort_date=False, id_as_slug=False):
     # Define path variables
     CONTENTS_DIR = CONFIG['CONTENTS_DIR']
     METADATA_DIR = CONFIG['METADATA_DIR']
@@ -67,7 +67,6 @@ def parsePosts(sort_date=False):
 
     # Iterate through all posts
     for post in os.listdir(CONTENTS_DIR):
-
         file_path = os.path.join(CONTENTS_DIR, post)
         file_update = int(os.path.getmtime(file_path))
         post_id = None
@@ -80,9 +79,16 @@ def parsePosts(sort_date=False):
         # Create new entry in POSTS_DICT and rename file if new
         # Otherwise, get existing post_id
         if '#' not in file_path:
+
+            # Rename to be post title
+            with open(file_path, 'r+') as f:
+                post_text = f.read()
+                parsed_file = markdown(post_text, extras=['metadata'])
+                anchor = quote(parsed_file.metadata['title'].replace(' ', '-'))
+                
             ID_COUNT += 1
             post_id = ID_COUNT
-            new_file_path = file_path[:file_path.find('.md')] + '#' + str(ID_COUNT) + '.md'
+            new_file_path = OUTPUT_DIR + anchor + '#' + str(ID_COUNT) + '.md'
             os.rename(file_path, new_file_path)
         else:
             post_id = int(post[post.find('#')+1:post.find('.md')])
@@ -104,7 +110,7 @@ def parsePosts(sort_date=False):
                 title = parsed_file.metadata['title']
 
                 # Remove the old HTML file if it exists:
-                if str(post_id) in POSTS_DICT['POSTS'].keys():
+                if str(post_id) in POSTS_DICT['POSTS'].keys() and not id_as_slug:    
                     anchor = POSTS_DICT['POSTS'][str(post_id)]['anchor']
                     old_file = OUTPUT_DIR + anchor +'.html'
                     os.remove(old_file)
@@ -125,7 +131,8 @@ def parsePosts(sort_date=False):
                     'last-updated': file_update,
                     'anchor': anchor,
                     'summary': summary,
-                    'word_count': word_count
+                    'word_count': word_count,
+                    'id': post_id
                 }
                 POSTS_DICT['POSTS'][str(post_id)] = data.copy()
 
@@ -135,8 +142,17 @@ def parsePosts(sort_date=False):
 
                 # Parse the HTML using Jinja and create the page
                 env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
-                post_html = env.get_template(POST_TEMPLATE).render(post = data)      
-                with open(OUTPUT_DIR + str(anchor)+'.html', 'w') as output:
+                post_html = env.get_template(POST_TEMPLATE).render(post = data, 
+                    max_num = ID_COUNT)
+
+                # Toggle between id or anchor as file name
+                if id_as_slug:
+                    post_name = str(post_id)
+                else:
+                    post_name = str(anchor)
+
+                # Save new HTML file
+                with open(OUTPUT_DIR + post_name+'.html', 'w') as output:
                     output.write(post_html)
 
             # Update message
@@ -155,24 +171,16 @@ def parsePosts(sort_date=False):
             reverse=True
         )]
 
+    # TODO: add support for id indexing rather than anchor
+
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
-    index_html = env.get_template(INDEX_TEMPLATE).render(
-    posts = POSTS_LIST)
+    index_html = env.get_template(INDEX_TEMPLATE).render(posts = POSTS_LIST)
     with open (OUTPUT_DIR + 'index.html', 'w') as output:
         output.write(index_html)
 
-'''
-POSTS_LIST = [{
-        p : POSTS_DICT["POSTS"][p] for p in sorted(
-            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
-            reverse=True
-        )
-    }]
-'''
 
 
 # Run script as main
-# TODO: go through all options and build site
 if __name__ == "__main__":
     updateTime()
     
@@ -182,4 +190,4 @@ if __name__ == "__main__":
 
     # Parse Muse
     loadConfig(OPTIONS[1])
-    parsePosts(sort_date=True)
+    parsePosts(sort_date=True, id_as_slug=True)

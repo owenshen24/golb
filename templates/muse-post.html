@@ -6,7 +6,7 @@ the image, style, and js files -->
 
 <head>
 	<title>{{post.title}}</title>
-  <link rel="stylesheet" href="../styles/post.css">
+  <link rel="stylesheet" href="../styles/muse-post.css">
   <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
   
   <!-- Favicon -->
@@ -27,6 +27,20 @@ the image, style, and js files -->
       <div class="title">{{post.title}}</div>
       <div class="date">Last Updated: {{post.date}}</div>
       <div class="content">{{post.content}}</div>
+      <hr/>
+      <div class="navbar">
+        {% if post.id == 1 %}
+        <div></div>
+        {% else %}
+        <a href="{{ './%s.html'%(post.id-1) }}" class="prev-button">◄ Prev Post</a>
+        {% endif %}
+
+        {% if post.id >= max_num %}
+        <div></div>
+        {% else %}
+        <a href="{{ './%s.html'%(post.id+1) }}" class="next-button">Next Post ►</a>
+        {% endif %}
+      </div>
     </div>
     <div class="grid-spacer"></div>
   </div>
