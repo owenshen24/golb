@@ -7,7 +7,8 @@
             "last-updated": 1556322977,
             "anchor": "Concept-Space-vs-Action-Space",
             "summary": "A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.",
-            "word_count": 1163
+            "word_count": 1163,
+            "id": 1
         },
         "2": {
             "title": "Fading Novelty",
@@ -15,15 +16,17 @@
             "last-updated": 1555818480,
             "anchor": "Fading-Novelty",
             "summary": "Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.",
-            "word_count": 2167
+            "word_count": 2167,
+            "id": 2
         },
         "3": {
             "title": "Recognizing vs Generating",
-            "date": "2019-04-27 21:03",
-            "last-updated": 1556424184,
+            "date": "2019-04-30 17:37",
+            "last-updated": 1556671050,
             "anchor": "Recognizing-vs-Generating",
             "summary": "In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/w\u2026",
-            "word_count": 1600
+            "word_count": 1777,
+            "id": 3
         }
     }
 }

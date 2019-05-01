@@ -43,10 +43,10 @@ a:hover {
 .home-title-logo {
   width: 6rem;
   height: auto;
-  padding: 1rem;
+  margin: 1rem;
 }
 .post-link {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .post-title a {
   font-size: 2.0rem;

@@ -53,10 +53,10 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
   line-height: 2.5rem;
-  color: rgb(135, 32, 64);
+  color: rgb(41, 41, 41);
 }
 .post-title a:hover  {
-  color: rgb(14, 14, 14);
+  color: rgb(135, 32, 64);
 }
 .post-summary {
   font-size: 1rem;

@@ -25,7 +25,7 @@ the image, style, and js files -->
 			</div>
 			{% for p in posts %}
 			<div class="post-link">
-				<div class="post-title">
+				<div class="post-title" data-word-count="{{ p.word_count }}">
 					<a href="{{ './%s.html'%p.id }}">{{ p.title }}</a>
 				</div>
 				<div class="word-count">{{ p.word_count }} words</div>

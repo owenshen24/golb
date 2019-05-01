@@ -55,12 +55,11 @@ a:hover {
   font-size: 1.1rem;
 }
 .home-logo-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .home-logo {
   width: 4rem;
   height: auto;
-  padding: 1rem;
+  margin: 1rem;
   cursor: pointer;
 }

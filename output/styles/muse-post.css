@@ -61,7 +61,7 @@ a:hover {
 .home-logo {
   width: 4rem;
   height: auto;
-  padding: 1rem;
+  margin: 1rem;
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ a:hover {
   cursor: pointer;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  width: 9rem;
+  width: 8rem;
   border-radius: 0.33rem;
 
   text-align: center;

@@ -1,6 +1,6 @@
 title: Recognizing vs Generating
 
-In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. This dichotomy isn't just academic in nature. It provides a good starting point for the discussion of the human analogue--**Recognizing** vs **Generating**.
+In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. This dichotomy isn't just academic in nature; it also provides a good starting point for the discussion of the human analogue--**Recognizing** vs **Generating**.
 
 Here is an example of what I want to point to:
 
@@ -10,11 +10,13 @@ You give both items to your friend. "Can you match up the outline to the essay?"
 
 This is a Recognizing task.
 
-Now, say you only give the outline to your friend. "Can you use this outline to write an essay?" you ask. Here, their goal is to actually expand on the bullet points into full sentences and paragraphs. The amount of effort they need to put in seems to have increased a lot.
+Now, say you give only the the outline to your friend. "Can you use this outline to write an essay?" you ask. Note the difficulty jump. Here, their goal is to actually expand on the bullet points into full sentences and paragraphs, whereas you previously only had to cross-reference. 
 
 This is a Generating task.
 
-The Recognizing task gives you something to work with, whereas the Generating task requires you to start from scratch. Both are related, but in the above example, it is easy to see that the two are not the same thing. The difference isn't always so clear-cut.
+The difference between these two is like matching up vocabulary words to their definitions versus filling in the definitions yourself. The Recognizing task gives you something to work with, whereas the Generating task requires you to start from scratch. Both are related, but in the above example, it's easy to see that the two aren't the same thing. 
+
+The difference isn't always so clear-cut.
 
 Consider another example:
 
@@ -22,25 +24,33 @@ A student is reading their textbook, studying for their math exam. They go over 
 
 This is a Recognizing task.
 
-Now, say the student closes the textbook. "How did that proof go, again?" they ask themselves. They derive each step, trying to see what makes sense, given what they want to prove.
+Now, consider a second student who has the same exam. After reading the textbook, the student closes the textbook and thinks back to the proof. "How did that proof go, again?" they ask themselves. Starting with a blank page, they derive each step. At each step, rather than just following along, they're asking themselves what they need to show next to get to the end of the proof.
 
 This is a Generating task.
 
-Put in this context, perhaps the distinction is clear. But when people think about "studying for math", I think both the Recognizing and the Generating can seem like correct things to do. But only one of them is going to help you when the test asks you to prove something from scratch.
+When people think about "studying for math", I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word "lazy", you wouldn't fault the first student as being lazy. Yet, there is effort lacking from the first approach. Indeed, only the second student's approach is going to help you when the test asks you to prove something from scratch.
+
+But here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves. I think some part of us believes that we can do the easier Recognize task, yet still reap the benefits of the Generating task. After all, both reading the textbook and writing proofs count as "studying", so why can't both work?
+
+This is a clear-cut example of mixing up [conceptual similarity for actionable similarity](./Concept-Space-vs-Action-Space.html), where we think that, just because two things are related, so must be their effects.
 
 I think this is why math can end up being a difficult subject. It’s all too easy to fool yourself that you understand what's going on when you’re just following along with the textbook. Cover up the steps, though, and try to solve the problem yourself, and things get a lot harder.
 
-In a similar vein, when you’re reading a book and the author says, “Now, obviously, we can conclude X,” you should take a step back and see what you think. If the author hadn’t presented you with the conclusion, could you have generated it with the pieces you already had?
+In a similar vein, when you’re reading a book and the author says, “Now, obviously, we can conclude X,” you should take a step back and examine what you actually think. If the author hadn’t presented you with the conclusion, could you have generated it with the pieces you already had?
 
-For humans, it seems very clear that Recognizing tasks (i.e. P) are easier than Generating tasks (i.e. NP). As such, you'd expect to see many more instances of Recognizing, even if Generating is what produces more useful work.
+For humans, I hope I've made the case that Recognizing tasks (i.e. P) are always easier than Generating tasks (i.e. NP). As such, if you think that humans are apt to bias towards less effortful options, you'd expect to see many more instances of Recognizing, even if Generating is what produces more useful work.
 
-For example, if you’ve ever been in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that gets proposed. But it's not often that you have many people willing to share lots of ideas. And from an effort perspective, that makes sense: it’s far easier to point out why an idea is bad (after all, basically every plan will have drawbacks!) than to come up with ideas in the first place. This isn’t to say that criticism isn’t important, but I do think it’s important to acknowledge this asymmetry in effort that’s being put in by both sides.
+And indeed, I think this is true. 
+
+For example, in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that gets proposed. But it's not often that you have many people willing to share lots of ideas. And from an effort perspective, that makes sense: it’s far easier to point out why an idea is bad (after all, basically every plan will have drawbacks!) than to come up with ideas in the first place. This isn’t to say that criticism isn’t important, but I do think it’s important to acknowledge this asymmetry in effort that’s being put in by both sides.
 
 In this specific example, one takeaway might be to offer up more ideas early, even if you think they're bad, because criticism will arise anyway. Better to offer your group a wider selection of ideas (and have them improved by criticism) than to hold it in.
 
-So that's one example where the Recognizing vs Generating distinction offers insight. In general, I think the distinction is useful because it is easy to mix up the two, when it comes to self-help.
+For self-help specifically, I think that there is a tendency for advice to get cached in declaratively, rather than procedurely, which parallels the Recognize vs Generate dichotomy.
 
-1. 
+
+* declarative vs procedural knowledge example
+* advice-giving example
 
 
 

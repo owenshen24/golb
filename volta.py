@@ -171,8 +171,6 @@ def parsePosts(sort_date=False, id_as_slug=False):
             reverse=True
         )]
 
-    # TODO: add support for id indexing rather than anchor
-
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
     index_html = env.get_template(INDEX_TEMPLATE).render(posts = POSTS_LIST)
     with open (OUTPUT_DIR + 'index.html', 'w') as output:
@@ -182,6 +180,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
 
 # Run script as main
 if __name__ == "__main__":
+    # Set new timestamp for last-updated
     updateTime()
     
     # Parse MLU
