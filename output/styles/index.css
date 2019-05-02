@@ -1,3 +1,11 @@
+/* 
+  MLU Colors:
+  very light red: #FF9D9D
+  light red: #E20E22
+  main red: rgb(170, 0, 22);
+  dark red: #77080D
+*/
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -29,22 +37,20 @@
   }
 }
 
-/* Link stylings */
-a {
-  color: rgb(135, 32, 64);
-}
-a:hover {
-  color: rgb(198, 77, 115);
-}
-
 .home-title {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
 }
 .home-title-logo {
-  width: 6rem;
-  height: auto;
+  height: 6rem;
+  width: auto;
   margin: 1rem;
 }
+.logo-wrapper {
+  text-align: center;
+}
+
 .post-link {
   margin-bottom: 1.5rem;
 }
@@ -56,7 +62,7 @@ a:hover {
   color: rgb(41, 41, 41);
 }
 .post-title a:hover  {
-  color: rgb(135, 32, 64);
+  color: #77080D;
 }
 .post-summary {
   font-size: 1rem;
@@ -70,7 +76,33 @@ a:hover {
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-/* List stylings */
-li:not(:first-child) {
-  padding-top: 1rem;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-button {
+  color: rgb(170, 0, 22);
+
+  cursor: pointer;
+
+  width: 4rem;
+
+  border: 0.15rem solid;
+  border-radius: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-button:hover {
+  color: black;
 }

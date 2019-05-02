@@ -165,6 +165,8 @@ def parsePosts(sort_date=False, id_as_slug=False):
 
     # Update Posts Index with all posts
     POSTS_LIST = POSTS_DICT["POSTS"].values()
+
+    # Sort descending date
     if (sort_date):
         POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
             POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
@@ -189,4 +191,4 @@ if __name__ == "__main__":
 
     # Parse Muse
     loadConfig(OPTIONS[1])
-    parsePosts(sort_date=True, id_as_slug=True)
+    parsePosts(id_as_slug=True)
