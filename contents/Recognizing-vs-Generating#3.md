@@ -1,8 +1,8 @@
 title: Recognizing vs Generating
 
-In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. This dichotomy isn't just academic in nature; it also provides a good starting point for the discussion of the human analogue--**Recognizing** vs **Generating**.
+In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. For example, checking to see whether 7 and 17 are prime factors of 119 versus actually factoring 119. This dichotomy isn't just academic in nature; it also provides a good starting point for what I regard as the human analogue of this dichotomy--**Recognizing** vs **Generating**.
 
-Here is an example of what I want to point to:
+In short, Recognizing tasks rely on your brain's ability to quickly recognize patterns. Generating tasks rely on your brain's ability to put pieces together. Here is an example of what I want to point to:
 
 Say you have an outline, and an essay that was written using the outline as a guide. 
 
@@ -16,9 +16,7 @@ This is a Generating task.
 
 The difference between these two is like matching up vocabulary words to their definitions versus filling in the definitions yourself. The Recognizing task gives you something to work with, whereas the Generating task requires you to start from scratch. Both are related, but in the above example, it's easy to see that the two aren't the same thing. 
 
-The difference isn't always so clear-cut.
-
-Consider another example:
+The difference isn't always so clear-cut. Here's another example:
 
 A student is reading their textbook, studying for their math exam. They go over the proof in their book. "Does this step make sense?" they ask themselves. They make sure they can follow what's going on before moving to the next step.
 
@@ -28,36 +26,52 @@ Now, consider a second student who has the same exam. After reading the textbook
 
 This is a Generating task.
 
-When people think about "studying for math", I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word "lazy", you wouldn't fault the first student as being lazy. Yet, there is effort lacking from the first approach. Indeed, only the second student's approach is going to help you when the test asks you to prove something from scratch.
+When people think about "studying for math", I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word "lazy", you wouldn't fault the first student as being lazy. Yet, there is a specific type of effort lacking from the first student's approach. Indeed, only the second student's approach is going to help when the test asks for proofs from scratch.
 
-But here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves. I think some part of us believes that we can do the easier Recognize task, yet still reap the benefits of the Generating task. After all, both reading the textbook and writing proofs count as "studying", so why can't both work?
+But here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves into thinking we're putting in more effort than we really are. "After all," the tempting thought goes, "both reading the textbook and writing proofs count as 'studying', so why can't the easier one work?"
 
-This is a clear-cut example of mixing up [conceptual similarity for actionable similarity](./Concept-Space-vs-Action-Space.html), where we think that, just because two things are related, so must be their effects.
+Some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. 
 
-I think this is why math can end up being a difficult subject. It’s all too easy to fool yourself that you understand what's going on when you’re just following along with the textbook. Cover up the steps, though, and try to solve the problem yourself, and things get a lot harder.
+In everyday life, I think this is why math can end up being a difficult subject for many people. It’s all too easy to fool yourself that you understand what's going on when you’re just following along with the textbook. Cover up the steps, though, and try to solve the problem yourself, and things get a lot harder.
 
-In a similar vein, when you’re reading a book and the author says, “Now, obviously, we can conclude X,” you should take a step back and examine what you actually think. If the author hadn’t presented you with the conclusion, could you have generated it with the pieces you already had?
+In a similar vein, when you’re reading a book and the author says, “Now, obviously, we can conclude X,” this is a sign to pause. You should take a step back and examine what you actually think. If the author hadn’t presented you with the conclusion, could you have generated it with the pieces you already had?
 
-For humans, I hope I've made the case that Recognizing tasks (i.e. P) are always easier than Generating tasks (i.e. NP). As such, if you think that humans are apt to bias towards less effortful options, you'd expect to see many more instances of Recognizing, even if Generating is what produces more useful work.
+Overall, this substitution is a clear-cut example of mixing up [concept space and action space](./Concept-Space-vs-Action-Space.html). We think that just because the tasks are conceptually similar, they must also have similar effects. But this intuitive notion of porting over similarities in other categorical domains is a flawed one. 
+
+For humans, I hope I've made the case that Recognizing tasks (i.e. P) are easier than Generating tasks (i.e. NP). As such, if you think that humans are apt to bias towards less effortful options, you'd expect to see many more instances of Recognizing, even if Generating is what produces more useful work.
 
 And indeed, I think this is true. 
 
-For example, in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that gets proposed. But it's not often that you have many people willing to share lots of ideas. And from an effort perspective, that makes sense: it’s far easier to point out why an idea is bad (after all, basically every plan will have drawbacks!) than to come up with ideas in the first place. This isn’t to say that criticism isn’t important, but I do think it’s important to acknowledge this asymmetry in effort that’s being put in by both sides.
+For example, in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that get proposed, but it's less often that you have many people willing to share lots of ideas. From an effort perspective, that makes sense: it’s far easier to point out why an idea is bad (after all, basically every plan will have drawbacks!) than to come up with ideas in the first place. This isn’t to say that criticism isn’t important, but I do think it’s important to acknowledge this asymmetry in effort that’s being put in by both sides.
 
-In this specific example, one takeaway might be to offer up more ideas early, even if you think they're bad, because criticism will arise anyway. Better to offer your group a wider selection of ideas (and have them improved by criticism) than to hold it in.
+One takeaway here might be to offer up more ideas early, even if you think they're bad, because criticism will arise anyway. Better to offer your group a wider selection of ideas (and have them improved by criticism) than to hold it in.
 
-For self-help specifically, I think that there is a tendency for advice to get cached in declaratively, rather than procedurely, which parallels the Recognize vs Generate dichotomy.
+For self-help specifically, I think that there is a tendency for advice to get cached as [declarative knowledge, rather than procedural knowledge](https://en.wikipedia.org/wiki/Procedural_knowledge), in a way which parallels the Recognizing vs Generating dichotomy. Briefly, declarative knowledge refers to things you know how to *relate*, like Paris being the capital of France. Procedural knowledge refers to things you know how to *do*, like tying a knot. The issue is that most models in self-help appear to be declarative, but their efficacy lies in their being procedural.
+
+To give a more concrete example: When you first learn about the planning fallacy, this involves concepts together. You learn that the planning fallacy is a cognitive bias, it revolves around underestimation, and that reference class forecasting is a way to help. You learn that reference class forecasting is a method of creating estimations, that it's been successful in public works projects, and that it requires choosing your reference class carefully.
+
+At the end of all of this, you might have a mind map that looks something like this: 
+
+(INSERT PICTURE HERE)
+
+And this is all well and good, if the purpose of learning about the planning fallacy was to do well on an undergraduate psychology exam. You will be able to answer questions like "Does the planning fallacy say we systematically overestimate or underestimate?" or "What does reference class forecasting do?"
+
+This extends to other areas like motivation, habits, procrastination, meditation, etc. where, after learning / research, you can build a detailed internal representation of the concept and its related nodes. But this usually isn't what you want! What you want is to be able to put all those concepts into practice, so they actually become useful. This requires finding examples of using the concept and thinking of ways to integrate the concept into your existing schedule.
+
+If building a mental map is the Recognizing task, then finding ways to actually have the concepts cash out into actions is the Generating task. And once again, it's harder. In the same way that you get good at tying your shoes by doing it again and again (with feedback), you get better at reference class forecasting by doing it again and again. 
+
+This provides strong motivation for a meta-self-help framework that often endorses just *doing the thing*, whatever that thing in question is.
 
 
-* declarative vs procedural knowledge example
-* advice-giving example
-
-
-
-
++++++
+I'll end with one last extended example:
+"The best way to get a thought into someone's head might not be explicitly trying to describe that thought."
+Ditto for motivating actions.
 
 
 ++++
+
+* advice-giving example
 
 Lastly, a more general example of this Recognize vs Generate distinction has to do with coming up with ideas. If you’ve ever been in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that are proposed. But having a steady stream of ideas proves to be harder.
 

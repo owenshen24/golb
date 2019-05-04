@@ -3,16 +3,16 @@
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
 }
-
 .container {
-  margin: auto;
-}
-
-/* Phone width */
-.container {
-  width: 100%;
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
   font-display: auto;
+}
+
+
+/* Initial width for phones */
+.container {
+  margin: auto;
+  width: 100%;
 }
 
 /* For tablet width */
@@ -26,6 +26,9 @@
 @media only screen and (min-width: 1200px) {
   .container {
     width: 65%;
+  }
+  .content{
+    font-size: 1.1rem;
   }
 }
 
@@ -51,8 +54,10 @@ a:hover {
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
+
+/* Default font size for smaller screens */
 .content{
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 .home-logo-container {
   text-align: center;

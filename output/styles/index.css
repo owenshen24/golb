@@ -83,22 +83,24 @@
   justify-content: flex-end;
 }
 .nav-button {
-  color: rgb(170, 0, 22);
+  color: #77080D;
 
   cursor: pointer;
 
-  width: 4rem;
+  /* width: 4rem; */
 
   border: 0.15rem solid;
   border-radius: 0.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 
   font-weight: 700;
   font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
