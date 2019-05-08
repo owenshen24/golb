@@ -1,36 +1,38 @@
 title: Concept Space vs Action Space
 summary: A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.
 
-In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, it's important to note that our representations of objects are distinct from the objects themselves. When you don't respect such a distinction, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. Similarly, I think there is a map/territory error that arises when we assume that just because two things are conceptually similar, they must be solved the same way.
+In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, our representations of objects are distinct from the objects themselves. This is an important, (and perhaps obvious) distinction. Without paying mind to this, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. This, of course, doesn't work because the mountains inform her map and not the other way around. 
 
-Here's a concrete example of where this confusion might arise: 
+I think a similar map/territory error arises when we assume that just because two things are conceptually similar, they must be solved the same way. Here's a concrete example of where this confusion might arise: 
 
-First, let's consider the **temporal discounting**, a type of
+First, let's consider the concept of **temporal discounting**, a type of
  [time inconsistent preference](https://en.wikipedia.org/wiki/Dynamic_inconsistency). Temporal discounting arises in situations where we make a decision and then, later on, wish we had acted differently. Specifically, it refers to instances where we see people value the present situation much more than the future. It's often what people have in mind when they refer to things like "instant gratification".
 
-Some places where we might exhibit temporal discounting include:
+Some situations which exhibit temporal discounting include:
 
 1. A student puts off studying until the last moment. Instead, they choose to read a fun novel in the interim. 
 2. A partygoer drinks more than they can handle, leaving their future self to deal with the resulting hangover.
 3. A dieter opts for yet another dessert during a meal, telling themselves they can make up for it with more exercise later.
 
-In all three of these cases, there is indeed a commonality we can abstract—a human considers doing X and prioritizes over a future event Y. All three cases fit within our definition.
-
-However, does knowing that all three cases are instances of the same category lend itself to a common solution? 
+In all three of these cases, there is indeed a commonality we can abstract—a human considers doing X and prioritizes over a future event Y. All three cases, then, fit our definition of "temporal discounting". However, does knowing that all three cases are instances of the same category imply a common solution? 
 
 I think the answer is mostly "no", and I'll try to explain why:
 
-First off, what does knowing about the general case of temporal discounting tell us? Well, we know that this whole phenomenon relates to when our future selves prefer a different action than one we take in the present. 
+First off, what does knowing about the general case of temporal discounting tell us? Well, we know that this whole phenomenon relates to when our future selves prefer a different action than one we take in the present. There is a pattern we can abstract.
 
-How does that help us find a general strategy? Maybe we could try to create a heuristic like, "When you're about to do something that you're going to regret...don't."
+How does this pattern help us find a general strategy? Maybe we could try to create a heuristic like, "When you're about to do something that you're going to regret...don't."
 
 Hmm...
 
-That doesn't seem like enough, does it?
+That doesn't seem like enough.
 
-I think there's an asymmetry here. It can make sense to abstract from many situations to come up with the concept of a General Problem (like what "temporal discounting" does). But trying to find a General Solution to the General Problem and then applying that General Solution to your specific situation is much more difficult.
+I think there's an asymmetry here. It can make sense to abstract from many situations to come up with the concept of a General Problem (like what "temporal discounting" does). But trying to find a General Solution to the General Problem and then applying that General Solution to your specific situation is much more difficult. 
 
-Indeed, in most cases, I don't think that it's clear there *will* be a clean General Solution.
+In mathematics, this is readily apparent. We might look at finding the best-fit line to a set of points as well as finding the shortest path between two nodes in a graph. It is clear we can abstract the idea of "optimization" from the two problems (we care about some optimal value, relative to a metric), but the ways in which we optimize the two are going to be very different. 
+
+Indeed, in most cases, I don't think that it's clear there *will* be a clean General Solution, even when a common pattern can be abstracted.
+
+Back to our examples:
 
 For our student, it might be that they could reexamine their priorities. Perhaps this class isn't important to them, and doing poorly on this exam has few consequences. Or perhaps our student could rearrange their schedule around and study with a friend to shave off some of the aversion they had towards studying.
 
@@ -38,9 +40,7 @@ For our partygoer, they may want to consider the sort of circumstances which bro
 
 For the dieter, perhaps planning out their meals in advance would allow them to avoid restaurants with unhealthy desserts. Or perhaps filling up before going out to eat with friends can help curb their desire for desserts. Or perhaps they tend to do a good job following their exercise plans, so eating another dessert was fine.
 
-The point I want to get across is that, when looking for a solution, one might consider dramatically different factors, even though all three situations can be part of the same phenomenon. As a concept, temporal discounting is a *descriptive* category, not a *prescriptive* one. It is designed to help us see a common pattern between different situations, not necessarily to tell us how to act accordingly.
-
-I'm not saying we should avoid descriptive categories when thinking about self-help. Just that, in these situations where you’ve got a descriptive classification, it’s actually the specific details (and not the ability to recognize that you’re engaging in a more general phenomenon) which provide the most leverage towards solving your problem.
+The point I want to get across is that, when looking for a solution, one might consider dramatically different factors, even though all three situations can be part of the same phenomenon. As a concept, temporal discounting is a *descriptive* category, not a *prescriptive* one. It is designed to help us see a common pattern between different situations, not necessarily to tell us how to act accordingly. I'm not saying we should avoid descriptive categories when thinking about self-help. Just that, in these situations where you’ve got a descriptive classification, it’s actually the specific details (and not the ability to recognize that you’re engaging in a more general phenomenon) which provide the most leverage towards solving your problem.
 
 In other words, it's the considerations like "What led me, specifically in this case, to this situation?" rather than "If this is a temporal discounting situation, what do I do?" that lead to the most useful insights.
 
@@ -56,6 +56,18 @@ A final word of caution: It can be easy, I think, to do the relevant conceptual 
 
 But if your goal is to resolve the problem, recognition isn't the whole story. It's important, then, once you've got a toolbox of mental models and helpful concepts, to make sure to follow through. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. And it's this misstep that I want to caution against.
 
-By now, I hope the title makes sense. "Concept Space" is an imaginary space that groups items based on how similar they are, relative to some concept in question. Items closer together share more the same relevant features that categorize them as some concept, like how all three actions in the temporal discounting example all featured a present vs future trade-off. In the same way, "Action Space" groups items based the similarity of their solutions (i.e. actionables you can take). 
+#####**Recap:**
+By now, I hope the title makes sense: "Concept Space" is an imaginary space that groups items based on how similar they are, relative to some concept in question. Items closer together share more the same relevant features that categorize them as some concept, like how all three actions in the temporal discounting example all featured a present vs future trade-off. Likewise, "Action Space" groups items based the similarity of their solutions (i.e. actionables you can take). 
 
 Items close together in Concept Space can be very far apart in Action Space because they are two different ways of categorizing. The default self-help paradigm, which jumps straight into giving you models and frameworks can sidestep this, which is why I think this is worth being clear about.
+
+The two main instantiations of this error in the self-help context are:
+
+1. Trying to infer common actionables from descriptive categories. (When there is none.)
+2. Thinking that two actions of the same category have similar effects. (When their effects are actually quite different.)
+
+The first error I've described above. We can't make the immediate jump from "instance of a concept" to "look for a general solution", and the recognition that a commonality exists could even be interpreted as a sign to stop thinking early.
+
+The second error is also described in [Recognizing vs Generating](https://mlu.red/recognizing-vs-generating). Here, the subtle difference is that, instead of mistaking conceptual similarity for similarity of solutions, we mistake it for similarity of effect. In other words, we think that two things which are similar (relative to some concept) will also behave similarly.
+
+* some stuff about this is vague

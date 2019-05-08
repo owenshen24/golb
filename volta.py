@@ -164,7 +164,6 @@ def parsePosts(sort_date=False, id_as_slug=False):
         json.dump(POSTS_DICT, outfile, indent=4)
 
     # Update Posts Index with all posts
-    POSTS_LIST = POSTS_DICT["POSTS"].values()
 
     # Sort descending date
     if (sort_date):
@@ -172,6 +171,13 @@ def parsePosts(sort_date=False, id_as_slug=False):
             POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
             reverse=True
         )]
+    # Else, sort by descending ID
+    else:
+        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
+            POSTS_DICT["POSTS"], key=lambda x: int(POSTS_DICT["POSTS"][x]['id']),
+            reverse=True
+        )]
+
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
     index_html = env.get_template(INDEX_TEMPLATE).render(posts = POSTS_LIST)

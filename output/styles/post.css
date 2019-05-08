@@ -8,6 +8,10 @@
   font-display: auto;
 }
 
+/* Default font size for smaller screens */
+.content{
+  font-size: 1.25rem;
+}
 
 /* Initial width for phones */
 .container {
@@ -20,6 +24,9 @@
   .container {
     width: 85%;
   }
+  .content{
+    font-size: 1.2rem;
+  }
 }
 
 /* For normal computer width */
@@ -28,9 +35,10 @@
     width: 65%;
   }
   .content{
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 }
+
 
 /* Link stylings */
 a {
@@ -55,10 +63,6 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
-/* Default font size for smaller screens */
-.content{
-  font-size: 1.25rem;
-}
 .home-logo-container {
   text-align: center;
 }
@@ -67,4 +71,8 @@ a:hover {
   height: auto;
   margin: 1rem;
   cursor: pointer;
+}
+
+.content {
+  margin-bottom: 5rem;
 }
