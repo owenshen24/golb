@@ -1,7 +1,7 @@
 title: Fading Novelty
 summary: Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.
 
-A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume a priori. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
+A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 
 I don't disagree, of course. It does seem obvious that there's something tantalizing about chasing after that which is new. Correspondingly, it's not just that we like chasing after things which are new. We stop chasing after things which are old. And, with time, *everything* becomes old. We find ourselves, despite our best efforts to change things, back in a similar state of mind. In response, people will often say that "the novelty has faded", hence the title of this post. 
 
@@ -19,7 +19,7 @@ In psychology, this phenomenon whereby repeated exposure to a stimulus leads to 
 
 From a survival standpoint, a bias towards newness is reasonable. Things in our environment which did not change, e.g. trees, shrubs, or familiar tribe members, likely presented less of a threat than new additions, e.g. fresh tracks, gathering storm clouds, or a stranger in our midst. It's a little tongue-in-cheek, but here's what our thoughts might have looked like, had we *not* biased towards newness:
 
-*“Oh wow, that’s exciting! Look at that majestic tree! It looks just as good as it did yesterday! Those great branches, I could look at them day after day. Look at that lush grass! It’s so fluffy! Oh wow! Look at that tiger! That's exciting! It’s so— ”*
+*“Oh wow, that’s exciting! Look at that majestic tree! It looks just as good as it did yesterday! Those great branches, I could look at them day after day. Look at that lush grass! It’s so fluffy! Oh wow! Look at that tiger! That's exciting! It’s so— CRUNCH”*
 
 (Proceeds to get chomped on by the tiger.)
 
@@ -85,7 +85,7 @@ For more simple problems like fatigue brought on by satiation during studying, t
 
 However, it does seem more difficult to apply such a strategy towards habit creation, given that frequency is what we want to max out on. Trying to trick ourselves into thinking that we didn't do the habit is, after all, quite counterproductive.
 
-There *are* some direct applications, but take them with a large grain of salt. For example, using a productivity app with a dull UI ("You can't have the novelty fade if it isn't even exciting to use the first time around!") or an app that randomly changes its UI (which might lead to compulsions to open the app, absent the intended reason) might be interesting to pursue.
+There *are* some direct applications, but take them with a large grain of salt. For example, using a productivity app with a dull UI (novelty might not fade if it isn't even exciting to use the first time around) or an app that randomly changes its UI (which might lead to compulsions to open the app, absent the intended reason) seem like intriguing avenues.
 
 Perhaps it would be more tractable to look for a different psychological approach. In addition to our cravings for novelty, humans also have a drive for optimization. We want things to get better, we're always on the lookout for improvement. This drive to improve can be used to cut through the humdrum that repetition brings on. 
 
@@ -97,4 +97,6 @@ And it's in this hyper-focused sense of doing better and better that can combat 
 
 For reviewing topics we think we know, this altered view will hopefully substitute back in the more practical actionable-based checks for understanding. Also, I think the practicing analogy can bring up additional inspiration for ways to improve. For example, there might be questions like "Can I execute this skill even when I am tired or distracted?" or "How easy is this to do with my eyes closed?" which normally make sense in a practice context, but could be ported with analogs over to a learning context.
 
-Given that life is all about change, I don't think it's coherent to fully have a view that separates itself from seeking novelty. But I think this is useful insofar as it shifts the scope, so that it focuses on change with regards to the same task, rather than the task itself.
+Given that life is all about change, I don't think it's coherent to fully have a view that separates itself from seeking novelty. But I think this is useful insofar as it shifts the scope, so that it focuses on change *within* tasks, rather than *between* tasks. 
+
+Lastly, our intuitions seem to underplay things. A [recent summary](https://www.gwern.net/docs/culture/2019-obrien.pdf) found that we tend to underestimate how much we'll enjoy repeat activities. It seems like this is because it's very difficult to truly duplicate the same experience; when doing the same thing a second time, differences will still persist. This is promising from an experiential perspective as it suggests repetition isn't as bad as it seems.

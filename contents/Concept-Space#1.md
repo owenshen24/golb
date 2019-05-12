@@ -56,7 +56,6 @@ A final word of caution: It can be easy, I think, to do the relevant conceptual 
 
 But if your goal is to resolve the problem, recognition isn't the whole story. It's important, then, once you've got a toolbox of mental models and helpful concepts, to make sure to follow through. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. And it's this misstep that I want to caution against.
 
-#####**Recap:**
 By now, I hope the title makes sense: "Concept Space" is an imaginary space that groups items based on how similar they are, relative to some concept in question. Items closer together share more the same relevant features that categorize them as some concept, like how all three actions in the temporal discounting example all featured a present vs future trade-off. Likewise, "Action Space" groups items based the similarity of their solutions (i.e. actionables you can take). 
 
 Items close together in Concept Space can be very far apart in Action Space because they are two different ways of categorizing. The default self-help paradigm, which jumps straight into giving you models and frameworks can sidestep this, which is why I think this is worth being clear about.
