@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 23,
+    "ID_COUNT": 24,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -207,6 +207,15 @@
             "summary": "I'm taking some classes this quarter, and they are all sort of okay. What I'm annoyed by is how much\u2026",
             "word_count": 358,
             "id": 23
+        },
+        "24": {
+            "title": "Building Up Constantly",
+            "date": "2019-05-13 18:39",
+            "last-updated": 1557797976,
+            "anchor": "Building-Up-Constantly",
+            "summary": "It's a little weird. I haven't been really doing lots of rationality stuff or introspection. And I t\u2026",
+            "word_count": 213,
+            "id": 24
         }
     }
 }
