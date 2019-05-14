@@ -115,15 +115,17 @@ def parsePosts(sort_date=False, id_as_slug=False):
                     old_file = OUTPUT_DIR + anchor +'.html'
                     os.remove(old_file)
 
-                # Get provided character or first sentence
-                # Note: the found sentence might be incomplete
+                # Get provided summary or first 100 chars of md file
                 if 'summary' in parsed_file.metadata.keys():
                     summary = parsed_file.metadata['summary']
                 else:
                     summary = post_only[0:100] + '…'
-
                 anchor = quote(title.replace(' ', '-'))
                 word_count = len(post_only.split(' '))
+
+                # Replace double dashes with em-dash
+                parsed_file = parsed_file.replace('--', '—');
+
                 data = {
                     'title': title,
                     'date': datetime.fromtimestamp(
