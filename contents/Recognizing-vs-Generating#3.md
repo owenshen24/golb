@@ -1,4 +1,5 @@
 title: Recognizing vs Generating
+summary: Recognizing refers to verifying that some property exists. Generating refers to the process of making something with such a property. I think this distinction is a broadly applicable dichotomy, as we usually want the generating task, but conceptual similarity may lead us to performing the recognizing task instead.
 
 In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. For example, checking to see whether 7 and 17 are prime factors of 119 versus actually factoring 119. This dichotomy isn't just academic in nature; it also provides a good starting point for what I regard as the human analogue of this dichotomy--**Recognizing** vs **Generating**.
 
@@ -50,40 +51,29 @@ For self-help specifically, I think that there is a tendency for advice to get c
 
 To give a more concrete example: When you first learn about the planning fallacy, this involves concepts together. You learn that the planning fallacy is a cognitive bias, it revolves around underestimation, and that reference class forecasting is a way to help. You learn that reference class forecasting is a method of creating estimations, that it's been successful in public works projects, and that it requires choosing your reference class carefully.
 
-At the end of all of this, you might have a mind map that looks something like this: 
+And this is all well and good, if the purpose of learning about the planning fallacy was to do well on an undergraduate psychology exam. You'll be able to answer questions like: 
 
-(INSERT PICTURE HERE)
+1. "Does the planning fallacy say we systematically overestimate or underestimate?"
+2. "What does reference class forecasting do?" 
+3. "Which researcher discovered the premortem technique?"
 
-And this is all well and good, if the purpose of learning about the planning fallacy was to do well on an undergraduate psychology exam. You will be able to answer questions like "Does the planning fallacy say we systematically overestimate or underestimate?" or "What does reference class forecasting do?"
+In essence, you've built up detailed internal representation of the concept and its related nodes, and background information. But this usually isn't what you want! From a practical perspective, what you want is to be able to put all those concepts into practice, so they actually become useful. This requires finding examples of using the concept and thinking of ways to integrate the concept into your existing schedule. These are questions like:
 
-This extends to other areas like motivation, habits, procrastination, meditation, etc. where, after learning / research, you can build a detailed internal representation of the concept and its related nodes. But this usually isn't what you want! What you want is to be able to put all those concepts into practice, so they actually become useful. This requires finding examples of using the concept and thinking of ways to integrate the concept into your existing schedule.
+1. What is my average underestimation rate?
+2. How do I use past data can I draw from to inform future decisions?
+3. Am I surprised when I don't meet up expected deadlines?
+
+Once again, the questions we care about are also the ones that are harder to answer.
+
+And it's not just planning. This extends to other areas like motivation, habits, procrastination, or meditation; these are all categories where you care about what to do, rather than what it is.
 
 If building a mental map is the Recognizing task, then finding ways to actually have the concepts cash out into actions is the Generating task. And once again, it's harder. In the same way that you get good at tying your shoes by doing it again and again (with feedback), you get better at reference class forecasting by doing it again and again. 
 
-This provides strong motivation for a meta-self-help framework that often endorses just *doing the thing*, whatever that thing in question is.
+This provides strong justification for a meta-self-help framework that often endorses just *doing the thing*, whatever that thing in question is.
 
+One last extended example: 
 
-+++++
-I'll end with one last extended example:
-"The best way to get a thought into someone's head might not be explicitly trying to describe that thought."
-Ditto for motivating actions.
-
-
-++++
-
-* advice-giving example
-
-Lastly, a more general example of this Recognize vs Generate distinction has to do with coming up with ideas. If you’ve ever been in a group discussion, you’ve probably never had a shortage of people willing to critique ideas that are proposed. But having a steady stream of ideas proves to be harder.
-
-Once again, I think the distinction is at work here. It’s far more easier to point out why an idea is bad (after all, basically every plan will have drawbacks!) than to come up with ideas in the first place. This isn’t to say that criticism isn’t important, but I do think it’s important to acknowledge this asymmetry in effort that’s being put in by both sides.
-
-I think that one of the most useful ways to use this distinction is when people give advice. 
-
-I claim that basically everyone who gives advice is doing it wrong.
-
-The tldr; is that I think that pretty much all advice people give falls into the Recognizable category, when they should really be thinking in a more Generating style.
-
-Here’s what I think roughly goes into people’s heads when they try to give advice into another human:
+Consider what happens internally when you give advice to a friend person. Here's what I think roughly happens:
 
 1. Think of several experiences where things turned out well for them. 
 EX: “That time I won the free laptop, that time I scored the awesome job, and that time that I asked Andy to the dance.”
@@ -94,48 +84,21 @@ EX: “Well, I did always start with a good impression, I always introduced myse
 3. Distill it into something general. Give it out as advice.
 EX: “Remember to always start with a strong handshake!”
 
-So your experienced friend, hoping to impart some worldly advice, tells you to always start with a strong handshake. And that advice promptly gets filed under your “Boring Advice” drawer in your head, never to be seen again.
+As a result, you advise your friend to start with strong handshakes.
 
-I think that the core problem here is that your friend hasn’t done a good job of accurately conveying the reasons for the advice given.
+But for the person receiving the advice, their immediate reaction is likely to be of a Recognizing sort. They'll ask themselves, "Have I heard advice like this before already?" rather than "How can I see myself using this advice in the future?"
 
-From inside their heads, they have access to all of their experiences, so once they’ve got the generalized piece of advice—”Remember to always start with a strong handshake!”—which they can check against their memories to verify if it’s a good match.
+As the person giving advice, just saying the actionable advice without any of the reasons is like jumping straight to the conclusion without any of the supporting evidence. Sure, from inside *your* head, you have access to all your experiences. So once you hear the generalized piece of advice—”Remember to always start with a strong handshake!”—you can easily verify that it's a good match for explaining your success.
 
-They’re able to quickly recognize that the advice checks out.
+But your friend has none of that. From a Generative perspective, it makes sense to tailor your words to cause your friend to also think your advice is a good idea. You want to provide them with the same parts you used to come up with the advice. You ask yourself, “What information would I have needed in those situations in order to have come up with said action (which I am now offering as advice) in the first place?” 
 
-But, for you, the advice-getter, you don’t have access to any of those experiences. 
+Rather than checking to see if your outcomes match the advice you give, you’re now actually checking to see if the advice you give even leads to those outcomes in the first place. It means you’re thinking about what they do and don’t know. Which means you’re less likely to fall prey to the illusion of transparency, the cognitive bias where we assume that everything we know is also known by the other party.
 
-So the best you, the advice-getter, can do is imagine a few situations where the advice kinda works out, and it’s not at all as convincing and obviously “good” as the advice-giver thinks it is.
+For example, under this model, here are some things you might amend to your statement of advice:
 
-I think that advice becomes far better when you start taking a Generative approach towards things.
+1. Provide additional context: "Now, I know this sounds obvious, and you've probably heard it before, but..."
+2. Explain your anecdata: "Look, here are the situations where it worked well for me..."
+3. Give a puzzle: "Next time you shake someone's hand, try feeling their tension and see what happens." (This might cause the person getting advice to discover that firm handshakes work all on their own.)
 
-Now, instead of looking for common threads, you ask yourself, “What information would I have needed in those situations in order to have come up with those positive actions in the first place?” 
-
-Rather than checking to see if your outcomes match the advice you give, you’re now actually checking to see if the advice you give even leads to those outcomes in the first place. 
-
-Which is great because it better aligns your thinking with that of the advice-getter’s. It means you’re thinking about what they do and don’t know. Which means you’re less likely to fall prey to the illusion of transparency, the cognitive bias where we assume that everything we know is also known by the other party.
-
-There’s a certain sense here where you’re modeling humans as complicated input-output machines, and you’re trying to see what sort of input would generate the best outputs. 
-
-If we turn this back to the handshake example, an attempt to be more Generative might look like this:
-
-Your helpful friend tells you, “Hey, so whenever you meet someone, you should definitely check out the hills and valley of their hand. It’s totally groovy!”
-
-Now, your curiosity is piqued. The next time you meet another human, you squeeze their hand, trying to figure out where the hills and valleys are. To your surprise, they respond, “Hey, nice handshake!” and the rest of the meeting goes swimmingly well.
-
-As a result, you think to yourself, “Gee, it turns out that handshakes are pretty great when they’re firm!”
-
-This is undoubtedly a silly toy example. 
-
-But I hope it illustrates how a large part of advice is letting the other person figure out the actual advice for themselves.
-
-Of course, note that the dichotomy goes both ways: If you’re receiving advice from someone that your brain is quickly labeling as “obvious”, it’s a good idea to do a check and see if you could have come up with it yourself if they hadn’t told you.
-
-And I don’t mean to imply that this model is the only or best way of giving advice. 
-
-There’s certainly other ways, from going meta (EX: acknowledging that the advice sounds boring and/or obvious), finding ways to quickly shift intuitions (EX: telling a memorable anecdote), to bridging the differences in experience (EX: give more background information).
-
-But I think that the Recognize vs Generate distinction is still a highly useful one that can find itself into many more discussions. 
-
-In general, taking note of this dichotomy means we want to avoid the surface-level similarities of what, at their very core, are quite different activities (i.e. recognizing vs generating). 
-
-The obvious takeaway is that the effort required for the two tasks is very different, despite their apparent similarities. The slightly deeper one is thinking in a more input-output style where you’re trying to imagine fitting pieces together to get the end result.
+++++
+* Conclusion goes here
