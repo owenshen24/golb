@@ -21,11 +21,11 @@
         },
         "3": {
             "title": "Recognizing vs Generating",
-            "date": "2019-05-19 13:34",
-            "last-updated": 1558298043,
+            "date": "2019-05-19 23:13",
+            "last-updated": 1558332812,
             "anchor": "Recognizing-vs-Generating",
-            "summary": "Recognizing refers to verifying that some property exists. Generating refers to the process of making something with such a property. I think this distinction is a broadly applicable dichotomy, as we usually want the generating task, but conceptual similarity may lead us to performing the recognizing task instead.",
-            "word_count": 1811,
+            "summary": "Two core ways to categorize tasks are Recognizing and Generating. I outline the difference between the two tasks and provide several examples where the distinction proves to be important.",
+            "word_count": 1958,
             "id": 3
         }
     }
