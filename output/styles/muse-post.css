@@ -59,7 +59,7 @@ a:hover {
   justify-content: center;
 }
 .home-logo {
-  width: 4rem;
+  width: 5rem;
   height: auto;
   margin: 1rem;
   cursor: pointer;
@@ -85,13 +85,14 @@ a:hover {
   font-size: 1rem;
   text-transform: uppercase;
 
-  background-color: rgb(135, 32, 64);
+  background-color: rgb(40, 40, 40);
   color: white;
   border: none;
 }
 
 .next-button:hover, .prev-button:hover {
-  background-color: rgb(206, 65, 109);
+  /* background-color: rgb(206, 65, 109); */
+  background-color: rgb(135, 32, 64);
   color: white;
 }
 

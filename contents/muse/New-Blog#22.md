@@ -6,7 +6,7 @@ Going through the whole process, I can see now why certain design decisions were
 
 But now I can rejoice because I think I've ironed out most of the bugs! I have a static site generator that is pretty smart about only updating files which have been edited, and it supports the changing of titles, which is pretty nice. Sort of. While typing this, I just realized that I don't actually have support for dead links. While my index page keeps track of when pages change, I don't take into account the changing of the actual page slug.
 
-And, really, there's no reason except for my own clarity, why the actual page slug has to change. Given that I'm already using numeric IDs, I could just make the slug the ID itself. And that would solve backwards compatibility, given that I'm already counting up.
+And, really, there's no reason except for my own clarity, why the actual page slug has to change. Given that I'm already using numeric IDs, I could just make the slug the ID itself. And that would solve backwards compatibility, given that I'm already counting up. EDIT: Yup, so now I'm doing that.
 
 Most of these changes, though, seem like they're more relevant to Muse than to MLU. My current Muse implementation is pretty nice, I think. It's simple, everything's on one page, and anchors allow hotlinking to any single post. There's client-side search, which is always cool, and it's readable enough. 
 

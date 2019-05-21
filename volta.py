@@ -115,7 +115,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
                     old_file = OUTPUT_DIR + anchor +'.html'
                     os.remove(old_file)
 
-                # Get provided summary or first 100 chars of md file
+                # Get provided summary or first 100 chars of .md file
                 if 'summary' in parsed_file.metadata.keys():
                     summary = parsed_file.metadata['summary']
                 else:
@@ -179,7 +179,6 @@ def parsePosts(sort_date=False, id_as_slug=False):
             POSTS_DICT["POSTS"], key=lambda x: int(POSTS_DICT["POSTS"][x]['id']),
             reverse=True
         )]
-
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
     index_html = env.get_template(INDEX_TEMPLATE).render(posts = POSTS_LIST)

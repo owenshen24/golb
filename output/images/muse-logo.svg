@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="174.814mm"
-   height="174.81398mm"
-   viewBox="0 0 174.814 174.81398"
+   width="667.8197"
+   height="381.03485"
+   viewBox="0 0 176.69397 100.81547"
    version="1.1"
    id="svg853"
    inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="Muse Logo.svg">
+   sodipodi:docname="muse-logo.svg">
   <defs
      id="defs847" />
   <sodipodi:namedview
@@ -25,13 +25,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="383.03065"
-     inkscape:cy="234.76153"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="69.711524"
+     inkscape:cy="78.68402"
      inkscape:document-units="px"
      inkscape:current-layer="g5608"
      showgrid="false"
-     units="mm"
+     units="px"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -58,7 +58,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-9.2604115,-7.2812584)">
+     transform="translate(-8.3204373,-44.280518)">
     <g
        style="fill:#aa0000;fill-opacity:1"
        id="g848"
@@ -68,25 +68,18 @@
       <g
          transform="rotate(47.441117,409.60394,441.05703)"
          id="g5608">
-        <ellipse
-           style="opacity:1;fill:#780b0b;fill-opacity:1;stroke:none;stroke-width:4.59626913;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path944"
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#292929;stroke-width:22.98134613;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect827"
+           width="590.93848"
+           height="327.27271"
+           x="-355.63"
+           y="397.08771"
            transform="rotate(-47.441117)"
-           cx="-60.160786"
-           cy="560.72406"
-           rx="303.69397"
-           ry="303.6702" />
-        <ellipse
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.21774197;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path944-3"
-           cx="-60.160786"
-           cy="560.72406"
-           rx="278.68317"
-           ry="278.66129"
-           transform="rotate(-47.441117)" />
+           ry="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:176.57754517px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#780b0b;fill-opacity:1;stroke:none;stroke-width:4.41443872"
+           style="font-style:normal;font-weight:normal;font-size:176.57754517px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#292929;fill-opacity:1;stroke:none;stroke-width:4.41443872;"
            x="-268.76651"
            y="623.51379"
            id="text963"
@@ -95,7 +88,7 @@
              id="tspan961"
              x="-268.76651"
              y="623.51379"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,  Bold Condensed';fill:#780b0b;fill-opacity:1;stroke-width:4.41443872">MUSE</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold Condensed';fill:#292929;fill-opacity:1;stroke-width:4.41443872;">MUSE</tspan></text>
       </g>
       <g
          id="g5434" />
