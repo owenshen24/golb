@@ -1,3 +1,3 @@
 # golb
 A blog.
-![blog logo](output/images/mlu-logo.svg)
+<img src="output/images/mlu-logo.svg" width="6rem"/>
