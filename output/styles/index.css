@@ -6,6 +6,35 @@
   dark red: #77080D
 */
 
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('./fonts/hind-v9-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -42,11 +71,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 .home-title-logo {
   height: 6rem;
   width: auto;
-  margin: 1rem;
 }
 .logo-wrapper {
   text-align: center;
@@ -65,7 +94,8 @@
   color: rgb(170, 0, 22);
 }
 .post-title a:hover  {
-  color: rgb(83, 6, 10);
+  color: rgb(65, 8, 11);
+  text-decoration: underline;
 }
 
 .post-summary {
@@ -80,7 +110,10 @@
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-
+.nav-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -88,27 +121,18 @@
 }
 .nav-button {
   color: #77080D;
+  /* color: #9d6063; */
 
   cursor: pointer;
-
-  /* width: 4rem; */
-
-  border: 0.2rem solid;
-  border-radius: 0.7rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
 
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
 
   text-transform: uppercase;
-  text-align: center;
+  text-decoration: none;
 }
 .nav-button:hover {
-  color: white;
-  background-color: #77080D;
+  color: rgb(65, 8, 11);
+  text-decoration: underline;
 }

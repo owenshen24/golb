@@ -1,5 +1,5 @@
 title: Fading Novelty
-summary: Humans have a natural tendency to get become desensitized to repeated experiences; this is paired with a drive to look for newness. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon of fading novelty and give some thoughts on how this can inform the way we live.
+summary: Humans have a natural tendency to get become desensitized to repeated experiences. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon and give some thoughts on how this can inform the way we live.
 
 A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 

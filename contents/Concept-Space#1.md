@@ -52,21 +52,11 @@ For example, say you want to start flossing regularly and correctly recognize th
 
 But note that the majority of the work comes after noticing the relevant category of what you are trying to do is "habit creation". In a way, concepts can serve as a template. Once you've identified the appropriate concept, you still need to put in the effort to fill it out.
 
-A final word of caution: It can be easy, I think, to do the relevant conceptual categorization, and then just stop there. There is a flash of insight associated with figuring out the general structure of whatever situation you're in. And it's not "fake insight", insofar as it really could be the correct conceptual bucket. 
+A final word of caution: It can be easy, I think, to do the relevant conceptual categorization, and then just stop there. Figuring out the general structure of whatever situation you're in usually results in a flash of insight. And it's not "fake insight", insofar as it really can be the correct conceptual bucket. 
 
-But if your goal is to resolve the problem, recognition isn't the whole story. It's important, then, once you've got a toolbox of mental models and helpful concepts, to make sure to follow through. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work could give the false impression that you also know how to solve the problem. And it's this misstep that I want to caution against.
+If your goal is to resolve the problem, though, then recognition isn't the whole story. It's important, then, once you've got a toolbox of mental models and helpful concepts, to make sure to follow through. There’s a sort of mental misstep that can happen where being able to simply identify the generalized principle at work can give the false impression that you also know how to solve the problem. Or, if you're not thinking hard, the flash of insight gives a sign to stop investigating. It's this misstep that I want to caution against.
 
-By now, I hope the title makes sense: "Concept Space" is an imaginary space that groups items based on how similar they are, relative to some concept in question. Items closer together share more the same relevant features that categorize them as some concept, like how all three actions in the temporal discounting example all featured a present vs future trade-off. Likewise, "Action Space" groups items based the similarity of their solutions (i.e. actionables you can take). 
+By now, I hope the title makes sense: "Concept Space" is an imaginary space that groups items based on how similar they are, relative to some concept in question. Likewise, "Action Space" groups items based the similarity of their solutions (i.e. actionables you can take). Items close together in Concept Space can be very far apart in Action Space because they are two different ways of categorizing. But our defaults don't necessarily respect different notions of distance. Concept Space is much less constrained then Action Space. We can think of many ways to see patterns between two things, but only a small subset of them will correspond to things which are practically similar.
 
-Items close together in Concept Space can be very far apart in Action Space because they are two different ways of categorizing. The default self-help paradigm, which jumps straight into giving you models and frameworks can sidestep this, which is why I think this is worth being clear about.
+The default self-help paradigm, which jumps straight into giving you models and frameworks doesn't seem to directly address this, which is why I think this is worth being clear about.
 
-The two main instantiations of this error in the self-help context are:
-
-1. Trying to infer common actionables from descriptive categories. (When there is none.)
-2. Thinking that two actions of the same category have similar effects. (When their effects are actually quite different.)
-
-The first error I've described above. We can't make the immediate jump from "instance of a concept" to "look for a general solution", and the recognition that a commonality exists could even be interpreted as a sign to stop thinking early.
-
-The second error is also described in [Recognizing vs Generating](https://mlu.red/recognizing-vs-generating). Here, the subtle difference is that, instead of mistaking conceptual similarity for similarity of solutions, we mistake it for similarity of effect. In other words, we think that two things which are similar (relative to some concept) will also behave similarly.
-
-* some stuff about this is vague
