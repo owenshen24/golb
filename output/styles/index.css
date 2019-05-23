@@ -17,14 +17,14 @@
        url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* hind-500 - latin */
-/* @font-face {
+@font-face {
   font-family: 'Hind';
   font-style: normal;
   font-weight: 500;
   src: local('Hind Medium'), local('Hind-Medium'),
        url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
        url('./fonts/hind-v9-latin-500.woff') format('woff'); 
-} */
+}
 /* hind-700 - latin */
 @font-face {
   font-family: 'Hind';
@@ -136,9 +136,12 @@
 }
 .nav-button {
   color: #77080D;
-  /* color: #9d6063; */
 
   cursor: pointer;
+
+  /* border: 0.15rem #77080D solid;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; */
 
   font-weight: 700;
   font-size: 1.2rem;
@@ -148,6 +151,7 @@
   text-decoration: none;
 }
 .nav-button:hover {
+  border-color: rgb(65, 8, 11);
   color: rgb(65, 8, 11);
   text-decoration: underline;
 }

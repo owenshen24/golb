@@ -1,5 +1,5 @@
 title: Fading Novelty
-summary: Humans have a natural tendency to get become desensitized to repeated experiences. Our urge to seek variety appears to underlie many practical considerations. I outline the phenomenon and give some thoughts on how this can inform the way we live.
+summary: Fading novelty refers to when new things become old and dull after repetition. It shows up everywhere in life, from songs to foods. I also think it plays a negative role in learning, and I propose an attitude to combat this.
 
 A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 
@@ -99,4 +99,4 @@ For reviewing topics we think we know, this altered view will hopefully substitu
 
 Given that life is all about change, I don't think it's coherent to fully have a view that separates itself from seeking novelty. But I think this is useful insofar as it shifts the scope, so that it focuses on change *within* tasks, rather than *between* tasks. 
 
-Lastly, our intuitions seem to underplay things. A [recent summary](https://www.gwern.net/docs/culture/2019-obrien.pdf) found that we tend to underestimate how much we'll enjoy repeat activities. It seems like this is because it's very difficult to truly duplicate the same experience; when doing the same thing a second time, differences will still persist. This is promising from an experiential perspective as it suggests repetition isn't as bad as it seems.
+Lastly, our intuitions might even lead us astray in this domain. A [recent summary](https://www.gwern.net/docs/culture/2019-obrien.pdf) found that we tend to underestimate how much we'll enjoy repeat activities. It seems like this is because it's very difficult to truly duplicate the same experience; when doing the same thing a second time, differences will still persist. This is promising from an experiential perspective as it suggests repetition isn't as bad as it seems.

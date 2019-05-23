@@ -59,18 +59,17 @@ def parsePosts(sort_date=False, id_as_slug=False):
     with open(METADATA_DIR + POSTS_DICT_FILE, 'r') as infile:
         POSTS_DICT = json.load(infile)
         ID_COUNT = POSTS_DICT['ID_COUNT']
+        OLD_ID_COUNT = ID_COUNT
 
     # Get last updated time for template
     template_update = max(
         int(os.path.getmtime(TEMPLATE_DIR + POST_TEMPLATE)), 
         int(os.path.getmtime(TEMPLATE_DIR + INDEX_TEMPLATE)))
 
-    # Iterate through all posts
+    # Rename new posts to have #{NUM}
     for post in os.listdir(CONTENTS_DIR):
         file_path = os.path.join(CONTENTS_DIR, post)
         file_update = int(os.path.getmtime(file_path))
-        post_id = None
-        new_file_path = None
 
         # Skip subdirectories:
         if os.path.isdir(file_path):
@@ -85,22 +84,27 @@ def parsePosts(sort_date=False, id_as_slug=False):
                 post_text = f.read()
                 parsed_file = markdown(post_text, extras=['metadata'])
                 anchor = quote(parsed_file.metadata['title'].replace(' ', '-'))
-                
             ID_COUNT += 1
-            post_id = ID_COUNT
-            new_file_path = OUTPUT_DIR + anchor + '#' + str(ID_COUNT) + '.md'
+            new_file_path = CONTENTS_DIR + anchor + '#' + str(ID_COUNT) + '.md'
             os.rename(file_path, new_file_path)
-        else:
-            post_id = int(post[post.find('#')+1:post.find('.md')])
 
-        # Parse the post into HTML if we updated the template or the post
-        # since the last time we ran the script
+    # Iterate through all posts and parse as HTML
+    for post in os.listdir(CONTENTS_DIR):
+
+        file_path = os.path.join(CONTENTS_DIR, post)
+        file_update = int(os.path.getmtime(file_path))
+
+        # Skip subdirectories:
+        if os.path.isdir(file_path):
+            continue
+        
+        post_id = int(post[post.find('#')+1:post.find('.md')])
+
+        # Parse the post into HTML if we updated the template or post or
+        # if it's the latest post from last time since the last script run
         if (template_update > LAST_UPDATED or
-            file_update > LAST_UPDATED):
-
-            # Set file_path to be new file_path
-            if new_file_path != None:
-                file_path = new_file_path
+            file_update > LAST_UPDATED or
+            ((post_id >= OLD_ID_COUNT) and id_as_slug)):
             
             # Parse file
             with open(file_path, 'r+') as f:
@@ -120,6 +124,8 @@ def parsePosts(sort_date=False, id_as_slug=False):
                     summary = parsed_file.metadata['summary']
                 else:
                     summary = post_only[0:100] + '…'
+                
+                # Get more metadata
                 anchor = quote(title.replace(' ', '-'))
                 word_count = len(post_only.split(' '))
 
@@ -165,7 +171,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
     with open(METADATA_DIR + POSTS_DICT_FILE, 'w') as outfile:
         json.dump(POSTS_DICT, outfile, indent=4)
 
-    # Update Posts Index with all posts
+    # Update Posts Index with all posts:
 
     # Sort descending date
     if (sort_date):

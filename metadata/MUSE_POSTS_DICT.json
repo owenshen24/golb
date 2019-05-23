@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 24,
+    "ID_COUNT": 25,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -210,12 +210,21 @@
         },
         "24": {
             "title": "Building Up Constantly",
-            "date": "2019-05-13 18:39",
-            "last-updated": 1557797976,
+            "date": "2019-05-21 23:22",
+            "last-updated": 1558506142,
             "anchor": "Building-Up-Constantly",
             "summary": "It's a little weird. I haven't been really doing lots of rationality stuff or introspection. And I t\u2026",
-            "word_count": 213,
+            "word_count": 212,
             "id": 24
+        },
+        "25": {
+            "title": "Stat Check 19-05-21",
+            "date": "2019-05-21 23:24",
+            "last-updated": 1558506243,
+            "anchor": "Stat-Check-19-05-21",
+            "summary": "It's been a while now, but I've found that I really enjoy writing my dates in terms of year, month, \u2026",
+            "word_count": 166,
+            "id": 25
         }
     }
 }

@@ -1,5 +1,5 @@
 title: Recognizing vs Generating
-summary: Two core ways to categorize tasks are Recognizing and Generating. I outline the difference between the two tasks and provide several examples where the distinction proves to be important.
+summary: Two core ways to categorize tasks are Recognizing and Generating. Though they may seem similar, I think the difference is in the amount of effort involved. This framework is useful for noticing when a proposed solution is going to be effective or not.
 
 In computer science, one of the biggest open questions concerns [P vs NP](https://en.wikipedia.org/wiki/P_versus_NP_problem). This question asks whether or not problems that are quickly *verifiable* are also quickly *solvable*. For example, checking to see whether 7 and 17 are prime factors of 119 versus actually factoring 119. This dichotomy isn't just academic in nature; it also provides a good starting point for what I regard as the human analogue of this dichotomy--**Recognizing** vs **Generating**.
 
