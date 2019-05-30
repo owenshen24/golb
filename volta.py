@@ -16,6 +16,7 @@ CONFIG = {}
 LAST_UPDATED = None
 
 
+
 def updateTime():
     with open(CONFIG_PATH, 'r') as infile:
         config = json.load(infile)
@@ -26,10 +27,12 @@ def updateTime():
         json.dump(config, infile, indent=4)
 
 
+
 def loadConfig(options):
     with open(CONFIG_PATH, 'r') as infile:
         global CONFIG
         CONFIG = json.load(infile)["config"][options]
+
 
 
 def extractText(text):
@@ -44,54 +47,67 @@ def extractText(text):
     return tail
 
 
-def parsePosts(sort_date=False, id_as_slug=False):
-    # Define path variables
-    CONTENTS_DIR = CONFIG['CONTENTS_DIR']
-    METADATA_DIR = CONFIG['METADATA_DIR']
-    POSTS_DICT_FILE = CONFIG['METADATA_DICT']
-    OUTPUT_DIR = CONFIG['OUTPUT_DIR']
-    TEMPLATE_DIR = CONFIG['TEMPLATE_DIR']
-    POST_TEMPLATE = CONFIG["POST_TEMPLATE_PATH"]
-    INDEX_TEMPLATE = CONFIG["INDEX_TEMPLATE_PATH"]
 
+# Rename new posts to be TITLE#{NUM}
+def updatePostNames(id):
+    ID_COUNT = id
+    for post in os.listdir(CONFIG['CONTENTS_DIR']):
+        file_path = os.path.join(CONFIG['CONTENTS_DIR'], post)
+        # Skip subdirectories
+        if os.path.isdir(file_path):
+            continue
+        if '#' not in file_path:
+            with open(file_path, 'r+') as f:
+                post_text = f.read()
+                parsed_file = markdown(post_text, extras=['metadata'])
+                anchor = quote(parsed_file.metadata['title'].replace(' ', '-'))
+            ID_COUNT += 1
+            new_file_path = CONFIG['CONTENTS_DIR'] + anchor + '#' + str(ID_COUNT) + '.md'
+            os.rename(file_path, new_file_path)
+    return(ID_COUNT)
+
+
+
+# Update Posts Index with all posts:
+def updateIndex(POSTS_DICT, sort_date):
+    # Sort descending date
+    if (sort_date):
+        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
+            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
+            reverse=True
+        )]
+    # Else, sort by descending ID
+    else:
+        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
+            POSTS_DICT["POSTS"], key=lambda x: int(POSTS_DICT["POSTS"][x]['id']),
+            reverse=True
+        )]
+    env = Environment(loader=FileSystemLoader(CONFIG['TEMPLATE_DIR'])) 
+    index_html = env.get_template(CONFIG["INDEX_TEMPLATE_PATH"]).render(posts = POSTS_LIST)
+    with open (CONFIG['OUTPUT_DIR'] + 'index.html', 'w') as output:
+        output.write(index_html)
+
+
+
+def parsePosts(sort_date=False, id_as_slug=False):
     # Load up the POSTS_DICT
     POSTS_DICT = {}
-    with open(METADATA_DIR + POSTS_DICT_FILE, 'r') as infile:
+    with open(CONFIG['METADATA_DIR'] + CONFIG['METADATA_DICT'], 'r') as infile:
         POSTS_DICT = json.load(infile)
         ID_COUNT = POSTS_DICT['ID_COUNT']
         OLD_ID_COUNT = ID_COUNT
 
     # Get last updated time for template
     template_update = max(
-        int(os.path.getmtime(TEMPLATE_DIR + POST_TEMPLATE)), 
-        int(os.path.getmtime(TEMPLATE_DIR + INDEX_TEMPLATE)))
+        int(os.path.getmtime(CONFIG['TEMPLATE_DIR'] + CONFIG["POST_TEMPLATE_PATH"])), 
+        int(os.path.getmtime(CONFIG['TEMPLATE_DIR'] + CONFIG["INDEX_TEMPLATE_PATH"])))
 
-    # Rename new posts to have #{NUM}
-    for post in os.listdir(CONTENTS_DIR):
-        file_path = os.path.join(CONTENTS_DIR, post)
-        file_update = int(os.path.getmtime(file_path))
+    # Rename files and update ID_COUNT
+    ID_COUNT = updatePostNames(ID_COUNT)
 
-        # Skip subdirectories:
-        if os.path.isdir(file_path):
-            continue
-
-        # Create new entry in POSTS_DICT and rename file if new
-        # Otherwise, get existing post_id
-        if '#' not in file_path:
-
-            # Rename to be post title
-            with open(file_path, 'r+') as f:
-                post_text = f.read()
-                parsed_file = markdown(post_text, extras=['metadata'])
-                anchor = quote(parsed_file.metadata['title'].replace(' ', '-'))
-            ID_COUNT += 1
-            new_file_path = CONTENTS_DIR + anchor + '#' + str(ID_COUNT) + '.md'
-            os.rename(file_path, new_file_path)
-
-    # Iterate through all posts and parse as HTML
-    for post in os.listdir(CONTENTS_DIR):
-
-        file_path = os.path.join(CONTENTS_DIR, post)
+    # Start the actual parsing
+    for post in os.listdir(CONFIG['CONTENTS_DIR']):
+        file_path = os.path.join(CONFIG['CONTENTS_DIR'], post)
         file_update = int(os.path.getmtime(file_path))
 
         # Skip subdirectories:
@@ -100,11 +116,13 @@ def parsePosts(sort_date=False, id_as_slug=False):
         
         post_id = int(post[post.find('#')+1:post.find('.md')])
 
-        # Parse the post into HTML if we updated the template or post or
+        # Check if we updated the template or post or
         # if it's the latest post from last time since the last script run
+        # or if we need to backtrack to add prev/next buttons to an older post
         if (template_update > LAST_UPDATED or
             file_update > LAST_UPDATED or
-            ((post_id >= OLD_ID_COUNT) and id_as_slug)):
+            ((post_id >= OLD_ID_COUNT) and id_as_slug and 
+             (post_id != ID_COUNT) and OLD_ID_COUNT != ID_COUNT)):
             
             # Parse file
             with open(file_path, 'r+') as f:
@@ -116,7 +134,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
                 # Remove the old HTML file if it exists:
                 if str(post_id) in POSTS_DICT['POSTS'].keys() and not id_as_slug:    
                     anchor = POSTS_DICT['POSTS'][str(post_id)]['anchor']
-                    old_file = OUTPUT_DIR + anchor +'.html'
+                    old_file = CONFIG['OUTPUT_DIR'] + anchor +'.html'
                     os.remove(old_file)
 
                 # Get provided summary or first 100 chars of .md file
@@ -149,8 +167,8 @@ def parsePosts(sort_date=False, id_as_slug=False):
                 data['summary'] = summary
 
                 # Parse the HTML using Jinja and create the page
-                env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
-                post_html = env.get_template(POST_TEMPLATE).render(post = data, 
+                env = Environment(loader=FileSystemLoader(CONFIG['TEMPLATE_DIR'])) 
+                post_html = env.get_template(CONFIG["POST_TEMPLATE_PATH"]).render(post = data, 
                     max_num = ID_COUNT)
 
                 # Toggle between id or anchor as file name
@@ -160,7 +178,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
                     post_name = str(anchor)
 
                 # Save new HTML file
-                with open(OUTPUT_DIR + post_name+'.html', 'w') as output:
+                with open(CONFIG['OUTPUT_DIR'] + post_name+'.html', 'w') as output:
                     output.write(post_html)
 
             # Update message
@@ -168,28 +186,10 @@ def parsePosts(sort_date=False, id_as_slug=False):
 
     # Save new POSTS_DICT to metadata
     POSTS_DICT['ID_COUNT'] = ID_COUNT
-    with open(METADATA_DIR + POSTS_DICT_FILE, 'w') as outfile:
+    with open(CONFIG['METADATA_DIR'] + CONFIG['METADATA_DICT'], 'w') as outfile:
         json.dump(POSTS_DICT, outfile, indent=4)
 
-    # Update Posts Index with all posts:
-
-    # Sort descending date
-    if (sort_date):
-        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
-            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
-            reverse=True
-        )]
-    # Else, sort by descending ID
-    else:
-        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
-            POSTS_DICT["POSTS"], key=lambda x: int(POSTS_DICT["POSTS"][x]['id']),
-            reverse=True
-        )]
-
-    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR)) 
-    index_html = env.get_template(INDEX_TEMPLATE).render(posts = POSTS_LIST)
-    with open (OUTPUT_DIR + 'index.html', 'w') as output:
-        output.write(index_html)
+    updateIndex(POSTS_DICT, sort_date)
 
 
 
