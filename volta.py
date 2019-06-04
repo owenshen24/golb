@@ -70,17 +70,17 @@ def updatePostNames(id):
 
 
 # Update Posts Index with all posts:
-def updateIndex(POSTS_DICT, sort_date):
+def updateIndex(POSTS_LIST, sort_date):
     # Sort descending date
     if (sort_date):
-        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
-            POSTS_DICT["POSTS"], key=lambda x: POSTS_DICT["POSTS"][x]['last-updated'],
+        POSTS_LIST = [POSTS_LIST[p] for p in sorted(
+            POSTS_LIST, key=lambda x: POSTS_LIST[x]['last-updated'],
             reverse=True
         )]
     # Else, sort by descending ID
     else:
-        POSTS_LIST = [POSTS_DICT["POSTS"][p] for p in sorted(
-            POSTS_DICT["POSTS"], key=lambda x: int(POSTS_DICT["POSTS"][x]['id']),
+        POSTS_LIST = [POSTS_LIST[p] for p in sorted(
+            POSTS_LIST, key=lambda x: int(POSTS_LIST[x]['id']),
             reverse=True
         )]
     env = Environment(loader=FileSystemLoader(CONFIG['TEMPLATE_DIR'])) 
@@ -91,18 +91,22 @@ def updateIndex(POSTS_DICT, sort_date):
 
 
 # Updates RSS feed
-def updateRSS(CONFIG, POST_LIST, id_as_slug):
+def updateRSS(CONFIG, POSTS_LIST, id_as_slug):
+    # Sort by descending ID
     rss_items = []
-    for p in POST_LIST:
+    for p in sorted(
+        POSTS_LIST, key=lambda x: int(POSTS_LIST[x]['id']),
+        reverse=True
+    ):
         if id_as_slug:
-            post_link = CONFIG['URL'] + str(POST_LIST[p]['id']) + '.html'
+            post_link = CONFIG['URL'] + str(POSTS_LIST[p]['id']) + '.html'
         else:
-            post_link = CONFIG['URL'] + POST_LIST[p]['anchor'] + '.html'
+            post_link = CONFIG['URL'] + POSTS_LIST[p]['anchor'] + '.html'
         rss_items.append(
             PyRSS2Gen.RSSItem(
-    	        title = POST_LIST[p]['title'],
+    	        title = POSTS_LIST[p]['title'],
                 link = post_link,
-                description = POST_LIST[p]['summary']
+                description = POSTS_LIST[p]['summary']
           )
         )
     rss = PyRSS2Gen.RSS2(
@@ -216,7 +220,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
     with open(CONFIG['METADATA_DIR'] + CONFIG['METADATA_DICT'], 'w') as outfile:
         json.dump(POSTS_DICT, outfile, indent=4)
 
-    updateIndex(POSTS_DICT, sort_date)
+    updateIndex(POSTS_DICT['POSTS'], sort_date)
     updateRSS(CONFIG, POSTS_DICT['POSTS'], id_as_slug)
 
 
