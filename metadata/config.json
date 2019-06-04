@@ -7,7 +7,10 @@
             "OUTPUT_DIR": "output/",
             "TEMPLATE_DIR": "templates/",
             "POST_TEMPLATE_PATH": "post.html",
-            "INDEX_TEMPLATE_PATH": "index-template.html"
+            "INDEX_TEMPLATE_PATH": "index-template.html",
+            "RSS": "mlu.xml",
+            "URL": "https://mlu.red/",
+            "NAME": "MLU"
         },
         "muse": {
             "CONTENTS_DIR": "contents/muse/",
@@ -16,8 +19,11 @@
             "OUTPUT_DIR": "output/muse/",
             "TEMPLATE_DIR": "templates/",
             "POST_TEMPLATE_PATH": "muse-post.html",
-            "INDEX_TEMPLATE_PATH": "muse-index-template.html"
+            "INDEX_TEMPLATE_PATH": "muse-index-template.html",
+            "RSS": "muse.xml",
+            "URL": "https://mlu.red/muse/",
+            "NAME": "MUSE"
         }
     },
-    "last-updated": 1559238152.6060593
+    "last-updated": 1559622559.074043
 }

@@ -2,6 +2,7 @@ import os
 import json
 import time
 import re
+import PyRSS2Gen
 from urllib.parse import quote
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
@@ -86,6 +87,32 @@ def updateIndex(POSTS_DICT, sort_date):
     index_html = env.get_template(CONFIG["INDEX_TEMPLATE_PATH"]).render(posts = POSTS_LIST)
     with open (CONFIG['OUTPUT_DIR'] + 'index.html', 'w') as output:
         output.write(index_html)
+
+
+
+# Updates RSS feed
+def updateRSS(CONFIG, POST_LIST, id_as_slug):
+    rss_items = []
+    for p in POST_LIST:
+        if id_as_slug:
+            post_link = CONFIG['URL'] + str(POST_LIST[p]['id']) + '.html'
+        else:
+            post_link = CONFIG['URL'] + POST_LIST[p]['anchor'] + '.html'
+        rss_items.append(
+            PyRSS2Gen.RSSItem(
+    	        title = POST_LIST[p]['title'],
+                link = post_link,
+                description = POST_LIST[p]['summary']
+          )
+        )
+    rss = PyRSS2Gen.RSS2(
+        title = "Muse",
+        link = CONFIG['URL'],
+        description = CONFIG['NAME'],
+        lastBuildDate = datetime.now(),
+        items = rss_items
+    )
+    rss.write_xml(open(CONFIG['OUTPUT_DIR']+CONFIG['RSS'], "w"))
 
 
 
@@ -190,6 +217,7 @@ def parsePosts(sort_date=False, id_as_slug=False):
         json.dump(POSTS_DICT, outfile, indent=4)
 
     updateIndex(POSTS_DICT, sort_date)
+    updateRSS(CONFIG, POSTS_DICT['POSTS'], id_as_slug)
 
 
 
