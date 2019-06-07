@@ -12,40 +12,45 @@
 </head>
 
 <body>
-	<div class="grid">
-		<div class="grid-spacer"></div>
-		<div class="container">
-			<div class="home-title">
-				
-				<span class="grid-spacer"></span>
+<div class="body">
+	<div class="home-title">
 
-				<span class="logo-wrapper">
-					<img src="images/mlu-logo.png" class="home-title-logo">
-				</span>
-
-				<span class="nav-holder">
-					<span class="navbar">
-							<a href="./about.html" class="nav-button">About</a>
-					</span>
-					<span class="navbar">
-							<a href="./muse/" class="nav-button">Muse</a>
-					</span>
-				</span>
-
-			</div>
-			{% for p in posts %}
-			<div class="post-link">
-				<div class="post-title">
-					<a href="{{ './%s.html'%p.anchor }}">{{ p.title }}</a>
-				</div>
-				<div class="word-count">{{ p.word_count }} words</div>
-				<div class="post-summary">{{ p.summary }}</div>
-			</div>
-			{% endfor %}
+		<div class="nav-holder">
+			<span class="nav-spacer"></span>
+			<span>
+				<a href="./about.html" class="nav-button">About</a>
+			</span>
 		</div>
-		<div class="grid-spacer"></div>
+
+		<div class="logo-wrapper">
+			<img src="images/mlu-logo.png" class="home-title-logo">
+		</div>
+
+		<div class="nav-holder">
+			<span>
+				<a href="./muse/" class="nav-button">Muse</a>
+			</span>
+			<span class="nav-spacer"></span>
+		</div>
+		
 	</div>
 
+	<div class="grid">
+			<div class="grid-spacer"></div>
+			<div class="container">
+				{% for p in posts %}
+				<div class="post-link">
+					<div class="post-title">
+						<a href="{{ './%s.html'%p.anchor }}">{{ p.title }}</a>
+					</div>
+					<div class="word-count">{{ p.word_count }} words</div>
+					<div class="post-summary">{{ p.summary }}</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="grid-spacer"></div>
+		</div>
+</div>
 </body>
 
 </html>

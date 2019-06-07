@@ -35,6 +35,13 @@
        url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.body {
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
+}
+
+
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -49,17 +56,13 @@
 /* Phone width */
 .container {
   width: 100%;
-  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-  font-display: auto;
 }
-
 /* For tablet width */
 @media only screen and (min-width: 768px) {
   .container {
     width: 85%;
   }
 }
-
 /* For normal computer width */
 @media only screen and (min-width: 1200px) {
   .container {
@@ -67,6 +70,17 @@
   }
 }
 
+/* Highlight stylings */
+::selection {
+  background: #77080D; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #77080D; /* Gecko Browsers */
+  color: white;
+}
+
+/* Header things */
 .home-title {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -80,17 +94,43 @@
 .logo-wrapper {
   text-align: center;
 }
+.nav-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-button {
 
+  color: #77080D;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-button:hover {
+  border-color: rgb(65, 8, 11);
+  color: rgb(65, 8, 11);
+  text-decoration: underline;
+}
+.nav-spacer {
+  width: 50%;
+} 
+
+
+/* Body of the page */
 .post-link {
   margin-bottom: 1.5rem;
   padding: 0.5rem;
 }
-
 .post-title a {
   font-size: 1.85rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 2.5rem;
+  line-height: 2.0rem;
   color: rgb(170, 0, 22);
 }
 .post-title a:hover  {
@@ -110,29 +150,33 @@
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-.nav-holder {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.nav-button {
-  color: #77080D;
 
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-
-  text-transform: uppercase;
-  text-decoration: none;
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .post-title a {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .post-summary {
+    font-size: 1rem;
+  }
+  .home-title-logo {
+    height: 4rem;
+  }
+  .nav-button {
+    font-size: 1.12rem;
+  }
 }
-.nav-button:hover {
-  border-color: rgb(65, 8, 11);
-  color: rgb(65, 8, 11);
-  text-decoration: underline;
+
+/* Tablet width */
+@media only screen and (max-width: 1200px) {
+  .grid {
+    display: grid;
+  }
+  .post-summary {
+    font-size: 1.15rem;
+  }
 }

@@ -1,3 +1,32 @@
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
+       url('./fonts/hind-v9-latin-500.woff') format('woff'); 
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -18,7 +47,6 @@
   margin: auto;
   width: 100%;
 }
-
 
 /* For normal computer width */
 @media only screen and (min-width: 1200px) {
@@ -42,6 +70,17 @@ a:hover {
   color: rgb(198, 77, 115);
 }
 
+/* Highlight stylings */
+::selection {
+  background: #77080D; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #77080D; /* Gecko Browsers */
+  color: white;
+}
+
+/* Post stylings */
 .title, .date {
   text-align: center;
 }
@@ -66,7 +105,6 @@ a:hover {
   margin: 1rem;
   cursor: pointer;
 }
-
 .content {
   margin-bottom: 5rem;
 }

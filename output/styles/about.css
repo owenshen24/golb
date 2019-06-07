@@ -1,3 +1,47 @@
+/* 
+  MLU Colors:
+  very light red: #FF9D9D
+  light red: #E20E22
+  main red: rgb(170, 0, 22);
+  dark red: #77080D
+*/
+
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
+       url('./fonts/hind-v9-latin-500.woff') format('woff'); 
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.body {
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
+}
+
+
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -12,17 +56,13 @@
 /* Phone width */
 .container {
   width: 100%;
-  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-  font-display: auto;
 }
-
 /* For tablet width */
 @media only screen and (min-width: 768px) {
   .container {
     width: 85%;
   }
 }
-
 /* For normal computer width */
 @media only screen and (min-width: 1200px) {
   .container {
@@ -30,6 +70,7 @@
   }
 }
 
+/* Header styles */
 .home-title {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -44,18 +85,13 @@
   text-align: center;
 }
 .nav-holder {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.navbar {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
 }
 .nav-button {
-  color: #77080D;
-  /* color: #9d6063; */
 
+  color: #77080D;
   cursor: pointer;
 
   font-weight: 700;
@@ -66,11 +102,16 @@
   text-decoration: none;
 }
 .nav-button:hover {
+  border-color: rgb(65, 8, 11);
   color: rgb(65, 8, 11);
   text-decoration: underline;
 }
+.nav-spacer {
+  width: 50%;
+} 
 
-.header {
+/* Body styles */
+.title {
   font-size: 2.1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
@@ -88,4 +129,37 @@
 }
 .desc a:hover {
   color: rgb(65, 8, 11);
+}
+
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .post-title a {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .post-summary {
+    font-size: 1rem;
+  }
+  .home-title-logo {
+    height: 4rem;
+  }
+  .nav-button {
+    font-size: 1.12rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .desc {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet width */
+@media only screen and (max-width: 1200px) {
+  .grid {
+    display: grid;
+  }
 }
