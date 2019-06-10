@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 26,
+    "ID_COUNT": 27,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -234,6 +234,15 @@
             "summary": "So it's been a while since my last blog post. It still feels weird writing all of my insecurities ou\u2026",
             "word_count": 256,
             "id": 26
+        },
+        "27": {
+            "title": "What Makes A Skinner Box?",
+            "date": "2019-06-09 18:54",
+            "last-updated": 1560131663,
+            "anchor": "What-Makes-A-Skinner-Box%3F",
+            "summary": "One common theme that I return to, time and time again, is that of addictiveness. More specifically,\u2026",
+            "word_count": 448,
+            "id": 27
         }
     }
 }

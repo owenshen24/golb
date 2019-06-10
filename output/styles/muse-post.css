@@ -37,6 +37,11 @@
   }
 }
 
+/* List stylings */
+li:not(:first-child) {
+  padding-top: 1rem;
+}
+
 /* Link stylings */
 a {
   color: rgb(135, 32, 64);
