@@ -1,36 +1,43 @@
 title: The Best Self-Help Should Be Self-Defeating
-summary: IN-PROGRESS. Self-help is supposed to get people to stop needing it. But the typical incentives in any medium mean that it's possible to get people hooked on your content, rather than learning from it. Writing self-help differs from writing other types of content.
+summary: Self-help is supposed to get people to stop needing it. But the typical incentives in any medium mean that it's possible to get people hooked on your content, rather than learning from it. Writing self-help differs from writing other types of content.
 
-============
+### IN-PROGRESS ESSAY. PROCEED AT YOUR OWN RISK.
 
-Say you have a job as a Self-Help Guru. You spend your days giving out your worldly advice to those who seek guidance on their problems.
+So here's a proverb we've likely heard a variant of many times before: "Give a person a fish, feed them for a day. Teach them to fish, feed them for a lifetime."
 
-I claim that if you’re doing job as a Self-Help Guru right, then you should never have repeat customers.
+Taken at face value, the proverb says that it's important to teach people self-sufficiency, rather than to give them one-time aid. Dive a little deeper, and there's a discussion about local vs systemic solutions. In medicine, for example, it's popular to debate "curing the cause" versus "alleviating the symptoms." While such a dichotomy might arguably be mistaken for medicine, I think this is an apt framing for self-help. Indeed, the above proverb could be seen as about giving people advice such that they become self-sufficient.
 
-That’s the gist behind the idea that the best self-help should be self-defeating.
+In this essay, I'm curious about what that process of becoming self-sufficient looks like. It seems there's a self-defeating dynamic where we do a thing such that we (later) don't have to keep doing the thing. If we squint a little, I think the same dynamic occurs in other areas of learning/improvement.
 
-Here are some analogies of things that I think are like self-help:
+Here are some more examples of what I'm pointing to:
 
-The point of taking antibiotics is so that you eventually stop taking them and feel better.
-The point of wearing glasses is so that you can stop squinting and see more clearly.
-The point of reading a programming textbook is so you can eventually start writing programs on your own.
-My claim is that if you’re trying to do self-help right, you want people to be able to “graduate” from your ideas and figure out what actually works for them. In a sense, you want to catalyze people to find their own optimal solutions instead of consisting coming back to you for more help every time.
+1. Using an abacus to do math so that you can stop using the abacus and just use your mind.
+2. Reading a programming textbook so you can stop referring to the book and write programs of your own.
+3. Using training wheels on your bike so you can stop using them later on.
 
-You want them to go off on their own adventures in life, confident that they have the ability to craft new tools when the ones you give them stop working.
+In all of the above examples, there's something of a crutch (i.e. abacus, textbook, training wheels) that we might rely on for a while, but the intent is to slowly wean ourselves off of the crutch. In the end, we should be able to go on our own. 
 
-Once again, the Recognize vs Generate dichotomy comes into play here. Following advice someone else gave you can look about the same as coming up with something similar on your own. But being the sort of person who can generate solutions independently is far more effective in the long run.
+Likewise, if we're trying to do self-help right, we want people to be able to “graduate” from our mental models and figure out what actually works for them. We want to catalyze people to find their own optimal solutions instead of consisting coming back to us for more help every time. We want them to go off on their own adventures in life, confident that they have the ability to craft new tools when the ones you give them stop working. We want to make ourselves obsolete.
 
-Basically I claim the whole point of self-help is to help people help themselves.
+The [Recognize vs Generate dichotomy](https://mlu.red/recognizing-vs-generating) comes into play here. From the outside, following advice someone else gave you can look about the same as coming up with something similar on your own. But being the sort of person who can generate solutions independently is far more effective in the long run.
 
-Not that controversial a viewpoint. The real problem, I think, comes in when we consider the way that self-help gets publicized and published.
+Okay, so we've basically just said that the whole point of self-help is to help people help themselves. Not that controversial a viewpoint. The real problem comes in when we consider the way that self-help gets publicized and published.
 
-First off, consider the incentives of many media like newspapers, television channels, novels, or vloggers. Growing an audience is an explicit part of their goals; after all, their profits are largely tied to their viewership. As a result, it makes a lot of sense for them to come out with constant content—it keeps the original crowd coming, and a constant presence means it can draw more people in.
+First off, consider the incentives of media like newspapers, television, comics, or novels. Growing an audience is an explicit part of their goals; their profits are largely tied to their viewership. As a result, it makes a lot of sense for them to come out with constant content—it keeps the original crowd coming back for more, and it presents ample opportunity to draw new people in.
 
-But self-help is different. Arguably, the content isn’t even the real point. The real point is something about giving others the self-help “attitude” which enables them to solve future problems. You want them to level up and then head off to do great things in the real world.
-
-Entertainment isn’t your goal, so you don’t really want people binging on your content. If you’re motivated by helping others, it’s actually not very good if people get hooked on your content. You want them to read the content, learn whatever lessons are useful for them, and then move on.
+Self-help, as we've described above, is different. For your audience, self-sufficiency is the goal. Entertainment is not your goal, so you don’t really want people binging on your content. If you’re motivated by helping others, it’s not very good if people get hooked on your content. You want them to read the content, learn whatever lessons are useful for them, and then move on.
 
 Which means that some sort of constant, fluctuating, or even decreasing number of readers can actually be a sign that you’re doing things correctly.
+
+This stark conflict between typical media incentives for publicity and the lofty goals of self-help hits at the heart of the issue. I think that most people in the self-improvement space have gone way off into the “maximize profits and publicity” direction rather than the “maximize beneficial impact of the content” direction. (Cal Newport is probably the highest profile counterexample that comes immediately to mind.)
+
+Here’s a hypothetical situation: Someone with genuinely altruistic motivations might want to first write some clickbaity articles to bring in an audience, and then provide more real insights. "After all", they reason, ""
+
+“I’ll just do the clickbait stuff first, and then I’ll gradually transition to deeper stuff later,” they think.
+
+Except that they never transition. Writing to nab in readers begets more writing designed to nab in more readers. Unfortunate as that might be, it's also understandable. None of this self-help stuff is happening in a vacuum. Battles for attention in the modern world are zero-sum, and the other side (i.e. all other media) is already optimizing the hell out of [grabbing your attention](http://www.tristanharris.com/2016/05/how-technology-hijacks-peoples-minds%e2%80%8a-%e2%80%8afrom-a-magician-and-googles-design-ethicist/). 
+
+============
 
 This stark conflict between typical media incentives for publicity and the lofty goals of self-help hits at the heart of the issue. I think that basically everyone trying to do self-improvement has gone way off into the “maximize profits and publicity” direction rather than the “maximize beneficial impact of the content” direction.
 
