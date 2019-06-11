@@ -1,5 +1,5 @@
 title: The Best Self-Help Should Be Self-Defeating
-summary: Self-help is supposed to get people to stop needing it. But the typical incentives in any medium mean that it's possible to get people hooked on your content, rather than learning from it. Writing self-help differs from writing other types of content.
+summary: IN-PROGRESS. Self-help is supposed to get people to stop needing it. But the typical incentives in any medium mean that it's possible to get people hooked on your content, rather than learning from it. Writing self-help differs from writing other types of content.
 
 ============
 
