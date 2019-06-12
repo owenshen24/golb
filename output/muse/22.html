@@ -7,7 +7,6 @@ the image, style, and js files -->
 <head>
 	<title>Working on MLU 2.0</title>
   <link rel="stylesheet" href="../styles/muse-post.css">
-  <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -15,18 +14,25 @@ the image, style, and js files -->
 </head>
 
 <body>
-  <div class="grid">
-    <div class="grid-spacer">
+  <div class="body">
+    
+    <div class="back-holder">
+      <a href="./" class="nav-button back">◄ Muse</a>
     </div>
-    <div class="container">
-      <div class="home-logo-container">
-        <a href="./">
-          <img src="../images/muse-logo.png" class="home-logo">
-        </a>
+
+    <div class="grid">
+      <div class="grid-spacer">
       </div>
-      <div class="title">Working on MLU 2.0</div>
-      <div class="date">Last Updated: 2019-05-21 13:31</div>
-      <div class="content"><p>So I finally got around to updating my site. It's been my goal for a while ot have a nice place where I can port over all of my blog posts, and I'm excited to be wrapping up the static site generator. I don't think the overall code was very large, but it feels good because I wrote the whole thing, so I know what's going on. I'd previously tried both Jekyll and Hugo, and they both seemed over-the-top for what I wanted.</p>
+      <div class="container">
+
+        <!-- <div class="home-logo-container">
+          <a href="./">
+            <img src="../images/muse-logo.png" class="home-logo">
+          </a>
+        </div> -->
+        <div class="title">Working on MLU 2.0</div>
+        <div class="date">Last Updated: 2019-05-21 13:31</div>
+        <div class="content"><p>So I finally got around to updating my site. It's been my goal for a while ot have a nice place where I can port over all of my blog posts, and I'm excited to be wrapping up the static site generator. I don't think the overall code was very large, but it feels good because I wrote the whole thing, so I know what's going on. I'd previously tried both Jekyll and Hugo, and they both seemed over-the-top for what I wanted.</p>
 
 <p>Going through the whole process, I can see now why certain design decisions were made, as I had to make similar ones. Things like whether or not to include defaults, checking for metadata, being smart about updates, etc. etc.</p>
 
@@ -40,18 +46,19 @@ the image, style, and js files -->
 
 <p>I'm pretty satisfied with the separation between MLU and Muse, and the slight differences between them. I'll probably write more about the writing process soon, but the whole point, after all, of a short-form blog, is to be able to just randomly write stuff, yeah?</p>
 </div>
-      <hr/>
-      <div class="navbar">
-        
-        <a href="./21.html" class="prev-button">◄ Prev Post</a>
-        
+        <hr/>
+        <div class="navbar">
+          
+          <a href="./21.html" class="nav-button prev">◄ Prev Post</a>
+          
 
-        
-        <a href="./23.html" class="next-button">Next Post ►</a>
-        
+          
+          <a href="./23.html" class="nav-button next">Next Post ►</a>
+          
+        </div>
       </div>
+      <div class="grid-spacer"></div>
     </div>
-    <div class="grid-spacer"></div>
   </div>
 
 </body>

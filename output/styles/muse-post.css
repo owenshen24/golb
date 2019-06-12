@@ -1,3 +1,37 @@
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
+       url('./fonts/hind-v9-latin-500.woff') format('woff'); 
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.body {
+  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
+  font-display: auto;
+}
+
 /*Adaptive sizing*/
 .grid {
   display: grid;
@@ -11,8 +45,6 @@
 /* Phone width */
 .container {
   width: 100%;
-  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-  font-display: auto;
 }
 
 /* Default font size for smaller screens */
@@ -35,6 +67,13 @@
   .content{
     font-size: 1.2rem;
   }
+}
+
+.back-holder {
+  display: grid;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* List stylings */
@@ -64,16 +103,16 @@ a:hover {
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
-.home-logo-container {
+/* .home-logo-container {
   display: flex;
   justify-content: center;
 }
 .home-logo {
-  width: 5rem;
+  width: 6rem;
   height: auto;
   margin: 1rem;
   cursor: pointer;
-}
+} */
 
 .navbar {
   margin-top: 3rem;
@@ -82,7 +121,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-.next-button, .prev-button {
+.nav-button {
   text-decoration: none;
 
   cursor: pointer;
@@ -93,22 +132,24 @@ a:hover {
 
   text-align: center;
   font-size: 1rem;
-  text-transform: uppercase;
 
   background-color: rgb(40, 40, 40);
   color: white;
   border: none;
+
+  text-transform: uppercase;
 }
 
-.next-button:hover, .prev-button:hover {
-  /* background-color: rgb(206, 65, 109); */
+.nav-button:hover {
   background-color: rgb(135, 32, 64);
   color: white;
 }
-
-.prev-button {
+.back {
+  width: 6rem;
+}
+.prev {
   margin-right: auto;
 }
-.next-button {
+.next {
   margin-left: auto;
 }

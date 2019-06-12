@@ -1,68 +1,126 @@
-/*Adaptive sizing*/
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+/* 
+  MLU Colors:
+  very light red: #FF9D9D
+  light red: #E20E22
+  main red: rgb(170, 0, 22);
+  dark red: #77080D
+*/
+
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
+       url('./fonts/hind-v9-latin-500.woff') format('woff'); 
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.container {
-  margin: auto;
+/* Highlight stylings */
+::selection {
+  background: #77080D; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #77080D; /* Gecko Browsers */
+  color: white;
 }
 
-/* Phone width */
-.container {
-  width: 100%;
+.body {
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
   font-display: auto;
+  overflow-wrap: break-word;
 }
-
-/* For tablet width */
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 85%;
-  }
+.top-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
-
-/* For normal computer width */
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 65%;
-  }
-}
-
-/* Link stylings */
-a {
-  color: rgb(135, 32, 64);
-}
-a:hover {
-  color: rgb(198, 77, 115);
-}
-
-.home-title {
+.logo-holder {
   text-align: center;
 }
-.home-title-logo {
-  width: 7rem;
-  height: auto;
-  padding: 1.2rem;
+.back-holder {  
+  display: flex;
+  align-items: flex-start;
 }
+.nav-button {
+
+  text-decoration: none;
+
+  cursor: pointer;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: 5rem;
+  border-radius: 0.33rem;
+
+  text-align: center;
+  font-size: 1rem;
+
+  background-color: #77080D;
+  color: white;
+  border: none;
+}
+.nav-button:hover {
+  background-color: rgb(170, 0, 22);
+  color: white;
+}
+.back {  
+  font-size: 1.15rem;
+  margin-left: 1rem;
+}
+.home-title-logo {
+  padding-top: 1rem;
+  height: 4rem;
+  width: auto;
+}
+.container {
+  max-width:40em;
+  margin:auto;
+  padding:0 1em;
+}
+
+/* Body of the page */
 .post-link {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
 }
 .post-title a {
   font-size: 2.0rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 2.5rem;
+  line-height: 2.1rem;
   color: rgb(41, 41, 41);
 }
 .post-title a:hover  {
   color: rgb(135, 32, 64);
+  text-decoration: underline;
 }
+
 .post-summary {
-  font-size: 1.15rem;
+  font-size: 1.20rem;
   margin-top: -0.25rem;
   line-height: 1.3;
-  color: rgb(75, 75, 75);
+  color: rgb(50, 50, 50);
 }
 .word-count {
   font-size: 0.95rem;
@@ -70,7 +128,20 @@ a:hover {
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-/* List stylings */
-li:not(:first-child) {
-  padding-top: 1rem;
+
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .post-title a {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .post-summary {
+    font-size: 1rem;
+  }
+  .nav-button {
+    font-size: 1.12rem;
+  }
 }

@@ -7,7 +7,6 @@ the image, style, and js files -->
 <head>
 	<title>{{post.title}}</title>
   <link rel="stylesheet" href="../styles/muse-post.css">
-  <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -15,34 +14,42 @@ the image, style, and js files -->
 </head>
 
 <body>
-  <div class="grid">
-    <div class="grid-spacer">
+  <div class="body">
+    
+    <div class="back-holder">
+      <a href="./" class="nav-button back">◄ Muse</a>
     </div>
-    <div class="container">
-      <div class="home-logo-container">
-        <a href="./">
-          <img src="../images/muse-logo.png" class="home-logo">
-        </a>
-      </div>
-      <div class="title">{{post.title}}</div>
-      <div class="date">Last Updated: {{post.date}}</div>
-      <div class="content">{{post.content}}</div>
-      <hr/>
-      <div class="navbar">
-        {% if post.id == 1 %}
-        <div></div>
-        {% else %}
-        <a href="{{ './%s.html'%(post.id-1) }}" class="prev-button">◄ Prev Post</a>
-        {% endif %}
 
-        {% if post.id >= max_num %}
-        <div></div>
-        {% else %}
-        <a href="{{ './%s.html'%(post.id+1) }}" class="next-button">Next Post ►</a>
-        {% endif %}
+    <div class="grid">
+      <div class="grid-spacer">
       </div>
+      <div class="container">
+
+        <!-- <div class="home-logo-container">
+          <a href="./">
+            <img src="../images/muse-logo.png" class="home-logo">
+          </a>
+        </div> -->
+        <div class="title">{{post.title}}</div>
+        <div class="date">Last Updated: {{post.date}}</div>
+        <div class="content">{{post.content}}</div>
+        <hr/>
+        <div class="navbar">
+          {% if post.id == 1 %}
+          <div></div>
+          {% else %}
+          <a href="{{ './%s.html'%(post.id-1) }}" class="nav-button prev">◄ Prev Post</a>
+          {% endif %}
+
+          {% if post.id >= max_num %}
+          <div></div>
+          {% else %}
+          <a href="{{ './%s.html'%(post.id+1) }}" class="nav-button next">Next Post ►</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="grid-spacer"></div>
     </div>
-    <div class="grid-spacer"></div>
   </div>
 
 </body>
