@@ -68,8 +68,8 @@
   text-decoration: none;
 
   cursor: pointer;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   width: 5rem;
   border-radius: 0.33rem;
 
@@ -142,6 +142,8 @@
     font-size: 1rem;
   }
   .nav-button {
-    font-size: 1.12rem;
+    font-size: 0.8rem;
+    width: 3rem;
+    padding: 0.2rem;
   }
 }

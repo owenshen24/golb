@@ -103,16 +103,6 @@ a:hover {
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
-/* .home-logo-container {
-  display: flex;
-  justify-content: center;
-}
-.home-logo {
-  width: 6rem;
-  height: auto;
-  margin: 1rem;
-  cursor: pointer;
-} */
 
 .navbar {
   margin-top: 3rem;
@@ -125,8 +115,8 @@ a:hover {
   text-decoration: none;
 
   cursor: pointer;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 8rem;
   border-radius: 0.33rem;
 
