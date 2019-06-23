@@ -1,4 +1,4 @@
-title: The Best Self-Help Is Self-Defeating
+title: Good Self-Help Is Self-Defeating
 summary: Self-help is supposed to get people to stop needing it. But the typical incentives in any medium mean that it's possible to get people hooked on your content, rather than learning from it.
 
 ### IN-PROGRESS ESSAY. PROCEED AT YOUR OWN RISK.
