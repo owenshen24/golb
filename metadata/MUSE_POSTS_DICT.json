@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 29,
+    "ID_COUNT": 32,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -261,6 +261,33 @@
             "summary": "It's been a while since I have written in my journal. This is quite odd, actually, as I have previou\u2026",
             "word_count": 96,
             "id": 29
+        },
+        "30": {
+            "title": "Consuming vs Creating",
+            "date": "2019-06-27 23:33",
+            "last-updated": 1561703586,
+            "anchor": "Consuming-vs-Creating",
+            "summary": "This is similar to my previous post on Consumers and Creators. Except this time, instead of thinking\u2026",
+            "word_count": 124,
+            "id": 30
+        },
+        "31": {
+            "title": "Stockholm Syndrome and Cargo Cults",
+            "date": "2019-06-27 23:36",
+            "last-updated": 1561703817,
+            "anchor": "Stockholm-Syndrome-and-Cargo-Cults",
+            "summary": "Two concepts:\n\nStockholm Syndrome:\n\n- A bunch of classes / requirements are probably only perpetuate\u2026",
+            "word_count": 86,
+            "id": 31
+        },
+        "32": {
+            "title": "Corporate Ruins Everything",
+            "date": "2019-06-27 23:39",
+            "last-updated": 1561703950,
+            "anchor": "Corporate-Ruins-Everything",
+            "summary": "I'm currently at Microsoft. We're really big on growth mindset. It feels fake when corporate people \u2026",
+            "word_count": 110,
+            "id": 32
         }
     }
 }
