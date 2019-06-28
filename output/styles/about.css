@@ -70,7 +70,7 @@
   }
 }
 
-/* Header styles */
+/* Header things */
 .top-nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -108,7 +108,7 @@
 }
 .nav-spacer {
   width: 50%;
-} 
+}
 
 /* Body styles */
 .title {
@@ -135,25 +135,6 @@
 @media only screen and (max-width: 768px) {
   .grid {
     display: block;
-  }
-  .post-title a {
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }
-  .post-summary {
-    font-size: 1rem;
-  }
-  .home-title-logo {
-    height: 4rem;
-  }
-  .nav-button {
-    font-size: 1.12rem;
-  }
-  .title {
-    font-size: 1.8rem;
-  }
-  .desc {
-    font-size: 1.1rem;
   }
 }
 

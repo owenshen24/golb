@@ -59,6 +59,11 @@ The incentive structure for self-help is unfortunately set up in such a way that
 
 What, then, to do?
 
+1. Don't join in burning the commons
+Given that the above tactics are bad for readers, my immediate recommendation is to 
+
+2. Create your own network
+
 +++++
 
 * Don't participate in the zero-sum game. Attention-grabbing trade-offs are wrong to make, even if you think they'll work out well. It won't work out well.

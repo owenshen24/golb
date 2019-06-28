@@ -1,5 +1,5 @@
 title: Fading Novelty
-summary: Fading novelty refers to when new things become old and dull after repetition. It shows up everywhere in life, from songs to foods. I also think it plays a negative role in learning, and I propose an attitude to combat this.
+summary: Fading novelty is when new things become old and dull after repetition. From foods to songs, we notice its presence. It also makes it harder for us to learn and practice certain skills.
 
 A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 
