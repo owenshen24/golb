@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 32,
+    "ID_COUNT": 33,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -273,21 +273,30 @@
         },
         "31": {
             "title": "Stockholm Syndrome and Cargo Cults",
-            "date": "2019-06-27 23:36",
-            "last-updated": 1561703817,
+            "date": "2019-06-30 23:05",
+            "last-updated": 1561961113,
             "anchor": "Stockholm-Syndrome-and-Cargo-Cults",
             "summary": "Two concepts:\n\nStockholm Syndrome:\n\n- A bunch of classes / requirements are probably only perpetuate\u2026",
-            "word_count": 86,
+            "word_count": 149,
             "id": 31
         },
         "32": {
             "title": "Corporate Ruins Everything",
-            "date": "2019-06-27 23:39",
-            "last-updated": 1561703950,
+            "date": "2019-06-30 23:00",
+            "last-updated": 1561960843,
             "anchor": "Corporate-Ruins-Everything",
             "summary": "I'm currently at Microsoft. We're really big on growth mindset. It feels fake when corporate people \u2026",
-            "word_count": 110,
+            "word_count": 197,
             "id": 32
+        },
+        "33": {
+            "title": "Favorite Books",
+            "date": "2019-06-30 23:07",
+            "last-updated": 1561961232,
+            "anchor": "Favorite-Books",
+            "summary": "I expect to update this over time, as a reference for things I've really enjoyed reading, that are v\u2026",
+            "word_count": 68,
+            "id": 33
         }
     }
 }
