@@ -63,7 +63,7 @@
 
 /* List stylings */
 li:not(:first-child) {
-  padding-top: 1rem;
+  padding-top: 0.25rem;
 }
 
 /* Link stylings */
