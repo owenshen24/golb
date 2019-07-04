@@ -106,7 +106,7 @@
 .filter-bar {
   text-align: center;
   font-size: var(--filter-web-size);
-  padding-bottom: 1.0rem;
+  padding-bottom: 1.5rem;
   color: rgb(80, 80, 80);
 }
 .filter-bar #checkbox {
