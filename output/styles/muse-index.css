@@ -5,6 +5,10 @@
   main red: rgb(170, 0, 22);
   dark red: #77080D
 */
+:root {
+  --filter-web-size: 1.3rem;
+  --filter-mobile-size: 1.0rem;
+}
 
 /* Fonts */
 /* hind-regular - latin */
@@ -37,14 +41,15 @@
 
 /* Highlight stylings */
 ::selection {
-  background: #77080D; /* WebKit/Blink Browsers */
+  background: rgb(41, 41, 41);; /* WebKit/Blink Browsers */
   color: white;
 }
 ::-moz-selection {
-  background: #77080D; /* Gecko Browsers */
+  background: rgb(41, 41, 41);; /* Gecko Browsers */
   color: white;
 }
 
+/* Content stylings */
 .body {
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
   font-display: auto;
@@ -66,24 +71,24 @@
 .nav-button {
   text-decoration: none;
   cursor: pointer;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  width: 5rem;
+  padding: 0.2rem;
+  width: 4rem;
   border-radius: 0.33rem;
 
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   background-color: #77080D;
   color: white;
   border: none;
+
+  opacity: 0.5;
 }
 .nav-button:hover {
-  background-color: rgb(170, 0, 22);
   color: white;
+  opacity: 1.0
 }
-.back {  
-  font-size: 1.15rem;
+.back { 
   margin-left: 1rem;
 }
 .home-title-logo {
@@ -100,17 +105,17 @@
 /* Filter bar */
 .filter-bar {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: var(--filter-web-size);
   padding-bottom: 1.0rem;
   color: rgb(80, 80, 80);
 }
 .filter-bar #checkbox {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: var(--filter-web-size);
+  height: var(--filter-web-size);
 }
 .filter-bar #num-field {
   width: 4rem;
-  font-size: 1.3rem;
+  font-size: var(--filter-web-size);
 }
 
 /* Body of the page */
@@ -119,10 +124,10 @@
   padding: 0.5rem;
 }
 .post-title a {
-  font-size: 2.0rem;
+  font-size: 1.85rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 2.1rem;
+  line-height: 2.0rem;
   color: rgb(41, 41, 41);
 }
 .post-title a:hover  {
@@ -158,6 +163,16 @@
   .nav-button {
     font-size: 0.8rem;
     width: 3rem;
-    padding: 0.2rem;
+    padding: 0.15rem;
+  }
+  .filter-bar {
+    font-size: var(--filter-mobile-size);
+  }
+  .filter-bar #checkbox {
+    width: var(--filter-mobile-size);
+    height: var(--filter-mobile-size);
+  }
+  .filter-bar #num-field {
+    font-size: var(--filter-mobile-size);
   }
 }

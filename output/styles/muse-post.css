@@ -45,17 +45,19 @@
 /* Phone width */
 .container {
   width: 100%;
+  max-width:40em;
+  padding:0 1em;
 }
 
 /* Default font size for smaller screens */
 .content{
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 /* For tablet width */
 @media only screen and (min-width: 768px) {
   .container {
-    width: 85%;
+    width: 95%;
   }
 }
 
@@ -69,16 +71,9 @@
   }
 }
 
-.back-holder {
-  display: grid;
-  margin-top: 1.5rem;
-  margin-left: 1rem;
-  margin-bottom: 1.5rem;
-}
-
 /* List stylings */
 li:not(:first-child) {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 /* Link stylings */
@@ -113,20 +108,16 @@ a:hover {
 
 .nav-button {
   text-decoration: none;
-
   cursor: pointer;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 8rem;
   border-radius: 0.33rem;
-
   text-align: center;
   font-size: 1rem;
-
   background-color: rgb(40, 40, 40);
   color: white;
   border: none;
-
   text-transform: uppercase;
 }
 
@@ -134,8 +125,17 @@ a:hover {
   background-color: rgb(135, 32, 64);
   color: white;
 }
+
+.back-holder {
+  display: grid;
+  margin-top: 1.0rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
 .back {
-  width: 6rem;
+  width: 4rem;
+  padding: 0.35rem;
+  font-size: 1.0rem;
 }
 .prev {
   margin-right: auto;
