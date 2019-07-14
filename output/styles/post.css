@@ -110,5 +110,9 @@ a:hover {
   cursor: pointer;
 }
 .content {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.comment-spacer {
+  margin-bottom: 2.5rem;
 }

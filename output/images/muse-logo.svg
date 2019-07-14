@@ -1,97 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="667.8197"
-   height="381.03485"
-   viewBox="0 0 176.69397 100.81547"
-   version="1.1"
-   id="svg853"
-   inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="muse-logo.svg">
-  <defs
-     id="defs847" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="69.711524"
-     inkscape:cy="78.68402"
-     inkscape:document-units="px"
-     inkscape:current-layer="g5608"
-     showgrid="false"
-     units="px"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="2560"
-     inkscape:window-height="1380"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     showguides="false" />
-  <metadata
-     id="metadata850">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-8.3204373,-44.280518)">
-    <g
-       style="fill:#aa0000;fill-opacity:1"
-       id="g848"
-       transform="matrix(0.28781277,0,0,0.28783528,-17.675846,-20.954202)"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <g
-         transform="rotate(47.441117,409.60394,441.05703)"
-         id="g5608">
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#292929;stroke-width:22.98134613;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect827"
-           width="590.93848"
-           height="327.27271"
-           x="-355.63"
-           y="397.08771"
-           transform="rotate(-47.441117)"
-           ry="0" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:176.57754517px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#292929;fill-opacity:1;stroke:none;stroke-width:4.41443872;"
-           x="-268.76651"
-           y="623.51379"
-           id="text963"
-           transform="matrix(0.676374,-0.73661145,0.73655384,0.67632111,0,0)"><tspan
-             sodipodi:role="line"
-             id="tspan961"
-             x="-268.76651"
-             y="623.51379"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold Condensed';fill:#292929;fill-opacity:1;stroke-width:4.41443872;">MUSE</tspan></text>
-      </g>
-      <g
-         id="g5434" />
+<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 177 101">
+  <g fill="#a00">
+    <g transform="scale(.28781 .28784) rotate(47 622 225)">
+      <rect width="591" height="327" x="-356" y="397" fill="#fff" stroke="#292929" stroke-width="23" ry="0" transform="rotate(-47)"/>
+      <text style="line-height:1.25" x="-269" y="624" fill="#292929" stroke-width="4" font-family="sans-serif" font-size="177" font-weight="400" letter-spacing="0" transform="matrix(.67637 -.73661 .73655 .67632 0 0)" word-spacing="0">
+        <tspan x="-269" y="624" style="-inkscape-font-specification:'Roboto Condensed, Bold Condensed'" font-family="Roboto Condensed, Arial, Helvetica, sans-serif" font-stretch="condensed" font-weight="700">MUSE</tspan>
+      </text>
     </g>
   </g>
 </svg>
