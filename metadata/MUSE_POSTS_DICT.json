@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 35,
+    "ID_COUNT": 36,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -315,6 +315,15 @@
             "summary": "(A lot of ink has been shed on the topic of how to rationally update your beliefs with respect to ot\u2026",
             "word_count": 454,
             "id": 35
+        },
+        "36": {
+            "title": "A Stickler For Rules",
+            "date": "2019-07-19 21:57",
+            "last-updated": 1563598648,
+            "anchor": "A-Stickler-For-Rules",
+            "summary": "Here's something that feels like another instance of the deontologist vs consequentialist abstractio\u2026",
+            "word_count": 262,
+            "id": 36
         }
     }
 }
