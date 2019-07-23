@@ -85,6 +85,10 @@ a:hover {
 }
 
 /* Post stylings */
+h3 {
+  margin-top: 5rem;
+  margin-bottom: -1rem;
+}
 .title, .date {
   text-align: center;
 }
@@ -110,9 +114,34 @@ a:hover {
   cursor: pointer;
 }
 .content {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .comment-spacer {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Show Comments button */
+.button-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#show-comment-button {
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 10rem;
+  border-radius: 0.33rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border: none;
+  margin: 0 auto;
+}
+#show-comment-button:hover {
+  background-color: rgb(135, 32, 64);
+  color: white;
 }
