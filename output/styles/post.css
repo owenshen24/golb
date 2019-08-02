@@ -4,6 +4,7 @@
   font-family: 'Hind';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Hind Regular'), local('Hind-Regular'),
        url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -13,6 +14,7 @@
   font-family: 'Hind';
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local('Hind Medium'), local('Hind-Medium'),
        url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
        url('./fonts/hind-v9-latin-500.woff') format('woff'); 
@@ -22,6 +24,7 @@
   font-family: 'Hind';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Hind Bold'), local('Hind-Bold'),
        url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -34,7 +37,6 @@
 }
 .container {
   font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-  font-display: auto;
 }
 
 /* Default font size for smaller screens */
@@ -62,9 +64,9 @@
 }
 
 /* List stylings */
-li:not(:first-child) {
+/* li:not(:first-child) {
   padding-top: 0.25rem;
-}
+} */
 
 /* Link stylings */
 a {
@@ -85,8 +87,8 @@ a:hover {
 }
 
 /* Post stylings */
-h3 {
-  margin-top: 5rem;
+h3:not(:first-child) {
+  margin-top: 4rem;
   margin-bottom: -1rem;
 }
 .title, .date {
