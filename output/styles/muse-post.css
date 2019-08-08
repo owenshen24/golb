@@ -146,3 +146,7 @@ a:hover {
 .next {
   margin-left: auto;
 }
+
+img {
+  max-width: 100%;
+}
