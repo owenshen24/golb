@@ -1,5 +1,5 @@
 {
-    "ID_COUNT": 36,
+    "ID_COUNT": 37,
     "POSTS": {
         "1": {
             "title": "Speediness 1",
@@ -324,6 +324,15 @@
             "summary": "Here's something that feels like another instance of the deontologist vs consequentialist abstractio\u2026",
             "word_count": 262,
             "id": 36
+        },
+        "37": {
+            "title": "Calibrating With Cards",
+            "date": "2019-08-07 23:30",
+            "last-updated": 1565245811,
+            "anchor": "Calibrating-With-Cards",
+            "summary": "In this post, I'll try to bring together two things I enjoy: rationality and magic. Like [Hazard](ht\u2026",
+            "word_count": 729,
+            "id": 37
         }
     }
 }
