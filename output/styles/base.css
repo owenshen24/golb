@@ -1,0 +1,84 @@
+/* 
+  MLU Colors:
+  very light red: #FF9D9D
+  light red: #E20E22
+  main red: rgb(170, 0, 22);
+  dark red: #77080D
+*/
+
+/* Fonts */
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Hind Regular'), local('Hind-Regular'),
+       url('/styles/fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/styles/fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-500 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Hind Medium'), local('Hind-Medium'),
+       url('/styles/fonts/hind-v9-latin-500.woff2') format('woff2'),
+       url('/styles/fonts/hind-v9-latin-500.woff') format('woff'); 
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Hind Bold'), local('Hind-Bold'),
+       url('/styles/fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/styles/fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Basic adaptive resize styling */
+/* For phones, full-width */
+.content {
+  margin: auto;
+  width: 100%;
+  font-family: Hind, Arial, Helvetica, sans-serif;
+}
+/* For tablets and above */
+@media only screen and (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+}
+/* For normal computer width */
+@media only screen and (min-width: 1200px) {
+  .content {
+    max-width: 42rem;
+  }
+}
+
+/* Title stylings */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Link stylings */
+a {
+  color: rgb(135, 32, 64);
+}
+a:hover {
+  color: rgb(198, 77, 115);
+}
+
+/* Highlight stylings */
+::selection {
+  background: #77080D; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #77080D; /* Gecko Browsers */
+  color: white;
+}

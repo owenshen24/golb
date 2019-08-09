@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Block for title, css, scripts, etc.-->
+  {% block head%}
+  {% endblock head %}
+</head>
+
+<body>
+  
+  {% block top_bar %}
+  <div class="title">{{ title }}</div>
+  {% endblock top_bar %}
+
+  <div class="grid">
+    <div class="grid_spacer"></div>
+    <!-- Block for content -->
+    <div class="content">
+      {% block content %}
+      {% endblock content %}
+    </div>
+    <div class="grid_spacer"></div>
+  </div>
+</body>
+
+</html>
