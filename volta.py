@@ -45,7 +45,6 @@ def init_config():
 
 
 
-# TODO: change get_paths call to instead reference the global PATHS object
 def load_paths():
   try:
     with open(PATHS_PATH, 'r') as infile:
@@ -86,7 +85,6 @@ def get_file_index(index_path):
 
 def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=False):
   FILE_INDEX = get_file_index(index_path)
-  NOT_IN_FILE_INDEX = set([k for k in FILE_INDEX])
   for post in os.listdir(input_dir):
     file_path = os.path.join(input_dir, post)
     file_update = int(os.path.getmtime(file_path))
@@ -142,17 +140,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         # Create HTML file
         render_HTML(html_path, template_path, data)
         print("Updated: ", data['title'])
-
-        # Keep track of what FILE_INDEX has
-        # (KeyErrors are okay, as they merely mean the post_id is new)
-        try:
-          NOT_IN_FILE_INDEX.remove(post_id)
-        except KeyError:
-          pass
-  
-  # Remove obsolete keys and update FILE_INDEX
-  for obsolete_key in NOT_IN_FILE_INDEX:
-      FILE_INDEX.pop(obsolete_key)
+        
   with open(index_path, 'w') as outfile:
     json.dump(FILE_INDEX, outfile, indent=4)
 

@@ -38,12 +38,16 @@
        url('/styles/fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Set font */
+body {
+  font-family: Hind, Arial, Helvetica, sans-serif;
+}
+
 /* Basic adaptive resize styling */
 /* For phones, full-width */
 .content {
   margin: auto;
   width: 100%;
-  font-family: Hind, Arial, Helvetica, sans-serif;
 }
 /* For tablets and above */
 @media only screen and (min-width: 700px) {

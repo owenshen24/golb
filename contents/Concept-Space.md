@@ -1,7 +1,7 @@
 title: Concept Space vs Action Space
 summary: A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.
 
-In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, our representations of objects are distinct from the objects themselves. This is an important, (and perhaps obvious) distinction. Without paying mind to this, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. This, of course, doesn't work because the mountains inform her map and not the other way around. 
+In my circles, it's common to say that [the map is not the territory](https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory). In other words, our representations of objects are distinct from the objects themselves. This is an important, (and perhaps obvious) distinction. If you don't pay attention to this, you end up prey to a host of fallacious reasoning. For example, a conniving army general looking to cross a treacherous mountain pass might have the "clever" idea of erasing the marked mountain range from her map. This, of course, doesn't work because the mountains inform her map and not the other way around. 
 
 I think a similar map/territory error arises when we assume that just because two things are conceptually similar, they must be solved the same way. Here's a concrete example of where this confusion might arise: 
 
