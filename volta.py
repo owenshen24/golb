@@ -147,7 +147,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
 
         # Create HTML file
         render_HTML(html_path, template_path, data)
-        # print("Updated: ", data['title'])
+        print("Updated: ", data['title'])
         
         # Rename file
         new_file_path = os.path.join(input_dir, (anchor + '.md'))
