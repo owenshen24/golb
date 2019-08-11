@@ -115,32 +115,46 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           'last_updated': file_update
         }
 
+        # Gather post attributes
+        file_title = os.path.splitext(post)[0].replace(' ', '-')
+        anchor = None
+
         # Add post attributes
         try:
           post_metadata['title'] = parsed_file.metadata['title']
         except KeyError:
-          title = os.path.splitext(post)[0]
-          post_metadata['title'] = quote(title.replace(' ', '-'))
+          post_metadata['title'] = file_title
+          
         try:
           post_metadata['anchor'] = parsed_file.metadata['anchor']
+          anchor = post_metadata['anchor']
         except KeyError:
-          post_metadata['anchor'] = quote(post_metadata['title'].replace(' ', '-'))
+          anchor = quote(post_metadata['title'].replace(' ', '-'))
+          # Double quote anchor to solve escape issue
+          post_metadata['anchor'] = quote(anchor)
         try:
           post_metadata['summary'] = parsed_file.metadata['summary']
         except KeyError:
           post_metadata['summary'] = post_body[0:CONFIG["MAX_SUMMARY_LENGTH"]] + '...'
+        
         post_metadata['word_count'] = len(post_body.split(' '))
         
         # Add to FILE_INDEX (either overwriting or adding a new entry)
         FILE_INDEX[post_id] = post_metadata
         data = post_metadata.copy()
         data['content'] = parsed_file
-        html_path = output_dir + data['anchor'] + '.html'
+        html_path = os.path.join(output_dir, (anchor + '.html'))
 
         # Create HTML file
         render_HTML(html_path, template_path, data)
-        print("Updated: ", data['title'])
+        # print("Updated: ", data['title'])
         
+        # Rename file
+        new_file_path = os.path.join(input_dir, (anchor + '.md'))
+        os.rename(file_path, new_file_path)
+        print(file_path + ' : ' + new_file_path)
+
+  # Update FILE_INDEX
   with open(index_path, 'w') as outfile:
     json.dump(FILE_INDEX, outfile, indent=4)
 
@@ -199,7 +213,7 @@ def update_index(file_index_path, output_path, template_path):
 
 def update_contents():
   # Do all post-types first because they'll update their corresponding
-  # FILE_INDEX files
+  # FILE_INDEX files before updating the indexes
   for k in PATHS.keys():
     c = PATHS[k]
     if c["TYPE"] == "post":
@@ -232,4 +246,12 @@ if __name__ == '__main__':
   load_paths()
   if args.rebuild:
     CONFIG["LAST_UPDATED"] = 0
+    # Remove all old indices
+    for k in PATHS.keys():
+      p = PATHS[k]
+      if p["TYPE"] == "index":
+        try:
+          os.remove(p["FILE_INDEX"])
+        except Exception as e:
+          pass
   build_site()

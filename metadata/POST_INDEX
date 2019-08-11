@@ -1,20 +1,4 @@
 {
-    "55069866310": {
-        "title": "Concept Space vs Action Space",
-        "anchor": "Concept-Space-vs-Action-Space",
-        "summary": "A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.",
-        "word_count": 1300,
-        "date": "2019-08-10 17:54",
-        "last_updated": 1565484895
-    },
-    "55069966310": {
-        "title": "Fading Novelty",
-        "anchor": "Fading-Novelty",
-        "summary": "Fading novelty is when new things become old and dull after repetition. From foods to songs, we notice its presence. It also makes it harder for us to learn and practice certain skills.",
-        "word_count": 2229,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
     "55070266310": {
         "title": "Good Self-Help Is Self-Defeating",
         "anchor": "Good-Self-Help-Is-Self-Defeating",
@@ -23,11 +7,27 @@
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660
     },
+    "55069866310": {
+        "title": "Concept Space vs Action Space",
+        "anchor": "Concept-Space-vs-Action-Space",
+        "summary": "A look into what happens when we mix up descriptive categories with prescriptive ones. Problems from the same category may still have different solutions, and recognizing the similarities is insufficient for a solution.",
+        "word_count": 1300,
+        "date": "2019-08-10 17:54",
+        "last_updated": 1565484895
+    },
     "55070166310": {
         "title": "Recognizing vs Generating",
         "anchor": "Recognizing-vs-Generating",
         "summary": "Two core ways to categorize tasks are Recognizing and Generating. Though they may seem initially similar, they differ in the effort involved. This dichotomy is explains which ways of solving a problem are effective and which ones are just paying lip service.",
         "word_count": 1967,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660
+    },
+    "55069966310": {
+        "title": "Fading Novelty",
+        "anchor": "Fading-Novelty",
+        "summary": "Fading novelty is when new things become old and dull after repetition. From foods to songs, we notice its presence. It also makes it harder for us to learn and practice certain skills.",
+        "word_count": 2229,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660
     }

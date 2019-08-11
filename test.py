@@ -1,5 +1,6 @@
 import volta
 import os
+from urllib.parse import unquote
 
 def iterate_folder(folder, f):
   for p in os.listdir(folder):
@@ -18,4 +19,10 @@ def remove_num(folder):
     os.rename(path, new_path)
   iterate_folder(folder, rename)
 
-clear_folder('./output/muse')
+def requote(folder):
+  def rename(path):
+    os.rename(path, unquote(path))
+  iterate_folder(folder, rename)
+
+requote('contents/')
+requote('contents/muse/')
