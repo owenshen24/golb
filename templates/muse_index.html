@@ -1,38 +1,19 @@
 {% extends "templates/base.html" %}
 
 {% block head %}
-<title>mindlevelup</title>
+<title>muse</title>
 <link rel="stylesheet" href="/styles/index.css">
 {% endblock head %}
 
-{% block topbar %}
-<div class="topbar">
-
-  <div class="nav-holder">
-    <div class="nav-spacer"></div>
-    <a href="/page/about.html">About</a>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="/images/mlu_logo.svg" class="logo">
-  </div>
-
-  <div class="nav-holder">
-    <a href="/muse/">Muse</a>
-    <div class="nav-spacer"></div>
-  </div>
-
-</div>
-{% endblock topbar %}
-
 {% block content %}
   {% for p in data|dictsort('last_updated', reverse=true) %}
-  <div class="post-link">
+  <div class="post-link" data-word_count="{{ p.word_count }}>
     <div class="post-title">
       <a href="{{ './%s.html'%p[1].anchor }}">{{ p[1].title }}</a>
     </div>
     <div class="word-count">{{ p[1].word_count }} words</div>
     <div class="post-summary">{{ p[1].summary }}</div>
+    <div class="last-updated">Last Updated: {{ p[1].date }}</div>
   </div>
   {% endfor %}
 {% endblock content %}

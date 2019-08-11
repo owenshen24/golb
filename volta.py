@@ -1,10 +1,3 @@
-# TODO: 
-'''
-Add support for declaring new entries to parse in sub-folders
-Figure out my templating and css
-Re-build the site
-'''
-
 import os
 import json
 import sys
@@ -20,6 +13,8 @@ from markdown2 import markdown
 
 CONFIG_PATH = ".config.json"
 CONFIG = {}
+PATHS_PATH = ".paths.json"
+PATHS = {}
 
 
 
@@ -31,8 +26,7 @@ def check_config():
   except EnvironmentError:
     ans = input('.config.json not found. Create default .config.json? (Y/N)')
     if ans.lower() == 'y':
-      title = input('Enter name of project: ')
-      init_config(title)
+      init_config()
       print('Created .config.json')
       return check_config()
     else:
@@ -41,57 +35,24 @@ def check_config():
 
 
 
-def init_config(title):
+def init_config():
   default_config = {
-    "CONTENTS_DIR": "contents/",
-    "METADATA_DIR": "metadata/",
-    "OUTPUT_DIR": "output/",
-    "PAGE_DIR": "page/",
-    "TEMPLATES_DIR": "templates/",
-    "BASE_PATH": "base.html",
-    "POST_PATH": "post.html",
-    "INDEX_PATH": "index.html",
-    "PAGE_PATH": "page.html",
-    "POST_INDEX": "POST_INDEX.json",
-    "PAGE_INDEX": "PAGE_INDEX.json",
     "LAST_UPDATED": 0,
-    "MAX_SUMMARY_LENGTH": 150,
-    "TITLE": title
+    "MAX_SUMMARY_LENGTH": 150
   }
   with open(".config.json", 'w') as outfile:
     json.dump(default_config, outfile, indent=4)
 
 
 
-def get_paths():
-  paths = {
-    "POST": {
-      "CONTENTS": CONFIG['CONTENTS_DIR'],
-      "OUTPUT": CONFIG['OUTPUT_DIR'],
-      "FILE_INDEX": os.path.join(CONFIG['METADATA_DIR'], CONFIG['POST_INDEX']),
-      "TEMPLATE": os.path.join(CONFIG['TEMPLATES_DIR'], CONFIG['POST_PATH']),
-      "parse": True
-    },
-    "PAGE": {
-      "CONTENTS": os.path.join(CONFIG['CONTENTS_DIR'], CONFIG['PAGE_DIR']),
-      "OUTPUT": os.path.join(CONFIG['OUTPUT_DIR'], CONFIG['PAGE_DIR']),
-      "FILE_INDEX": os.path.join(CONFIG['METADATA_DIR'], CONFIG['PAGE_INDEX']),
-      "TEMPLATE": os.path.join(CONFIG['TEMPLATES_DIR'], CONFIG['PAGE_PATH']),
-      "parse": True
-    },
-    "INDEX": {
-      "PATH": os.path.join(CONFIG['CONTENTS_DIR'], CONFIG['INDEX_PATH']),
-      "OUTPUT": os.path.join(CONFIG['OUTPUT_DIR'], CONFIG['INDEX_PATH']),
-      "FILE_INDEX": os.path.join(CONFIG['METADATA_DIR'], CONFIG['POST_INDEX']),
-      "TEMPLATE": os.path.join(CONFIG['TEMPLATES_DIR'], CONFIG['INDEX_PATH']),
-      "parse": False
-    },
-    "BASE": {
-      "TEMPLATE": os.path.join(CONFIG['TEMPLATES_DIR'], CONFIG['BASE_PATH']),
-      "parse": False
-    }
-  }
-  return paths
+# TODO: change get_paths call to instead reference the global PATHS object
+def load_paths():
+  try:
+    with open(PATHS_PATH, 'r') as infile:
+      global PATHS
+      PATHS = json.load(infile)
+  except EnvironmentError:
+    print(PATHS_PATH + ' not found')
 
 
 
@@ -199,7 +160,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
 
 def render_HTML(output_path, template_path, data):
   env = Environment(loader=FileSystemLoader('./')) 
-  post_html = env.get_template(template_path).render(data = data, title = CONFIG['TITLE'])
+  post_html = env.get_template(template_path).render(data = data)
   with open(output_path, 'w') as outfile:
     outfile.write(post_html)
 
@@ -208,7 +169,7 @@ def render_HTML(output_path, template_path, data):
 def need_to_update(template_path):
   # Either the specified template or the base template has been updated since last run
   return (int(os.path.getmtime(template_path)) > CONFIG["LAST_UPDATED"] or
-    int(os.path.getmtime(get_paths()["BASE"]["TEMPLATE"])) > CONFIG["LAST_UPDATED"]
+    int(os.path.getmtime(PATHS["BASE"]["TEMPLATE"])) > CONFIG["LAST_UPDATED"]
   )
 
 
@@ -219,7 +180,8 @@ def update(input_path, output_path, template_path, index_path):
     print(template_path + ' has been updated since last run. Updating all files in ' + input_path)
     for post in os.listdir(output_path):
         file_path = os.path.join(output_path, post)
-        # Skip subdirectories:
+        
+        # Skip subdirectories and index:
         if os.path.isdir(file_path):
           continue
         if post != 'index.html':
@@ -232,28 +194,32 @@ def update(input_path, output_path, template_path, index_path):
 
 
 
-def update_contents():
-  contents = get_paths()
-  for k in contents.keys():
-    c = contents[k]
-    if c["parse"]:
-      update(c["CONTENTS"], c["OUTPUT"], c["TEMPLATE"], c["FILE_INDEX"])
-
-
-
-def update_index():
-  c = get_paths()["INDEX"]
+def update_index(file_index_path, output_path, template_path):
   # Check if index template has been updated
-  if need_to_update(c["TEMPLATE"]):
+  if need_to_update(template_path):
     # Remove old index
     try: 
-      os.remove(c["OUTPUT"])
+      os.remove(output_path)
     except FileNotFoundError:
       pass
     # Build the new index page
-    FILE_INDEX = get_file_index(c["FILE_INDEX"])
-    render_HTML(c["OUTPUT"], c["TEMPLATE"], FILE_INDEX)
-    print('Updated index.html')
+    FILE_INDEX = get_file_index(file_index_path)
+    render_HTML(output_path, template_path, FILE_INDEX)
+    print('Updated: ' + output_path)
+
+
+
+def update_contents():
+  # Do all post-types first because they'll update their corresponding
+  # FILE_INDEX files
+  for k in PATHS.keys():
+    c = PATHS[k]
+    if c["TYPE"] == "post":
+      update(c["CONTENTS"], c["OUTPUT"], c["TEMPLATE"], c["FILE_INDEX"])
+  for k in PATHS.keys():
+    c =PATHS[k]
+    if c["TYPE"] == "index":
+      update_index(c["FILE_INDEX"], c["OUTPUT"], c["TEMPLATE"])
 
 
 
@@ -266,7 +232,6 @@ def update_time():
 
 def build_site():
   update_contents()
-  update_index()
   update_time()
 
 
@@ -276,6 +241,7 @@ if __name__ == '__main__':
   parser.add_argument("-r", "--rebuild", help="Rebuilds the entire site", action="store_true")
   args = parser.parse_args()
   check_config()
+  load_paths()
   if args.rebuild:
     CONFIG["LAST_UPDATED"] = 0
   build_site()

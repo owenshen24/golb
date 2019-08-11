@@ -1,0 +1,39 @@
+{
+  "BASE": {
+    "TEMPLATE": "templates/base.html",
+    "TYPE": "none"
+  },
+  "POST": {
+    "CONTENTS": "contents/",
+    "OUTPUT": "output/",
+    "FILE_INDEX": "metadata/POST_INDEX",
+    "TEMPLATE": "templates/post.html",
+    "TYPE": "post"
+  },
+  "PAGE": {
+    "CONTENTS": "contents/page/",
+    "OUTPUT": "output/page/",
+    "FILE_INDEX": "metadata/PAGE_INDEX",
+    "TEMPLATE": "templates/page.html",
+    "TYPE": "post"
+  },
+  "MUSE": {
+    "CONTENTS": "contents/muse/",
+    "OUTPUT": "output/muse/",
+    "FILE_INDEX": "metadata/MUSE_INDEX",
+    "TEMPLATE": "templates/muse_post.html",
+    "TYPE": "post"
+  },
+  "POST_INDEX": {
+    "FILE_INDEX": "metadata/POST_INDEX",
+    "OUTPUT": "output/index.html",
+    "TEMPLATE": "templates/index.html",
+    "TYPE": "index"
+  },
+  "MUSE_INDEX": {
+    "FILE_INDEX": "metadata/MUSE_INDEX",
+    "OUTPUT": "output/muse/index.html",
+    "TEMPLATE": "templates/muse_index.html",
+    "TYPE": "index"
+  }
+}

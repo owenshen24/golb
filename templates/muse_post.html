@@ -1,0 +1,15 @@
+{% extends "templates/base.html" %}
+
+{% block head %}
+<title>{{ data.title }}</title>
+<link rel="stylesheet" href="/styles/post.css">
+{% endblock head %}
+
+{% block top_bar %}
+{% endblock top_bar %}
+
+{% block content %}
+<div class="post-title">{{data.title}}</div>
+<div class="date">Last Updated: {{data.date}}</div>
+<div class="content">{{data.content}}</div>
+{% endblock content %}

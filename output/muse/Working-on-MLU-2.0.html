@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Working on MLU 2.0</title>
+<link rel="stylesheet" href="/styles/post.css">
+
+</head>
+
+<body>
+  
+  
+
+
+  <div class="grid">
+    <div class="grid_spacer"></div>
+    <!-- Block for content -->
+    <div class="content">
+      
+<div class="post-title">Working on MLU 2.0</div>
+<div class="date">Last Updated: 2019-08-08 18:04</div>
+<div class="content"><p>So I finally got around to updating my site. It&#8217;s been my goal for a while ot have a nice place where I can port over all of my blog posts, and I&#8217;m excited to be wrapping up the static site generator. I don&#8217;t think the overall code was very large, but it feels good because I wrote the whole thing, so I know what&#8217;s going on. I&#8217;d previously tried both Jekyll and Hugo, and they both seemed over-the-top for what I wanted.</p>
+
+<p>Going through the whole process, I can see now why certain design decisions were made, as I had to make similar ones. Things like whether or not to include defaults, checking for metadata, being smart about updates, etc. etc.</p>
+
+<p>But now I can rejoice because I think I&#8217;ve ironed out most of the bugs! I have a static site generator that is pretty smart about only updating files which have been edited, and it supports the changing of titles, which is pretty nice. Sort of. While typing this, I just realized that I don&#8217;t actually have support for dead links. While my index page keeps track of when pages change, I don&#8217;t take into account the changing of the actual page slug.</p>
+
+<p>And, really, there&#8217;s no reason except for my own clarity, why the actual page slug has to change. Given that I&#8217;m already using numeric IDs, I could just make the slug the ID itself. And that would solve backwards compatibility, given that I&#8217;m already counting up. EDIT: Yup, so now I&#8217;m doing that.</p>
+
+<p>Most of these changes, though, seem like they&#8217;re more relevant to Muse than to MLU. My current Muse implementation is pretty nice, I think. It&#8217;s simple, everything&#8217;s on one page, and anchors allow hotlinking to any single post. There&#8217;s client-side search, which is always cool, and it&#8217;s readable enough. </p>
+
+<p>I think that having a one-page blog, though, isn&#8217;t great from a UX perspective; it encourages binging and that sort of thing. So that&#8217;s why I made the conscious decision of having an index to break it up.</p>
+
+<p>I&#8217;m pretty satisfied with the separation between MLU and Muse, and the slight differences between them. I&#8217;ll probably write more about the writing process soon, but the whole point, after all, of a short-form blog, is to be able to just randomly write stuff, yeah?</p>
+</div>
+
+    </div>
+    <div class="grid_spacer"></div>
+  </div>
+</body>
+
+</html>

@@ -1,100 +1,31 @@
-/* Fonts */
-/* hind-regular - latin */
-@font-face {
-  font-family: 'Hind';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Hind Regular'), local('Hind-Regular'),
-       url('./fonts/hind-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/hind-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* hind-500 - latin */
-@font-face {
-  font-family: 'Hind';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Hind Medium'), local('Hind-Medium'),
-       url('./fonts/hind-v9-latin-500.woff2') format('woff2'),
-       url('./fonts/hind-v9-latin-500.woff') format('woff'); 
-}
-/* hind-700 - latin */
-@font-face {
-  font-family: 'Hind';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Hind Bold'), local('Hind-Bold'),
-       url('./fonts/hind-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/hind-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/*Adaptive sizing*/
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-}
-.container {
-  font-family: 'Hind', 'Helvetica', 'Open Sans', sans-serif;
-}
-
 /* Default font size for smaller screens */
 .content{
-  font-size: 1.35rem;
-}
-
-/* Initial width for phones */
-.container {
-  margin: auto;
-  width: 100%;
-}
-
-/* For normal computer width */
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 65%;
-  }
-  .content{
-    font-size: 1.2rem;
-  }
-  .nav-button {
-    font-size: 1.2rem;
-  }
-}
-
-/* List stylings */
-/* li:not(:first-child) {
-  padding-top: 0.25rem;
-} */
-
-/* Link stylings */
-a {
-  color: rgb(135, 32, 64);
-}
-a:hover {
-  color: rgb(198, 77, 115);
+  font-size: 1.4rem;
+  max-width: 55rem;
 }
 
 /* Highlight stylings */
 ::selection {
-  background: #77080D; /* WebKit/Blink Browsers */
+  background: rgb(70, 6, 9); /* WebKit/Blink Browsers */
   color: white;
 }
 ::-moz-selection {
-  background: #77080D; /* Gecko Browsers */
+  background: rgb(70, 6, 9); /* Gecko Browsers */
   color: white;
 }
 
 /* Post stylings */
-h3:not(:first-child) {
-  margin-top: 4rem;
-  margin-bottom: -1rem;
+h3 {
+  margin-bottom: -1.5rem;
+  font-size: 1.8rem;
 }
-.title, .date {
+h3:not(:first-child) {
+  margin-top: 2rem;
+}
+.post-title, .date {
   text-align: center;
 }
-.title {
+.post-title {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -114,13 +45,6 @@ h3:not(:first-child) {
   height: auto;
   margin: 1rem;
   cursor: pointer;
-}
-.content {
-  margin-bottom: 2rem;
-}
-
-.comment-spacer {
-  margin-bottom: 2rem;
 }
 
 /* Show Comments button */

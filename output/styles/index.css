@@ -1,11 +1,16 @@
+/* Styling the width */
+.content {
+  max-width: 40rem;
+}
+
 /* Header things */
-.top-nav {
+.topbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
 }
-.home-title-logo {
+.logo {
   height: 6rem;
   width: auto;
 }
@@ -18,7 +23,6 @@
   align-items: center;
 }
 .nav-button {
-
   color: #77080D;
   cursor: pointer;
 
@@ -67,28 +71,4 @@
   color: rgb(80, 80, 80);
   font-weight: bold;
   padding-bottom: 0.5rem;
-}
-
-/* Tablet width */
-@media only screen and (max-width: 1200px) {
-  .post-summary {
-    font-size: 1.15rem;
-  }
-}
-
-/* For phone width */
-@media only screen and (max-width: 768px) {
-  .post-title a {
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }
-  .post-summary {
-    font-size: 1rem;
-  }
-  .home-title-logo {
-    height: 4rem;
-  }
-  .nav-button {
-    font-size: 1.12rem;
-  }
 }
