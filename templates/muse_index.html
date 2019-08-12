@@ -2,15 +2,21 @@
 
 {% block head %}
 <title>Muse</title>
-<link rel="stylesheet" href="/styles/index.css">
+<link rel="stylesheet" href="/styles/muse_index.css">
+<script src="/scripts/filter.js" defer></script>
 {% endblock head %}
 
 {% block topbar %}
 {% endblock topbar %}
 
 {% block content %}
+  <div class="filter-bar">
+    <input type="checkbox" id="checkbox" data-toggle="1" />
+    Hide all posts under
+    <input type="number" id="num-field" value=300 /> words.
+  </div>
   {% for p in data|dictsort('last_updated', reverse=true) %}
-  <div class="post-link" data-word_count="{{ p.word_count }}">
+  <div class="post-link" data-word_count="{{ p[1].word_count }}">
     <div class="post-title">
       <a href="{{ './%s.html'%p[1].anchor }}">{{ p[1].title }}</a>
     </div>

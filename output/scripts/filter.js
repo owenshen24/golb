@@ -3,6 +3,7 @@ function filterPosts() {
   let posts = document.querySelectorAll(".post-link");
   for (let i = 0; i < posts.length; i++) {
     let c = parseInt(posts[i].dataset.word_count);
+    console.log(c);
       if (c <= n) {
         if (this.dataset.toggle === "1") {
           posts[i].style.display = 'none';

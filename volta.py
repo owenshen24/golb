@@ -85,14 +85,22 @@ def get_file_index(index_path):
 
 def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=False):
   FILE_INDEX = get_file_index(index_path)
+  NOT_IN_INDEX = set([s for s in FILE_INDEX.keys()])
   for post in os.listdir(input_dir):
     file_path = os.path.join(input_dir, post)
     file_update = int(os.path.getmtime(file_path))
     post_id = str(os.stat(file_path).st_ino) + str(os.stat(file_path).st_dev)
-
+    
     # Skip subdirectories:
     if os.path.isdir(file_path):
         continue
+    
+    # Remove to keep track of new files
+    try:
+      NOT_IN_INDEX.remove(post_id)
+    except KeyError:
+      pass
+
     if (parse_all or file_update > CONFIG["LAST_UPDATED"]):
       # Remove the old HTML file if it exists:
       try:
@@ -106,7 +114,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         post_body = extract_text(p)
         parsed_file = markdown(p, extras=['metadata', 'smarty-pants'])
         post_metadata = {
-          'title': None,
+          'title': '',
           'anchor': None,
           'summary': None,
           'word_count': None,
@@ -115,23 +123,17 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           'last_updated': file_update
         }
 
-        # Gather post attributes
-        file_title = os.path.splitext(post)[0].replace(' ', '-')
-        anchor = None
-
         # Add post attributes
         try:
           post_metadata['title'] = parsed_file.metadata['title']
         except KeyError:
-          post_metadata['title'] = file_title
-          
+          post_metadata['title'] = os.path.splitext(post)[0]
+        
         try:
           post_metadata['anchor'] = parsed_file.metadata['anchor']
-          anchor = post_metadata['anchor']
         except KeyError:
-          anchor = quote(post_metadata['title'].replace(' ', '-'))
-          # Double quote anchor to solve escape issue
-          post_metadata['anchor'] = quote(anchor)
+          post_metadata['anchor'] = post_id
+        
         try:
           post_metadata['summary'] = parsed_file.metadata['summary']
         except KeyError:
@@ -143,18 +145,24 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         FILE_INDEX[post_id] = post_metadata
         data = post_metadata.copy()
         data['content'] = parsed_file
-        html_path = os.path.join(output_dir, (anchor + '.html'))
+        html_path = os.path.join(output_dir, (post_metadata['anchor'] + '.html'))
 
         # Create HTML file
         render_HTML(html_path, template_path, data)
         print("Updated: ", data['title'])
         
         # Rename file
-        new_file_path = os.path.join(input_dir, (anchor + '.md'))
+        new_title = post_metadata['title'].replace(' ', '-')
+        new_file_path = os.path.join(input_dir, (new_title + '.md'))
         os.rename(file_path, new_file_path)
-        print(file_path + ' : ' + new_file_path)
 
   # Update FILE_INDEX
+  # Remove obsolete posts
+  for k in NOT_IN_INDEX:
+    try:
+      os.remove(os.path.join(output_dir, (FILE_INDEX[k]['anchor'] + '.html')))
+    except EnvironmentError:
+      pass
   with open(index_path, 'w') as outfile:
     json.dump(FILE_INDEX, outfile, indent=4)
 
