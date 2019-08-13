@@ -16,19 +16,27 @@
   
 <title>Blogging Redux</title>
 <link rel="stylesheet" href="/styles/post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
 
 </head>
 
 <body>
   
   
-  <div></div>
-  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
 
   <div class="grid">
     <div class="grid_spacer"></div>
     <!-- Block for content -->
-    <div class="content">
+    <div class="container">
       
 <div class="post-title">Blogging Redux</div>
 <div class="date">Last Updated: 2019-08-08 18:04</div>
@@ -47,6 +55,16 @@
 <p>Now, I feel like it&#8217;s less about finding a time to write, and it&#8217;s more about having stuff worth writing about. Of course, having the time to do it is important, but it seems like that searhc process doesn&#8217;t even happen unless you want to do it in the first place.</p>
 
 <p>(Shocker, you can only do the thing you want to do. Yes, we&#8217;ve gone Full Circle many, many times. Doesn&#8217;t stop these insights from being useful, as it seems that, given that humans are leaky systems, we&#8217;re not particularly great at holding onto everything. Even if growth is a coherent concept, it isn&#8217;t contradictory to have a model where we&#8217;re in a constant state of atrophy and loss. Although, oof, that ain&#8217;t a great aesthetic.)</p>
+</div>
+
+<hr class="comment-spacer">
+<div class="button-holder">
+  <button id="show-comment-button">Show Comments</button>
+</div>
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
 </div>
 
     </div>

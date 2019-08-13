@@ -45,7 +45,7 @@ body {
 
 /* Basic adaptive resize styling */
 /* For phones, full-width */
-.content {
+.container {
   margin: auto;
   width: 100%;
 }
@@ -58,7 +58,7 @@ body {
 }
 /* For normal computer width */
 @media only screen and (min-width: 1200px) {
-  .content {
+  .container {
     width: 90%;
   }
 }

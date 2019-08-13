@@ -1,7 +1,7 @@
 /* Default font size for smaller screens */
-.content{
-  font-size: 1.4rem;
-  max-width: 55rem;
+.container {
+  font-size: 1.3rem;
+  max-width: 45rem;
 }
 
 /* Highlight stylings */
@@ -37,10 +37,10 @@ h3:not(:first-child) {
   margin-bottom: 2.5rem;
 }
 
-.home-logo-container {
+.logo-holder {
   text-align: center;
 }
-.home-logo {
+.logo {
   width: 4rem;
   height: auto;
   margin: 1rem;
@@ -48,21 +48,26 @@ h3:not(:first-child) {
 }
 
 /* Show Comments button */
+.comment-spacer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .button-holder {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 #show-comment-button {
+  font-family: Hind, Arial, Helvetica, sans-serif;
   cursor: pointer;
   text-decoration: none;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   width: 10rem;
-  border-radius: 0.33rem;
+  border-radius: 0.53rem;
   text-align: center;
   font-size: 1rem;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(40, 40, 40); 
   color: white;
   border: none;
   margin: 0 auto;

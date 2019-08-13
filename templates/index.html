@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="/styles/index.css">
 {% endblock head %}
 
-{% block topbar %}
-<div class="topbar">
+{% block top_bar %}
+<div class="top_bar">
   <div class="nav-holder">
     <div class="nav-spacer"></div>
     <a href="/page/about.html" class="nav-button">About</a>
@@ -21,7 +21,7 @@
     <div class="nav-spacer"></div>
   </div>
 </div>
-{% endblock topbar %}
+{% endblock top_bar %}
 
 {% block content %}
   {% for p in data|dictsort('last_updated', reverse=true) %}
