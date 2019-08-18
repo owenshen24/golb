@@ -4,16 +4,6 @@
   max-width: 45rem;
 }
 
-/* Highlight stylings */
-::selection {
-  background: rgb(70, 6, 9); /* WebKit/Blink Browsers */
-  color: white;
-}
-::-moz-selection {
-  background: rgb(70, 6, 9); /* Gecko Browsers */
-  color: white;
-}
-
 /* Images */
 /* Make sure images don't go too big */
 img {
@@ -90,6 +80,11 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
 #show-comment-button:hover {
   background-color: rgb(135, 32, 64);
   color: white;
+}
+
+/* Code formatting */
+code {
+  background-color: #eee;
 }
 
 /* For phone width */

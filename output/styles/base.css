@@ -82,10 +82,10 @@ a:hover {
 
 /* Highlight stylings */
 ::selection {
-  background: #77080D; /* WebKit/Blink Browsers */
+  background: rgb(0, 0, 0); /* WebKit/Blink Browsers */
   color: white;
 }
 ::-moz-selection {
-  background: #77080D; /* Gecko Browsers */
+  background: rgb(0, 0, 0); /* Gecko Browsers */
   color: white;
 }

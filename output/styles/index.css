@@ -3,6 +3,16 @@
   max-width: 40rem;
 }
 
+/* Highlight stylings */
+::selection {
+  background: #77080D; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #77080D; /* Gecko Browsers */
+  color: white;
+}
+
 /* Header things */
 .top_bar {
   display: grid;
