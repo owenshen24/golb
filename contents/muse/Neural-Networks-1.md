@@ -1,7 +1,8 @@
 title: Neural Networks 1
+summary: Writing a neural net in Python, covers forward pass and backpropagation code and derivations.
 
 # Introduction
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 This post is an attempt to explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen's fantastic online book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html). [Victor Zhou also has a great tutorial in Python](https://victorzhou.com/series/neural-networks-from-scratch/). Why am I trying to do the same? Partially, it's for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. 
 
 Okay, so here's a typical picture of a neural network:
@@ -28,7 +29,7 @@ $f_4 = a(f_3) = \hat{Y} = \text{predicted output}$
 
 This recursive definition will make it easy to derive the backpropagation algorithm, which we'll use to train our network. It also allows us to easily unroll the function, if we want to see what's going on in on line, by substituting until we get back to the input:
 
-$f_4 = a(W_2 \cdot (a(W_1 \cdot f_0 + b_1) + b_2))​$
+$f_4 = a(W_2 \cdot (a(W_1 \cdot f_0 + b_1) + b_2))$
 
 And of course, if our neural network has more than three layers, we just add more recursively defined functions.
 
@@ -88,7 +89,7 @@ We can easily integrate this into our model by adding it to our computational gr
 
 ![a graph with nodes, one after another](/images/computational_graph2.svg)
 
-Now we've added two more steps:
+Now we've added one more step:
 
 $f_0 = X = \text{input}$
 

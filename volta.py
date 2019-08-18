@@ -8,6 +8,7 @@ from urllib.parse import quote
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
+from misaka import Markdown, HtmlRenderer
 
 
 
@@ -55,16 +56,27 @@ def load_paths():
 
 
 
+# Returns metadata dict as well as text
 def extract_text(text):
-    _meta_data_newline = re.compile("^\n", re.MULTILINE)
-    _meta_data_pattern = re.compile(r'^(?:---[\ \t]*\n)?(.*:\s+>\n\s+[\S\s]+?)(?=\n\w+\s*:\s*\w+\n|\Z)|([\S\w]+\s*:(?! >)[ \t]*.*\n?)(?:---[\ \t]*\n)?', re.MULTILINE)
-    metadata_split = re.split(_meta_data_newline, text, maxsplit=1)
-    metadata_content = metadata_split[0]
-    match = re.findall(_meta_data_pattern, metadata_content)
-    if not match:
-        return text
-    tail = metadata_split[1]
-    return tail
+  metadata = {}
+  _key_val_pat = re.compile(r"[\S\w]+\s*:(?! >)[ \t]*.*\n?", re.MULTILINE)
+  _key_val_block_pat = re.compile(
+        "(.*:\s+>\n\s+[\S\s]+?)(?=\n\w+\s*:\s*\w+\n|\Z)", re.MULTILINE)
+  _meta_data_newline = re.compile("^\n", re.MULTILINE)
+  _meta_data_pattern = re.compile(r'^(?:---[\ \t]*\n)?(.*:\s+>\n\s+[\S\s]+?)(?=\n\w+\s*:\s*\w+\n|\Z)|([\S\w]+\s*:(?! >)[ \t]*.*\n?)(?:---[\ \t]*\n)?', re.MULTILINE)
+  metadata_split = re.split(_meta_data_newline, text, maxsplit=1)
+  metadata_content = metadata_split[0]
+  match = re.findall(_meta_data_pattern, metadata_content)
+  if not match:
+      return text
+  tail = metadata_split[1]
+  kv = re.findall(_key_val_pat, metadata_content)
+  kvm = re.findall(_key_val_block_pat, metadata_content)
+  kvm = [item.replace(": >\n", ":", 1) for item in kvm]
+  for item in kv + kvm:
+    k, v = item.split(":", 1)
+    metadata[k.strip()] = v.strip()
+  return metadata, tail
 
 
 
@@ -115,8 +127,10 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
       # Begin parsing the file
       with open(file_path, 'r+') as f:
         p = f.read()
-        post_body = extract_text(p)
-        parsed_file = markdown(p, extras=['metadata', 'smarty-pants', 'footnotes'])
+        parsed_metadata, post_body = extract_text(p)
+        r = HtmlRenderer()
+        md = Markdown(r, extensions=('fenced-code','math', 'math-explicit'))
+        parsed_file = md(post_body)
         post_metadata = {
           'title': '',
           'anchor': None,
@@ -129,17 +143,17 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
 
         # Add post attributes
         try:
-          post_metadata['title'] = parsed_file.metadata['title']
+          post_metadata['title'] = parsed_metadata['title']
         except KeyError:
           post_metadata['title'] = os.path.splitext(post)[0]
         
         try:
-          post_metadata['anchor'] = parsed_file.metadata['anchor']
+          post_metadata['anchor'] = parsed_metadata['anchor']
         except KeyError:
           post_metadata['anchor'] = post_id
         
         try:
-          post_metadata['summary'] = parsed_file.metadata['summary']
+          post_metadata['summary'] = parsed_metadata['summary']
         except KeyError:
           post_metadata['summary'] = post_body[0:CONFIG["MAX_SUMMARY_LENGTH"]] + '...'
         
