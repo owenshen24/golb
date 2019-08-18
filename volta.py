@@ -85,6 +85,7 @@ def get_file_index(index_path):
 
 def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=False):
   FILE_INDEX = get_file_index(index_path)
+  updated_index = False
   NOT_IN_INDEX = set([s for s in FILE_INDEX.keys()])
   for post in os.listdir(input_dir):
     file_path = os.path.join(input_dir, post)
@@ -101,7 +102,10 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
     except KeyError:
       pass
 
+    # If we have to parse everything, or the file is an updated one
     if (parse_all or file_update > CONFIG["LAST_UPDATED"]):
+      updated_index = True
+
       # Remove the old HTML file if it exists:
       try:
         os.remove(os.path.join(output_dir, FILE_INDEX[post_id]['anchor']))
@@ -112,7 +116,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
       with open(file_path, 'r+') as f:
         p = f.read()
         post_body = extract_text(p)
-        parsed_file = markdown(p, extras=['metadata', 'smarty-pants'])
+        parsed_file = markdown(p, extras=['metadata', 'smarty-pants', 'footnotes'])
         post_metadata = {
           'title': '',
           'anchor': None,
@@ -161,10 +165,12 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
   for k in NOT_IN_INDEX:
     try:
       os.remove(os.path.join(output_dir, (FILE_INDEX[k]['anchor'] + '.html')))
+      updated_index = True
     except EnvironmentError:
       pass
-  with open(index_path, 'w') as outfile:
-    json.dump(FILE_INDEX, outfile, indent=4)
+  if updated_index:
+    with open(index_path, 'w') as outfile:
+      json.dump(FILE_INDEX, outfile, indent=4)
 
 
 
@@ -176,7 +182,7 @@ def render_HTML(output_path, template_path, data):
 
 
 
-def need_to_update(template_path):
+def need_to_update_template(template_path):
   # Either the specified template or the base template has been updated since last run
   return (int(os.path.getmtime(template_path)) > CONFIG["LAST_UPDATED"] or
     int(os.path.getmtime(PATHS["BASE"]["TEMPLATE"])) > CONFIG["LAST_UPDATED"]
@@ -184,9 +190,14 @@ def need_to_update(template_path):
 
 
 
+def need_to_update_index(index_path):
+  return (int(os.path.getmtime(index_path)) > CONFIG["LAST_UPDATED"])
+
+
+
 def update(input_path, output_path, template_path, index_path):
   # Check if template has been updated
-  if need_to_update(template_path):
+  if need_to_update_template(template_path):
     print(template_path + ' has been updated since last run. Updating all files in ' + input_path)
     for post in os.listdir(output_path):
         file_path = os.path.join(output_path, post)
@@ -205,8 +216,8 @@ def update(input_path, output_path, template_path, index_path):
 
 
 def update_index(file_index_path, output_path, template_path):
-  # Check if index template has been updated
-  if need_to_update(template_path):
+  # Check if index template has been updated or we added new posts
+  if need_to_update_template(template_path) or need_to_update_index(file_index_path):
     # Remove old index
     try: 
       os.remove(output_path)

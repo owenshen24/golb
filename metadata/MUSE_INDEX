@@ -294,5 +294,21 @@
         "word_count": 189,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660
+    },
+    "55172966310": {
+        "title": "Neural Networks 1",
+        "anchor": "55172966310",
+        "summary": "An introduction to writing a neural net from scratch in Python.",
+        "word_count": 2294,
+        "date": "2019-08-17 18:48",
+        "last_updated": 1566092911
+    },
+    "55186566310": {
+        "title": "Neural Networks 1",
+        "anchor": "55186566310",
+        "summary": "# Introduction\n\nThis post is an attempt to explain how to write a neural network in Python using numpy. I am obviously not the first person to do this...",
+        "word_count": 2293,
+        "date": "2019-08-17 18:51",
+        "last_updated": 1566093064
     }
 }
