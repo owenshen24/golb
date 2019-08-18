@@ -72,3 +72,21 @@
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
+
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .post-title a {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .post-summary {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 3rem;
+    height: auto;
+  }
+}

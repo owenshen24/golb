@@ -39,18 +39,21 @@
     <div class="container">
       
 <div class="post-title">Neural Networks 1</div>
-<div class="date">Last Updated: 2019-08-17 23:04</div>
+<div class="date">Last Updated: 2019-08-18 10:21</div>
 <div class="content"><h1>Introduction</h1>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script></p>
 
-<p>This post is an attempt to explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen&#39;s fantastic online book <a href="http://neuralnetworksanddeeplearning.com/chap2.html">Neural Networks and Deep Learning</a>. <a href="https://victorzhou.com/series/neural-networks-from-scratch/">Victor Zhou also has a great tutorial in Python</a>. Why am I trying to do the same? Partially, it&#39;s for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. </p>
+<p>This post will explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen&#39;s fantastic online book <a href="http://neuralnetworksanddeeplearning.com/chap2.html">Neural Networks and Deep Learning</a>. <a href="https://victorzhou.com/series/neural-networks-from-scratch/">Victor Zhou also has a great tutorial in Python</a>. Why am I trying to do the same? Partially, it&#39;s for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. </p>
 
 <p>Okay, so here&#39;s a typical picture of a neural network:</p>
 
 <p><img src="/images/simple_nn.svg" alt="basic neural net image"></p>
 
-<p>If you&#39;re new to all this: A neural network is a function that takes in an input vector (or matrix) and outputs another vector (or matrix). The input starts at the leftmost vertical layer of nodes and then gets transformed, via a series of operations, to the rightmost vertical layer of nodes. Each layer is a linear combination of the layer before it, followed by an activation function, which is applied to each node. In other words, a neural net is parameterized by a series of weight matrices \(W_1,W_2,..\), a series of bias vectors, \(b_1,b_2,...\), and an activation function \(a\) (typically a nonlinear function like \(tanh(x)\) which is applied element-wise).</p>
+<p>If you&#39;re new to all this: A neural network is a function that takes in an input vector (or matrix) and outputs another vector (or matrix). The input starts at the leftmost vertical layer of nodes and then gets transformed, via a series of operations, to the rightmost vertical layer of nodes. Each layer is a linear combination of the layer before it, followed by an activation function, which is applied to element-wise to each node in the layer. In other words, a neural net is parameterized by a series of weight matrices \(W_1,W_2,..\), a series of bias vectors, \(b_1,b_2,...\), and an activation function \(a\) (typically a nonlinear function like \(tanh(x)\)).</p>
 
 <p>The typical picture, while good for representing the general idea of a neural net, does not do a good job of showing the different operations being performed. I prefer representing a neural net as a computational graph, like below:</p>
 
@@ -104,11 +107,11 @@ class NN():
 
 <p>So far, I haven&#39;t explained how the neural net is supposed to actually work. Say we have some data and their associated target values (EX: different measurements of divers and how long they can hold their breath). Using the above code, even if we get the dimensions of the input/output right, our forward pass is going to give us garbage results.</p>
 
-<p>This is because we randomly initialized our weights and biases. We don&#39;t want <em>any</em> set of weights and biases, but a &quot;good&quot; set of weights and biases. In doing so, we now need to define what we mean by &quot;good&quot;. At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.</p>
+<p>This is because we randomly initialized our weights and biases. We don&#39;t want a random set of weights and biases, but a &quot;good&quot; set of weights and biases. And in doing so, we now need to define what we mean by &quot;good&quot;. At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.</p>
 
-<p>This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between \(Y\) and \(\hat{Y}\). For ease of explanation, we&#39;ll go with \(L_2\) norm of their difference, i.e. the sum of the squares of their differences. </p>
+<p>This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between \(Y\)(true value) and \(\hat{Y}\)(predicted output). For ease of explanation, we&#39;ll go with \(L_2\) norm of their difference, i.e. the sum of the squares of their differences. </p>
 
-<p>Now, after taking a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It&#39;s easy to add this change to our class:</p>
+<p>Now, after performing a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It&#39;s easy to add this change to our class:</p>
 
 <pre><code class="language-python">class NN():
     

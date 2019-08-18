@@ -23,6 +23,7 @@ img {
   margin-right: auto;
   padding: 1rem;
   display: block;
+  width: 90%;
 }
 
 
@@ -33,7 +34,7 @@ h1, h2, h3 {
 h3 {
   font-size: 1.8rem;
 }
-h3:not(:first-child) {
+h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
   margin-top: 2rem;
 }
 .post-title, .date {
@@ -89,4 +90,22 @@ h3:not(:first-child) {
 #show-comment-button:hover {
   background-color: rgb(135, 32, 64);
   color: white;
+}
+
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .post-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .date {
+    font-size: 0.8rem;
+  }
+  .content {
+    font-size: 1.0rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.3rem;
+    margin-bottom: -0.75rem;
+  }
 }

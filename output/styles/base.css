@@ -55,11 +55,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
   }
+  .container {
+    width: 90%;
+  }
 }
 /* For normal computer width */
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }
 

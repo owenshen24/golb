@@ -2,14 +2,18 @@ title: Neural Networks 1
 summary: Writing a neural net in Python, covers forward pass and backpropagation code and derivations.
 
 # Introduction
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-This post is an attempt to explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen's fantastic online book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html). [Victor Zhou also has a great tutorial in Python](https://victorzhou.com/series/neural-networks-from-scratch/). Why am I trying to do the same? Partially, it's for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+This post will explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen's fantastic online book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html). [Victor Zhou also has a great tutorial in Python](https://victorzhou.com/series/neural-networks-from-scratch/). Why am I trying to do the same? Partially, it's for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. 
 
 Okay, so here's a typical picture of a neural network:
 
 ![basic neural net image](/images/simple_nn.svg)
 
-If you're new to all this: A neural network is a function that takes in an input vector (or matrix) and outputs another vector (or matrix). The input starts at the leftmost vertical layer of nodes and then gets transformed, via a series of operations, to the rightmost vertical layer of nodes. Each layer is a linear combination of the layer before it, followed by an activation function, which is applied to each node. In other words, a neural net is parameterized by a series of weight matrices $W_1,W_2,..$, a series of bias vectors, $b_1,b_2,...$, and an activation function $a$ (typically a nonlinear function like $tanh(x)$ which is applied element-wise).
+If you're new to all this: A neural network is a function that takes in an input vector (or matrix) and outputs another vector (or matrix). The input starts at the leftmost vertical layer of nodes and then gets transformed, via a series of operations, to the rightmost vertical layer of nodes. Each layer is a linear combination of the layer before it, followed by an activation function, which is applied to element-wise to each node in the layer. In other words, a neural net is parameterized by a series of weight matrices $W_1,W_2,..$, a series of bias vectors, $b_1,b_2,...$, and an activation function $a$ (typically a nonlinear function like $tanh(x)$).
 
 The typical picture, while good for representing the general idea of a neural net, does not do a good job of showing the different operations being performed. I prefer representing a neural net as a computational graph, like below:
 
@@ -63,11 +67,11 @@ A quick explanation: our class takes in an array of layer sizes and creates appr
 
 So far, I haven't explained how the neural net is supposed to actually work. Say we have some data and their associated target values (EX: different measurements of divers and how long they can hold their breath). Using the above code, even if we get the dimensions of the input/output right, our forward pass is going to give us garbage results.
 
-This is because we randomly initialized our weights and biases. We don't want *any* set of weights and biases, but a "good" set of weights and biases. In doing so, we now need to define what we mean by "good". At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.
+This is because we randomly initialized our weights and biases. We don't want a random set of weights and biases, but a "good" set of weights and biases. And in doing so, we now need to define what we mean by "good". At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.
 
-This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between $Y$ and $\hat{Y}$. For ease of explanation, we'll go with $L_2$ norm of their difference, i.e. the sum of the squares of their differences. 
+This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between $Y$(true value) and $\hat{Y}$(predicted output). For ease of explanation, we'll go with $L_2$ norm of their difference, i.e. the sum of the squares of their differences. 
 
-Now, after taking a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It's easy to add this change to our class:
+Now, after performing a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It's easy to add this change to our class:
 
 ```python
 class NN():

@@ -291,9 +291,9 @@
         "title": "Neural Networks 1",
         "anchor": "55186966310",
         "summary": "Writing a neural net in Python, covers forward pass and backpropagation code and derivations.",
-        "word_count": 2295,
-        "date": "2019-08-17 23:04",
-        "last_updated": 1566108277
+        "word_count": 2311,
+        "date": "2019-08-18 10:21",
+        "last_updated": 1566148908
     },
     "55072066310": {
         "title": "Experience Is Compounding",
