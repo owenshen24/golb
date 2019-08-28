@@ -271,22 +271,23 @@ def update_time():
 
 
 def update_rss(file_index_path, title, url, description, rss_path):
-  file_index = get_file_index(file_index_path)
-  rss = PyRSS2Gen.RSS2(
-    title = title,
-    link = url,
-    description = description,
-    lastBuildDate = datetime.now(),
-    items = [
-      PyRSS2Gen.RSSItem(
-        title = item['title'],
-        link = url + item['anchor'],
-        description = item['summary']
-      ) for item in sorted(file_index.values(), key=lambda k: int(k['last_updated']), reverse=True)
-    ]
-  )
-  rss.write_xml(open(rss_path, "w"))
-  print("Updated RSS feed for: ", title)
+  if need_to_update_index(file_index_path):
+    file_index = get_file_index(file_index_path)
+    rss = PyRSS2Gen.RSS2(
+      title = title,
+      link = url,
+      description = description,
+      lastBuildDate = datetime.now(),
+      items = [
+        PyRSS2Gen.RSSItem(
+          title = item['title'],
+          link = url + item['anchor'],
+          description = item['summary']
+        ) for item in sorted(file_index.values(), key=lambda k: int(k['last_updated']), reverse=True)
+      ]
+    )
+    rss.write_xml(open(rss_path, "w"))
+    print("Updated RSS feed for: ", title)
 
 
 
