@@ -240,7 +240,8 @@ def update_index(file_index_path, output_path, template_path):
     except FileNotFoundError:
       pass
     # Build the new index page
-    FILE_INDEX = get_file_index(file_index_path)
+    FILE_INDEX = sorted(get_file_index(file_index_path).values(), 
+      key=lambda k: int(k['last_updated']), reverse=True)
     render_HTML(output_path, template_path, FILE_INDEX)
     print('Updated Index: ' + output_path)
 
