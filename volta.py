@@ -281,7 +281,7 @@ def update_rss(file_index_path, title, url, description, rss_path):
       items = [
         PyRSS2Gen.RSSItem(
           title = item['title'],
-          link = url + item['anchor'],
+          link = url + '/' + item['anchor'],
           description = item['summary']
         ) for item in sorted(file_index.values(), key=lambda k: int(k['last_updated']), reverse=True)
       ]
