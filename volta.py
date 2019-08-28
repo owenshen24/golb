@@ -4,6 +4,7 @@ import sys
 import time
 import re
 import argparse
+import PyRSS2Gen
 from urllib.parse import quote
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
@@ -167,7 +168,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
 
         # Create HTML file
         render_HTML(html_path, template_path, data)
-        print("Updated: ", data['title'])
+        print("Updated Post: ", data['title'])
         
         # Rename file
         new_title = post_metadata['title'].replace(' ', '-')
@@ -180,6 +181,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
     try:
       os.remove(os.path.join(output_dir, (FILE_INDEX[k]['anchor'] + '.html')))
       updated_index = True
+      print("Removed: " + FILE_INDEX[k]['title'])
     except EnvironmentError:
       pass
   if updated_index:
@@ -240,7 +242,7 @@ def update_index(file_index_path, output_path, template_path):
     # Build the new index page
     FILE_INDEX = get_file_index(file_index_path)
     render_HTML(output_path, template_path, FILE_INDEX)
-    print('Updated: ' + output_path)
+    print('Updated Index: ' + output_path)
 
 
 
@@ -255,6 +257,9 @@ def update_contents():
     c =PATHS[k]
     if c["TYPE"] == "index":
       update_index(c["FILE_INDEX"], c["OUTPUT"], c["TEMPLATE"])
+      if "RSS" in c.keys():
+        rss = c["RSS"]
+        update_rss(c["FILE_INDEX"], rss["TITLE"], rss["URL"], rss["DESC"], rss["RSS_PATH"])
 
 
 
@@ -262,6 +267,26 @@ def update_time():
   CONFIG['LAST_UPDATED'] = time.time()
   with open(CONFIG_PATH, 'w') as infile:
       json.dump(CONFIG, infile, indent=4)
+
+
+
+def update_rss(file_index_path, title, url, description, rss_path):
+  file_index = get_file_index(file_index_path)
+  rss = PyRSS2Gen.RSS2(
+    title = title,
+    link = url,
+    description = description,
+    lastBuildDate = datetime.now(),
+    items = [
+      PyRSS2Gen.RSSItem(
+        title = item['title'],
+        link = url + item['anchor'],
+        description = item['summary']
+      ) for item in sorted(file_index.values(), key=lambda k: int(k['last_updated']), reverse=True)
+    ]
+  )
+  rss.write_xml(open(rss_path, "w"))
+  print("Updated RSS feed for: ", title)
 
 
 

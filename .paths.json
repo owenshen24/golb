@@ -28,12 +28,24 @@
     "FILE_INDEX": "metadata/POST_INDEX",
     "OUTPUT": "output/index.html",
     "TEMPLATE": "templates/index.html",
-    "TYPE": "index"
+    "TYPE": "index",
+    "RSS": {
+      "TITLE": "mindlevelup",
+      "URL": "https://mlu.red",
+      "DESC": "Musings on magic, minds, and meta-levels",
+      "RSS_PATH": "output/rss.xml"
+    }
   },
   "MUSE_INDEX": {
     "FILE_INDEX": "metadata/MUSE_INDEX",
     "OUTPUT": "output/muse/index.html",
     "TEMPLATE": "templates/muse_index.html",
-    "TYPE": "index"
+    "TYPE": "index",
+    "RSS": {
+      "TITLE": "Muse",
+      "URL": "https://mlu.red/muse",
+      "DESC": "Owen's short-form blog",
+      "RSS_PATH": "output/muse/rss.xml"
+    }
   }
 }
