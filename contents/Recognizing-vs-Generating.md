@@ -27,11 +27,11 @@ Now, consider a second student who has the same exam. After reading the textbook
 
 This is a Generating task.
 
-When people think about "studying for math", I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word "lazy", you wouldn't fault the first student as being lazy. Yet, there is a specific type of effort lacking from the first student's approach. Indeed, only the second student's approach is going to help when the test asks for proofs from scratch.
+When people think about "studying for math", I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word "lazy", you wouldn't fault the first student as being lazy. Yet, there is a specific type of effort lacking from the first student's approach. However, only the second student's approach is going to help when the test asks for proofs from scratch.
 
-But here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves into thinking we're putting in more effort than we really are. "After all," the tempting thought goes, "both reading the textbook and writing proofs count as 'studying', so why can't the easier one work?" Some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. 
+Here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves into thinking we're putting in more effort than we really are. "After all," the tempting thought goes, "both reading the textbook and writing proofs feel like they fit the definition 'studying', so why can't the easier one work?" The issue is that we're conflating the two definitions.
 
-Overall, this substitution is a clear-cut example of mixing up [concept space and action space](./concept-space-vs-action-space). We think that just because the tasks are conceptually similar, they must also have similar effects. But this intuitive notion of porting over similarities in other categorical domains is a flawed one. 
+Overall, this substitution is a clear-cut example of mixing up [concept space and action space](./concept-space-vs-action-space). We think that just because the tasks are conceptually similar, they must also have similar effects. Or, maybe we do know the difference but some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. Either way, this intuitive notion of porting over similarities in other categorical domains is a flawed one. 
 
 This is why math can end up being a difficult subject for many people. It’s all too easy to fool yourself that you understand what's going on when you’re just following along with the textbook. Cover up the steps, though, and try to solve the problem yourself, and things get a lot harder.
 

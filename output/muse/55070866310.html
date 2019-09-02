@@ -12,6 +12,23 @@
   <!-- Base stylings -->
   <link rel="stylesheet" href="/styles/base.css">
 
+  <!-- Analytics -->
+  <script async>
+    (function() {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      window.counter = 'https://mlu.goatcounter.com/count'
+      script.async = 1;
+      script.src = '//static.goatcounter.com/count.min.js';
+  
+      var ins = document.getElementsByTagName('script')[0];
+      ins.parentNode.insertBefore(script, ins)
+    })();
+  </script>
+
   <!-- Block for title, css, scripts, etc.-->
   
 <title>Ascetic Aesthetic</title>

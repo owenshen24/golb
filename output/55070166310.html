@@ -12,6 +12,23 @@
   <!-- Base stylings -->
   <link rel="stylesheet" href="/styles/base.css">
 
+  <!-- Analytics -->
+  <script async>
+    (function() {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      window.counter = 'https://mlu.goatcounter.com/count'
+      script.async = 1;
+      script.src = '//static.goatcounter.com/count.min.js';
+  
+      var ins = document.getElementsByTagName('script')[0];
+      ins.parentNode.insertBefore(script, ins)
+    })();
+  </script>
+
   <!-- Block for title, css, scripts, etc.-->
   
 <title>Recognizing vs Generating</title>
@@ -39,7 +56,7 @@
     <div class="container">
       
 <div class="post-title">Recognizing vs Generating</div>
-<div class="date">Last Updated: 2019-08-08 18:04</div>
+<div class="date">Last Updated: 2019-08-29 20:55</div>
 <div class="content"><p>In computer science, one of the biggest open questions concerns <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem">P vs NP</a>. This question asks whether or not problems that are quickly <em>verifiable</em> are also quickly <em>solvable</em>. For example, checking to see whether 7 and 17 are prime factors of 119 versus actually factoring 119. This dichotomy isn&#39;t just academic in nature; it also provides a good starting point for what I regard as the human analogue of this dichotomy--<strong>Recognizing</strong> vs <strong>Generating</strong>.</p>
 
 <p>In short, Recognizing tasks rely on your brain&#39;s ability to quickly recognize patterns. Generating tasks rely on your brain&#39;s ability to put pieces together. </p>
@@ -66,11 +83,11 @@
 
 <p>This is a Generating task.</p>
 
-<p>When people think about &quot;studying for math&quot;, I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word &quot;lazy&quot;, you wouldn&#39;t fault the first student as being lazy. Yet, there is a specific type of effort lacking from the first student&#39;s approach. Indeed, only the second student&#39;s approach is going to help when the test asks for proofs from scratch.</p>
+<p>When people think about &quot;studying for math&quot;, I think both the Recognizing and the Generating task can jump to mind as correct things to do. Indeed, for most conventional uses of the word &quot;lazy&quot;, you wouldn&#39;t fault the first student as being lazy. Yet, there is a specific type of effort lacking from the first student&#39;s approach. However, only the second student&#39;s approach is going to help when the test asks for proofs from scratch.</p>
 
-<p>But here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves into thinking we&#39;re putting in more effort than we really are. &quot;After all,&quot; the tempting thought goes, &quot;both reading the textbook and writing proofs count as &#39;studying&#39;, so why can&#39;t the easier one work?&quot; Some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. </p>
+<p>Here, as in many other Recognizing vs Generating dichotomies, it can be easy to trick ourselves into thinking we&#39;re putting in more effort than we really are. &quot;After all,&quot; the tempting thought goes, &quot;both reading the textbook and writing proofs feel like they fit the definition &#39;studying&#39;, so why can&#39;t the easier one work?&quot; The issue is that we&#39;re conflating the two definitions.</p>
 
-<p>Overall, this substitution is a clear-cut example of mixing up <a href="./concept-space-vs-action-space">concept space and action space</a>. We think that just because the tasks are conceptually similar, they must also have similar effects. But this intuitive notion of porting over similarities in other categorical domains is a flawed one. </p>
+<p>Overall, this substitution is a clear-cut example of mixing up <a href="./concept-space-vs-action-space">concept space and action space</a>. We think that just because the tasks are conceptually similar, they must also have similar effects. Or, maybe we do know the difference but some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. Either way, this intuitive notion of porting over similarities in other categorical domains is a flawed one. </p>
 
 <p>This is why math can end up being a difficult subject for many people. It’s all too easy to fool yourself that you understand what&#39;s going on when you’re just following along with the textbook. Cover up the steps, though, and try to solve the problem yourself, and things get a lot harder.</p>
 
