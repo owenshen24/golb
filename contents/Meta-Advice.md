@@ -12,3 +12,6 @@ title: Meta-Advice
 	1. Mental skills are procedural, not declarative
 	2. Sports, other skills
 	3. Operationalizing, avoiding conceptual pitfalls
+4. Q: What sort of advice does the above meta-advice select for/against?
+	1. For: Advice with actionable components, things that you can do.
+	2. Against: Advice that's about mindset changes, things about intuitions.

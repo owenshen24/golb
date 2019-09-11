@@ -5,7 +5,6 @@ import time
 import re
 import argparse
 import PyRSS2Gen
-from urllib.parse import quote
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
