@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script async>
+    (function() {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      window.counter = 'https://mlu.goatcounter.com/count'
+      script.async = 1;
+      script.src = '//static.goatcounter.com/count.min.js';
+  
+      var ins = document.getElementsByTagName('script')[0];
+      ins.parentNode.insertBefore(script, ins)
+    })();
+  </script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Unread Emails: A Biased Survey</title>
+<link rel="stylesheet" href="/styles/post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <div class="grid_spacer"></div>
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">Unread Emails: A Biased Survey</div>
+<div class="date">Last Updated: 2019-10-21 21:18</div>
+<div class="content"><p>So a while back, I&#39;ve noticed that my parents have lots of unread emails, somewhere in the thousands. A lot of them seemed to be spam or marketing emails. I also know of lots of people who seem to be very good at managing their inbox. For me personally, I have around 0-10 emails unread in my inbox, as I keep emails I want to respond to unread, or emails which represent to-dos.</p>
+
+<p>It seemed likely there was a bimodal distribution, with lots of people at 0-ish, and lots of people at infinity, or whatever the max email limit is. To figure this out, I ran a super informal survey on my Facebook friends, and I got 80 responses. I give the results below:</p>
+
+<p>(Note the data can be found <a href="/assets/unread_emails.csv">here</a>. If you want to add your data, you can take the survey <a href="https://forms.gle/KNpDpt54TvjEiPzX9">here</a>.)</p>
+
+<p>Here&#39;s a histogram which shows the general distribution:</p>
+
+<p><img src="/images/unread_emails_hist.png" alt="histogram of unread email values"></p>
+
+<p>It looks like most people are at most at the several hundreds, with a very long tail of people in the tens of thousands.</p>
+
+<p>Here&#39;s the same distribution, now log-scaled:</p>
+
+<p><img src="/images/unread_emails_hist_log.png" alt="histogram of unread emails, log scaled"></p>
+
+<p>I also asked for the participants&#39; ages. Most people were between 18 and 35. I&#39;ve plotted the them below in a scatteplot:</p>
+
+<p><img src="/images/unread_emails_scatter.png" alt="scatterplot of age and unread email count"></p>
+
+<p>Out of the 80 participants, 25 of them had 0 emails in their inbox. In general, I think my friends are much more productivity focused than the general crowd. I expect more people to have heard of things like inbox zero.</p>
+
+<p>Anyway, I don&#39;t expect to draw any grand conclusions from this all. Mostly just to sate my own curiosity.</p>
+</div>
+
+<hr class="comment-spacer">
+<div class="button-holder">
+  <button id="show-comment-button">Show Comments</button>
+</div>
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <div class="grid_spacer"></div>
+  </div>
+</body>
+
+</html>

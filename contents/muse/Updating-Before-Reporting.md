@@ -1,0 +1,9 @@
+title: Updating Before Reporting
+
+When people ask me questions, I sometimes think about how my response will be received. For example, if I have strong views on a subject, I might want to temper my views before giving them, so they are more palatable. Or, if someone asks me for an explanation, I might try to give something more simplistic, if I'm trying to bridge a big inferential gap. On the whole, I don't think there's anything conceptually wrong with this; you're just taking the receiver into account before passing your information.
+
+However, one thing I've been thinking about is in the context of polling, or when someone is taking a survey of many opinions. Here, it is to your surveyor's advantage for you to report as accurately as possible, without regard to how they will consider it. The idea being that, though your individual bias may color what you say, it still contributes usefully to the overall picture. In these situations, giving the strongest version of your opinion, or the most technical explanation can be good because they add variance to your surveyor's picture that "should" rightfully be there. If everyone tries to self-correct to something more vanilla, it'll lead to a more homogeneous view than what is real.
+
+The question, then, is to what extent normal interactions with people also serve as surveys for them. Probably a lot, as you draw on your experiences with people to inform what you know. Then, the question shifts to be about how other people aggregate opinions. Do they do it on a per-topic basis or a per-person basis?
+
+I thus think it's a good idea to be as extreme as you actually are, though there are cases I'm still conflicted about (e.g. when doing so raises more conflict).
