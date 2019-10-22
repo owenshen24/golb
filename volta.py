@@ -175,14 +175,16 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         os.rename(file_path, new_file_path)
 
   # Update FILE_INDEX
-  # Remove obsolete posts
   for k in NOT_IN_INDEX:
+    # Remove obsolete posts from output dir
     try:
       os.remove(os.path.join(output_dir, (FILE_INDEX[k]['anchor'] + '.html')))
       updated_index = True
       print("Removed: " + FILE_INDEX[k]['title'])
     except EnvironmentError:
       pass
+    # Remove obsolete posts from FILE_INDEX
+    FILE_INDEX.pop(k)
   if updated_index:
     with open(index_path, 'w') as outfile:
       json.dump(FILE_INDEX, outfile, indent=4)
