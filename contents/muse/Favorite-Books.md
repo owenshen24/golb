@@ -9,6 +9,7 @@ I expect to update this over time, as a reference for things I've really enjoyed
 3. Ultimate Rock Paper Scissors (manga)
 4. UNSONG
 5. Story of Your Life and Other Stories
+6. Worth The Candle
 
 ### Non-Fiction
 

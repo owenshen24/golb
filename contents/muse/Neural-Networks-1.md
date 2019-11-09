@@ -7,7 +7,7 @@ summary: Writing a neural net in Python, covers forward pass and backpropagation
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-This post will explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen's fantastic online book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html). [Victor Zhou also has a great tutorial in Python](https://victorzhou.com/series/neural-networks-from-scratch/). Why am I trying to do the same? Partially, it's for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. 
+This post will explain how to write a neural network in Python. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen's fantastic online book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html). [Victor Zhou also has a great tutorial in Python](https://victorzhou.com/series/neural-networks-from-scratch/). Why am I trying to do the same? Partially, it's for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. 
 
 Okay, so here's a typical picture of a neural network:
 
@@ -69,7 +69,7 @@ So far, I haven't explained how the neural net is supposed to actually work. Say
 
 This is because we randomly initialized our weights and biases. We don't want a random set of weights and biases, but a "good" set of weights and biases. And in doing so, we now need to define what we mean by "good". At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.
 
-This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between $Y$(true value) and $\hat{Y}$(predicted output). For ease of explanation, we'll go with $L_2$ norm of their difference, i.e. the sum of the squares of their differences. 
+This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between $Y$(true value) and $\hat{Y}$(predicted output). For ease of explanation, we'll go with the $L_2$ norm of their difference, i.e. the sum of the squares of their differences. 
 
 Now, after performing a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It's easy to add this change to our class:
 
@@ -111,7 +111,7 @@ Now that we have our loss function defined, we can begin the work of actually op
 
 # Backpropagation
 
-Recall that our network is parameterized by a set of weights and biases. (There's also the activation function, but that's more of a fixed thing we can't really fine-tune.) 
+Recall that our network is parameterized by a set of weights and biases. (There's also the activation function, but we're going to assume that's fixed.) 
 
 Backpropagation allows us to figure out how much each weight and bias is responsible for the loss function. We do this by taking partial derivatives of the loss function with respect to each weight matrix and bias vector. Given that a neural net is just a big composite function, we'll be using the Chain Rule a lot. This is where the recursive notation shines. It's much easier to have a placeholder like $f_3$ than a big clump of nested parentheses.
 

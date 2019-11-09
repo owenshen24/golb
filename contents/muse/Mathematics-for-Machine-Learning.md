@@ -1,21 +1,16 @@
 title: Mathematics for Machine Learning
-summary: Working through mml-book
+summary: Working through mml-book and Deep Learning.
 
 I need to brush up on my formal understanding as well as the intuitions behind the maths in machine learning. To that end, I'll be working through exercises in Mathematics for Machine Learning as well as summarizing chapters.
 
-# Linear Algebra
+# Assorted Notes:
 
-A vector space contains objects which are closed under addition and scalar multiplication.
+- Hessians and the 2nd degree Taylor expansion:
+  - Taylor's theorem tells us how we can approximate a differentiable function.
+  - More specifically, as the Hessian represents the matrix of second derivatives, we're typically talking about quadratic approximations.
+  - Specifically: $f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2$.
+  - Ah, furthermore, as the Hessian can be used in the 2nd derivative test, we know that if the Hessian is positive definite, then we're at a local minima.
 
-To start, we consider systems of linear equations. Cool. Then, matrices. Matrices can be:
 
-- added together
-- scalar multiplied
-- multiplied by other matrices (as long as row/column match up)
 
-Some other notes:
-
-* A symmetric matrix is one that is equal to its inverse.
-* How can we solve systems of linear equations?
-  * 
-
+- Hessians, diagonalization, and eigenvectors:

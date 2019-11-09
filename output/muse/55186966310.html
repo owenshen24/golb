@@ -56,7 +56,7 @@
     <div class="container">
       
 <div class="post-title">Neural Networks 1</div>
-<div class="date">Last Updated: 2019-08-18 10:21</div>
+<div class="date">Last Updated: 2019-11-09 13:28</div>
 <div class="content"><h1>Introduction</h1>
 
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
@@ -64,7 +64,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script></p>
 
-<p>This post will explain how to write a neural network in Python using numpy. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen&#39;s fantastic online book <a href="http://neuralnetworksanddeeplearning.com/chap2.html">Neural Networks and Deep Learning</a>. <a href="https://victorzhou.com/series/neural-networks-from-scratch/">Victor Zhou also has a great tutorial in Python</a>. Why am I trying to do the same? Partially, it&#39;s for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. </p>
+<p>This post will explain how to write a neural network in Python. I am obviously not the first person to do this. Almost all of the code is here adapted from Michael Nielsen&#39;s fantastic online book <a href="http://neuralnetworksanddeeplearning.com/chap2.html">Neural Networks and Deep Learning</a>. <a href="https://victorzhou.com/series/neural-networks-from-scratch/">Victor Zhou also has a great tutorial in Python</a>. Why am I trying to do the same? Partially, it&#39;s for my own benefit, cataloging my code so I can refer back to it later in a form more captivating than a mere docstring. Also partially, I think I can share a few intuitions which make the backpropagation equations a lot easier to derive. </p>
 
 <p>Okay, so here&#39;s a typical picture of a neural network:</p>
 
@@ -126,7 +126,7 @@ class NN():
 
 <p>This is because we randomly initialized our weights and biases. We don&#39;t want a random set of weights and biases, but a &quot;good&quot; set of weights and biases. And in doing so, we now need to define what we mean by &quot;good&quot;. At the very least, it seems that a good set of weights and biases should lead to predicted values which are close to the associated target values, for most of the data we have.</p>
 
-<p>This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between \(Y\)(true value) and \(\hat{Y}\)(predicted output). For ease of explanation, we&#39;ll go with \(L_2\) norm of their difference, i.e. the sum of the squares of their differences. </p>
+<p>This is where loss functions come in. They take in as input our predicted value and the true value and output a measure of just how far apart the two values are. There are many functions we could choose to measure the distance between \(Y\)(true value) and \(\hat{Y}\)(predicted output). For ease of explanation, we&#39;ll go with the \(L_2\) norm of their difference, i.e. the sum of the squares of their differences. </p>
 
 <p>Now, after performing a forward pass, we can use our loss function to tell us just how far away our predicted value is from the true value. It&#39;s easy to add this change to our class:</p>
 
@@ -167,7 +167,7 @@ class NN():
 
 <h1>Backpropagation</h1>
 
-<p>Recall that our network is parameterized by a set of weights and biases. (There&#39;s also the activation function, but that&#39;s more of a fixed thing we can&#39;t really fine-tune.) </p>
+<p>Recall that our network is parameterized by a set of weights and biases. (There&#39;s also the activation function, but we&#39;re going to assume that&#39;s fixed.) </p>
 
 <p>Backpropagation allows us to figure out how much each weight and bias is responsible for the loss function. We do this by taking partial derivatives of the loss function with respect to each weight matrix and bias vector. Given that a neural net is just a big composite function, we&#39;ll be using the Chain Rule a lot. This is where the recursive notation shines. It&#39;s much easier to have a placeholder like \(f_3\) than a big clump of nested parentheses.</p>
 

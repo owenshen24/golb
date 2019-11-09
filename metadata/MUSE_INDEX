@@ -83,9 +83,9 @@
         "title": "Favorite Books",
         "anchor": "55072266310",
         "summary": "I expect to update this over time, as a reference for things I've really enjoyed reading, that are vaguely book-shaped.\n\n### Fiction\n\n1. Harry Potter ...",
-        "word_count": 68,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
+        "word_count": 71,
+        "date": "2019-11-07 19:36",
+        "last_updated": 1573184202
     },
     "55071066310": {
         "title": "Black-box Explanations For Productivity Stuff",
@@ -299,9 +299,9 @@
         "title": "Neural Networks 1",
         "anchor": "55186966310",
         "summary": "Writing a neural net in Python, covers forward pass and backpropagation code and derivations.",
-        "word_count": 2311,
-        "date": "2019-08-18 10:21",
-        "last_updated": 1566148908
+        "word_count": 2306,
+        "date": "2019-11-09 13:28",
+        "last_updated": 1573334932
     },
     "55072066310": {
         "title": "Experience Is Compounding",
@@ -346,10 +346,10 @@
     "52459366310": {
         "title": "Mathematics for Machine Learning",
         "anchor": "52459366310",
-        "summary": "Working through mml-book",
-        "word_count": 103,
-        "date": "2019-10-19 18:52",
-        "last_updated": 1571536331
+        "summary": "Working through mml-book and Deep Learning.",
+        "word_count": 121,
+        "date": "2019-10-24 15:37",
+        "last_updated": 1571956631
     },
     "52513466310": {
         "title": "Unread Emails: A Biased Survey",
@@ -358,5 +358,13 @@
         "word_count": 314,
         "date": "2019-10-21 21:32",
         "last_updated": 1571718744
+    },
+    "52466866310": {
+        "title": "The Flip Side of Cynicism",
+        "anchor": "52466866310",
+        "summary": "I've noticed myself getting more and more critical lately. As in, when people say things or when I hear new ideas (or maybe ideas in general? or ideas...",
+        "word_count": 238,
+        "date": "2019-11-07 19:58",
+        "last_updated": 1573185495
     }
 }
