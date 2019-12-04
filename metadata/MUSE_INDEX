@@ -366,5 +366,37 @@
         "word_count": 238,
         "date": "2019-11-07 19:58",
         "last_updated": 1573185495
+    },
+    "52498466310": {
+        "title": "On Doing Stuff",
+        "anchor": "52498466310",
+        "summary": "It seems like affordances are really important when talking about my ability to get stuff one. One part of it is paying attention to what sorts of thi...",
+        "word_count": 188,
+        "date": "2019-11-16 17:14",
+        "last_updated": 1573953277
+    },
+    "52617866310": {
+        "title": "My Personal Views on Value",
+        "anchor": "52617866310",
+        "summary": "I was talking with RJ earlier, and I think I finally articulated what I think is a core feature of my philosophy. I value the production of work much ...",
+        "word_count": 196,
+        "date": "2019-11-22 00:47",
+        "last_updated": 1574412421
+    },
+    "52465066310": {
+        "title": "How to Weight Second Order Effects?",
+        "anchor": "52465066310",
+        "summary": "I've been feeling confused about how to weigh second order effects. This essay is an attempt to tease out when it makes sense to over or underweigh th...",
+        "word_count": 241,
+        "date": "2019-11-24 14:26",
+        "last_updated": 1574634418
+    },
+    "52885266310": {
+        "title": "Weighing Second Order Effects",
+        "anchor": "52885266310",
+        "summary": "I'm confused about how to order second order effects, compared to first order ones. Both of these are things that happen after you take an action. Fir...",
+        "word_count": 504,
+        "date": "2019-11-24 15:14",
+        "last_updated": 1574637291
     }
 }

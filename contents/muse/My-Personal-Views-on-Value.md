@@ -1,0 +1,5 @@
+title: My Personal Views on Value
+
+I was talking with RJ earlier, and I think I finally articulated what I think is a core feature of my philosophy. I value the production of work much higher than its certification. I think, here in college, a lot of people seem to care about things like getting internships at prestigious companies. Something about how the achievement says something good about your skills or worth. And, in response, I've often taken the arrogant stance of assuming that I'm better than them. 
+
+Not on the same terms, mind you, (because sometimes I didn't get offers from those prestigious companies), But by appealing to how I have things like a cool blog, or I'm good at making vector art, or something. Especially the cool blog bit ;-). Also, Z's been reading some Marx lately, wherein he (Marx, that is) writes about how production is good because it's the expression of one's self. And then it clicked. It turns out I value the production of stuff quite highly. It's important to me to always be creating stuff because that's what's valuable, and it's also important to be able to be the sort of person who can do stuff.
