@@ -49,7 +49,8 @@ body {
   margin: auto;
   width: 100%;
 }
-/* For tablets and above */
+
+/* For tablets and above
 @media only screen and (min-width: 700px) {
   .grid {
     display: grid;
@@ -59,12 +60,12 @@ body {
     width: 90%;
   }
 }
-/* For normal computer width */
+For normal computer width
 @media only screen and (min-width: 1200px) {
   .container {
     width: 80%;
   }
-}
+} */
 
 /* Title stylings */
 .title {

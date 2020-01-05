@@ -18,10 +18,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .logo {
-  height: 6rem;
+  height: 4rem;
   width: auto;
 }
 .logo-wrapper {
@@ -37,7 +37,7 @@
   cursor: pointer;
 
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   letter-spacing: 0.1rem;
 
   text-transform: uppercase;
@@ -55,11 +55,11 @@
 
 /* Body of the page */
 .post-link {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.65rem;
   padding: 0.5rem;
 }
 .post-title a {
-  font-size: 1.85rem;
+  font-size: 2.0rem;
   font-weight: bold;
   text-decoration: none;
   line-height: 2.0rem;
@@ -71,13 +71,13 @@
 }
 
 .post-summary {
-  font-size: 1.20rem;
+  font-size: 1.35rem;
   margin-top: -0.25rem;
   line-height: 1.3;
   color: rgb(50, 50, 50);
 }
 .word-count {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: rgb(80, 80, 80);
   font-weight: bold;
   padding-bottom: 0.5rem;
