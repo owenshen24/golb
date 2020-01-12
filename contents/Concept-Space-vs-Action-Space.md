@@ -44,9 +44,7 @@ The point I want to get across is that, when looking for a solution, one might c
 
 In other words, it's the considerations like "What led me, specifically in this case, to this situation?" rather than "If this is a temporal discounting situation, what do I do?" that lead to the most useful insights.
 
-Caveat: Thinking about the general concept *can* be useful as a springboard for what to do next. 
-
-For example, say you want to start flossing regularly and correctly recognize that you are trying to form a habit. Then, based on what you know about habit formation in general, you would know that you need a strong sensory trigger to start off the habit. From there, you can think about what items in your bathroom or daily routine could act as a good trigger.
+Caveat: Thinking about the general concept *can* be useful as a springboard for what to do next. For example, say you want to start flossing regularly and correctly recognize that you are trying to form a habit. Then, based on what you know about habit formation in general, you would know that you need a strong sensory trigger to start off the habit. From there, you can think about what items in your bathroom or daily routine could act as a good trigger.
 
 (And indeed, this is how some rationality techniques, like [TAPs](https://www.lesswrong.com/posts/v4nNuJBZWPkMkgQRb/making-intentions-concrete-trigger-action-planning),  are created.)
 

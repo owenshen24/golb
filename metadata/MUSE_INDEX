@@ -300,8 +300,8 @@
         "anchor": "55186966310",
         "summary": "Writing a neural net in Python, covers forward pass and backpropagation code and derivations.",
         "word_count": 2306,
-        "date": "2019-11-09 13:28",
-        "last_updated": 1573334932
+        "date": "2020-01-11 17:22",
+        "last_updated": 1578792123
     },
     "55072066310": {
         "title": "Experience Is Compounding",
@@ -414,5 +414,13 @@
         "word_count": 431,
         "date": "2019-12-11 23:16",
         "last_updated": 1576134967
+    },
+    "52491166310": {
+        "title": "Perceptron Convergence Proof",
+        "anchor": "52491166310",
+        "summary": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7...",
+        "word_count": 485,
+        "date": "2020-01-11 18:26",
+        "last_updated": 1578795965
     }
 }

@@ -1,6 +1,8 @@
 title: Fading Novelty
 summary: Fading novelty is when new things become old and dull after repetition. From foods to songs, we notice its presence. It also makes it harder for us to learn and practice certain skills.
 
+### Novelty As Human
+
 A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 
 I don't disagree, of course. It does seem obvious that there's something tantalizing about chasing after that which is new. Correspondingly, it's not just that we like chasing after things which are new. We stop chasing after things which are old. And, with time, *everything* becomes old. We find ourselves, despite our best efforts to change things, back in a similar state of mind. In response, people will often say that "the novelty has faded", hence the title of this post. 
@@ -25,6 +27,8 @@ From a survival standpoint, a bias towards newness is reasonable. Things in our 
 
 And we can't just pay attention to all the variables. Constantly taking note of everything in your environment is costly. Focusing on just what’s new is a way to optimize for our limited attention. From a natural selection standpoint, we can view it as a trait that's persisted so long because of its long-lasting usefulness. Yet, despite its beneficial roots, I think that fading novelty is also responsible for many of the difficulties we experience with self-improvement and learning.
 
+### Chasing Novelty Gone Awry
+
 First off, on the self-improvement side of things, I think fading novelty makes practicing rationality skills more difficult because it hampers habit creation and contributes to the illusion of understanding.
 
 Consider the process of creating a new habit:
@@ -41,9 +45,9 @@ Why might this be? I think that the initial excitement / effectiveness of switch
 
 Now, I don’t mean to necessarily knock this initial burst of excitement. I’m glad that humans have the ability to jump-start new projects, and switching to something novel seems to be one of the easiest motivation hacks we have at our disposal. However, I think that this decay over time from our initial excitement is often not factored in when people start new regimens. The mountain of abandoned resolutions (New Year's or otherwise) lies testament to his.
 
-This leads to an overall negative cycle where someone might try out a new rationality skill or productivity app, experience an initial surge of success, and then, after having become acclimated (whereupon excitement fades), give up too easily. This can lead someone to switch tactics constantly, never sticking with something long enough for it to become a habit. Taken to extremes, someone can become a "productivity junkie" where they’re compelled to seek out ever-more radical solutions simply because they’ve exhausted any potential excitement afforded by more “normal” or “obvious” interventions.
+This leads to an overall negative cycle where someone might try out a new rationality skill/app/regimen, experience an initial surge of success, and then, after having become acclimated (whereupon excitement fades), give up too easily. This can lead someone to switch tactics constantly, never sticking with something long enough for it to become a habit. Taken to extremes, someone can become a "productivity junkie" where they’re compelled to seek out ever-more radical solutions simply because they’ve exhausted any potential excitement afforded by more “normal” or “obvious” interventions.
 
-Where does learning fall into the picture? Cue someone reviewing a topic: 
+It also hampers learning. Cue someone reviewing a topic: 
 
 If someone reads the same textbook chapter over and over, the pages and words might start to look familiar. But this type of recognition, I claim, is not what we want. Here, fading novelty contributes to a sense of false understanding. In the same way that a song heard over and over becomes easy to recognize within a few bars, something analogous happens with concepts that we see over and over again. 
 
@@ -68,6 +72,8 @@ Here are some more examples where this dangerous substitution happens:
 3. Similarly, when reading a book, it's easier to check "Have I read these words already?" instead of "Did these words give me ideas I hadn't considered before?"
 
 Due to fading novelty, we interpret familiarity as recognition and make the fallacious leap towards equating this with comprehension. You can end up lulling yourself into a false sense of understanding, which in turn can hinder you from putting in more effort towards areas where you do in fact need improvement.
+
+### Zooming Out
 
 The aforementioned two areas, habit formation and learning, are both centered around the efforts of an individual and self-improvement. On a broader scale, too, I think similar issues manifest.
 

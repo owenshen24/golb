@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script async>
+    (function() {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      window.counter = 'https://mlu.goatcounter.com/count'
+      script.async = 1;
+      script.src = '//static.goatcounter.com/count.min.js';
+  
+      var ins = document.getElementsByTagName('script')[0];
+      ins.parentNode.insertBefore(script, ins)
+    })();
+  </script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Perceptron Convergence Proof</title>
+<link rel="stylesheet" href="/styles/post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <!-- <div class="grid_spacer"></div> -->
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">Perceptron Convergence Proof</div>
+<div class="date">Last Updated: 2020-01-11 18:26</div>
+<div class="content"><p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous"></p>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<p>Okay, so here&#39;s the setup for proving that the perceptron learning algorithm converges in the binary classification case. If this is new to you, the perceptron is a linear classifier as follows:</p>
+
+<ul>
+<li>\(\hat{y} =  \text{sign}(w \cdot x)\)
+
+<ul>
+<li>The perceptron is a linear combination of the input vector and outputs either \(-1\) or \(+1\).</li>
+</ul></li>
+<li>If \(\hat{y}_t \not = y_t\) then we update \(w_{k+1} = w_{k} + y_t(x_k)^T\)
+
+<ul>
+<li>It&#39;s an iterative algorithm, where the first misclassified input is added to our weight vector on iteration \(k+1\) and then we iterate again.</li>
+</ul></li>
+<li>\(w_1 = 0\)
+
+<ul>
+<li>We initialize the starting weight vector to the zero vector.</li>
+</ul></li>
+</ul>
+
+<p>For this proof, we&#39;ll assume a few things:</p>
+
+<ul>
+<li>There exists an optimal \(w = w^*\) such that for some \(\epsilon &gt; 0\), it&#39;s the case that \(y_i(w^* \cdot x_i) &gt; \epsilon\) for all inputs on the training set.
+
+<ul>
+<li>In other words, we assume that there is a margin of at least \(\epsilon\) and that a solution exists.</li>
+</ul></li>
+<li>\(||w^*|| = 1\)
+
+<ul>
+<li>This gives us a unique weight vector.</li>
+</ul></li>
+<li>For all \(x_1, x_2, ... \in X\), it&#39;s the case that \(||x_i|| \le R\).
+
+<ul>
+<li>We&#39;re upper bounding the norm of the data points in our training set.</li>
+</ul></li>
+</ul>
+
+<p>To start, we show that \(w_{k+1} \cdot (w^*)^T \ge k \epsilon \) with a proof by induction.</p>
+
+<p>Base case where \(k = 0\):
+\(w_{0+1}\cdot (w^*)^T =  0 \ge 0 \cdot \epsilon \)</p>
+
+<p>Inductive step where \(k \to k+1\):
+\(w_{k+1}\cdot (w^*)^T = (w^k + y_t(x_t)^T)\cdot (w^*)^T\) (WLOG, we assume that \(x_t\) is the first misclassified input)
+\(= w^k \cdot (w^*)^T + y_t (w^* \cdot x_t)\)
+\( \ge (k-1)\cdot \epsilon + \epsilon\) (Using the inductive hypothesis, and the definition of \(w^*\))
+\( \ge k \epsilon\) </p>
+
+<p>Next, we show that \(||w_{k+1}|| \ge k \epsilon​\)
+\(w_{k+1} \cdot w^* = ||w_{k+1}|| \times ||w^*|| \times \text{cos}(\theta)​\) where \(\theta​\) is the angle between \(w_{k+1}​\) and \(w^*​\)
+Because \(cos(\theta) \le 1​\), \(||w_{k+1}|| \times ||w^*|| \ge w_{k+1} \cdot (w^*)^T​\)
+​Thus \(||w_{k+1}|| \times ||w^*|| \ge k \epsilon​\)
+Finally because \(||w^*|| = 1​\) by definition, \(||w_{k+1}|| \ge k \epsilon​\)</p>
+
+<p>Now we notice that \(||w_{k+1}||^2 = ||w_{k} + y_t (x_t)^T||^2\)
+\(= ||w_k||^2 + 2y_t (w_k \cdot x_t) + ||x_k||^2\)
+\(\le ||w_k||^2 + ||x_k||^2\) because by definition \(\text{sign}(y_t(w_k \cdot x_t)) = -1\) as it is the first misclassified input, so \(2y_t(w_k \cdot x_t) &lt; 0\).
+\(\le ||w_k||^2 + R^2\) because by definition \(||x_i|| \le R\)</p>
+
+<p>Next we show that \(||w_{k+1}||^2 \le kR^2\) with a proof by induction.</p>
+
+<p>Base case where \(k = 0\)
+\(||w_{0+1}||^2 = 0 \le 0(R)\)</p>
+
+<p>Inductive step where \(k \to k+1\)</p>
+
+<p>By the above part, we know that \(||w_{k+1}||^2 \le ||w_k||^2 + R^2\).
+Now, by the inductive hypothesis, we see that \(||w_{k+1}|| \le (k-1)R^2 + R^2 = kR^2\).</p>
+
+<p>Thus, we have the full inequality:
+\(k^2 \epsilon^2 \le ||w_{k+1}||^2 \le kR^2\)</p>
+
+<p>And thus we can see that \(k \le \frac{R^2}{\epsilon^2}\), bounding the number of iterations we run our algorithm by the margin and the farthest point.</p>
+</div>
+
+<hr class="comment-spacer">
+<div class="button-holder">
+  <button id="show-comment-button">Show Comments</button>
+</div>
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <!-- <div class="grid_spacer"></div> -->
+  </div>
+</body>
+
+</html>
