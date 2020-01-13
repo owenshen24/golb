@@ -422,5 +422,21 @@
         "word_count": 485,
         "date": "2020-01-11 18:26",
         "last_updated": 1578795965
+    },
+    "52489366310": {
+        "title": "Push and Pull",
+        "anchor": "52489366310",
+        "summary": "Here's something that fits into a 2x2:\n\n|      | **Pull** | **Push** |\n| ---- | ---- | ---- |\n| **Internal** | Doing something because you like it. | ...",
+        "word_count": 82,
+        "date": "2020-01-13 15:29",
+        "last_updated": 1578958184
+    },
+    "52816666310": {
+        "title": "What Level of Abstraction Actually Generalizes?",
+        "anchor": "52816666310",
+        "summary": "In the vein of TDT, the [Sliding Window of Experience](https://mlu.red/muse/55073266310.html), and Being The Sort of Person You Want To Be, I think th...",
+        "word_count": 248,
+        "date": "2020-01-13 15:50",
+        "last_updated": 1578959428
     }
 }
