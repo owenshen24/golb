@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script async>
+    (function() {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      window.counter = 'https://mlu.goatcounter.com/count'
+      script.async = 1;
+      script.src = '//static.goatcounter.com/count.min.js';
+  
+      var ins = document.getElementsByTagName('script')[0];
+      ins.parentNode.insertBefore(script, ins)
+    })();
+  </script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Perceptron Musings</title>
+<link rel="stylesheet" href="/styles/post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <!-- <div class="grid_spacer"></div> -->
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">Perceptron Musings</div>
+<div class="date">Last Updated: 2020-01-18 18:00</div>
+<div class="content"><p>Thinking about why the Voted Perceptron works well. It works because if you have data that&#39;s generally linearly separable, then the weights which have survived the longest are a good proxy for the true value. Similarly, if you instead run each updated set of weights against the entire dataset, you can probably get a good indication for how well a set of weights is doing.</p>
+
+<p>But this seems sort of artificial, mainly because I just flipped a few points. It seems like a better version of this is to try it ona dataset with some actual inherent nonlinearity, e.g. some Gaussians or something like that.</p>
+
+<p>Otherwise, maybe some sort of ensemble method that uses a decision tree to decide which perceptron to apply...? That&#39;s a little extreme...</p>
+
+<p>Anyway, the other thing with the delta trick seems too complex, in that it could easily blow up your dimensionality...and I&#39;m still confused about what the curse of dimensionality is about...</p>
+
+<p>But anyhow, I think the next thing to do is to run the delta trick perceptron and see if it can classify all of the points correctly. That&#39;s of course good for reducing empirical risk, but it feels pretty brittle, especially if it&#39;s really just noise...but maybe it&#39;d be good for actually nonlinear datasets.</p>
+
+<p>Anyway, this is what I want to do:</p>
+
+<ol>
+<li>Implement the delta trick. See what it looks like.
+
+<ol>
+<li>See if it can classify everything correctly.</li>
+</ol></li>
+<li>Add Voted Perceptron visualization to the website.</li>
+</ol>
+</div>
+
+<hr class="comment-spacer">
+<div class="button-holder">
+  <button id="show-comment-button">Show Comments</button>
+</div>
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <!-- <div class="grid_spacer"></div> -->
+  </div>
+</body>
+
+</html>

@@ -7,7 +7,6 @@ import argparse
 import PyRSS2Gen
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
-from markdown2 import markdown
 from misaka import Markdown, HtmlRenderer
 
 

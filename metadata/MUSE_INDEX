@@ -420,8 +420,8 @@
         "anchor": "52491166310",
         "summary": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7...",
         "word_count": 485,
-        "date": "2020-01-11 18:26",
-        "last_updated": 1578795965
+        "date": "2020-01-14 14:19",
+        "last_updated": 1579040358
     },
     "52489366310": {
         "title": "Push and Pull",
@@ -438,5 +438,29 @@
         "word_count": 248,
         "date": "2020-01-13 15:50",
         "last_updated": 1578959428
+    },
+    "53159166310": {
+        "title": "Knowing Vs Building",
+        "anchor": "53159166310",
+        "summary": "When I have free time, I feel like I could go read something or go write something. Writing stuff is more effortful. Reading stuff is fun. There are t...",
+        "word_count": 29,
+        "date": "2020-01-18 18:39",
+        "last_updated": 1579401580
+    },
+    "52430766310": {
+        "title": "Perceptron Musings",
+        "anchor": "52430766310",
+        "summary": "Thinking about why the Voted Perceptron works well. It works because if you have data that's generally linearly separable, then the weights which have...",
+        "word_count": 241,
+        "date": "2020-01-18 18:00",
+        "last_updated": 1579399208
+    },
+    "53149866310": {
+        "title": "The Power of Small Numbers",
+        "anchor": "53149866310",
+        "summary": "I think that, as humans, we collectively underestimate how BIG a \"small\" number of things can feel. There's a few things here. One is that we ruminate...",
+        "word_count": 289,
+        "date": "2020-01-18 18:05",
+        "last_updated": 1579399557
     }
 }
