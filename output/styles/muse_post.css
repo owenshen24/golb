@@ -21,7 +21,7 @@ img {
 /* Post stylings */
 h1, h2, h3 {
   margin-bottom: -0.25rem;
-  color: #77080D;
+  color: rgb(71, 71, 71);
 }
 h1 {
   font-size: 2.0rem;
@@ -38,7 +38,7 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
   font-size: 2.75rem;
   font-weight: bold;
   line-height: 1.25;
-  color: rgb(170, 0, 22);
+  color: rgb(10, 10, 10);
   margin-bottom: 2.5rem;
 }
 .date {

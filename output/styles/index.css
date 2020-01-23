@@ -1,6 +1,6 @@
 /* Styling the width */
 .container {
-  max-width: 40rem;
+  max-width: 42rem;
 }
 
 /* Highlight stylings */
@@ -69,7 +69,6 @@
   color: rgb(65, 8, 11);
   text-decoration: underline;
 }
-
 .post-summary {
   font-size: 1.35rem;
   margin-top: -0.25rem;

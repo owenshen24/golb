@@ -7,7 +7,7 @@ A core aspect of human experience is our pursuit of novelty. We might find this 
 
 I don't disagree, of course. It does seem obvious that there's something tantalizing about chasing after that which is new. Correspondingly, it's not just that we like chasing after things which are new. We stop chasing after things which are old. And, with time, *everything* becomes old. We find ourselves, despite our best efforts to change things, back in a similar state of mind. In response, people will often say that "the novelty has faded", hence the title of this post. 
 
-Okay, but appealing to intuition isn't enough. For more concreteness, here are three everyday examples of fading novelty:
+That's the main intuition. For more concreteness, here are three more everyday examples of fading novelty:
 
 1. Songs which sounded so entrancing upon the first few listenings become dull after being put on repeat. Today's pop hits are unlikely to be next year's top hits, as we grow accustomed to the same tune. Seemingly as a result, there is always much excitement when a band is releasing new music.
 2. Foods which were so delicious during the first few tastings become bland after being eaten day after day. "No, we had sushi yesterday. Let's go somewhere different." Such a sentiment is commonplace; we plan around the fact that our palate becomes adjusted to the same food.

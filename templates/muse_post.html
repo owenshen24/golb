@@ -2,7 +2,7 @@
 
 {% block head %}
 <title>{{ data.title }}</title>
-<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
 <script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
 <script defer src="/scripts/remarkbox.js"></script>
 {% endblock head %}
@@ -19,8 +19,8 @@
 
 {% block content %}
 <div class="post-title">{{data.title}}</div>
-<div class="date">Last Updated: {{data.date}}</div>
 <div class="content">{{data.content}}</div>
+<div class="date">Last Updated: {{data.date}}</div>
 
 <hr class="comment-spacer">
 <div class="button-holder">
