@@ -1,5 +1,5 @@
 title: Meta-Advice
-summary: Several principles can improve how we take advice. Advocate for accepting the obvious, looking for practical applications, and an analogy of mental habits as skills are three way to get more mostmileage out of any advice you receive.
+summary: Several principles can improve how we take advice. Accepting the obvious, looking for practical applications, and viewing mental habits as procedural skills are three way to get more mostmileage out of any advice you receive.
 order: 5
 
 Advice has many desirable qualities. In [Recognizing vs Generating](https://mlu.red/55070166310.html), I talked about how advice should be focused on, not just telling people what to do, but giving them justification. Specifically, justification that would allow them to come up with object-level insights themselves. Similarly, in [Good Self-Help is Self-Defeating](https://mlu.red/55070266310.html), I talked about how advice should aim to move people to become self-reliant. Specifically, you want to avoid situations where people become dependent on you for advice, or you trade-off clarity for readership.
