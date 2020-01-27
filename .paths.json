@@ -29,6 +29,8 @@
     "OUTPUT": "output/index.html",
     "TEMPLATE": "templates/index.html",
     "TYPE": "index",
+    "SORT_KEY": "order",
+    "IS_REVERSED": "False",
     "RSS": {
       "TITLE": "mindlevelup",
       "URL": "https://mlu.red",

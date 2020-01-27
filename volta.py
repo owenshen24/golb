@@ -137,7 +137,8 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           'word_count': None,
           'date': datetime.fromtimestamp(
           file_update).strftime('%Y-%m-%d %H:%M'),
-          'last_updated': file_update
+          'last_updated': file_update,
+          'order': 0
         }
 
         # Add post attributes
@@ -155,7 +156,12 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           post_metadata['summary'] = parsed_metadata['summary']
         except KeyError:
           post_metadata['summary'] = post_body[0:CONFIG["MAX_SUMMARY_LENGTH"]] + '...'
-        
+
+        try:
+          post_metadata['order'] = parsed_metadata['order']
+        except KeyError:
+          pass
+
         post_metadata['word_count'] = len(post_body.split(' '))
         
         # Add to FILE_INDEX (either overwriting or adding a new entry)
@@ -168,7 +174,8 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         render_HTML(html_path, template_path, data)
         print("Updated Post: ", data['title'])
         
-        # Rename file
+        # Rename markdown file to be the same as the post title
+        # TODO: maybe change this behavior?
         new_title = post_metadata['title'].replace(' ', '-')
         new_file_path = os.path.join(input_dir, (new_title + '.md'))
         os.rename(file_path, new_file_path)
@@ -212,26 +219,24 @@ def need_to_update_index(index_path):
 
 
 def update(input_path, output_path, template_path, index_path):
+  parse_all = False
   # Check if template has been updated
   if need_to_update_template(template_path):
     print(template_path + ' has been updated since last run. Updating all files in ' + input_path)
     for post in os.listdir(output_path):
         file_path = os.path.join(output_path, post)
-        
         # Skip subdirectories and index:
         if os.path.isdir(file_path):
           continue
         if post != 'index.html':
           os.remove(file_path)
     parse_all = True
-  else:
-    parse_all = False
   # Rebuild either all posts or some posts
   parse_posts(input_path, output_path, template_path, index_path, parse_all=parse_all)
 
 
 
-def update_index(file_index_path, output_path, template_path):
+def update_index(file_index_path, output_path, template_path, sort_key, is_reversed):
   # Check if index template has been updated or we added new posts
   if need_to_update_template(template_path) or need_to_update_index(file_index_path):
     # Remove old index
@@ -240,16 +245,18 @@ def update_index(file_index_path, output_path, template_path):
     except FileNotFoundError:
       pass
     # Build the new index page
+    # Sort by sort_key, which can be update date or order, or whatever
     FILE_INDEX = sorted(get_file_index(file_index_path).values(), 
-      key=lambda k: int(k['last_updated']), reverse=True)
+      key=lambda k: int(k[sort_key]), reverse=is_reversed)
     render_HTML(output_path, template_path, FILE_INDEX)
     print('Updated Index: ' + output_path)
 
 
 
 def update_contents():
-  # Do all post-types first because they'll update their corresponding
-  # FILE_INDEX files before updating the indexes
+  # Update posts first, and then index
+  # This is because they'll update their corresponding FILE_INDEX metadata files,
+  # which the index files use
   for k in PATHS.keys():
     c = PATHS[k]
     if c["TYPE"] == "post":
@@ -257,7 +264,20 @@ def update_contents():
   for k in PATHS.keys():
     c =PATHS[k]
     if c["TYPE"] == "index":
-      update_index(c["FILE_INDEX"], c["OUTPUT"], c["TEMPLATE"])
+      
+      # Get custom sort values
+      sort_key = 'last_updated'
+      is_reversed = True
+      try:
+        sort_key = c["SORT_KEY"]  
+      except KeyError:
+        pass
+      try:
+        is_reversed = c["IS_REVERSED"] == "True"
+      except KeyError:
+        pass
+
+      update_index(c["FILE_INDEX"], c["OUTPUT"], c["TEMPLATE"], sort_key, is_reversed)
       if "RSS" in c.keys():
         rss = c["RSS"]
         update_rss(c["FILE_INDEX"], rss["TITLE"], rss["URL"], rss["DESC"], rss["RSS_PATH"])

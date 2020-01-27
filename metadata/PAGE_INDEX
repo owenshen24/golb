@@ -5,6 +5,7 @@
         "summary": "mindlevelup is a blog about human rationality. I'm interested in understanding how we make decisions, investigating meta-questions about our reasoning...",
         "word_count": 65,
         "date": "2019-08-27 18:24",
-        "last_updated": 1566955466
+        "last_updated": 1566955466,
+        "order": 0
     }
 }

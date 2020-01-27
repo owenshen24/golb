@@ -1,11 +1,21 @@
 {
+    "52466866310": {
+        "title": "The Flip Side of Cynicism",
+        "anchor": "52466866310",
+        "summary": "I've noticed myself getting more and more critical lately. As in, when people say things or when I hear new ideas (or maybe ideas in general? or ideas...",
+        "word_count": 238,
+        "date": "2019-11-07 19:58",
+        "last_updated": 1573185495,
+        "order": 0
+    },
     "55073366310": {
         "title": "Speediness 1",
         "anchor": "55073366310",
         "summary": "It's now my second year of college. I suppose that Muse works more as a place for me to be far more casual about what's been up with my life. I'm not ...",
         "word_count": 222,
         "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
+        "last_updated": 1565312660,
+        "order": 0
     },
     "55072366310": {
         "title": "I Think I'm Feeling Less Scared of Apocalypses Now",
@@ -13,7 +23,8 @@
         "summary": "A few years ago, I was viscerally scared by the thought of the world ending. It felt a lot closer than it does now. Also, since a few years ago, I've ...",
         "word_count": 154,
         "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
+        "last_updated": 1565312660,
+        "order": 0
     },
     "55073566310": {
         "title": "Stockholm Syndrome and Cargo Cults",
@@ -21,7 +32,8 @@
         "summary": "Two concepts:\n\nStockholm Syndrome:\n\n- A bunch of classes / requirements are probably only perpetuated because of Stockholm-Syndrome-esque reasons, whe...",
         "word_count": 149,
         "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
+        "last_updated": 1565312660,
+        "order": 0
     },
     "55073466310": {
         "title": "Stat Check 19-05-21",
@@ -29,319 +41,8 @@
         "summary": "It's been a while now, but I've found that I really enjoy writing my dates in terms of year, month, day. This is like how numbers work, with the most ...",
         "word_count": 166,
         "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071666310": {
-        "title": "Controlling vs Controlled Attention",
-        "anchor": "55071666310",
-        "summary": "I often think about activities we can engage in as one of two types: activities in which we're directing our attention and activities where our attent...",
-        "word_count": 344,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073966310": {
-        "title": "What Makes A Skinner Box?",
-        "anchor": "55073966310",
-        "summary": "One common theme that I return to, time and time again, is that of addictiveness. More specifically, what makes something habit-forming in a bad way? ...",
-        "word_count": 448,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073666310": {
-        "title": "The Surprising Effectiveness of Doing Literally Anything",
-        "anchor": "55073666310",
-        "summary": "So I've been using Todoist as my to-do list of choice for over a year now. This feels pretty good and great. I don't think it's the optimal to-do list...",
-        "word_count": 166,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071466310": {
-        "title": "Caring About Literally Anything",
-        "anchor": "55071466310",
-        "summary": "I have this gut feeling that games should have some degree of *depth* to them. There should be lots of options, menus, customization, and variety. Whe...",
-        "word_count": 323,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55070566310": {
-        "title": "A Stickler For Rules",
-        "anchor": "55070566310",
-        "summary": "Here's something that feels like another instance of the deontologist vs consequentialist abstraction, except that the particulars of the situation ar...",
-        "word_count": 262,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073066310": {
-        "title": "Reward Loops",
-        "anchor": "55073066310",
-        "summary": "Sometimes, when I'm on Facebook, I'll get a notification. I'll click on it, and then someone has sent me a message. I'll respond to the message, and t...",
-        "word_count": 210,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55072266310": {
-        "title": "Favorite Books",
-        "anchor": "55072266310",
-        "summary": "I expect to update this over time, as a reference for things I've really enjoyed reading, that are vaguely book-shaped.\n\n### Fiction\n\n1. Harry Potter ...",
-        "word_count": 71,
-        "date": "2019-11-07 19:36",
-        "last_updated": 1573184202
-    },
-    "55071066310": {
-        "title": "Black-box Explanations For Productivity Stuff",
-        "anchor": "55071066310",
-        "summary": "You know how sometimes you're staring at a problem or a math proof, and you know that you *could* find the solution? But maybe you don't go all the wa...",
-        "word_count": 89,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55072466310": {
-        "title": "Happiness and Meaningness",
-        "anchor": "55072466310",
-        "summary": "I used to think that happiness was pretty important. Now, though, it looks like I didn't do a good job of figuring out exactly what 'happiness' was ab...",
-        "word_count": 381,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55074166310": {
-        "title": "Where Did The Excitement Go?",
-        "anchor": "55074166310",
-        "summary": "So it's been a while since my last blog post. It still feels weird writing all of my insecurities out into this weird internet void. But I figure it's...",
-        "word_count": 256,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071566310": {
-        "title": "Consuming vs Creating",
-        "anchor": "55071566310",
-        "summary": "This is similar to my previous post on Consumers and Creators. Except this time, instead of thinking about roles that people play, I'm thinking about ...",
-        "word_count": 124,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073766310": {
-        "title": "Titles are Evil",
-        "anchor": "55073766310",
-        "summary": "[Malcolm Ocean gets it](https://malcolmocean.com/2016/02/sparkly-pink-purple-ball-thing/). There's a terrible thing that happens when you try to encap...",
-        "word_count": 99,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "54961866310": {
-        "title": "Thoughts on Recovering",
-        "anchor": "54961866310",
-        "summary": "### Knowing Isn't Enough \n\nSay that you have a problem, and you know that you're doomed to fail.\n\n1. Knowing that you have a problem isn't enough.\n2. ...",
-        "word_count": 371,
-        "date": "2019-08-22 23:29",
-        "last_updated": 1566541741
-    },
-    "55072766310": {
-        "title": "Morning Page",
-        "anchor": "55072766310",
-        "summary": "Mornings Pages were this thing I used to do. I feel like my mornings have been significantly out of whack, so I'd like to get more into a habit of doi...",
-        "word_count": 476,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55072666310": {
-        "title": "Important Stuff in Romance",
-        "anchor": "55072666310",
-        "summary": "Everyone kinda knows that some mixture of love and affection doesn't cut it in relationships. I've been reading Attached on attachment theory. (Yes, I...",
-        "word_count": 97,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55070666310": {
-        "title": "Acceptance, Analogies, and Asymmetries",
-        "anchor": "55070666310",
-        "summary": "Three concepts that I seem to be using a lot lately are acceptance, analogies, and asymmetries. They feel like important building blocks that I use fo...",
-        "word_count": 211,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071766310": {
-        "title": "Corporate Ruins Everything",
-        "anchor": "55071766310",
-        "summary": "I'm currently at Microsoft. We're really big on growth mindset. It feels fake when corporate people try to espouse it. It also feels fake when we try ...",
-        "word_count": 197,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073166310": {
-        "title": "Self-Discovery vs Self-Modification",
-        "anchor": "55073166310",
-        "summary": "In [Normative vs Descriptive Confusions](https://mindlevelup.wordpress.com/2018/08/31/normative-vs-descriptive-confusions/) I touch upon a key distinc...",
-        "word_count": 575,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55074366310": {
-        "title": "Writing Journals",
-        "anchor": "55074366310",
-        "summary": "It's been a while since I have written in my journal. This is quite odd, actually, as I have previously written in journals daily for 4-ish years. So ...",
-        "word_count": 96,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55074266310": {
-        "title": "Why Does Self-Help Work?",
-        "anchor": "55074266310",
-        "summary": "One thing I've been thinking about is why self-help works at all. In conjunction with the blog right below this one, why *is it* the case that doing a...",
-        "word_count": 218,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55070766310": {
-        "title": "Anticipated Fear in Mental Explorations",
-        "anchor": "55070766310",
-        "summary": "There's this weird thing that's been happening lately where I generally feel okay, and I'm noting that my state of mind is \"y'know, pretty good\". And ...",
-        "word_count": 166,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55070966310": {
-        "title": "Attention vs Effort",
-        "anchor": "55070966310",
-        "summary": "I think I missed the memo on this, but apparently 2x2 squares have been the sexy thing to do when talking about concepts for a while now, re: Ribbonfa...",
-        "word_count": 222,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071366310": {
-        "title": "Calibrating With Cards",
-        "anchor": "55071366310",
-        "summary": "In this post, I'll try to bring together two things I enjoy: rationality and magic. Like [Hazard](https://www.lesswrong.com/posts/ctBCPaD3yYimEHXPu/ma...",
-        "word_count": 729,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55070866310": {
-        "title": "Ascetic Aesthetic",
-        "anchor": "55070866310",
-        "summary": "I have a Mood or a Feel that I care a lot about. It's a little like minimalism. It's a little like praising deprivation. It's a little like mindfulnes...",
-        "word_count": 271,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071966310": {
-        "title": "Critiquing Schoolwork",
-        "anchor": "55071966310",
-        "summary": "I'm taking some classes this quarter, and they are all sort of okay. What I'm annoyed by is how much better the assignments and lectures could be. Bei...",
-        "word_count": 358,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55072166310": {
-        "title": "Famous People I Don't Know",
-        "anchor": "55072166310",
-        "summary": "There are lots of famous people in the world, and I don't know most of them. That's a little weird for me to think about. By \"famous\", there are two d...",
-        "word_count": 442,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071266310": {
-        "title": "Building Up Constantly",
-        "anchor": "55071266310",
-        "summary": "It's a little weird. I haven't been really doing lots of rationality stuff or introspection. And I think this correlates with enjoying life a lot less...",
-        "word_count": 212,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073866310": {
-        "title": "Waning Attention",
-        "anchor": "55073866310",
-        "summary": "I've been worried lately at my ability to do work and to focus and do work. Not Deep Work in the Cal Newport sense, of putting in several hours, mind ...",
-        "word_count": 459,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55074066310": {
-        "title": "What Sources Inform Your Friends?",
-        "anchor": "55074066310",
-        "summary": "(A lot of ink has been shed on the topic of how to rationally update your beliefs with respect to other sources. I don't mean for this little essay to...",
-        "word_count": 454,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55072866310": {
-        "title": "Working on MLU 2.0",
-        "anchor": "55072866310",
-        "summary": "So I finally got around to updating my site. It's been my goal for a while ot have a nice place where I can port over all of my blog posts, and I'm ex...",
-        "word_count": 385,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55073266310": {
-        "title": "Sliding Windows of Experience",
-        "anchor": "55073266310",
-        "summary": "Maybe because it's one of the algorithms that's been showing up lately, but I've been thinking about sliding windows as an analogy. Specifically, as a...",
-        "word_count": 189,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071166310": {
-        "title": "Blogging Redux",
-        "anchor": "55071166310",
-        "summary": "Hey, yo, so I'm back to writing stuff for now. Or, sort of. I mentioned that I'd be taking a break for about three to four months. And now I'm back. I...",
-        "word_count": 373,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55071866310": {
-        "title": "Creators vs Consumers",
-        "anchor": "55071866310",
-        "summary": "It feels like there's been a push towards getting people to start creating their own content. Platforms like YouTube + the Internet make it a lot easi...",
-        "word_count": 292,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "55186966310": {
-        "title": "Neural Networks 1",
-        "anchor": "55186966310",
-        "summary": "Writing a neural net in Python, covers forward pass and backpropagation code and derivations.",
-        "word_count": 2306,
-        "date": "2020-01-11 17:22",
-        "last_updated": 1578792123
-    },
-    "55072066310": {
-        "title": "Experience Is Compounding",
-        "anchor": "55072066310",
-        "summary": "I've been on a real not-learning kick lately. By that, I mean a long stretch of not feeling like I've changed much as a person. See also [Learning fro...",
-        "word_count": 396,
-        "date": "2019-08-08 18:04",
-        "last_updated": 1565312660
-    },
-    "54984966310": {
-        "title": "What Makes Good Exercises?",
-        "anchor": "54984966310",
-        "summary": "Ben Pace has a new post up on LessWrong that's asking about good exercises for rationality / general LW-adjacent stuff. I think this is a good thing t...",
-        "word_count": 360,
-        "date": "2019-09-07 21:44",
-        "last_updated": 1567917860
-    },
-    "54985766310": {
-        "title": "Do What You Really Want",
-        "anchor": "54985766310",
-        "summary": "I think that if I were to go back in time and give my freshman college self some good advice, it'd be \"work on what you really want\". I am still inter...",
-        "word_count": 275,
-        "date": "2019-09-11 00:02",
-        "last_updated": 1568185361
-    },
-    "55035766310": {
-        "title": "More on Pedagogy",
-        "anchor": "55035766310",
-        "summary": "I think I've been jumping the gun too quickly when it comes to \"helping people figure things out\". To reiterate: it's much better to have people figur...",
-        "word_count": 166,
-        "date": "2019-09-20 22:25",
-        "last_updated": 1569043527
-    },
-    "52444766310": {
-        "title": "Updating Before Reporting",
-        "anchor": "52444766310",
-        "summary": "When people ask me questions, I sometimes think about how my response will be received. For example, if I have strong views on a subject, I might want...",
-        "word_count": 290,
-        "date": "2019-10-08 23:15",
-        "last_updated": 1570601730
+        "last_updated": 1565312660,
+        "order": 0
     },
     "52459366310": {
         "title": "Mathematics for Machine Learning",
@@ -349,39 +50,17 @@
         "summary": "Working through mml-book and Deep Learning.",
         "word_count": 121,
         "date": "2019-10-24 15:37",
-        "last_updated": 1571956631
+        "last_updated": 1571956631,
+        "order": 0
     },
-    "52513466310": {
-        "title": "Unread Emails: A Biased Survey",
-        "anchor": "52513466310",
-        "summary": "I ask my Facebook friends how many unread emails they have.",
-        "word_count": 314,
-        "date": "2019-10-21 21:32",
-        "last_updated": 1571718744
-    },
-    "52466866310": {
-        "title": "The Flip Side of Cynicism",
-        "anchor": "52466866310",
-        "summary": "I've noticed myself getting more and more critical lately. As in, when people say things or when I hear new ideas (or maybe ideas in general? or ideas...",
-        "word_count": 238,
-        "date": "2019-11-07 19:58",
-        "last_updated": 1573185495
-    },
-    "52498466310": {
-        "title": "On Doing Stuff",
-        "anchor": "52498466310",
-        "summary": "It seems like affordances are really important when talking about my ability to get stuff one. One part of it is paying attention to what sorts of thi...",
-        "word_count": 188,
-        "date": "2019-11-16 17:14",
-        "last_updated": 1573953277
-    },
-    "52617866310": {
-        "title": "My Personal Views on Value",
-        "anchor": "52617866310",
-        "summary": "I was talking with RJ earlier, and I think I finally articulated what I think is a core feature of my philosophy. I value the production of work much ...",
-        "word_count": 196,
-        "date": "2019-11-22 00:47",
-        "last_updated": 1574412421
+    "55071666310": {
+        "title": "Controlling vs Controlled Attention",
+        "anchor": "55071666310",
+        "summary": "I often think about activities we can engage in as one of two types: activities in which we're directing our attention and activities where our attent...",
+        "word_count": 344,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
     },
     "52465066310": {
         "title": "How to Weight Second Order Effects?",
@@ -389,23 +68,8 @@
         "summary": "I've been feeling confused about how to weigh second order effects. This essay is an attempt to tease out when it makes sense to over or underweigh th...",
         "word_count": 241,
         "date": "2019-11-24 14:26",
-        "last_updated": 1574634418
-    },
-    "52885266310": {
-        "title": "Weighing Second Order Effects",
-        "anchor": "52885266310",
-        "summary": "I'm confused about how to order second order effects, compared to first order ones. Both of these are things that happen after you take an action. Fir...",
-        "word_count": 504,
-        "date": "2019-11-24 15:14",
-        "last_updated": 1574637291
-    },
-    "52433766310": {
-        "title": "Aw Snap, Here We Go Again",
-        "anchor": "52433766310",
-        "summary": "Oh snap, now I'm 21 years old. That's pretty scary; humans just keep getting older. I think I've basically sucked quite a bit at life these past two y...",
-        "word_count": 1041,
-        "date": "2019-12-11 23:34",
-        "last_updated": 1576136093
+        "last_updated": 1574634418,
+        "order": 0
     },
     "53110266310": {
         "title": "On Effort",
@@ -413,55 +77,35 @@
         "summary": "I used to better at just doing the thing I needed to do. Lately, I've been needing to resort to effort. I don't think this is the optimal ontology. Id...",
         "word_count": 431,
         "date": "2019-12-11 23:16",
-        "last_updated": 1576134967
+        "last_updated": 1576134967,
+        "order": 0
     },
-    "52491166310": {
-        "title": "Perceptron Convergence Proof",
-        "anchor": "52491166310",
-        "summary": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7...",
-        "word_count": 485,
-        "date": "2020-01-14 14:19",
-        "last_updated": 1579040358
+    "55073966310": {
+        "title": "What Makes A Skinner Box?",
+        "anchor": "55073966310",
+        "summary": "One common theme that I return to, time and time again, is that of addictiveness. More specifically, what makes something habit-forming in a bad way? ...",
+        "word_count": 448,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
     },
-    "52489366310": {
-        "title": "Push and Pull",
-        "anchor": "52489366310",
-        "summary": "Here's something that fits into a 2x2:\n\n|      | **Pull** | **Push** |\n| ---- | ---- | ---- |\n| **Internal** | Doing something because you like it. | ...",
-        "word_count": 82,
-        "date": "2020-01-13 15:29",
-        "last_updated": 1578958184
+    "55073666310": {
+        "title": "The Surprising Effectiveness of Doing Literally Anything",
+        "anchor": "55073666310",
+        "summary": "So I've been using Todoist as my to-do list of choice for over a year now. This feels pretty good and great. I don't think it's the optimal to-do list...",
+        "word_count": 166,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
     },
-    "52816666310": {
-        "title": "What Level of Abstraction Actually Generalizes?",
-        "anchor": "52816666310",
-        "summary": "In the vein of TDT, the [Sliding Window of Experience](https://mlu.red/muse/55073266310.html), and Being The Sort of Person You Want To Be, I think th...",
-        "word_count": 248,
-        "date": "2020-01-13 15:50",
-        "last_updated": 1578959428
-    },
-    "53159166310": {
-        "title": "Knowing Vs Building",
-        "anchor": "53159166310",
-        "summary": "When I have free time, I feel like I could go read something or go write something. Writing stuff is more effortful. Reading stuff is fun. There are t...",
-        "word_count": 29,
-        "date": "2020-01-18 18:39",
-        "last_updated": 1579401580
-    },
-    "52430766310": {
-        "title": "Perceptron Musings",
-        "anchor": "52430766310",
-        "summary": "Thinking about why the Voted Perceptron works well. It works because if you have data that's generally linearly separable, then the weights which have...",
-        "word_count": 241,
-        "date": "2020-01-18 18:00",
-        "last_updated": 1579399208
-    },
-    "53149866310": {
-        "title": "The Power of Small Numbers",
-        "anchor": "53149866310",
-        "summary": "I think that, as humans, we collectively underestimate how BIG a \"small\" number of things can feel. There's a few things here. One is that we ruminate...",
-        "word_count": 289,
-        "date": "2020-01-18 18:05",
-        "last_updated": 1579399557
+    "55071466310": {
+        "title": "Caring About Literally Anything",
+        "anchor": "55071466310",
+        "summary": "I have this gut feeling that games should have some degree of *depth* to them. There should be lots of options, menus, customization, and variety. Whe...",
+        "word_count": 323,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
     },
     "52464966310": {
         "title": "Stuff I Wish I Were Doing",
@@ -469,6 +113,421 @@
         "summary": "1. Stop going on Reddit.\n2. Stop playing games.\n3. Journal more regularly.\n4. Do back exercises every day.\n5. Spend 1 hour thinking every day.\n6. Spen...",
         "word_count": 78,
         "date": "2020-01-22 21:16",
-        "last_updated": 1579756613
+        "last_updated": 1579756613,
+        "order": 0
+    },
+    "55070566310": {
+        "title": "A Stickler For Rules",
+        "anchor": "55070566310",
+        "summary": "Here's something that feels like another instance of the deontologist vs consequentialist abstraction, except that the particulars of the situation ar...",
+        "word_count": 262,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52885266310": {
+        "title": "Weighing Second Order Effects",
+        "anchor": "52885266310",
+        "summary": "I'm confused about how to order second order effects, compared to first order ones. Both of these are things that happen after you take an action. Fir...",
+        "word_count": 504,
+        "date": "2019-11-24 15:14",
+        "last_updated": 1574637291,
+        "order": 0
+    },
+    "55073066310": {
+        "title": "Reward Loops",
+        "anchor": "55073066310",
+        "summary": "Sometimes, when I'm on Facebook, I'll get a notification. I'll click on it, and then someone has sent me a message. I'll respond to the message, and t...",
+        "word_count": 210,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55072266310": {
+        "title": "Favorite Books",
+        "anchor": "55072266310",
+        "summary": "I expect to update this over time, as a reference for things I've really enjoyed reading, that are vaguely book-shaped.\n\n### Fiction\n\n1. Harry Potter ...",
+        "word_count": 71,
+        "date": "2019-11-07 19:36",
+        "last_updated": 1573184202,
+        "order": 0
+    },
+    "55071066310": {
+        "title": "Black-box Explanations For Productivity Stuff",
+        "anchor": "55071066310",
+        "summary": "You know how sometimes you're staring at a problem or a math proof, and you know that you *could* find the solution? But maybe you don't go all the wa...",
+        "word_count": 89,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55072466310": {
+        "title": "Happiness and Meaningness",
+        "anchor": "55072466310",
+        "summary": "I used to think that happiness was pretty important. Now, though, it looks like I didn't do a good job of figuring out exactly what 'happiness' was ab...",
+        "word_count": 381,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55074166310": {
+        "title": "Where Did The Excitement Go?",
+        "anchor": "55074166310",
+        "summary": "So it's been a while since my last blog post. It still feels weird writing all of my insecurities out into this weird internet void. But I figure it's...",
+        "word_count": 256,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55071566310": {
+        "title": "Consuming vs Creating",
+        "anchor": "55071566310",
+        "summary": "This is similar to my previous post on Consumers and Creators. Except this time, instead of thinking about roles that people play, I'm thinking about ...",
+        "word_count": 124,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55073766310": {
+        "title": "Titles are Evil",
+        "anchor": "55073766310",
+        "summary": "[Malcolm Ocean gets it](https://malcolmocean.com/2016/02/sparkly-pink-purple-ball-thing/). There's a terrible thing that happens when you try to encap...",
+        "word_count": 99,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "54961866310": {
+        "title": "Thoughts on Recovering",
+        "anchor": "54961866310",
+        "summary": "### Knowing Isn't Enough \n\nSay that you have a problem, and you know that you're doomed to fail.\n\n1. Knowing that you have a problem isn't enough.\n2. ...",
+        "word_count": 371,
+        "date": "2019-08-22 23:29",
+        "last_updated": 1566541741,
+        "order": 0
+    },
+    "55072766310": {
+        "title": "Morning Page",
+        "anchor": "55072766310",
+        "summary": "Mornings Pages were this thing I used to do. I feel like my mornings have been significantly out of whack, so I'd like to get more into a habit of doi...",
+        "word_count": 476,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "53159166310": {
+        "title": "Knowing Vs Building",
+        "anchor": "53159166310",
+        "summary": "When I have free time, I feel like I could go read something or go write something. Writing stuff is more effortful. Reading stuff is fun. There are t...",
+        "word_count": 29,
+        "date": "2020-01-18 18:39",
+        "last_updated": 1579401580,
+        "order": 0
+    },
+    "55072666310": {
+        "title": "Important Stuff in Romance",
+        "anchor": "55072666310",
+        "summary": "Everyone kinda knows that some mixture of love and affection doesn't cut it in relationships. I've been reading Attached on attachment theory. (Yes, I...",
+        "word_count": 97,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55070666310": {
+        "title": "Acceptance, Analogies, and Asymmetries",
+        "anchor": "55070666310",
+        "summary": "Three concepts that I seem to be using a lot lately are acceptance, analogies, and asymmetries. They feel like important building blocks that I use fo...",
+        "word_count": 211,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52444766310": {
+        "title": "Updating Before Reporting",
+        "anchor": "52444766310",
+        "summary": "When people ask me questions, I sometimes think about how my response will be received. For example, if I have strong views on a subject, I might want...",
+        "word_count": 290,
+        "date": "2019-10-08 23:15",
+        "last_updated": 1570601730,
+        "order": 0
+    },
+    "55071766310": {
+        "title": "Corporate Ruins Everything",
+        "anchor": "55071766310",
+        "summary": "I'm currently at Microsoft. We're really big on growth mindset. It feels fake when corporate people try to espouse it. It also feels fake when we try ...",
+        "word_count": 197,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52489366310": {
+        "title": "Push and Pull",
+        "anchor": "52489366310",
+        "summary": "Here's something that fits into a 2x2:\n\n|      | **Pull** | **Push** |\n| ---- | ---- | ---- |\n| **Internal** | Doing something because you like it. | ...",
+        "word_count": 82,
+        "date": "2020-01-13 15:29",
+        "last_updated": 1578958184,
+        "order": 0
+    },
+    "55073166310": {
+        "title": "Self-Discovery vs Self-Modification",
+        "anchor": "55073166310",
+        "summary": "In [Normative vs Descriptive Confusions](https://mindlevelup.wordpress.com/2018/08/31/normative-vs-descriptive-confusions/) I touch upon a key distinc...",
+        "word_count": 575,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52430766310": {
+        "title": "Perceptron Musings",
+        "anchor": "52430766310",
+        "summary": "Thinking about why the Voted Perceptron works well. It works because if you have data that's generally linearly separable, then the weights which have...",
+        "word_count": 241,
+        "date": "2020-01-18 18:00",
+        "last_updated": 1579399208,
+        "order": 0
+    },
+    "55074366310": {
+        "title": "Writing Journals",
+        "anchor": "55074366310",
+        "summary": "It's been a while since I have written in my journal. This is quite odd, actually, as I have previously written in journals daily for 4-ish years. So ...",
+        "word_count": 96,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55074266310": {
+        "title": "Why Does Self-Help Work?",
+        "anchor": "55074266310",
+        "summary": "One thing I've been thinking about is why self-help works at all. In conjunction with the blog right below this one, why *is it* the case that doing a...",
+        "word_count": 218,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52513466310": {
+        "title": "Unread Emails: A Biased Survey",
+        "anchor": "52513466310",
+        "summary": "I ask my Facebook friends how many unread emails they have.",
+        "word_count": 314,
+        "date": "2019-10-21 21:32",
+        "last_updated": 1571718744,
+        "order": 0
+    },
+    "55070766310": {
+        "title": "Anticipated Fear in Mental Explorations",
+        "anchor": "55070766310",
+        "summary": "There's this weird thing that's been happening lately where I generally feel okay, and I'm noting that my state of mind is \"y'know, pretty good\". And ...",
+        "word_count": 166,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55070966310": {
+        "title": "Attention vs Effort",
+        "anchor": "55070966310",
+        "summary": "I think I missed the memo on this, but apparently 2x2 squares have been the sexy thing to do when talking about concepts for a while now, re: Ribbonfa...",
+        "word_count": 222,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55071366310": {
+        "title": "Calibrating With Cards",
+        "anchor": "55071366310",
+        "summary": "In this post, I'll try to bring together two things I enjoy: rationality and magic. Like [Hazard](https://www.lesswrong.com/posts/ctBCPaD3yYimEHXPu/ma...",
+        "word_count": 729,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55070866310": {
+        "title": "Ascetic Aesthetic",
+        "anchor": "55070866310",
+        "summary": "I have a Mood or a Feel that I care a lot about. It's a little like minimalism. It's a little like praising deprivation. It's a little like mindfulnes...",
+        "word_count": 271,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55071966310": {
+        "title": "Critiquing Schoolwork",
+        "anchor": "55071966310",
+        "summary": "I'm taking some classes this quarter, and they are all sort of okay. What I'm annoyed by is how much better the assignments and lectures could be. Bei...",
+        "word_count": 358,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52433766310": {
+        "title": "Aw Snap, Here We Go Again",
+        "anchor": "52433766310",
+        "summary": "Oh snap, now I'm 21 years old. That's pretty scary; humans just keep getting older. I think I've basically sucked quite a bit at life these past two y...",
+        "word_count": 1041,
+        "date": "2019-12-11 23:34",
+        "last_updated": 1576136093,
+        "order": 0
+    },
+    "55072166310": {
+        "title": "Famous People I Don't Know",
+        "anchor": "55072166310",
+        "summary": "There are lots of famous people in the world, and I don't know most of them. That's a little weird for me to think about. By \"famous\", there are two d...",
+        "word_count": 442,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52617866310": {
+        "title": "My Personal Views on Value",
+        "anchor": "52617866310",
+        "summary": "I was talking with RJ earlier, and I think I finally articulated what I think is a core feature of my philosophy. I value the production of work much ...",
+        "word_count": 196,
+        "date": "2019-11-22 00:47",
+        "last_updated": 1574412421,
+        "order": 0
+    },
+    "55035766310": {
+        "title": "More on Pedagogy",
+        "anchor": "55035766310",
+        "summary": "I think I've been jumping the gun too quickly when it comes to \"helping people figure things out\". To reiterate: it's much better to have people figur...",
+        "word_count": 166,
+        "date": "2019-09-20 22:25",
+        "last_updated": 1569043527,
+        "order": 0
+    },
+    "55071266310": {
+        "title": "Building Up Constantly",
+        "anchor": "55071266310",
+        "summary": "It's a little weird. I haven't been really doing lots of rationality stuff or introspection. And I think this correlates with enjoying life a lot less...",
+        "word_count": 212,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "53149866310": {
+        "title": "The Power of Small Numbers",
+        "anchor": "53149866310",
+        "summary": "I think that, as humans, we collectively underestimate how BIG a \"small\" number of things can feel. There's a few things here. One is that we ruminate...",
+        "word_count": 289,
+        "date": "2020-01-18 18:05",
+        "last_updated": 1579399557,
+        "order": 0
+    },
+    "52498466310": {
+        "title": "On Doing Stuff",
+        "anchor": "52498466310",
+        "summary": "It seems like affordances are really important when talking about my ability to get stuff one. One part of it is paying attention to what sorts of thi...",
+        "word_count": 188,
+        "date": "2019-11-16 17:14",
+        "last_updated": 1573953277,
+        "order": 0
+    },
+    "54985766310": {
+        "title": "Do What You Really Want",
+        "anchor": "54985766310",
+        "summary": "I think that if I were to go back in time and give my freshman college self some good advice, it'd be \"work on what you really want\". I am still inter...",
+        "word_count": 275,
+        "date": "2019-09-11 00:02",
+        "last_updated": 1568185361,
+        "order": 0
+    },
+    "52816666310": {
+        "title": "What Level of Abstraction Actually Generalizes?",
+        "anchor": "52816666310",
+        "summary": "In the vein of TDT, the [Sliding Window of Experience](https://mlu.red/muse/55073266310.html), and Being The Sort of Person You Want To Be, I think th...",
+        "word_count": 248,
+        "date": "2020-01-13 15:50",
+        "last_updated": 1578959428,
+        "order": 0
+    },
+    "55073866310": {
+        "title": "Waning Attention",
+        "anchor": "55073866310",
+        "summary": "I've been worried lately at my ability to do work and to focus and do work. Not Deep Work in the Cal Newport sense, of putting in several hours, mind ...",
+        "word_count": 459,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55074066310": {
+        "title": "What Sources Inform Your Friends?",
+        "anchor": "55074066310",
+        "summary": "(A lot of ink has been shed on the topic of how to rationally update your beliefs with respect to other sources. I don't mean for this little essay to...",
+        "word_count": 454,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55072866310": {
+        "title": "Working on MLU 2.0",
+        "anchor": "55072866310",
+        "summary": "So I finally got around to updating my site. It's been my goal for a while ot have a nice place where I can port over all of my blog posts, and I'm ex...",
+        "word_count": 385,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55073266310": {
+        "title": "Sliding Windows of Experience",
+        "anchor": "55073266310",
+        "summary": "Maybe because it's one of the algorithms that's been showing up lately, but I've been thinking about sliding windows as an analogy. Specifically, as a...",
+        "word_count": 189,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "52491166310": {
+        "title": "Perceptron Convergence Proof",
+        "anchor": "52491166310",
+        "summary": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7...",
+        "word_count": 485,
+        "date": "2020-01-14 14:19",
+        "last_updated": 1579040358,
+        "order": 0
+    },
+    "55071166310": {
+        "title": "Blogging Redux",
+        "anchor": "55071166310",
+        "summary": "Hey, yo, so I'm back to writing stuff for now. Or, sort of. I mentioned that I'd be taking a break for about three to four months. And now I'm back. I...",
+        "word_count": 373,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "54984966310": {
+        "title": "What Makes Good Exercises?",
+        "anchor": "54984966310",
+        "summary": "Ben Pace has a new post up on LessWrong that's asking about good exercises for rationality / general LW-adjacent stuff. I think this is a good thing t...",
+        "word_count": 360,
+        "date": "2019-09-07 21:44",
+        "last_updated": 1567917860,
+        "order": 0
+    },
+    "55071866310": {
+        "title": "Creators vs Consumers",
+        "anchor": "55071866310",
+        "summary": "It feels like there's been a push towards getting people to start creating their own content. Platforms like YouTube + the Internet make it a lot easi...",
+        "word_count": 292,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
+    },
+    "55186966310": {
+        "title": "Neural Networks 1",
+        "anchor": "55186966310",
+        "summary": "Writing a neural net in Python, covers forward pass and backpropagation code and derivations.",
+        "word_count": 2306,
+        "date": "2020-01-11 17:22",
+        "last_updated": 1578792123,
+        "order": 0
+    },
+    "55072066310": {
+        "title": "Experience Is Compounding",
+        "anchor": "55072066310",
+        "summary": "I've been on a real not-learning kick lately. By that, I mean a long stretch of not feeling like I've changed much as a person. See also [Learning fro...",
+        "word_count": 396,
+        "date": "2019-08-08 18:04",
+        "last_updated": 1565312660,
+        "order": 0
     }
 }

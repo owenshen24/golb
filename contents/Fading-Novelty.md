@@ -1,9 +1,10 @@
 title: Fading Novelty
-summary: Fading novelty is when new things become old and dull after repetition. From foods to songs, we notice its presence. It also makes it harder for us to learn and practice certain skills.
+summary: Fading novelty is the fading of excitement as we become accustomed to things. This phenomenon is upstream of issues like mistaking familiarity with comprehension, and the dulling of our attention.
+order: 1
 
 ### Novelty As Human
 
-A core aspect of human experience is our pursuit of novelty. We might find this so obvious as to assume *a priori*. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
+A core aspect of human experience is our pursuit of novelty. This may already be obvious to you. "Of course we look for newness!" you might say, "Why, that's a big part of being human!"
 
 I don't disagree, of course. It does seem obvious that there's something tantalizing about chasing after that which is new. Correspondingly, it's not just that we like chasing after things which are new. We stop chasing after things which are old. And, with time, *everything* becomes old. We find ourselves, despite our best efforts to change things, back in a similar state of mind. In response, people will often say that "the novelty has faded", hence the title of this post. 
 
