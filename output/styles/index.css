@@ -59,7 +59,7 @@
   padding: 0.5rem;
 }
 .post-title a {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
   line-height: 2.0rem;
@@ -70,7 +70,7 @@
   text-decoration: underline;
 }
 .post-summary {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   margin-top: -0.25rem;
   line-height: 1.3;
   color: rgb(50, 50, 50);
