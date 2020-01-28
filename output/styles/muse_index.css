@@ -92,6 +92,11 @@
   background-color: black;
   text-decoration: underline;
 }
+.last-updated {
+  color: rgb(80, 80, 80);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
 
 .post-summary {
   font-size: 1.20rem;

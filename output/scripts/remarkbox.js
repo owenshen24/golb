@@ -16,15 +16,13 @@ function create_remarkbox_iframe() {
   document.getElementById("remarkbox-div").appendChild(ifrm);
 }
 
-document.getElementById("show-comment-button").addEventListener("click", function() {
-  create_remarkbox_iframe();
-  iFrameResize(
-    {
-      checkOrigin: ["https://my.remarkbox.com"],
-      inPageLinks: true,
-      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
-    },
-    document.getElementById("remarkbox-iframe")
-  );
-  this.style.display = 'none';
-});
+create_remarkbox_iframe();
+
+iFrameResize(
+  {
+    checkOrigin: ["https://my.remarkbox.com"],
+    inPageLinks: true,
+    initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+  },
+  document.getElementById("remarkbox-iframe")
+);
