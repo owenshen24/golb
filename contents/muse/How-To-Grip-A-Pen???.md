@@ -16,7 +16,7 @@ After a recent bout of writing-intensive finals, however, I realized that this w
 
 This has the benefit of not straining any of my fingers. After directing my attention to favoring this type grip over the course of a month, I actually now default to it, which is pretty nice. 
 
-As someone who previously spent a lot of time drawing, though, the lack of control afforded to me by the new grip is unfortunate, but it allows me to loosen up more when writing, which I think is a good thing. Here's an in-between grip I tried, which is a lot like my original tight one, except that I ended up just...not using my index finger at all. Here, my thumb and my second finger are tightly gripping the pen, which gives me a lot of my original control back:
+As someone who previously spent a lot of time drawing, though, the lack of control afforded to me by the new grip is unfortunate, but it allows me to loosen up more when writing, which I think is a good thing. Here's a wacky in-between grip I tried, which is a lot like my original tight one, except that I ended up just...not using my index finger at all. Here, my thumb and my second finger are tightly gripping the pen, which gives me a lot of my original control back:
 
 ![wacky looking grip](../images/handwrite-3.jpg)
 
@@ -37,6 +37,6 @@ And as for my original overly bent index finger? People notice! Papers like [thi
 
 But they don't really speculate on what this might cause, instead saying:
 
-> Although  these  variations  have  been  seen  in  the  normal  popula-tion  of seven to  14 year  olds, it has not been  determined if they  affect  the  speed orlegibility of writing.
+> Although  these  variations  have  been  seen  in  the  normal  population  of seven to  14 year  olds, it has not been  determined if they  affect  the  speed or legibility of writing.
 
 Of course, the literature on this is pretty substantial, although a cursory look at Google Scholar suggests that big chunk of it seems to have been done in the 80s-90s. (Which makes sense as typing was probably more emphasized the closer we got to the present.) So there could be more to look into about what the One True Grip looks like. But, for my own purposes, I'm satisfied with my new grip(s), and this was a deeper dive than I expected. I think my main anecdotal takeaway is that holding the pen lightly helps a lot, as does not hyperextending the distal interphalangeal joint (what a great phrase!)
