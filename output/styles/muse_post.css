@@ -81,6 +81,11 @@ code {
   background-color: #eee;
 }
 
+blockquote {
+  font-style: italic;
+  color: #3b3b3b;
+}
+
 /* For phone width */
 @media only screen and (max-width: 768px) {
   .post-title {
@@ -91,7 +96,7 @@ code {
     font-size: 0.8rem;
   }
   .content {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
   }
   h1, h2, h3 {
     font-size: 1.3rem;
