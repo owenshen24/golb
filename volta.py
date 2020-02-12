@@ -116,7 +116,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
     # If we have to parse everything, or the file is an updated one
     if (parse_all or file_update > CONFIG["LAST_UPDATED"]):
       updated_index = True
-
+    
       # Remove the old HTML file if it exists:
       try:
         os.remove(os.path.join(output_dir, FILE_INDEX[post_id]['anchor']))
@@ -261,6 +261,8 @@ def update_contents():
     c = PATHS[k]
     if c["TYPE"] == "post":
       update(c["CONTENTS"], c["OUTPUT"], c["TEMPLATE"], c["FILE_INDEX"])
+  
+  # update index call
   for k in PATHS.keys():
     c =PATHS[k]
     if c["TYPE"] == "index":

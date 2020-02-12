@@ -26,15 +26,6 @@
         "last_updated": 1580081860,
         "order": "4"
     },
-    "55070166310": {
-        "title": "Recognizing vs Generating",
-        "anchor": "55070166310",
-        "summary": "Two core ways to categorize tasks are Recognizing and Generating. Though they may seem initially similar, they differ in the effort involved. This dichotomy helps explain which ways of solving a problem are effective, and which ones are just paying lip service.",
-        "word_count": 1987,
-        "date": "2020-01-26 15:36",
-        "last_updated": 1580081785,
-        "order": "2"
-    },
     "55228366310": {
         "title": "Meta-Advice",
         "anchor": "55228366310",
@@ -43,5 +34,14 @@
         "date": "2020-01-26 16:22",
         "last_updated": 1580084538,
         "order": "5"
+    },
+    "55070166310": {
+        "title": "Recognizing vs Generating",
+        "anchor": "55070166310",
+        "summary": "Two core ways to categorize tasks are Recognizing and Generating. Though they may seem initially similar, they differ in the effort involved. This dichotomy helps explain which ways of solving a problem are effective, and which ones are just paying lip service.",
+        "word_count": 1987,
+        "date": "2020-01-26 15:36",
+        "last_updated": 1580081785,
+        "order": "2"
     }
 }
