@@ -547,5 +547,14 @@
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
         "order": 0
+    },
+    "53347466310": {
+        "title": "Pokemon with GANs",
+        "anchor": "53347466310",
+        "summary": "Something I've seen other people do, which seemed cool was using GANs to create Pokemon sprites. I decided to give this a go today. I pulled up the bo...",
+        "word_count": 112,
+        "date": "2020-02-14 20:38",
+        "last_updated": 1581741505,
+        "order": 0
     }
 }
