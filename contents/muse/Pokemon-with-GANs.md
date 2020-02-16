@@ -2,6 +2,16 @@ title: Pokemon with GANs
 
 Something I've seen other people do, which seemed cool was using GANs to create Pokemon sprites. I decided to give this a go today. I pulled up the boilerplate code on PyTorch, and within an hour (and a few tweaks), I got these fun results:
 
+<div style="text-align: center">
+    <video width="400" height="400" controls="controls">
+      <source src="../images/pokegan-transition.mp4" type="video/mp4" />
+    </video>
+</div>
+
+What start out as blobs eventually turn into…something more. 
+
+Here you can see the training vs fakes side by side:
+
 ![full images of pokegan sprites](../images/fakemon2.png)
 
 The real images are to the left, and the generated images are to the right. If you kinda squint, they do sorta look like Pokemon…eldritch horror-esque, nightmarish Pokemon…but Pokemon nonetheless. Maybe.
