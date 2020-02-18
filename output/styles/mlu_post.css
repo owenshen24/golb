@@ -1,9 +1,9 @@
 /* Blog specific colors */
 h1, h2, h3 {
-  color: rgb(71, 71, 71);
+  color: rgb(170, 0, 22);
 }
 .post-title {
-  color: rgb(10, 10, 10);
+  color: #77080D;
 }
 ol {
   background-color: #fdf4f4;

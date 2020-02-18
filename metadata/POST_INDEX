@@ -43,5 +43,14 @@
         "date": "2020-01-26 15:36",
         "last_updated": 1580081785,
         "order": "2"
+    },
+    "52499466310": {
+        "title": "The Gradualism Manifesto",
+        "anchor": "52499466310",
+        "summary": "WIP essay",
+        "word_count": 278,
+        "date": "2020-02-16 20:41",
+        "last_updated": 1581914488,
+        "order": 0
     }
 }

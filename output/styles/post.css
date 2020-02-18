@@ -21,7 +21,6 @@ img {
 /* Post stylings */
 h1, h2, h3 {
   margin-bottom: -0.25rem;
-  color: rgb(170, 0, 22);
 }
 h1 {
   font-size: 2.0rem;
@@ -38,7 +37,6 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #77080D;
   margin-top: -1.35rem;
 }
 .date {
@@ -56,7 +54,6 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
   display: inline-block;
 }
 ol {
-  background-color: #fdf4f4;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -79,6 +76,11 @@ li > p {
 /* Code formatting */
 code {
   background-color: #eee;
+}
+
+blockquote {
+  font-style: italic;
+  color: #3b3b3b;
 }
 
 /* For phone width */
