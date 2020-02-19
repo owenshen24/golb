@@ -46,6 +46,7 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) {
 
 .logo-holder {
   text-align: center;
+  padding-bottom: 0.75rem;
 }
 .logo {
   width: 4rem;
