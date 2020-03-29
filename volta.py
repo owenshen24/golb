@@ -98,6 +98,8 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
   FILE_INDEX = get_file_index(index_path)
   updated_index = False
   NOT_IN_INDEX = set([s for s in FILE_INDEX.keys()])
+ 
+  # Iterate through all posts
   for post in os.listdir(input_dir):
     file_path = os.path.join(input_dir, post)
     file_update = int(os.path.getmtime(file_path))
@@ -128,7 +130,8 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
         p = f.read()
         parsed_metadata, post_body = extract_text(p)
         r = HtmlRenderer()
-        md = Markdown(r, extensions=('fenced-code','math', 'math-explicit'))
+        md = Markdown(r, extensions=('fenced-code','math', 
+        'footnotes', 'math-explicit'))
         parsed_file = md(post_body)
         post_metadata = {
           'title': '',
