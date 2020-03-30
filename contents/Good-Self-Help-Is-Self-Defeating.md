@@ -64,11 +64,11 @@ The incentive structure for self-help is set up in such a way that the tradition
 
 What, then, to do? I think there are a few obvious moves.
 
-1. Don't join in burning the commons
-    Given that the above tactics are bad for readers, my immediate recommendation is to **not do it**. I don't think we're deep enough in a race to the bottom such that failing to compete will mean game over. There's room, at least right now, for people who write articles intended for intentional consumption. I think that if you consistently put out high quality stuff while respecting the reader, people will come. Maybe not a lot of people, but those who do will likely enjoy what they see. Plus, the marginal readers who come because of clickbaity tactics also seem least likely to be the ones who'll benefit from your content. (There's a question about scale when you start looking at the Really Big Name self-help people, and I'm not sure what the right analysis is there. But for most people, the above probably applies.)
+1. **Don't join in burning the commons:**
+    Given that the above tactics are bad for readers, my immediate recommendation is to *not do it*. I don't think we're deep enough in a race to the bottom such that failing to compete will mean game over. There's room, at least right now, for people who write articles intended for intentional consumption. I think that if you consistently put out high quality stuff while respecting the reader, people will come. Maybe not a lot of people, but those who do will likely enjoy what they see. Plus, the marginal readers who come because of clickbaity tactics also seem least likely to be the ones who'll benefit from your content. (There's a question about scale when you start looking at the Really Big Name self-help people, and I'm not sure what the right analysis is there. But for most people, the above probably applies.)
 
-2. Create a network of cooperators
+2. **Create a network of cooperators:**
     If you know who's also not burning the commons, you can signal boost them. Having a [blogroll](https://thezvi.wordpress.com/2017/04/23/help-us-find-your-blog-and-others/) is an easy way to link to others who have content you endorse. It's not fancy, but it gets the job done. It also potentially encourages the creation of better content. If it becomes known that you share Actually Good Content, this incentivizes more people to follow suit. 
 
-3. Spread the memes, not the source
+3. **Spread the memes, not the source:**
     You might also find it plausible that as long as people learn through *some* method, ways to improve their productivity, this is good. It doesn't necessarily have to be you. If you don't care about the status sub-games (and this is hard because we often do), then you can probably do some more good by either telling your insights to the Really Big Name people so they share it, or by selling your advice to friends as One Weird Trick, instead of some packaged productivity product.

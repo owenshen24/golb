@@ -21,5 +21,4 @@ summary: WIP essay
       4. tracking the progress
       5. knowing when to scale up
          1. is scaling up necessarily implied?
-3. What are 
 
