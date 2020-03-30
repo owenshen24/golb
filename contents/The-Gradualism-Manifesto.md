@@ -1,5 +1,6 @@
 title: The Gradualism Manifesto
 summary: WIP essay
+order: 6
 
 1. There's a general principle of taking things slow/reducing, which is interesting:
    1. Comes up in habit formation, where it takes a good amount of time for things to be made habits.
