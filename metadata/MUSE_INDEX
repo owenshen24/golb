@@ -602,13 +602,13 @@
         "last_updated": 1585509979,
         "order": 0
     },
-    "53537566310": {
+    "53406466310": {
         "title": "DuckDuckGo vs Google",
-        "anchor": "53537566310",
+        "anchor": "53406466310",
         "summary": "Sometimes people on Hacker News talk about how Google results are still better than those provided by DDG. They usually don't have any data to back it...",
-        "word_count": 139,
-        "date": "2020-03-30 13:16",
-        "last_updated": 1585599366,
+        "word_count": 178,
+        "date": "2020-03-30 18:25",
+        "last_updated": 1585617904,
         "order": 0
     }
 }
