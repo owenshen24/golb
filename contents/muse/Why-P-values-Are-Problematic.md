@@ -6,7 +6,7 @@ summary: As advertised.
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
-*(Notes: This content is adapted from [What's Wrong With Statistical Tests– And Where We Go From Here](docs/whats-wrong-kline.pdf) by Rex B Kline and [The Earth Is Round (p < .05)](docs/earth-round-cohen.pdf) by Jacob Cohen, from MSED 296C taught by [David Quarfoot](http://www.math.ucsd.edu/~dquarfoot/) at UCSD.)*
+*(Notes: This content is adapted from [What's Wrong With Statistical Tests– And Where We Go From Here](/docs/whats-wrong-kline.pdf) by Rex B Kline and [The Earth Is Round (p < .05)](/docs/earth-round-cohen.pdf) by Jacob Cohen, from MSED 296C taught by [David Quarfoot](http://www.math.ucsd.edu/~dquarfoot/) at UCSD.)*
 
 <hr>
 
