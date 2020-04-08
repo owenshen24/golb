@@ -16,7 +16,7 @@ $$p < 0.05$$
 
 Jokes aside, many words have already been spilled about how evil stasticians can p-hack their way to a statistically significant result. (See, for example, the [interactive demo on 538](https://projects.fivethirtyeight.com/p-hacking/), or this [lengthy takedown](https://putanumonit.com/2016/04/17/022-power_skeptic/) of power posing by Jacob Falkovich). What I want to focus on in this essay is how the p-value can be misleading, even when everything is being honest. There are several tempting misconceptions about p-values, as well as several issues with null hypothesis significance testing as a whole, which I think are less noticeable, but just as problematic.
 
-### 1. p-values DON'T tell us how likely hypotheses are
+### p-values are about data, not hypotheses
 
 Whenever we run a study, ideally, we'd like to use the data we get to inform our decision about which hypotheses could explain the data. One way to think about p-values is that they can represent the probability we can assign to some hypothesis (given some data).
 
@@ -48,7 +48,7 @@ Consider the following:
 
 This is wrong. If A makes B more probable, then the lack of B does not necessarily mean A is now *improbable*.
 
-### 2. p-values DON'T represent the magnitude of the effect size
+### p-values don't represent the magnitude of the effect size
 
 Imagine three different interventions to improve student test scores, which are given by $N(\mu = 50, \sigma = 10)$.
 
@@ -112,4 +112,15 @@ The second is that, if we admit that there is always *some* difference between o
 
 So we're locked into this weird limbo where we want our sample sizes to be large enough to rule out noise in our measurements–but not too large, such that the p-values are only small if the difference between the two groups is meaningful, i.e. a non-trivial effect.
 
+### p-values should not be the main gatekeeper for journals
+
+Despite decades of pushback, including a very recent [rebuke](https://amstat.tandfonline.com/doi/full/10.1080/00031305.2019.1583913) from the American Statistical Association, the $p < 0.05$ paradigm refuses to die. It's not just the journals. Other students in my course, who are in  education studies graduate courses have spoken about focusing on p-values. My first statistics class focused on p-values. Heck, even a recent [science-focused anime](https://www.crunchyroll.com/science-fell-in-love-so-i-tried-to-prove-it/episode-6-science-types-fell-in-love-so-they-tried-kissing-792895) showed it too.
+
+To be clear, p-values *do*, at the very least, address sampling error, which is probably the only thing they have going for them. They can quantify the variation we might see in our samples and help identify when certain results are extreme. 
+
+So that's useful at least.
+
+(Except confidence intervals can do that too, and they're arguably more informative.)
+
+(Please let the $p < 0.05$ paradigm die.)
 
