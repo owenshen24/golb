@@ -1,12 +1,14 @@
 title: Why P-values Are Problematic
+summary: As advertised.
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
+*(Notes: This content is adapted from [What's Wrong With Statistical Tests– And Where We Go From Here](docs/whats-wrong-kline.pdf) by Rex B Kline and [The Earth Is Round (p < .05)](docs/earth-round-cohen.pdf) by Jacob Cohen, from MSED 296C taught by [David Quarfoot](http://www.math.ucsd.edu/~dquarfoot/) at UCSD.)*
 
-(Notes: This content is adapted from [What's Wrong With Statistical Tests– And Where We Go From Here](docs/whats-wrong-kline.pdf) by Rex B Kline and [The Earth Is Round (p < .05)](docs/earth-round-cohen.pdf) by Jacob Cohen, from MSED 296C taught by [David Quarfoot](http://www.math.ucsd.edu/~dquarfoot/) at UCSD.)
+<hr>
 
 Everyone knows that social scientists literally only want one thing, and it's disgusting:
 
@@ -22,13 +24,13 @@ Except this is wrong.
 
 In significance testing, the p-value represents $P(D|H_0)$. This tells us how likely it is to for certain types of *data* (given some hypothesis is true). Even though what we usually want is $P(H_0|D)$, i.e. how likely it is for certain *hypotheses* (given that we've seen some data).
 
-Now, with Bayes Theorem, we can see that $P(D|H_0)$ is related to $P(H_0|D)$, but they aren't equal:
+Now, with Bayes Theorem, we can see that $P(D|H_0)$ is related to $P(H_0|D)$, but they certainly aren't equal:
 
 $$P(D|H_0) = \frac{P(H_0|D)P(D)}{P(H_0)}$$
 
-Given, the p-value, we could try to derive an estimate for $P(H_0|D)$, if we had estimates for $P(H_0)$ and $P(D)$. But most papers don't get that far. 
+Given, the p-value, we could try to derive an estimate for $P(H_0|D)$, if we had estimates for $P(H_0)$ and $P(D)$. But most papers don't get that far, and frequentist statistics doesn't emphasize priors anyway.
 
-One reason it can be easy to mistake the two is due to a misapplication of the contrapositive rule. 
+One reason it can be easy to mistake the two is due to a misapplication of the contrapositive rule from logical inference. 
 
 Consider the following:
 
@@ -36,7 +38,7 @@ Consider the following:
 2. You live in Russia.
 3. Thus, you do not live in the USA.
 
-Simple logical deduction, nothing wrong here. But, once the conditional in 1. becomes probabilistic, rather than certain, then this type of reasoning breaks down.
+Simple logical deduction, nothing wrong here. But, once the conditional in 1. becomes probabilistic, rather than certain, this type of reasoning breaks down.
 
 Consider the following:
 
@@ -52,9 +54,9 @@ Imagine three different interventions to improve student test scores, which are 
 
 For each of the three interventions, you run a study. Here are your results:
 
-1. Sample size = 16, sample mean = 70
-2. Sample size = 64, sample mean = 60
-3. Sample size 256, sample mean = 55
+1. Intervention A: Sample size = 16, sample mean = 70
+2. Intervention B: Sample size = 64, sample mean = 60
+3. Intervention C: Sample size 256, sample mean = 55
 
 Does the each intervention feel different?
 
@@ -66,17 +68,15 @@ The last intervention seems quite convincing, with a large sample size and a rea
 
 Yet, all three of these studies would yield the exact same p-value of $6.2 \times 10^{-16}$.
 
-Because the p-value is dependent on your sample size and your sample mean, it's a lossy representation. If it's very low, this is good evidence that your two groups are likely different, but you need more information in order to quantify just how different.
+Because the p-value is dependent on your sample size and your sample mean, it's a lossy representation. If it's very low, this is good evidence that your two groups are likely different, but you need more information that just the p-value in order to quantify just how different.
 
-When low p-values are described as "significant", this comes with a lot of baggage associated with the way the word is used in everyday life. We usually use significant to mean something like influential, which sneaks in the asusmption of a large delta.
+When low p-values are described as "significant", this comes with a lot of baggage associated with the way the word is used in everyday life. We usually use significant to mean something like influential, which sneaks in the asusmption of a large delta. But all a significant p-value tells us is that there is evidence of *an* effect, not necessarily a large one.
 
 ### p-value thresholds for publication lead to overestimation
 
 In null hypothesis significance testing, scientists have to control for $\alpha$, the false positive rate or Type 1 error rate. In the social sciences, $\alpha$ is often set to be 0.05. Hence, $p < 0.05$. We might expect, then, that around 5% of published studies are false. Mildly worrying.
 
-But it's actually much worse than that.
-
-What this fails to take into account is the prior probability that any given study investigates a true relationship.
+But it's actually much worse than that:
 
 Imagine 100 honest scientists investigating whether or not homeopathy actually works (spoiler alert: it doesn't):
 
@@ -86,7 +86,7 @@ Now, imagine doing a literature review of these published homeopathy studies. No
 
 Having thresholds for publication means that we don't get to see the other 95 results–and, in this case, it's made painfully clear that we *need* to see those null results in order to get an accurate estimation of a field. 
 
-In fields where real relationships are rare or data is vast, this does not bode well for published results, no matter how careful scientists are to avoid bias and measurement error. False positives can still vastly overshadow real results.
+In particular, assuming the typical $\alpha$ used in a field as the default false positive rate fails to take into account is the prior probability that any given study investigates a true relationship. In fields where real relationships are rare or data is vast, this does not bode well for published results, no matter how careful scientists are to avoid bias and measurement error. False positives can still vastly overshadow real results.
 
 And of course it's not just the false positive rate. You can demonstrate similar overestimation results for effect size, confidence intervals, and other parameteres of interest.
 
@@ -113,5 +113,3 @@ The second is that, if we admit that there is always *some* difference between o
 So we're locked into this weird limbo where we want our sample sizes to be large enough to rule out noise in our measurements–but not too large, such that the p-values are only small if the difference between the two groups is meaningful, i.e. a non-trivial effect.
 
 
-
-Hopefully, you can now see why this whole $p < 0.05$ paradigm is literally crazy.
