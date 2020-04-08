@@ -17,3 +17,5 @@ function filterPosts() {
   document.querySelector("#num-field").disabled = !document.querySelector("#num-field").disabled;
 }
 document.querySelector("#checkbox").addEventListener("change", filterPosts);
+
+// Add filter function

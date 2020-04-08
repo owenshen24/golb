@@ -35,15 +35,6 @@
         "last_updated": 1580084538,
         "order": "5"
     },
-    "55070166310": {
-        "title": "Recognizing vs Generating",
-        "anchor": "55070166310",
-        "summary": "Two core ways to categorize tasks are Recognizing and Generating. Though they may seem initially similar, they differ in the effort involved. This dichotomy helps explain why some apparent solutions work and others fail.",
-        "word_count": 996,
-        "date": "2020-03-29 21:06",
-        "last_updated": 1585541163,
-        "order": "2"
-    },
     "52499466310": {
         "title": "The Gradualism Manifesto",
         "anchor": "52499466310",
@@ -52,5 +43,14 @@
         "date": "2020-03-30 13:10",
         "last_updated": 1585599005,
         "order": "6"
+    },
+    "52622266310": {
+        "title": "Recognizing vs Generating",
+        "anchor": "52622266310",
+        "summary": "Two core ways to categorize tasks are Recognizing and Generating. Though they may seem initially similar, they differ in the effort involved. This dichotomy helps explain why some apparent solutions work and others fail.",
+        "word_count": 982,
+        "date": "2020-04-01 19:08",
+        "last_updated": 1585793310,
+        "order": "2"
     }
 }

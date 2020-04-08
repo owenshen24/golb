@@ -25,13 +25,21 @@
     <input type="number" id="num-field" value=300 /> words.
   </div>
   {% for p in data %}
-  <div class="post-link" data-word_count="{{ p.word_count }}">
+  <div class="post-link" 
+    data-word_count="{{ p.word_count }}">
     <div class="post-title">
       <a href="{{ './%s.html'%p.anchor }}">{{ p.title }}</a>
     </div>
     <div class="word-count">{{ p.word_count }} words</div>
     <div class="post-summary">{{ p.summary }}</div>
     <div class="last-updated">Last Updated: {{ p.date }}</div>
+    <!-- {% if 'tags' in p %}
+    <div class="tags-list">
+      {% for t in p.tags %}
+      <span class="tag-item">{{t}}</span>
+      {% endfor %}
+    </div>
+    {% endif %} -->
   </div>
   {% endfor %}
 {% endblock content %}

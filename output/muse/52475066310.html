@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script data-goatcounter="https://mlu.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>NHST notes</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <!-- <div class="grid_spacer"></div> -->
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">NHST notes</div>
+<div class="content"><p>Things which are important:</p>
+
+<ol>
+<li>This has been going on a for a long time?
+
+<ol>
+<li>Were the original critiques 50 years ago the same as now?</li>
+</ol></li>
+<li>Common pitfalls and why they seem intuitively correct.</li>
+</ol>
+
+<p>Questions to ask:</p>
+
+<ol>
+<li>What are some common examples of \(P(H_0 | D)\) or <others> given typical settings? EX: legal, medical, business, industrial settings?</li>
+<li>Have you had any experience with non NHST-methods? What was that experience like? (Was it intuitive? What were you able to infer? Was it still quantitative?)</li>
+<li>What can we learn with from qualitative assessments? Dooes quantification still play an integral role in scientific analysis, given its pitfalls? How else can we do comparisons? Are comparisons even useful?</li>
+</ol>
+
+<p>Activities:</p>
+
+<ol>
+<li>Goodhart&#39;s Law leads to gaming metrics?
+
+<ol>
+<li>Your favorite metric of choice likely won&#39;t make it</li>
+<li>What, then, to do?</li>
+</ol></li>
+</ol>
+
+<hr>
+
+<p>Notes:</p>
+
+<p>The <strong>correct</strong> definition of a p-value is \(p(D|H_0)\). In other words, p-values tell us about the probabilties of seeing different data points (assuming an underlying state of the world). What we usually want is \(P(H_0|D)\) or \(P(H_A|D)\). We want something that tells us about the probabilities of different states of the world, given the data we see.</p>
+
+<p>I think the confusing ones are where the two sides of the conditioning get swapped:</p>
+
+<p>Incorrect interpretations focus on making the probabilities into something that we want:</p>
+
+<ul>
+<li>Probability that the null hypothesis is true (given the data we see) \(P(H_0|D)\)
+
+<ul>
+<li>mistaken p-value</li>
+</ul></li>
+<li>Probability that null hypothesis is true (given our decision to reject) \(P(H_0 | \text{reject } H_0)\)
+
+<ul>
+<li>mistaken \(\alpha\)</li>
+</ul></li>
+</ul>
+
+<p>Other ones which seem pernicious:</p>
+
+<ul>
+<li>p-value is the magnitude of the effect size
+
+<ul>
+<li>small differences and large sample sizes can yield very small p-values</li>
+</ul></li>
+<li>if p-value is not significant, then effect size is zero
+
+<ul>
+<li>underpowered tests might not detect effect sizes</li>
+</ul></li>
+<li>keeping \(H_0\) means the study failed
+
+<ul>
+<li>important to publish null results!</li>
+<li>e.g. ESP, homeopathy, other scams</li>
+</ul></li>
+</ul>
+
+<p>Null hypothesis is typically already false:</p>
+
+<ul>
+<li>If you assume this, then low p-value doesn&#39;t even tell you anything new.</li>
+<li>Often unrealistic assumptions being made</li>
+</ul>
+
+<p>Publication bias:</p>
+
+<ul>
+<li>Overestimating effect sizes
+
+<ul>
+<li>If only studies past an acceptance threshold are published, averaging published data will be more misleading than averaging all data</li>
+</ul></li>
+<li>Assumes people are being honest. Faking data / selective reporting opens up another can of worms.</li>
+</ul>
+
+<p>p-values are lossy compression:</p>
+
+<ul>
+<li>confidence intervals can help alleviate part of the issue</li>
+<li>but also, very different studies could yield similar p-values
+
+<ul>
+<li>small sample big effect</li>
+<li>smal effect big sample</li>
+</ul></li>
+</ul>
+
+<p>Go over extended example of P(H0|D) vs P(D|H0)</p>
+</div>
+<div class="date">Last Updated: 2020-04-01 13:54</div>
+
+<hr class="comment-spacer">
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <!-- <div class="grid_spacer"></div> -->
+  </div>
+</body>
+
+</html>

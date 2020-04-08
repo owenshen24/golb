@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script data-goatcounter="https://mlu.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Why P-values Are Problematic</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <!-- <div class="grid_spacer"></div> -->
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">Why P-values Are Problematic</div>
+<div class="content"><p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous"></p>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<p>(Notes: This content is adapted from <a href="docs/whats-wrong-kline.pdf">What&#39;s Wrong With Statistical Tests– And Where We Go From Here</a> by Rex B Kline and <a href="docs/earth-round-cohen.pdf">The Earth Is Round (p &lt; .05)</a> by Jacob Cohen, from MSED 296C taught by <a href="http://www.math.ucsd.edu/%7Edquarfoot/">David Quarfoot</a> at UCSD.)</p>
+
+<p>Everyone knows that social scientists literally only want one thing, and it&#39;s disgusting:</p>
+
+<p>\[p &lt; 0.05\]</p>
+
+<p>Jokes aside, many words have already been spilled about how evil stasticians can p-hack their way to a statistically significant result. (See, for example, the <a href="https://projects.fivethirtyeight.com/p-hacking/">interactive demo on 538</a>, or this <a href="https://putanumonit.com/2016/04/17/022-power_skeptic/">lengthy takedown</a> of power posing by Jacob Falkovich). What I want to focus on in this essay is how the p-value can be misleading, even when everything is being honest. There are several tempting misconceptions about p-values, as well as several issues with null hypothesis significance testing as a whole, which I think are less noticeable, but just as problematic.</p>
+
+<h3>1. p-values DON&#39;T tell us how likely hypotheses are</h3>
+
+<p>Whenever we run a study, ideally, we&#39;d like to use the data we get to inform our decision about which hypotheses could explain the data. One way to think about p-values is that they can represent the probability we can assign to some hypothesis (given some data).</p>
+
+<p>Except this is wrong.</p>
+
+<p>In significance testing, the p-value represents \(P(D|H_0)\). This tells us how likely it is to for certain types of <em>data</em> (given some hypothesis is true). Even though what we usually want is \(P(H_0|D)\), i.e. how likely it is for certain <em>hypotheses</em> (given that we&#39;ve seen some data).</p>
+
+<p>Now, with Bayes Theorem, we can see that \(P(D|H_0)\) is related to \(P(H_0|D)\), but they aren&#39;t equal:</p>
+
+<p>\[P(D|H_0) = \frac{P(H_0|D)P(D)}{P(H_0)}\]</p>
+
+<p>Given, the p-value, we could try to derive an estimate for \(P(H_0|D)\), if we had estimates for \(P(H_0)\) and \(P(D)\). But most papers don&#39;t get that far. </p>
+
+<p>One reason it can be easy to mistake the two is due to a misapplication of the contrapositive rule. </p>
+
+<p>Consider the following:</p>
+
+<ol>
+<li>If you live in the USA, then you do not live in Russia.</li>
+<li>You live in Russia.</li>
+<li>Thus, you do not live in the USA.</li>
+</ol>
+
+<p>Simple logical deduction, nothing wrong here. But, once the conditional in 1. becomes probabilistic, rather than certain, then this type of reasoning breaks down.</p>
+
+<p>Consider the following:</p>
+
+<ol>
+<li>If you live in the USA, then you are unlikely to be the President.</li>
+<li>You are the President.</li>
+<li>Thus, you are unlikely to live in the USA.</li>
+</ol>
+
+<p>This is wrong. If A makes B more probable, then the lack of B does not necessarily mean A is now <em>improbable</em>.</p>
+
+<h3>2. p-values DON&#39;T represent the magnitude of the effect size</h3>
+
+<p>Imagine three different interventions to improve student test scores, which are given by \(N(\mu = 50, \sigma = 10)\).</p>
+
+<p>For each of the three interventions, you run a study. Here are your results:</p>
+
+<ol>
+<li>Sample size = 16, sample mean = 70</li>
+<li>Sample size = 64, sample mean = 60</li>
+<li>Sample size 256, sample mean = 55</li>
+</ol>
+
+<p>Does the each intervention feel different?</p>
+
+<p>The first intervention seems like it needs more information. Our initial results are quite promising with an effect size of 2, but we&#39;ll definitely need some larger samples to make a conclusion. </p>
+
+<p>The second intervention seems more credible, with a sizable sample size and some good results with an effect size of 1.</p>
+
+<p>The last intervention seems quite convincing, with a large sample size and a reasonable effect size of 0.5.</p>
+
+<p>Yet, all three of these studies would yield the exact same p-value of \(6.2 \times 10^{-16}\).</p>
+
+<p>Because the p-value is dependent on your sample size and your sample mean, it&#39;s a lossy representation. If it&#39;s very low, this is good evidence that your two groups are likely different, but you need more information in order to quantify just how different.</p>
+
+<p>When low p-values are described as &quot;significant&quot;, this comes with a lot of baggage associated with the way the word is used in everyday life. We usually use significant to mean something like influential, which sneaks in the asusmption of a large delta.</p>
+
+<h3>p-value thresholds for publication lead to overestimation</h3>
+
+<p>In null hypothesis significance testing, scientists have to control for \(\alpha\), the false positive rate or Type 1 error rate. In the social sciences, \(\alpha\) is often set to be 0.05. Hence, \(p &lt; 0.05\). We might expect, then, that around 5% of published studies are false. Mildly worrying.</p>
+
+<p>But it&#39;s actually much worse than that.</p>
+
+<p>What this fails to take into account is the prior probability that any given study investigates a true relationship.</p>
+
+<p>Imagine 100 honest scientists investigating whether or not homeopathy actually works (spoiler alert: it doesn&#39;t):</p>
+
+<p>With \(\alpha = 0.05\), we expect around 95 scientists to get null results and 5 scientists to get misleading positive results. Now, say these 5 scientists all publish their results and get accepted because they all honestly got \(p &lt; 0.05\), and all the journals care about are p-values and good research methodology (e.g. preregistering hypotheses).</p>
+
+<p>Now, imagine doing a literature review of these published homeopathy studies. Now, it&#39;s not just 5% of published studies which are false, but 100% of them!</p>
+
+<p>Having thresholds for publication means that we don&#39;t get to see the other 95 results–and, in this case, it&#39;s made painfully clear that we <em>need</em> to see those null results in order to get an accurate estimation of a field. </p>
+
+<p>In fields where real relationships are rare or data is vast, this does not bode well for published results, no matter how careful scientists are to avoid bias and measurement error. False positives can still vastly overshadow real results.</p>
+
+<p>And of course it&#39;s not just the false positive rate. You can demonstrate similar overestimation results for effect size, confidence intervals, and other parameteres of interest.</p>
+
+<h3>The null hypothesis is never true anyway</h3>
+
+<p>(Also see Gwern&#39;s <a href="https://www.gwern.net/Everything">Everything is Correlated</a> for an in-depth literature review on this topic.)</p>
+
+<p>Okay, so we just get everyone to publish their null results as well, so can stop skewing the literature, and we encourage good research methodology. Is that enough?</p>
+
+<p>As you have likely guessed, no, no it&#39;s not enough.</p>
+
+<p>The issue is that, for many studies, we <em>already know</em> the null hypothesis is false. Why? Because the real world never gives us perfect similarity between two groups. Look enough decimal points, and there will be a difference. </p>
+
+<p>In other words, if the z-score is given by \(z = \frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\), and \(\bar{X}-\mu \ge \epsilon \ge 0\), we can get any z-score we want by making the sample size big enough.</p>
+
+<p>This means that, for a large enough sample size, our significance tests will always output very small p-values (assuming null hypotheses which state two values are equal).</p>
+
+<p>This raises two big issues.</p>
+
+<p>The first is that, if we already know the result of running such a test with a massive sample, why even bother running the test in the first place with a smaller (read: feasible) sample? </p>
+
+<p>The second is that, if we admit that there is always <em>some</em> difference between our groups, then our false positive error rate becomes 0%. We&#39;ll never mistakenly conclude an exists when it doesn&#39;t because there&#39;s always <em>some</em> effect (though potentially small).</p>
+
+<p>So we&#39;re locked into this weird limbo where we want our sample sizes to be large enough to rule out noise in our measurements–but not too large, such that the p-values are only small if the difference between the two groups is meaningful, i.e. a non-trivial effect.</p>
+
+<p>Hopefully, you can now see why this whole \(p &lt; 0.05\) paradigm is literally crazy.</p>
+</div>
+<div class="date">Last Updated: 2020-04-07 17:54</div>
+
+<hr class="comment-spacer">
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <!-- <div class="grid_spacer"></div> -->
+  </div>
+</body>
+
+</html>

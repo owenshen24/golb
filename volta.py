@@ -149,19 +149,20 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           post_metadata['title'] = parsed_metadata['title']
         except KeyError:
           post_metadata['title'] = os.path.splitext(post)[0]
-        
         try:
           post_metadata['anchor'] = parsed_metadata['anchor']
         except KeyError:
           post_metadata['anchor'] = post_id
-        
         try:
           post_metadata['summary'] = parsed_metadata['summary']
         except KeyError:
           post_metadata['summary'] = post_body[0:CONFIG["MAX_SUMMARY_LENGTH"]] + '...'
-
         try:
           post_metadata['order'] = parsed_metadata['order']
+        except KeyError:
+          pass
+        try:
+          post_metadata['tags'] = parsed_metadata['tags']
         except KeyError:
           pass
 

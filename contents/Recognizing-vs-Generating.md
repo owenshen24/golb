@@ -26,7 +26,7 @@ This is why math can end up being a difficult subject for some people. It’s al
 
 In a similar vein, when you’re reading a book and the author says, “Now, obviously, we can conclude X,” this is a sign to pause. Stop. You should take a step back and examine what you actually think. If the author hadn’t presented you with the conclusion, could you have generated it with the pieces you already had?
 
-See also group dynamics, where everyone is all too happy to offer their opinion when someone has an idea, but are reluctant to submit their own. It's easier to critcize something that's already there, then to come up with something novel to present to others.
+See also group dynamics, where everyone is all too happy to offer their opinion when someone has an idea, but reluctant to submit their own. It's easier to critcize something that's already there, then to come up with something novel to present to others.
 
 And, of course, this dichotomy is of utmost importance in the realm of self-help. I think that there is a tendency for advice to get cached as [declarative knowledge, rather than procedural knowledge](https://en.wikipedia.org/wiki/Procedural_knowledge), in a way which parallels the Recognizing vs Generating dichotomy. 
 
@@ -59,6 +59,6 @@ Most importantly, as a general pattern, Generating tasks are *harder* than their
 * Practicing relevant skills vs understanding how concepts are related
 * Imagining how you'd change your actions given advice vs just checking if you've heard it before
 
-In conclusion, the big trap here is the feeling of, "I've seen this before, and thus I must already know about it." Recognition does not imply understanding, and pushing for something you can Generate can help expose what you actually know. 
+In conclusion, it's not that Recognizing isn't useful. Sometimes, it's a necessary heuristic for cutting through the cruft. But Recognition does not necessarily imply understanding, and pushing for something you can Generate can help expose what you actually know. 
 
-So. Next time you have a learning goal (e.g. new language, programming framework, mathematics, etc.), remember to move on from Recognizing after you've got down the basics. Generative work will be harder than the basic Recognizing stuff, but it'll also get you farther along.
+Thus, next time you have a learning goal (e.g. new language, programming framework, mathematics, etc.), remember to find ways to sharpen your skills Generatively, as that's where most of the useful work lies.

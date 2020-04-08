@@ -598,17 +598,35 @@
         "anchor": "52612866310",
         "summary": "Kline (Beyond Significance Testing) Chapter 3\nCohen J (1994) The earth is round\n...",
         "word_count": 12,
-        "date": "2020-03-29 12:26",
-        "last_updated": 1585509979,
+        "date": "2020-04-06 20:33",
+        "last_updated": 1586230423,
         "order": 0
     },
     "53406466310": {
         "title": "DuckDuckGo vs Google",
         "anchor": "53406466310",
         "summary": "Sometimes people on Hacker News talk about how Google results are still better than those provided by DDG. They usually don't have any data to back it...",
-        "word_count": 178,
-        "date": "2020-03-30 18:25",
-        "last_updated": 1585617904,
+        "word_count": 206,
+        "date": "2020-04-06 21:23",
+        "last_updated": 1586233419,
+        "order": 0
+    },
+    "52475066310": {
+        "title": "NHST notes",
+        "anchor": "52475066310",
+        "summary": "Things which are important:\n\n1. This has been going on a for a long time?\n   1. Were the original critiques 50 years ago the same as now?\n2. Common pi...",
+        "word_count": 427,
+        "date": "2020-04-01 13:54",
+        "last_updated": 1585774498,
+        "order": 0
+    },
+    "52430066310": {
+        "title": "Why P-values Are Problematic",
+        "anchor": "52430066310",
+        "summary": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7...",
+        "word_count": 1233,
+        "date": "2020-04-07 17:54",
+        "last_updated": 1586307242,
         "order": 0
     }
 }
