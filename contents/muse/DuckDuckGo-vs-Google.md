@@ -20,6 +20,6 @@ For this one, I was trying to find a specific paper written by one of my profess
 
 
 
-![yet another ddg vs goog](images/ddg-vs-goog-2.png)
+![yet another ddg vs goog](/images/ddg-vs-goog-3.png)
 
 Once again, I'm trying to find a specific chapter in a statistics book. DDG can't find the paper, while Google has it as the first result.
