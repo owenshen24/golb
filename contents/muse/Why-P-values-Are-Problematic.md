@@ -58,7 +58,7 @@ For each of the three interventions, you run a study. Here are your results:
 2. Intervention B: Sample size = 64, sample mean = 60
 3. Intervention C: Sample size 256, sample mean = 55
 
-Does the each intervention feel different?
+Does your impression of each intervention feel different?
 
 The first intervention seems like it needs more information. Our initial results are quite promising with an effect size of 2, but we'll definitely need some larger samples to make a conclusion. 
 

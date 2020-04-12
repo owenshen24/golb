@@ -288,15 +288,6 @@
         "last_updated": 1570601730,
         "order": 0
     },
-    "52430066310": {
-        "title": "Why P-values Are Problematic",
-        "anchor": "52430066310",
-        "summary": "As advertised.",
-        "word_count": 1408,
-        "date": "2020-04-12 12:23",
-        "last_updated": 1586719395,
-        "order": 0
-    },
     "55071766310": {
         "title": "Corporate Ruins Everything",
         "anchor": "55071766310",
@@ -647,5 +638,14 @@
         "last_updated": 1565312660,
         "order": 0,
         "tags": "bad-philosophy"
+    },
+    "53264266310": {
+        "title": "Why P-values Are Problematic",
+        "anchor": "53264266310",
+        "summary": "As advertised.",
+        "word_count": 1410,
+        "date": "2020-04-12 12:24",
+        "last_updated": 1586719477,
+        "order": 0
     }
 }
