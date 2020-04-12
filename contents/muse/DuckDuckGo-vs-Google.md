@@ -1,4 +1,5 @@
 title: DuckDuckGo vs Google
+summary: Times when DDG has failed me, and I had to resort to Google.
 
 
 

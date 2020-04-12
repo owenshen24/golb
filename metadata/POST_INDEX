@@ -17,6 +17,15 @@
         "last_updated": 1580083327,
         "order": "1"
     },
+    "52499466310": {
+        "title": "The Gradualism Manifesto",
+        "anchor": "52499466310",
+        "summary": "WIP essay",
+        "word_count": 275,
+        "date": "2020-03-30 13:10",
+        "last_updated": 1585599005,
+        "order": "6"
+    },
     "55069866310": {
         "title": "Concept Space vs Action Space",
         "anchor": "55069866310",
@@ -34,15 +43,6 @@
         "date": "2020-01-26 16:22",
         "last_updated": 1580084538,
         "order": "5"
-    },
-    "52499466310": {
-        "title": "The Gradualism Manifesto",
-        "anchor": "52499466310",
-        "summary": "WIP essay",
-        "word_count": 275,
-        "date": "2020-03-30 13:10",
-        "last_updated": 1585599005,
-        "order": "6"
     },
     "52622266310": {
         "title": "Recognizing vs Generating",

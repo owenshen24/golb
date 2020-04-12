@@ -15,7 +15,8 @@
         "word_count": 222,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "virtue, aesthetic"
     },
     "55072366310": {
         "title": "I Think I'm Feeling Less Scared of Apocalypses Now",
@@ -24,7 +25,8 @@
         "word_count": 154,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "gcr, effective-altruism, introspection"
     },
     "55073566310": {
         "title": "Stockholm Syndrome and Cargo Cults",
@@ -60,6 +62,16 @@
         "word_count": 344,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
+        "order": 0,
+        "tags": "attention"
+    },
+    "53347466310": {
+        "title": "Pokemon with GANs",
+        "anchor": "53347466310",
+        "summary": "Something I've seen other people do, which seemed cool was using GANs to create Pokemon sprites. I decided to give this a go today. I pulled up the bo...",
+        "word_count": 260,
+        "date": "2020-02-16 10:17",
+        "last_updated": 1581877077,
         "order": 0
     },
     "52465066310": {
@@ -96,7 +108,8 @@
         "word_count": 166,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "self-help, rationality"
     },
     "55071466310": {
         "title": "Caring About Literally Anything",
@@ -105,7 +118,8 @@
         "word_count": 323,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "bad-philosophy"
     },
     "52464966310": {
         "title": "Stuff I Wish I Were Doing",
@@ -114,6 +128,24 @@
         "word_count": 78,
         "date": "2020-01-22 21:16",
         "last_updated": 1579756613,
+        "order": 0
+    },
+    "53472866310": {
+        "title": "Resistance Distance",
+        "anchor": "53472866310",
+        "summary": "Okay, so I'm trying to understand how the resistance distance between two nodes of a graph is calculated. ...",
+        "word_count": 19,
+        "date": "2020-04-07 22:34",
+        "last_updated": 1586324061,
+        "order": 0
+    },
+    "52475066310": {
+        "title": "NHST notes",
+        "anchor": "52475066310",
+        "summary": "Things which are important:\n\n1. This has been going on a for a long time?\n   1. Were the original critiques 50 years ago the same as now?\n2. Common pi...",
+        "word_count": 427,
+        "date": "2020-04-01 13:54",
+        "last_updated": 1585774498,
         "order": 0
     },
     "55070566310": {
@@ -159,7 +191,8 @@
         "word_count": 89,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "rationality, bad-philosophy"
     },
     "55072466310": {
         "title": "Happiness and Meaningness",
@@ -168,7 +201,8 @@
         "word_count": 381,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "narrative, meaning, bad-philosophy"
     },
     "55074166310": {
         "title": "Where Did The Excitement Go?",
@@ -195,7 +229,8 @@
         "word_count": 99,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "meta"
     },
     "54961866310": {
         "title": "Thoughts on Recovering",
@@ -231,7 +266,8 @@
         "word_count": 97,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "bad-philosophy, romance"
     },
     "55070666310": {
         "title": "Acceptance, Analogies, and Asymmetries",
@@ -240,7 +276,8 @@
         "word_count": 211,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "rationality, tools"
     },
     "52444766310": {
         "title": "Updating Before Reporting",
@@ -249,6 +286,15 @@
         "word_count": 290,
         "date": "2019-10-08 23:15",
         "last_updated": 1570601730,
+        "order": 0
+    },
+    "52430066310": {
+        "title": "Why P-values Are Problematic",
+        "anchor": "52430066310",
+        "summary": "As advertised.",
+        "word_count": 1403,
+        "date": "2020-04-08 08:16",
+        "last_updated": 1586358960,
         "order": 0
     },
     "55071766310": {
@@ -276,7 +322,8 @@
         "word_count": 575,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "rationality, dichotomy"
     },
     "52430766310": {
         "title": "Perceptron Musings",
@@ -303,7 +350,8 @@
         "word_count": 218,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "rationality"
     },
     "52513466310": {
         "title": "Unread Emails: A Biased Survey",
@@ -321,7 +369,8 @@
         "word_count": 166,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "fear, introspection"
     },
     "55070966310": {
         "title": "Attention vs Effort",
@@ -330,7 +379,8 @@
         "word_count": 222,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "rationality, attention, effort, 2x2"
     },
     "55071366310": {
         "title": "Calibrating With Cards",
@@ -341,6 +391,15 @@
         "last_updated": 1565312660,
         "order": 0
     },
+    "52456666310": {
+        "title": "Structuring Your Info Diet",
+        "anchor": "52456666310",
+        "summary": "Since coming to college, I feel like I have been browsing the net a lot more. It's been nice these past few weeks because, for a variety of reasons, I...",
+        "word_count": 464,
+        "date": "2020-02-18 17:44",
+        "last_updated": 1582076657,
+        "order": 0
+    },
     "55070866310": {
         "title": "Ascetic Aesthetic",
         "anchor": "55070866310",
@@ -348,7 +407,8 @@
         "word_count": 271,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "aesthetic"
     },
     "55071966310": {
         "title": "Critiquing Schoolwork",
@@ -386,6 +446,15 @@
         "last_updated": 1574412421,
         "order": 0
     },
+    "52430866310": {
+        "title": "20-28-03",
+        "anchor": "52430866310",
+        "summary": "Just getting my thoughts out here. So it's been a week since I finished my winter quarter at school, and I've finally largely recuperated. COVID-19 is...",
+        "word_count": 331,
+        "date": "2020-03-28 22:24",
+        "last_updated": 1585459486,
+        "order": 0
+    },
     "55035766310": {
         "title": "More on Pedagogy",
         "anchor": "55035766310",
@@ -402,6 +471,15 @@
         "word_count": 212,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
+        "order": 0
+    },
+    "53406466310": {
+        "title": "DuckDuckGo vs Google",
+        "anchor": "53406466310",
+        "summary": "Times when DDG has failed me, and I had to resort to Google.",
+        "word_count": 552,
+        "date": "2020-04-12 12:20",
+        "last_updated": 1586719228,
         "order": 0
     },
     "53149866310": {
@@ -440,6 +518,15 @@
         "last_updated": 1568185361,
         "order": 0
     },
+    "52709566310": {
+        "title": "Desire for Behavior Change as Desire for Value Change?",
+        "anchor": "52709566310",
+        "summary": "The New Year has come and gone, and I'm sure people have had their resolutions either continue or fail. I don't think I've explored this view here on ...",
+        "word_count": 397,
+        "date": "2020-02-16 20:51",
+        "last_updated": 1581915071,
+        "order": 0
+    },
     "52816666310": {
         "title": "What Level of Abstraction Actually Generalizes?",
         "anchor": "52816666310",
@@ -456,7 +543,8 @@
         "word_count": 459,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "attention, tech, addiction"
     },
     "55074066310": {
         "title": "What Sources Inform Your Friends?",
@@ -465,6 +553,15 @@
         "word_count": 454,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
+        "order": 0
+    },
+    "52709666310": {
+        "title": "On Gaining Skill Via Rhythm Games",
+        "anchor": "52709666310",
+        "summary": "For the past few years, my default example of a weird thing you can learn to observe skill development (and thus potentially abstract general principl...",
+        "word_count": 322,
+        "date": "2020-02-16 20:59",
+        "last_updated": 1581915568,
         "order": 0
     },
     "55072866310": {
@@ -483,7 +580,8 @@
         "word_count": 189,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "bad-philosophy, p-of-e"
     },
     "52491166310": {
         "title": "Perceptron Convergence Proof",
@@ -528,7 +626,8 @@
         "word_count": 292,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
+        "order": 0,
+        "tags": "asymmetry"
     },
     "55186966310": {
         "title": "Neural Networks 1",
@@ -546,87 +645,7 @@
         "word_count": 396,
         "date": "2019-08-08 18:04",
         "last_updated": 1565312660,
-        "order": 0
-    },
-    "53347466310": {
-        "title": "Pokemon with GANs",
-        "anchor": "53347466310",
-        "summary": "Something I've seen other people do, which seemed cool was using GANs to create Pokemon sprites. I decided to give this a go today. I pulled up the bo...",
-        "word_count": 260,
-        "date": "2020-02-16 10:17",
-        "last_updated": 1581877077,
-        "order": 0
-    },
-    "52709666310": {
-        "title": "On Gaining Skill Via Rhythm Games",
-        "anchor": "52709666310",
-        "summary": "For the past few years, my default example of a weird thing you can learn to observe skill development (and thus potentially abstract general principl...",
-        "word_count": 322,
-        "date": "2020-02-16 20:59",
-        "last_updated": 1581915568,
-        "order": 0
-    },
-    "52709566310": {
-        "title": "Desire for Behavior Change as Desire for Value Change?",
-        "anchor": "52709566310",
-        "summary": "The New Year has come and gone, and I'm sure people have had their resolutions either continue or fail. I don't think I've explored this view here on ...",
-        "word_count": 397,
-        "date": "2020-02-16 20:51",
-        "last_updated": 1581915071,
-        "order": 0
-    },
-    "52456666310": {
-        "title": "Structuring Your Info Diet",
-        "anchor": "52456666310",
-        "summary": "Since coming to college, I feel like I have been browsing the net a lot more. It's been nice these past few weeks because, for a variety of reasons, I...",
-        "word_count": 464,
-        "date": "2020-02-18 17:44",
-        "last_updated": 1582076657,
-        "order": 0
-    },
-    "52430866310": {
-        "title": "20-28-03",
-        "anchor": "52430866310",
-        "summary": "Just getting my thoughts out here. So it's been a week since I finished my winter quarter at school, and I've finally largely recuperated. COVID-19 is...",
-        "word_count": 331,
-        "date": "2020-03-28 22:24",
-        "last_updated": 1585459486,
-        "order": 0
-    },
-    "53406466310": {
-        "title": "DuckDuckGo vs Google",
-        "anchor": "53406466310",
-        "summary": "\n\n<style>\n.modal {\n  display: none; /* Hidden by default */\n  position: fixed; /* Stay in place */\n  z-index: 1; /* Sit on top */\n  padding-top: 100px...",
-        "word_count": 552,
-        "date": "2020-04-09 22:09",
-        "last_updated": 1586495343,
-        "order": 0
-    },
-    "52475066310": {
-        "title": "NHST notes",
-        "anchor": "52475066310",
-        "summary": "Things which are important:\n\n1. This has been going on a for a long time?\n   1. Were the original critiques 50 years ago the same as now?\n2. Common pi...",
-        "word_count": 427,
-        "date": "2020-04-01 13:54",
-        "last_updated": 1585774498,
-        "order": 0
-    },
-    "52430066310": {
-        "title": "Why P-values Are Problematic",
-        "anchor": "52430066310",
-        "summary": "As advertised.",
-        "word_count": 1403,
-        "date": "2020-04-08 08:16",
-        "last_updated": 1586358960,
-        "order": 0
-    },
-    "53472866310": {
-        "title": "Resistance Distance",
-        "anchor": "53472866310",
-        "summary": "Okay, so I'm trying to understand how the resistance distance between two nodes of a graph is calculated. ...",
-        "word_count": 19,
-        "date": "2020-04-07 22:34",
-        "last_updated": 1586324061,
-        "order": 0
+        "order": 0,
+        "tags": "bad-philosophy"
     }
 }
