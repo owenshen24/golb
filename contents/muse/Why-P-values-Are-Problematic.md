@@ -60,55 +60,67 @@ For each of the three interventions, you run a study. Here are your results:
 
 Does your impression of each intervention feel different?
 
-The first intervention seems like it needs more information. Our initial results are quite promising with an effect size of 2, but we'll definitely need some larger samples to make a conclusion. 
+The first intervention seems like it needs more information. Our initial results are quite promising with an effect size of 2 (assuming we're using Cohen's $d$), but we'll definitely need some larger samples to make a conclusion. 
 
 The second intervention seems more credible, with a sizable sample size and some good results with an effect size of 1.
 
 The last intervention seems quite convincing, with a large sample size and a reasonable effect size of 0.5.
 
-Yet, all three of these studies would yield the exact same p-value of $6.2 \times 10^{-16}$.
+Yet, all three of these studies would yield the exact same p-value of $6.2 \times 10^{-16}$!
 
-Because the p-value is dependent on your sample size and your sample mean, it's a lossy representation. If it's very low, this is good evidence that your two groups are likely different, but you need more information that just the p-value in order to quantify just how different.
+Because the p-value is dependent on both your sample size and your sample mean, it's a lossy representation. If it's very low, this is good evidence that your two groups are likely different, but you need more information that just the p-value in order to quantify just how different.
 
 When low p-values are described as "significant", this comes with a lot of baggage associated with the way the word is used in everyday life. We usually use significant to mean something like influential, which sneaks in the asusmption of a large delta. But all a significant p-value tells us is that there is evidence of *an* effect, not necessarily a large one.
 
 ### p-value thresholds for publication lead to overestimation
 
-In null hypothesis significance testing, scientists have to control for $\alpha$, the false positive rate or Type 1 error rate. In the social sciences, $\alpha$ is often set to be 0.05. Hence, $p < 0.05$. We might expect, then, that around 5% of published studies are false. Mildly worrying.
+In null hypothesis significance testing, scientists have to control for $\alpha$, the false positive rate or the Type 1 error rate. In the social sciences, $\alpha$ is often set to be 0.05. Hence, $p < 0.05$. We might expect, then, that around 5% of published studies are false. Mildly worrying.
 
-But it's actually much worse than that:
+But it's actually much worse than that.
 
 Imagine 100 honest scientists investigating whether or not homeopathy actually works (spoiler alert: it doesn't):
 
-With $\alpha = 0.05$, we expect around 95 scientists to get null results and 5 scientists to get misleading positive results. Now, say these 5 scientists all publish their results and get accepted because they all honestly got $p < 0.05$, and all the journals care about are p-values and good research methodology (e.g. preregistering hypotheses).
+With $\alpha = 0.05$, we expect around 95 scientists to get correct null results and 5 scientists to get misleading positive results. Now, say these 5 scientists all publish their results and get accepted because they all honestly got $p < 0.05$, and all the journals care about are p-values and good research methodology (e.g. preregistering hypotheses, no faking of data, etc. etc.).
 
-Now, imagine doing a literature review of these published homeopathy studies. Now, it's not just 5% of published studies which are false, but 100% of them!
+Imagine doing a literature review of these published homeopathy studies. Now, it's not just 5% of published studies which are false, but 100% of them!
 
 Having thresholds for publication means that we don't get to see the other 95 results–and, in this case, it's made painfully clear that we *need* to see those null results in order to get an accurate estimation of a field. 
 
-In particular, assuming the typical $\alpha$ used in a field as the default false positive rate fails to take into account is the prior probability that any given study investigates a true relationship. In fields where real relationships are rare or data is vast, this does not bode well for published results, no matter how careful scientists are to avoid bias and measurement error. False positives can still vastly overshadow real results.
+In particular, assuming the typical $\alpha$ (e.g. $0.05$) as the false positive rate  for the entire field fails to take into account the prior probability that any given study in the field investigates a true relationship. 
 
-And of course it's not just the false positive rate. You can demonstrate similar overestimation results for effect size, confidence intervals, and other parameteres of interest.
+To see this, here's a simple model:
+
+Let $p$ be the prior probability that any study investigates a true effect. $\alpha$ and $\beta$ reprise their default roles as the Type 1 error rate and Type 2 erro rate.
+
+Then, the probability you should assign to a study being true, conditional on a significant result is given by:
+
+$$P(H | D) = \frac{(1-\beta)p}{(1-\beta)p + \alpha(1-p)}$$
+
+This is the probability of both getting a true effect and correctly detecting it, divided by the probability that the test comes out positive (both true and false positives). Here, it's clear to see that as $p$ decreases, so does your overall probability.
+
+Thus, in fields where real relationships are rare or data is vast, this does not bode well for published results, no matter how careful scientists are to avoid bias and measurement error. False positives can still vastly overshadow real results.
+
+And of course it's not just the false positive rate. You can demonstrate similar overestimation results for effect size, confidence intervals, or other parameteres of interest.
 
 ### The null hypothesis is never true anyway
 
-(Also see Gwern's [Everything is Correlated](https://www.gwern.net/Everything) for an in-depth literature review on this topic.)
+(See Gwern's [Everything is Correlated](https://www.gwern.net/Everything) for an in-depth literature review on this topic.)
 
 Okay, so we just get everyone to publish their null results as well, so can stop skewing the literature, and we encourage good research methodology. Is that enough?
 
 As you have likely guessed, no, no it's not enough.
 
-The issue is that, for many studies, we *already know* the null hypothesis is false. Why? Because the real world never gives us perfect similarity between two groups. Look enough decimal points, and there will be a difference. 
+The issue is that, for many studies, we *already know* the null hypothesis is false before we even start. Why? Because the real world never gives us perfect similarity between two groups, and typical null hypotheses make these perfect assumptions. Look enough decimal points, and there will be a difference. 
 
-In other words, if the z-score is given by $z = \frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}$, and $\bar{X}-\mu \ge \epsilon \ge 0$, we can get any z-score we want by making the sample size big enough.
+In other words, if the z-score is given by $z = \frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}$, and $\bar{X}-\mu > 0$, we can get any z-score we want by making the sample size big enough. For any z-score $z$, we can get that value with a sample size of $(\frac{z \sigma}{\bar{X}-\mu})^2$.
 
 This means that, for a large enough sample size, our significance tests will always output very small p-values (assuming null hypotheses which state two values are equal).
 
 This raises two big issues.
 
-The first is that, if we already know the result of running such a test with a massive sample, why even bother running the test in the first place with a smaller (read: feasible) sample? 
+The first is that, if we already know the result of running such a test with a massive (although sometimes impractical) sample, why even bother running the test in the first place with a smaller (read: feasible) sample? If, in the limit, it would just tell us the same thing, this just seems like introducing unnecessary variance.
 
-The second is that, if we admit that there is always *some* difference between our groups, then our false positive error rate becomes 0%. We'll never mistakenly conclude an exists when it doesn't because there's always *some* effect (though potentially small).
+The second is that, if we admit that there is always *some* difference between our groups, then our false positive error rate becomes 0%. We'll never mistakenly conclude an exists when it doesn't because there's always *some* effect (though potentially small). But then, why have any arbitrary cut-off at all for $\alpha$ values if there's always an effect?
 
 So we're locked into this weird limbo where we want our sample sizes to be large enough to rule out noise in our measurements–but not too large, such that the p-values are only small if the difference between the two groups is meaningful, i.e. a non-trivial effect.
 
