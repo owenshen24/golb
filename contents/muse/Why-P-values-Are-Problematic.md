@@ -14,7 +14,7 @@ Everyone knows that social scientists literally only want one thing, and it's di
 
 $$p < 0.05$$
 
-Jokes aside, many words have already been spilled about how evil stasticians can p-hack their way to a statistically significant result. (See, for example, the [interactive demo on 538](https://projects.fivethirtyeight.com/p-hacking/), or this [lengthy takedown](https://putanumonit.com/2016/04/17/022-power_skeptic/) of power posing by Jacob Falkovich). What I want to focus on in this essay is how the p-value can be misleading, even when everything is being honest. There are several tempting misconceptions about p-values, as well as several issues with null hypothesis significance testing as a whole, which I think are less noticeable, but just as problematic.
+Jokes aside, many words have already been spilled about how evil stasticians can p-hack their way to a statistically significant result. (See, for example, the [interactive demo on 538](https://projects.fivethirtyeight.com/p-hacking/), or this [lengthy takedown](https://putanumonit.com/2016/04/17/022-power_skeptic/) of power posing by Jacob Falkovich). What I want to focus on in this essay is how the p-value can be misleading, even when everyone is being honest. There are several tempting misconceptions about p-values, as well as several issues with null hypothesis significance testing as a whole, which I think are less noticeable, but just as problematic.
 
 ### p-values are about data, not hypotheses
 
@@ -22,7 +22,7 @@ Whenever we run a study, ideally, we'd like to use the data we get to inform our
 
 Except this is wrong.
 
-In significance testing, the p-value represents $P(D|H_0)$. This tells us how likely it is to for certain types of *data* (given some hypothesis is true). Even though what we usually want is $P(H_0|D)$, i.e. how likely it is for certain *hypotheses* (given that we've seen some data).
+In significance testing, the p-value represents $P(D|H_0)$. This tells us how likely it is to for certain types of *data* to appear (given some hypothesis is true). Even though what we usually want is $P(H_0|D)$, i.e. how likely it is for certain *hypotheses* to be true (given that we've seen some data).
 
 Now, with Bayes Theorem, we can see that $P(D|H_0)$ is related to $P(H_0|D)$, but they certainly aren't equal:
 
