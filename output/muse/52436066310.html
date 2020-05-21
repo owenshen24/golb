@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Base stylings -->
+  <link rel="stylesheet" href="/styles/base.css">
+
+  <!-- Analytics -->
+  <script data-goatcounter="https://mlu.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Block for title, css, scripts, etc.-->
+  
+<title>Proving the No-Free-Lunch Theorem</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer src="/scripts/remarkbox.js"></script>
+
+</head>
+
+<body>
+  
+  
+<div class="top_bar">
+    <div class="logo-holder">
+      <a href="/muse/">
+        <img src="/images/muse_logo.svg" class="logo">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    <!-- <div class="grid_spacer"></div> -->
+    <!-- Block for content -->
+    <div class="container">
+      
+<div class="post-title">Proving the No-Free-Lunch Theorem</div>
+<div class="content"><p>The No-Free-Lunch Theorem is an important part of statistical learning theory. I&#39;m going to trace the proof found in <em>Understanding Machine Learning</em> for my own benefit.</p>
+
+<p>The theorem is this:</p>
+
+<p>Say there is a learning algorithm A which outputs a binary classifier and has the 0-1 loss function over a domain \(X\). Then, there exists a distribution \(D\) over \(X \times \{0,1\}\) such that:</p>
+
+<ol>
+<li><p>There exists a function \(f: X \to \{0,1\}​\) with \(L_D(f) = 0​\). That is, there is some binary function over \(X​\) such that the expected loss of \(f​\) over \(D​\) is 0, meaning there is some function which will correctly classify all the points.</p></li>
+<li><p>With probability of at least \(\frac{1}{7}\) over the choice of \(S \sim D^m\) \(L_D(A(S)) \ge \frac{1}{8}\). In other words, for at least \(\frac{1}{7}\) of all possible training sets of size \(m\) from \(D\), the expected loss of output of the training algorithm on the training set is at least  \(\frac{1}{8}\).</p></li>
+</ol>
+
+<h3>Proof:</h3>
+
+<p>Let \(C \subseteq X\) such that \(|C| = 2m\). We note that there are \(T = 2^{2m}\) possible functions from \(C\) to \(\{0,1\}\).  Let \(D_i\) be the distribution over \(D\) that only assigns probability to the \((x,f_i(x))\) pairs for the corresponding function.</p>
+
+<p>We&#39;re going to show that:</p>
+
+<p>\(\underset{i \in [T]}{\text{max }} \underset{S \sim D_i^m}{\mathbb{E}} [L_{D_i}(A(S))] \ge 1/4\)</p>
+
+<p>That is, the largest expected loss of running our learning algorithm on a training set of size \(m\) among all functions from \(C\) to \(\{0,1\}\) (or rather, the distribution that is defined only on the function&#39;s \((x, f(x))\) pairs) is 1/4.</p>
+
+<p>When a random variable is between 0 and 1, we can use Markov&#39;s inequality to show that:</p>
+
+<p>\(P(X \ge a) \ge \frac{\mathbb{E}[X]-a}{1-a}\)</p>
+
+<p>Applying that to our inequality above, we see that:</p>
+
+<p>\(P(L_D(A&#39;(S)) \ge \frac{1}{8}) \ge \frac{\frac{1}{4}-\frac{1}{8}}{\frac{7}{8}} \ge \frac{1}{7}\) as desired.</p>
+
+<p>So now we just have to prove the inequality itself.</p>
+
+<p>Well, what do we know about the expected loss for a given distribution and a learning algorithm? It&#39;s just the averaged loss, over all possible choices of a training set:</p>
+
+<p>\(\underset{S \sim D_i^m}{\mathbb{E}}[L_{D_i}(A(S))] = \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j))\)</p>
+
+<p>And we care about taking the maximum among all possible distributions, which is greater than the average loss among all distributions, which is greater than the minimum value:</p>
+
+<p>\(\underset{i \in [T]}{\text{max }} \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j))\) </p>
+
+<p>\(\ge \frac{1}{T}\sum^T_{i=1}\frac{1}{k}\sum^k_{j=1}L_{D_i}(A(S^i_j))\)</p>
+
+<p>\(=\frac{1}{k}\sum^k_{j=1}\frac{1}{T}\sum^T_{i=1}L_{D_i}(A(S^i_j))\)</p>
+
+<p>\(\ge \underset{j \in [k]}{\text{min }} \frac{1}{T}\sum_{i=1}^TL_{D_i}(A(S^i_j))\)</p>
+
+<p>(To be clear, the last inequality refers to the lowest cost possible among all possible training sets, averaged across all possible distributions.)</p>
+
+<p>Next, let&#39;s fix some \(j \in [k]\). \(S_j = (x_1,..,x_m)\). Let \((v_1, ...,v_p)\) be the examples in \(C\) that aren&#39;t in \(S_j\). We can see that \(p \ge m\).</p>
+
+<p>Thus:</p>
+
+<p>\(L_{D_i}(h) = \frac{1}{2m}\sum_{x\in C}\mathbf{1}[h(x) \not= f_i(x)]\)</p>
+
+<p>\(\ge \frac{1}{2p}\sum_{j=1}^p\mathbf{1}[h(v_j) \not= f_i(v_j)]\)</p>
+
+<p>Combining our two inequalities, we get:</p>
+
+<p>\( \frac{1}{T}\sum_{i=1}^TL_{D_i}(A(S^i_j)) \ge \frac{1}{T}\sum_{i=1}^T \frac{1}{2p}\sum_{j=1}^p\mathbf{1}[h(v_j) \not= f_i(v_j)]\)</p>
+
+<p>\( = \frac{1}{2p}\sum_{j=1}^p\frac{1}{T}\sum_{i=1}^T \mathbf{1}[h(v_j) \not= f_i(v_j)]\)</p>
+
+<p>\(\ge \frac{1}{2}\underset{r \in [p]}{\text{min}}\frac{1}{T}\sum_{i=1}^T \mathbf{1}[h(v_j) \not= f_i(v_j)]\)</p>
+
+<p>Now, fix a point \(v_r \in [p]\). Notice that we can partition \([T]\) into \((f_a, f_b)\) pairs such that \(f_a\) and \(f_b\) agree on every value except for \(v_r\). We can do this because \([T]\) is the set of all functions, so we can imagine fixing \(f(v_r) = 0\) and letting all the other values vary, as well as fixing \(f(v_r) = 1\) and doing the same thing. It&#39;s clear this will give us two sets of equal size, as well as enable the above pairing.</p>
+
+<p>This means that:</p>
+
+<p>\(\mathbf{1}[h(v_j) \not = f_a(j)] + \mathbf{1}[h(v_j) \not = f_b(j)] = 1\), which means that the average loss for the pair of functions is \(\frac{1}{2}\).</p>
+
+<p>Thus, \(\frac{1}{2}\underset{r \in [p]}{\text{min}}\frac{1}{T}\sum_{i=1}^T \mathbf{1}[h(v_j) \not= f_i(v_j)] = \frac{1}{4}\)</p>
+
+<p>Thus, \(\underset{i \in [T]}{\text{max }} \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j)) \ge \frac{1}{4}\) as desired.</p>
+
+<h3>Intuition</h3>
+
+<p>Okay, so what we want to show is that for any learning algorithm \(A\), there exists some distribution \(D\) such that the average performance of \(L_D(A(S)) \ge \frac{1}{4}\) when averaged across all possible training sets \(S\). Also, there exists some other function \(f^*\) such that \(L_D(f^*) = 0\)</p>
+
+<p>Okay, so what distribution will it be?</p>
+
+<p>We&#39;ll show that there exists a group of distributions, the maximum of which will be at least 1/4. So we won&#39;t specify a distribution in particular, but just show that one exists.</p>
+
+<p>We&#39;ll consider the set of all distributions which represent the set of all functions from \(C\) to \(\{0,1\}\).</p>
+
+<hr>
+
+<p>Throughout this essay, I&#39;m going to be refering to a &quot;learning algorithm&quot;. Here&#39;s the intuition for what that is, if you haven&#39;t seen it before. In the machine learning context, a learning algorithm is an algorithm that takes in a series of (x,y) pairs from some target function–our training data, and outputs a hypothesis, which is a function that tries to be close to the original target function.</p>
+
+<p>INSERT IMAGE HERE OF LEARNING ALGORITHM</p>
+
+<p>This is an illustrated proof of the No Free Lunch (NFL) theorem; the NFL theorem has many variants, which all say slightly different things. The <a href="https://en.wikipedia.org/wiki/No_free_lunch_theorem">most famous one</a> says, roughly, that every learning algorithm has the same performance, when averaged across all possible target functions. In other words, there is no universal learning algorithm that outperforms every other algorithm on every learning task.</p>
+
+<p>Here, I&#39;m focused on a different NFL theorem (from <a href="https://www.cse.huji.ac.il/%7Eshais/UnderstandingMachineLearning/index.html">Understanding Machine Learning by Shai Shalev-Shwartz and Shai Ben-David</a>) which says, roughly, for any learning algorithm that outputs a binary function, there exists a distribution that will cause it to output a hypothesis with a high error rate, even though there exists another function that can achieve 0 error on the distribution. In other words, for every learning algorithm, we can find a distribution that can trip up the learning algorithm.</p>
+
+<p>Here&#39;s the intuition for what&#39;s going on: </p>
+
+<p>We&#39;re going to start by assuming that our learning algorithm only gets half of all possible points as its training set. But this means our algorithm knows nothing about the labels of the other half of the points. Now, if we assume that every function over these unknown points is equally likely, then each unknown point could be 1 or a 0 with equal probability. This means that our algorithm can only guess for these unknown points, which makes its expected error rate 0.5. But, clearly, there is a function which gets 0 error on the unknown points–it&#39;s just the function that outputs whatever the correct labels are.</p>
+
+<p>So how do we formalize this? </p>
+
+<p>The NFL theorem we&#39;re going to prove states that:</p>
+
+<p>Say there is a learning algorithm A which outputs a binary classifier and has the <strong>1</strong> loss (this is the 0-1 loss function which outputs 0 if the two values match, otherwise 1) function over a domain \(X\). Then, there exists a distribution \(D\) over \(X \times \{0,1\}\) such that:</p>
+
+<ol>
+<li>There exists a function \(f: X \to \{0,1\}\) with \(L_D(f) = 0\). That is, there is some binary function over \(X\) such that the expected loss of \(f\) over \(D\) is 0, meaning there is some function which will correctly classify all the points in our distribution correctly.</li>
+<li>With probability of at least \(\frac{1}{7}\) over the choice of \(S \sim D^m\) \(L_D(A(S)) \ge \frac{1}{8}\). In other words, for at least \(\frac{1}{7}\) of all possible training sets of size \(m\) from \(D\), the expected loss of output of the training algorithm on the training set is at least  \(\frac{1}{8}\).</li>
+</ol>
+</div>
+<div class="date">Last Updated: 2020-05-19 22:31</div>
+
+<hr class="comment-spacer">
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+
+    </div>
+    <!-- <div class="grid_spacer"></div> -->
+  </div>
+</body>
+
+</html>
