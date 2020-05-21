@@ -683,5 +683,14 @@
         "date": "2020-05-21 09:00",
         "last_updated": 1590076809,
         "order": 0
+    },
+    "52847866310": {
+        "title": "Latency and Mindfulness",
+        "anchor": "52847866310",
+        "summary": "I like it when my apps or software have longer latency and lag if the goal is to afford me more time to think. Having to wait a little while for Windo...",
+        "word_count": 77,
+        "date": "2020-05-21 15:58",
+        "last_updated": 1590101910,
+        "order": 0
     }
 }
