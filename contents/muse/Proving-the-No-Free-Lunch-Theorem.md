@@ -1,5 +1,11 @@
 title: Proving the No-Free-Lunch Theorem
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+
 The No-Free-Lunch Theorem is an important part of statistical learning theory. I'm going to trace the proof found in *Understanding Machine Learning* for my own benefit.
 
 The theorem is this:
@@ -38,9 +44,9 @@ And we care about taking the maximum among all possible distributions, which is 
 
 $\underset{i \in [T]}{\text{max }} \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j))$ 
 
-$\ge \frac{1}{T}\sum^T_{i=1}\frac{1}{k}\sum^k_{j=1}L_{D_i}(A(S^i_j))$
+$\ge \frac{1}{T}\sum^T_{i=1}\frac{1}{k}\sum^k_{j=1}L_{D_i}(A(S^i_j))​$
 
-$=\frac{1}{k}\sum^k_{j=1}\frac{1}{T}\sum^T_{i=1}L_{D_i}(A(S^i_j))$
+$=\frac{1}{k}\sum^k_{j=1}\frac{1}{T}\sum^T_{i=1}L_{D_i}(A(S^i_j))​$
 
 $\ge \underset{j \in [k]}{\text{min }} \frac{1}{T}\sum_{i=1}^TL_{D_i}(A(S^i_j))$
 
@@ -71,37 +77,4 @@ $\mathbf{1}[h(v_j) \not = f_a(j)] + \mathbf{1}[h(v_j) \not = f_b(j)] = 1$, which
 Thus, $\frac{1}{2}\underset{r \in [p]}{\text{min}}\frac{1}{T}\sum_{i=1}^T \mathbf{1}[h(v_j) \not= f_i(v_j)] = \frac{1}{4}$
 
 Thus, $\underset{i \in [T]}{\text{max }} \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j)) \ge \frac{1}{4}$ as desired.
-
-### Intuition
-
-Okay, so what we want to show is that for any learning algorithm $A$, there exists some distribution $D$ such that the average performance of $L_D(A(S)) \ge \frac{1}{4}$ when averaged across all possible training sets $S$. Also, there exists some other function $f^*$ such that $L_D(f^*) = 0$
-
-Okay, so what distribution will it be?
-
-We'll show that there exists a group of distributions, the maximum of which will be at least 1/4. So we won't specify a distribution in particular, but just show that one exists.
-
-We'll consider the set of all distributions which represent the set of all functions from $C$ to $\{0,1\}$.
-
----
-
-Throughout this essay, I'm going to be refering to a "learning algorithm". Here's the intuition for what that is, if you haven't seen it before. In the machine learning context, a learning algorithm is an algorithm that takes in a series of (x,y) pairs from some target function–our training data, and outputs a hypothesis, which is a function that tries to be close to the original target function.
-
-INSERT IMAGE HERE OF LEARNING ALGORITHM
-
-This is an illustrated proof of the No Free Lunch (NFL) theorem; the NFL theorem has many variants, which all say slightly different things. The [most famous one](https://en.wikipedia.org/wiki/No_free_lunch_theorem) says, roughly, that every learning algorithm has the same performance, when averaged across all possible target functions. In other words, there is no universal learning algorithm that outperforms every other algorithm on every learning task.
-
-Here, I'm focused on a different NFL theorem (from [Understanding Machine Learning by Shai Shalev-Shwartz and Shai Ben-David](https://www.cse.huji.ac.il/~shais/UnderstandingMachineLearning/index.html)) which says, roughly, for any learning algorithm that outputs a binary function, there exists a distribution that will cause it to output a hypothesis with a high error rate, even though there exists another function that can achieve 0 error on the distribution. In other words, for every learning algorithm, we can find a distribution that can trip up the learning algorithm.
-
-Here's the intuition for what's going on: 
-
-We're going to start by assuming that our learning algorithm only gets half of all possible points as its training set. But this means our algorithm knows nothing about the labels of the other half of the points. Now, if we assume that every function over these unknown points is equally likely, then each unknown point could be 1 or a 0 with equal probability. This means that our algorithm can only guess for these unknown points, which makes its expected error rate 0.5. But, clearly, there is a function which gets 0 error on the unknown points–it's just the function that outputs whatever the correct labels are.
-
-So how do we formalize this? 
-
-The NFL theorem we're going to prove states that:
-
-Say there is a learning algorithm A which outputs a binary classifier and has the **1** loss (this is the 0-1 loss function which outputs 0 if the two values match, otherwise 1) function over a domain $X$. Then, there exists a distribution $D$ over $X \times \{0,1\}$ such that:
-
-1. There exists a function $f: X \to \{0,1\}$ with $L_D(f) = 0$. That is, there is some binary function over $X$ such that the expected loss of $f$ over $D$ is 0, meaning there is some function which will correctly classify all the points in our distribution correctly.
-2. With probability of at least $\frac{1}{7}$ over the choice of $S \sim D^m$ $L_D(A(S)) \ge \frac{1}{8}$. In other words, for at least $\frac{1}{7}$ of all possible training sets of size $m$ from $D$, the expected loss of output of the training algorithm on the training set is at least  $\frac{1}{8}$.
 
