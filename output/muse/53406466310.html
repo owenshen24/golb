@@ -44,7 +44,29 @@
     <div class="container">
       
 <div class="post-title">DuckDuckGo vs Google</div>
-<div class="content"><style>
+<div class="content"><script>
+let modal = document.getElementById("myModal");
+let imgs = document.getElementsByTagName("img");
+let modalImg = document.getElementById("modalImg");
+
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].addEventListener('click', function(){
+​    modal.style.display = "block";
+​    modalImg.src = this.src;
+​    captionText.innerHTML = this.alt;
+  });
+}
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+</script>
+
+<style>
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -138,30 +160,8 @@ img:hover {
 <p><img src="/images/ddg-vs-goog-5.png" alt="yet another ddg vs goog"></p>
 
 <p>Great. I&#39;m trying to figure out how to verify whether Signal, the messaging app, has the source code it claims. While DDG does link to Signal, it doesn&#39;t have the bit about reproducible builds, which Google has helpfully included.</p>
-
-<script>
-let modal = document.getElementById("myModal");
-let imgs = document.getElementsByTagName("img");
-let modalImg = document.getElementById("modalImg");
-
-for (let i = 0; i < imgs.length; i++) {
-  imgs[i].addEventListener('click', function(){
-​    modal.style.display = "block";
-​    modalImg.src = this.src;
-​    captionText.innerHTML = this.alt;
-  });
-}
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-} 
-</script>
 </div>
-<div class="date">Last Updated: 2020-04-12 12:20</div>
+<div class="date">Last Updated: 2020-05-31 12:53</div>
 
 <hr class="comment-spacer">
 <div id="remarkbox-div">

@@ -469,8 +469,8 @@
         "anchor": "53406466310",
         "summary": "Times when DDG has failed me, and I had to resort to Google.",
         "word_count": 552,
-        "date": "2020-04-12 12:20",
-        "last_updated": 1586719228,
+        "date": "2020-05-31 12:53",
+        "last_updated": 1590954794,
         "order": 0
     },
     "53149866310": {
@@ -691,6 +691,15 @@
         "word_count": 77,
         "date": "2020-05-21 15:58",
         "last_updated": 1590101910,
+        "order": 0
+    },
+    "53559966310": {
+        "title": "Acronyms vs Surname?",
+        "anchor": "53559966310",
+        "summary": "### Motivation\n\nI've been writing some papers lately, and one thing that has bugged me is how many different formatting styles have resorted to (LastN...",
+        "word_count": 744,
+        "date": "2020-05-31 13:43",
+        "last_updated": 1590957811,
         "order": 0
     }
 }
