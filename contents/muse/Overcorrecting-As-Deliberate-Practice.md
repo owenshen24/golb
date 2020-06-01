@@ -1,0 +1,9 @@
+title: Overcorrecting As Deliberate Practice
+
+Something that I've gotten a lot of value out of, when learning many different things, is to deliberately overcorrect, when I notice I'm doing something the wrong way. For example, if I'm trying to hit the ball straight on a golf club, and I'm always hitting to the left, I make a deliberate effort to hit it to the right, rather than just trying to hit straight. Or if I'm speaking my lines too fast, I will slow down and try to speak them at 0.75x speed instead of just 1.0x speed.
+
+In these situations, what oftens ends up happening is that, instead of actually overcorrecting in the opposite direction, it turns out that the amount of effort I'm putting in to intentionally try and do the opposite thing is actually just about what's needed to make me hit the happy medium. If I instead strove for just trying to reach the medium, I would likely still be biased in the same direction, but just less so.
+
+The other benefit is getting a feel for the entire range of motion / the entire action space. By default, I think I feel cautions to try and overcorrect or overextend. There's some part of me that thinks, "Well, I'm already obviously biased towards X, why try and become biased towards not-X?" There's some sort of fear there of "Is trying to be extra wrong in the other direction even allowed?" and some internal disdain, like "I shouldn't try and intentionally do something *wrong*!"
+
+But I think the right thing to do is to flip that gut feeling around–"If I'm already biased towards X, then I already have a propensity for it. In that case, it makes really good sense to try and understand the things I'm not good at, which in this case is not-X!" This is really good experiential knowledge from a purely exploratory standpoint, as well as from a skill gain perspective.
