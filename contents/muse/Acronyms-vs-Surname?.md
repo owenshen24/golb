@@ -2,7 +2,7 @@ title: Acronyms vs Surname?
 
 ### Motivation
 
-I've been writing some papers lately, and one thing that has bugged me is how many different formatting styles have resorted to (LastName et al) for inline citations. Not only is this problematic when authors contribute equally, but there aren't that many last names in the world. Surely there are bound to be many collisions, even within a paper? I myself just cited two different Klines for a recent paper.
+I've been writing some papers lately, and one thing that has bugged me is how many different formatting styles have resorted to (LastName et al) for inline citations. Not only is this problematic when authors contribute equally, but there aren't that many last names in the world. Surely there are bound to be many collisions, perhaps even within a paper? I myself just cited two different Klines for a recent paper.
 
 Then, while musing, I figured that perhaps the acronym of the paper's title could serve as a more unique identifier instead of just the lead author's last name. For example, if Victoria Wang wrote a paper called Discovering A New Prime, we'd use (DANP) instead of (Wang) as an inline citation. Perhaps this is obvious to you already. Of course, the next thing to do is to empirically verify this.
 
