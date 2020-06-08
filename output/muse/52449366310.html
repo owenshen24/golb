@@ -117,13 +117,15 @@ onload="renderMathInElement(document.body);"></script>
 
 <p>If our input space consists of \(2m\) points and our training data consists of a sequence of \(m\) points, then there are \(k = (2m)^m\) possible sequences. </p>
 
-<p>Below, we&#39;ll let \(S_i^j\) be the \(i^{th}\) possible sequence of training data, labeled with the \(j^{th}\) possible function. </p>
+<p>Below, we&#39;ll let \(S_j^i\) be the \(i^{th}\) possible sequence of training data, labeled with the \(j^{th}\) possible function. </p>
 
 <p><img src="/images/sij.svg"> </p>
 
 <p>Thus, we know that \(\underset{S \sim D_i^m}{\mathbb{E}}[L_{D_i}(A(S))] = \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j))\). In other words, for any one given distribution of data, the expected loss of our learning algorithm (across all training data sets) is equal to the expected loss if we take \(m\) training points, averaged across all possible functions that could label the data.</p>
 
-<p><img src="/images/one-distr-error.svg"> Recall that, from above, we care about taking the <strong>maximum</strong> error across all possible distributions; by definition, this will be at least as big as the average loss across all distributions. Thus, we know that:</p>
+<p><img src="/images/one-distr-error.svg"> </p>
+
+<p>Recall that, from above, we care about taking the <strong>maximum</strong> error across all possible distributions; by definition, this will be at least as big as the <strong>average</strong> loss across all distributions. Thus, we know that:</p>
 
 <p>\(\underset{i \in [T]}{\text{max }} \frac{1}{k}\sum_{j=1}^kL_{D_i}(A(S^i_j)) \ge \frac{1}{T}\sum^T_{i=1}\frac{1}{k}\sum^k_{j=1}L_{D_i}(A(S^i_j))\)</p>
 
@@ -207,7 +209,7 @@ onload="renderMathInElement(document.body);"></script>
 
 <p>One lesson from the disconnect between empirical results and the No Free Lunch Theorem is that our search space is often more constrained than we think. We&#39;re basically never actually searching over the set of all possible functions. Real life often doesn&#39;t give us such adversarial distributions, and because of this, we often have informative priors about what the end result should look like. This often looks like a bias towards simplicity, which regularization can help enforce. </p>
 </div>
-<div class="date">Last Updated: 2020-06-07 18:49</div>
+<div class="date">Last Updated: 2020-06-08 11:49</div>
 
 <hr class="comment-spacer">
 <div id="remarkbox-div">

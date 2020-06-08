@@ -133,7 +133,7 @@ If our input space consists of $2m$ points and our training data consists of a s
 
 
 
-Below, we'll let $S_i^j$ be the $i^{th}$ possible sequence of training data, labeled with the $j^{th}$ possible function. 
+Below, we'll let $S_j^i$ be the $i^{th}$ possible sequence of training data, labeled with the $j^{th}$ possible function. 
 
 
 
@@ -145,7 +145,9 @@ Thus, we know that $\underset{S \sim D_i^m}{\mathbb{E}}[L_{D_i}(A(S))] = \frac{1
 
 
 
-<img src="/images/one-distr-error.svg"> Recall that, from above, we care about taking the **maximum** error across all possible distributions; by definition, this will be at least as big as the average loss across all distributions. Thus, we know that:
+<img src="/images/one-distr-error.svg"> 
+
+Recall that, from above, we care about taking the **maximum** error across all possible distributions; by definition, this will be at least as big as the **average** loss across all distributions. Thus, we know that:
 
 
 
