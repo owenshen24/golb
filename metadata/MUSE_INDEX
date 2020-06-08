@@ -714,10 +714,10 @@
     "52449366310": {
         "title": "An Illustrated Proof of the No Free Lunch Theorem",
         "anchor": "52449366310",
-        "summary": " <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css\" integrity=\"sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo...",
+        "summary": "Lots of equations, but also lots of pictures. Learn about one of the coolest things in statistical learning theory. Not that complicated.",
         "word_count": 1944,
-        "date": "2020-06-07 18:41",
-        "last_updated": 1591580489,
+        "date": "2020-06-07 18:49",
+        "last_updated": 1591580950,
         "order": 0
     }
 }

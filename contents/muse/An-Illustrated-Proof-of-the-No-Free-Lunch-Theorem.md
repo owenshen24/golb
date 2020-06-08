@@ -1,4 +1,5 @@
 title: An Illustrated Proof of the No Free Lunch Theorem
+summary: Lots of equations, but also lots of pictures. Learn about one of the coolest things in statistical learning theory. Not that complicated.
 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
 
@@ -44,10 +45,8 @@ Next, let's define an error or loss function, which will tell us how well our ou
 
 1. There exists a function $f: X \to \{0,1\}$ with $L_D(f) = 0$. That is, there is some binary function over $X$ such that the expected loss of $f$ over $D$ is 0. In other words, there is some function which will correctly classify all the points in our distribution correctly.
    
-
 2. With probability of at least $\frac{1}{7}$ over the choice of $S \sim D^m$ $L_D(A(S)) \ge \frac{1}{8}$. In other words, for at least $\frac{1}{7}$ of all possible training sets of size $m$ from $D$, the expected loss of output of the training algorithm on the training set is at least  $\frac{1}{8}$. (Note that our loss function is defined here as the average **1** loss across all points in the distribution).
    
-
 3. The distribution $D$ is defined over $2m$ points, so our training set will consist of at most $m$ unique values, i.e. half of the distribution's points. 
 
 
