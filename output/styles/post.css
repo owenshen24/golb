@@ -71,7 +71,7 @@ li > p {
 
 .comment-spacer {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Code formatting */
