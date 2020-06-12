@@ -1,4 +1,5 @@
 title: Proving the No-Free-Lunch Theorem
+summary: Proving that every learning algorithm has a distribution it can't learn well.
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
