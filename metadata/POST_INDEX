@@ -6,7 +6,8 @@
         "word_count": 1606,
         "date": "2020-03-29 21:00",
         "last_updated": 1585540843,
-        "order": "3"
+        "order": "3",
+        "first_published": "2020-03-29 21:00"
     },
     "55069966310": {
         "title": "Fading Novelty",
@@ -15,7 +16,8 @@
         "word_count": 2226,
         "date": "2020-01-26 16:02",
         "last_updated": 1580083327,
-        "order": "1"
+        "order": "1",
+        "first_published": "2020-01-26 16:02"
     },
     "52499466310": {
         "title": "The Gradualism Manifesto",
@@ -24,7 +26,8 @@
         "word_count": 275,
         "date": "2020-03-30 13:10",
         "last_updated": 1585599005,
-        "order": "6"
+        "order": "6",
+        "first_published": "2020-03-30 13:10"
     },
     "55069866310": {
         "title": "Concept Space vs Action Space",
@@ -33,7 +36,8 @@
         "word_count": 1302,
         "date": "2020-01-26 15:37",
         "last_updated": 1580081860,
-        "order": "4"
+        "order": "4",
+        "first_published": "2020-01-26 15:37"
     },
     "55228366310": {
         "title": "Meta-Advice",
@@ -42,7 +46,8 @@
         "word_count": 1779,
         "date": "2020-01-26 16:22",
         "last_updated": 1580084538,
-        "order": "5"
+        "order": "5",
+        "first_published": "2020-01-26 16:22"
     },
     "52622266310": {
         "title": "Recognizing vs Generating",
@@ -51,6 +56,7 @@
         "word_count": 982,
         "date": "2020-04-01 19:08",
         "last_updated": 1585793310,
-        "order": "2"
+        "order": "2",
+        "first_published": "2020-04-01 19:08"
     }
 }

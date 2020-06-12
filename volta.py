@@ -169,7 +169,7 @@ def parse_posts(input_dir, output_dir, template_path, index_path, parse_all=Fals
           post_metadata['first_published'] = FILE_INDEX[post_id]['date']
           post_metadata['first_published'] = FILE_INDEX[post_id]['first_published']
         except KeyError:
-          post_metadata['first_published'] = parsed_metadata['date']
+          post_metadata['first_published'] = post_metadata['date']
 
         post_metadata['word_count'] = len(post_body.split(' '))
         

@@ -34,7 +34,6 @@ How do we formalize this?
 The NFL theorem we're going to prove states that:
 
 
-
 Say we have a learning algorithm A which outputs a binary classifier (this is our hypothesis) over a domain $X$. 
 
 
