@@ -257,7 +257,14 @@ def update_index(file_index_path, output_path, template_path, sort_key, is_rever
     FILE_INDEX = sorted(get_file_index(file_index_path).values(), 
       key=lambda k: int(k[sort_key]), reverse=is_reversed)
     render_HTML(output_path, template_path, FILE_INDEX)
+    minify_index(output_path)
     print('Updated Index: ' + output_path)
+
+
+
+def minify_index(path):
+  os.system("html-minifier --remove-comments --collapse-whitespace --preserve-line-breaks --minify-urls true " + path + "> " + path + ".min")
+  os.system("mv " + path + ".min" + " " + path)
 
 
 
