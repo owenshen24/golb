@@ -7,4 +7,4 @@ My personal site is [here](https://owenshen24.github.io/).
 
 Shorter, more personal blog posts can be found on [Muse](https://mlu.red/muse).
 
-This blog is on [GitHub](https://github.com/owenshen24/golb) and is hosted with Netlify. The RSS feed for mindlevelup is [here](https://mlu.red/rss.xml), and the RSS feed for Muse is [here](https://mlu.red/muse/rss.xml).
+This blog is on [GitHub](https://github.com/owenshen24/golb) and is hosted with Netlify. It's built out using a custom static site generator I wrote in Python, which is also in the GitHub repo. (However, I would recommend Pelican as a much more complete product.) The RSS feed for mindlevelup is [here](https://mlu.red/rss.xml), and the RSS feed for Muse is [here](https://mlu.red/muse/rss.xml).
