@@ -807,5 +807,15 @@
         "last_updated": 1592198229,
         "order": 0,
         "first_published": "2020-06-13 23:20"
+    },
+    "53045766310": {
+        "title": "Insights Over Ontologies",
+        "anchor": "53045766310",
+        "summary": "* When you have a set of ideas, one natural human thing to do is to try and find an overarching theme that can hold them together\n  * e.g. a model abo...",
+        "word_count": 406,
+        "date": "2020-06-19 23:41",
+        "last_updated": 1592635289,
+        "order": 0,
+        "first_published": "2020-06-19 23:41"
     }
 }
