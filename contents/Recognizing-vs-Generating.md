@@ -20,7 +20,7 @@ Here, as in many other Recognizing vs Generating dichotomies, it can be easy to 
 
 The issue is that we're conflating the two definitions.
 
-Overall, this substitution is a clear-cut example of mixing up [concept space and action space](https://mlu.red/concept-space-vs-action-space). We think that just because the tasks are conceptually similar, they must also have similar effects. Or, maybe we do know the difference but some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. Either way, this intuition of being able to carry over similarities from other categorical domains is flawed.
+Overall, this substitution is a clear-cut example of mixing up [concept space and action space](https://mlu.red/55069866310.html). We think that just because the tasks are conceptually similar, they must also have similar effects. Or, maybe we do know the difference but some part of us believes that we can do the easier Recognizing task, yet still reap the greater benefits of the Generating task. Either way, this intuition of being able to carry over similarities from other categorical domains is flawed.
 
 This is why math can end up being a difficult subject for some people. It’s all too easy to fool yourself that you understand what's going on when you’re just following along with the textbook. Cover up the steps, though, and things get a lot harder if you try to solve it yourself.
 
