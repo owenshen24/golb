@@ -1,6 +1,6 @@
-title: Explicating Removes The Uncertainty. And The Fun.
+title: Explicating Removes The Uncertainty. And The Fun
 
-I'm usually a big fan of explicating. Uncertainty can give a false sense of security, and forcing things to specific can expose those flaws. It's also much easier to then execute on your plans if they're neatly out. Decoupling the thinking and the doing can both be more efficient and lead to better outcomes.
+I'm usually a big fan of explicating. Uncertainty can give a false sense of security, and forcing things to be specific can expose those flaws. It's also much easier to then execute on your plans if they're neatly out. Decoupling the thinking and the doing can both be more efficient and lead to better outcomes.
 
 One thing that's come up recently is this sense of, "Why bother doing something if I already know how it can be done?"
 

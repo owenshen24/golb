@@ -719,12 +719,12 @@
         "first_published": "2020-04-12 12:48"
     },
     "52433366310": {
-        "title": "Explicating Removes The Uncertainty. And The Fun.",
+        "title": "Explicating Removes The Uncertainty. And The Fun",
         "anchor": "52433366310",
-        "summary": "I'm usually a big fan of explicating. Uncertainty can give a false sense of security, and forcing things to specific can expose those flaws. It's also...",
-        "word_count": 336,
-        "date": "2020-04-14 21:46",
-        "last_updated": 1586925983,
+        "summary": "I'm usually a big fan of explicating. Uncertainty can give a false sense of security, and forcing things to be specific can expose those flaws. It's a...",
+        "word_count": 337,
+        "date": "2020-06-21 10:23",
+        "last_updated": 1592760238,
         "order": 0,
         "first_published": "2020-04-14 21:46"
     },
@@ -817,5 +817,25 @@
         "last_updated": 1592635289,
         "order": 0,
         "first_published": "2020-06-19 23:41"
+    },
+    "53054366310": {
+        "title": "Notes on Hull",
+        "anchor": "53054366310",
+        "summary": "### Types of financial derivatives\n\nForward contracts are just agreements to buy/sell an asset at a certain price in the future. They don't cost anyth...",
+        "word_count": 288,
+        "date": "2020-06-22 18:42",
+        "last_updated": 1592876560,
+        "order": 0,
+        "first_published": "2020-06-22 18:42"
+    },
+    "52432666310": {
+        "title": "Just Add Time",
+        "anchor": "52432666310",
+        "summary": "Sometimes the right thing to do is to not worry about optimizing for the best way to do X. Sometimes the right thing to do is to just find a strategy ...",
+        "word_count": 48,
+        "date": "2020-06-24 22:06",
+        "last_updated": 1593061599,
+        "order": 0,
+        "first_published": "2020-06-24 22:06"
     }
 }
