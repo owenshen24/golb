@@ -28,7 +28,7 @@ In a similar vein, when you’re reading a book and the author says, “Now, obv
 
 See also group dynamics, where everyone is all too happy to offer their opinion when someone has an idea, but reluctant to submit their own. It's easier to critcize something that's already there, then to come up with something novel to present to others.
 
-And, of course, this dichotomy is of utmost importance in the realm of self-help. I think that there is a tendency for advice to get cached as [declarative knowledge, rather than procedural knowledge](https://en.wikipedia.org/wiki/Procedural_knowledge), in a way which parallels the Recognizing vs Generating dichotomy. 
+And, of course, this dichotomy is of utmost importance in the realm of self-help. I think that there is a tendency for advice to get cached as [declarative knowledge, rather than procedural knowledge](https://mlu.red/55228366310.html), in a way which parallels the Recognizing vs Generating dichotomy. 
 
 (If you haven’t seen either of these terms before: Briefly, declarative knowledge refers to things you know how to relate, like Paris being the capital of France. Procedural knowledge refers to things you know how to do, like tying a knot.)
 
@@ -52,13 +52,17 @@ But this may not be what you want! From a practical perspective, what you may wa
 
 If building a mental map is the Recognizing task, then finding ways to actually have the concepts cash out into actions is the Generating task. 
 
-Most importantly, as a general pattern, Generating tasks are *harder* than their Recognizing counterparts, even if they appear to be doing similar things:
+When giving advice, for example, most advice looks like telling people what to do. From a Recognizing perspective, people can fall into the trap of asking themselves, "Have I heard this category of advice before?" This can cause people to dismiss advice rather easily. Presumably, you actually want them to take a Generative perspective, asking themselves something "How do I expect this advice to change future actions I take in the future?" 
+
+One possibly counterintuitive corollary of this for giving advice is that you want to focus on giving people information that would lead them to generate the advice you want them to have, *not* necessarily just giving them the advice outright. This explains why anecdotes and [insights](https://mlu.red/52499466310.html) can be so powerful because they draw the audience's attention to trails of thought that can cause them to take a more Generative stance.
+
+Importantly, as a general pattern, Generating tasks are *harder* than their Recognizing counterparts, even if they appear to be doing similar things:
 
 * Generating a proof from scratch vs reviewing the textbook
 * Drawing conclusions from data vs remembering what other people wrote
 * Practicing relevant skills vs understanding how concepts are related
 * Imagining how you'd change your actions given advice vs just checking if you've heard it before
 
-In conclusion, it's not that Recognizing isn't useful. Sometimes, it's a necessary heuristic for cutting through the cruft. But Recognition does not necessarily imply understanding, and pushing for something you can Generate can help expose what you actually know. 
+In conclusion, it's not that Recognizing isn't useful. Sometimes, it's a necessary heuristic for cutting through the cruft, and it's not always necessary. But keep in mind that Recognition does not necessarily imply understanding, and pushing for something you can Generate can help expose what you actually know. 
 
 Thus, next time you have a learning goal (e.g. new language, programming framework, mathematics, etc.), remember to find ways to sharpen your skills Generatively, as that's where most of the useful work lies.
