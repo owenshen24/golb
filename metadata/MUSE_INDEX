@@ -802,9 +802,9 @@
         "title": "Personal Websites I Like",
         "anchor": "53028766310",
         "summary": "Links to personal sites of cool people who have cool essays, oftentimes with cool graphics.",
-        "word_count": 150,
-        "date": "2020-06-14 22:17",
-        "last_updated": 1592198229,
+        "word_count": 192,
+        "date": "2020-07-20 19:29",
+        "last_updated": 1595298569,
         "order": 0,
         "first_published": "2020-06-13 23:20"
     },
@@ -837,5 +837,25 @@
         "last_updated": 1593061599,
         "order": 0,
         "first_published": "2020-06-24 22:06"
+    },
+    "53064666310": {
+        "title": "The Shape of the Question",
+        "anchor": "53064666310",
+        "summary": "One incredibly useful razor that I use when thinking about philosophical questions is to ask myself what shape I expect the answer to look like, *cond...",
+        "word_count": 66,
+        "date": "2020-07-14 21:25",
+        "last_updated": 1594787141,
+        "order": 0,
+        "first_published": "2020-07-14 21:25"
+    },
+    "52906366310": {
+        "title": "Operationalizing Interpretability",
+        "anchor": "52906366310",
+        "summary": "This blog post is my attempt to get some more clarity on how to think about interpretability in ML. Zach Lipton's [Mythos of Model Interpretability](h...",
+        "word_count": 1334,
+        "date": "2020-07-19 22:22",
+        "last_updated": 1595222521,
+        "order": 0,
+        "first_published": "2020-07-19 22:22"
     }
 }

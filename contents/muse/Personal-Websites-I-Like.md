@@ -30,11 +30,20 @@ summary: Links to personal sites of cool people who have cool essays, oftentimes
 * also cheating
 * you gotta check this out if you haven't already
 * so much content
+  * sleep
+  * drugs
+  * ai
+  * papers
+  * genes
+  * anime
 
 ### [Michael Nielsen](http://michaelnielsen.org/)
 
 * I should probably stop cheating and pick some more lesser-known gems
 * but seriously, this one's also a must-check-out
+  * neural networks
+  * quantum computing
+  * the best HCI stuff
 
 ### [Ben Kuhn](https://www.benkuhn.net/posts/)
 
@@ -46,3 +55,8 @@ summary: Links to personal sites of cool people who have cool essays, oftentimes
 * also cheating because this is not a personal site, per se
 * but very very very good stuff on motivation
 * actually incredibly high leverage, definitely read the stuff about Shoulds
+
+### [Lynn Fisher](https://lynnandtonic.com/)
+
+* [a single div](https://a.singlediv.com/) is so beautiful
+* very artsy

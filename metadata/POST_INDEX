@@ -68,5 +68,15 @@
         "last_updated": 1594618603,
         "order": "7",
         "first_published": "2020-07-12 22:36"
+    },
+    "52436366310": {
+        "title": "Habits 101",
+        "anchor": "52436366310",
+        "summary": "WIP. A comprehensive overview of the literature on habits, how to form them, and how to break them.",
+        "word_count": 1287,
+        "date": "2020-07-20 19:30",
+        "last_updated": 1595298606,
+        "order": 0,
+        "first_published": "2020-07-13 21:28"
     }
 }
