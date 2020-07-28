@@ -54,7 +54,7 @@ However, Lipton points out that this desiderata can be less about the specific c
 
 One approach towards achieving this for neural nets is [tree regularization](http://www.shallowmind.co/jekyll/pixyll/2017/12/30/tree-regularization/) which adds a regularization term that corresponds (roughly) to the size of the decision tree that can approximate the net being trained. The hope here is to eventually output a shallow decision tree that performs comparably to a neural net. Another approach is [neural backed decision trees](https://arxiv.org/pdf/2004.00221.pdf) which use another type of regularization to learn a hierarchy over class labels, which then get used to form a decision tree. 
 
-Of course, parameterization is not the whole story. There are methods like K-Nearest Neighbors which are paramterized by your entire dataset; this could be billions of points. Yet, there is a sense in which KNN is still interpretable despite its massive size. We can cleanly describe what the algorithm does, and we can even see "why" it made such a choice because the algorithm is so simple.
+Of course, parameterization is not the whole story. There are methods like K-Nearest Neighbors which are eerized by your entire dataset; this could be billions of points. Yet, there is a sense in which KNN is still interpretable despite its massive size. We can cleanly describe what the algorithm does, and we can even see "why" it made such a choice because the algorithm is so simple.
 
 ### Is the model interpretable at every step, or with regards to its sub-components? (Decomposability)
 
@@ -110,7 +110,7 @@ For example, I trained a CNN on MNIST and did a simple gradient visualization on
 
 Using PyTorch, I took the derivative of the logit that corresponds to the class 3 with respect to the input image. This gave me the image below. Here, the white pixels correspond to parts of the image that would increase the logit value for 3, and the black pixels correspond to the reverse. We can see the rough curves of the three come through. 
 
-![a picture of the gradient for 3](/images/mnist-3-grad-7.png)
+![a picture of the gradient for 3](/images/mnist-3-grad-0.png)
 
 Note how this is different from the visualization we previously had with the linear classifier in red and blue in the first section. Those visuals represented the importance in *aggregate* for the entire input space. The visualization here is only for this specific input. For a different input, e.g. a different 3, the local gradient would look different, as shown below:
 
@@ -197,7 +197,7 @@ They found that:
 
 Another paper, [Interpreting Interpretability: Understanding Data Scientists’ Use of Interpretability Tools for MachineLearning](http://www.jennwv.com/papers/interp-ds.pdf), found that even data scientists may not understand what interpretable visualizations tell them, and this can inspire unwarranted confidence in the underlying model, even leading to ad-hoc rationalization of suspicious results. 
 
-Lastly, [Evaluating Explainable AI: Which Algorithmic ExplanationsHelp Users Predict Model Behavior?](https://arxiv.org/pdf/2005.01831.pdf), is a recent study of five interpretability techniques and how they empirically help humans. The authors found very few benefits from any of techniques. Of particular note is that explanations which were rated to be higher quality by participants were not very useful in actually improving human performance.
+Lastly, [Evaluating Explainable AI: Which Algorithmic Explanations Help Users Predict Model Behavior?](https://arxiv.org/pdf/2005.01831.pdf), is a recent study of five interpretability techniques and how they empirically help humans. The authors found very few benefits from any of techniques. Of particular note is that explanations which were rated to be higher quality by participants were not very useful in actually improving human performance.
 
 All of this points to the difficult road ahead for interpretability research. These approaches and visuals are liable to be misused and misinterpreted. Even once we get improved notions of intepretability with intuitive properties, it still remains to be seen if we can use them to achieve the benefits I listed out in the very beginning. While it certainly seems more difficult to formalize interpretability than to use it well, I'm glad that empirical tests are already being done; they can hopefully also guide where the research goes next.
 
