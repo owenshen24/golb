@@ -1,6 +1,8 @@
 title: Interpretability in ML: A Broad Overview
 
-This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. I do not intend for this post to be necessarily comprehensive, but my goal is to review conceptual frameworks, existing research, and future directions. Most of these ideas are based heavily off of Zach Lipton's [Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf), which I think is the best paper for understanding the different definitions of interpretability (and related techniques). For a deeper dive into specific techniques, I recommend [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/pdf/1802.01933.pdf) which covers a wide variety of approaches for many different ML well as model-agnostic approaches. For neural nets specifically, [Explainable Deep Learning:A Field Guide for the Uninitiated](https://arxiv.org/pdf/2004.14545.pdf) provides an in-depth read.
+This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. I do not intend for this post to be necessarily comprehensive, but my goal is to review conceptual frameworks, existing research, and future directions. 
+
+Most of these ideas are based heavily off of Zach Lipton's [Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf), which I think is the best paper for understanding the different definitions of interpretability (and related techniques). For a deeper dive into specific techniques, I recommend [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/pdf/1802.01933.pdf) which covers a wide variety of approaches for many different ML well as model-agnostic approaches. For neural nets specifically, [Explainable Deep Learning: A Field Guide for the Uninitiated](https://arxiv.org/pdf/2004.14545.pdf) provides an in-depth read. Two other good recent conceptual surveys are [here](https://www.pnas.org/content/116/44/22071) and [here](https://arxiv.org/pdf/1905.08883.pdf).
 
 (Shout-out to [Connected Papers](https://www.connectedpapers.com/main/d516daff247f7157fccde6649ace91d969cd1973/The-Mythos-of-Model-Interpretability/) which made navigating the paper landscape for interpretability very bearable.)
 
@@ -181,9 +183,7 @@ I haven't looked too deep into each one of the saliency map approaches, but I th
 
 In the above paper on sanity-checks, they find that Grad-CAM actually is sensitive to changes in the input, which is good, but I definitely would like to see these sanity-checks being applied more frequently. Outside of new approaches, I think additional benchmarks for interpretability that mimic real-world use cases could be of great value to the field.
 
-Some other tasks, off the top of my head, which seem possibly useful:
-
-LIST
+Another approach is this direction is to back-chain from the explanations that people tend to use in everyday life to derive better benchmarks. [Explanation in Artificial Intelligence: Insights from the Social Sciences](https://arxiv.org/pdf/1706.07269.pdf) provides an overview of where philosophy and social science can meet ML in the middle. Of course, the final arbiter for all this is how well people can actually use and interpret these interpretability results, which brings me to my second point.
 
 ### Utility
 
