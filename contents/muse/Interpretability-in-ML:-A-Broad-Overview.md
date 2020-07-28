@@ -8,7 +8,7 @@ Most of these ideas are based heavily off of Zach Lipton's [Mythos of Model Inte
 
 As always, you can find code used to generate the images [here](https://github.com/owenshen24/interp-exp) on GitHub.
 
-In the rest of this post, we'll go over many ways to formalize what "interpretability" means.    Broadly, interpretability focuses on the *how*; it's focused on getting some notion of an explanation for the decisions made by our models. Below, each section is operationalized by a concrete question we can ask of our ML model using a specific definition of interpretability. Before that, though, if you're new to all this, I'll explain briefly about why we might care about interpretability at all. 
+In the rest of this post, we'll go over many ways to formalize what "interpretability" means.    Broadly, interpretability focuses on the *how*. It's focused on getting some notion of an explanation for the decisions made by our models. Below, each section is operationalized by a concrete question we can ask of our ML model using a specific definition of interpretability. Before that, though, if you're new to all this, I'll explain briefly about why we might care about interpretability at all. 
 
 ## Why Care About Interpretability?
 
