@@ -60,3 +60,8 @@ summary: Links to personal sites of cool people who have cool essays, oftentimes
 
 * [a single div](https://a.singlediv.com/) is so beautiful
 * very artsy
+
+###[Alvin Wan](https://alvinwan.com/)
+
+* very nice pictures
+* good design

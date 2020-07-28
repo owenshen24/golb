@@ -802,9 +802,9 @@
         "title": "Personal Websites I Like",
         "anchor": "53028766310",
         "summary": "Links to personal sites of cool people who have cool essays, oftentimes with cool graphics.",
-        "word_count": 192,
-        "date": "2020-07-20 19:29",
-        "last_updated": 1595298569,
+        "word_count": 198,
+        "date": "2020-07-26 12:25",
+        "last_updated": 1595791503,
         "order": 0,
         "first_published": "2020-06-13 23:20"
     },
@@ -849,12 +849,12 @@
         "first_published": "2020-07-14 21:25"
     },
     "52906366310": {
-        "title": "Operationalizing Interpretability",
+        "title": "Interpretability in ML: A Broad Overview",
         "anchor": "52906366310",
-        "summary": "This blog post is my attempt to get some more clarity on how to think about interpretability in ML. Zach Lipton's [Mythos of Model Interpretability](h...",
-        "word_count": 1334,
-        "date": "2020-07-19 22:22",
-        "last_updated": 1595222521,
+        "summary": "This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. I do not intend for this post to be necessaril...",
+        "word_count": 4321,
+        "date": "2020-07-27 18:41",
+        "last_updated": 1595900506,
         "order": 0,
         "first_published": "2020-07-19 22:22"
     }

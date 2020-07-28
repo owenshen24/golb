@@ -8,7 +8,7 @@
 <link rel="preload" href="/styles/fonts/hind-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles/base.css">
 <script data-goatcounter="https://mlu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<title>Operationalizing Interpretability</title>
+<title>Interpretability in ML: A Broad Overview</title>
 <link rel="stylesheet" href="/styles/post.css">
 <link rel="stylesheet" href="/styles/muse_post.css">
 <script defer="defer" src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
@@ -24,65 +24,155 @@
 </div>
 <div class="grid">
 <div class="container">
-<div class="post-title">Operationalizing Interpretability</div>
-<div class="content"><p>This blog post is my attempt to get some more clarity on how to think about interpretability in ML. Zach Lipton&#39;s <a href="https://arxiv.org/pdf/1606.03490.pdf">Mythos of Model Interpretability</a> is a great survey of the different definitions that people use when they talk about &quot;interpretability&quot;. Another useful paper is to be <a href="https://arxiv.org/pdf/1802.01933.pdf">A Survey Of Methods For Explaining Black Box Models</a> which covers a wide variety of approaches for many different ML well as model-agnostic approaches. For neural nets specifically, <a href="https://arxiv.org/pdf/2004.14545.pdf">Explainable Deep Learning:A Field Guide for the Uninitiated</a> provides an in-depth read. Lastly, shout-out to <a href="https://www.connectedpapers.com/main/d516daff247f7157fccde6649ace91d969cd1973/The-Mythos-of-Model-Interpretability/">Connected Papers</a> which made navigating the paper landscape for interpretability very bearable.</p>
-<p>One way to operationalize the concepts in these papers is to translate them into concrete questions we can ask of a machine learning model. Below, I&#39;ve listed out a set of such questions, what concepts they reference, and what research exists to solve them.</p>
-<h1>Transparency Interpretability</h1>
-<p>These three questions are from Lipton&#39;s section on Transparency as interpretability, where he features on properties of the model that are useful to understand and can be known before training begins.</p>
+<div class="post-title">Interpretability in ML: A Broad Overview</div>
+<div class="content"><p>This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. I do not intend for this post to be necessarily comprehensive, but my goal is to review conceptual frameworks, existing research, and future directions. Most of these ideas are based heavily off of Zach Lipton&#39;s <a href="https://arxiv.org/pdf/1606.03490.pdf">Mythos of Model Interpretability</a>, which I think is the best paper for understanding the different definitions of interpretability (and related techniques). For a deeper dive into specific techniques, I recommend <a href="https://arxiv.org/pdf/1802.01933.pdf">A Survey Of Methods For Explaining Black Box Models</a> which covers a wide variety of approaches for many different ML well as model-agnostic approaches. For neural nets specifically, <a href="https://arxiv.org/pdf/2004.14545.pdf">Explainable Deep Learning:A Field Guide for the Uninitiated</a> provides an in-depth read.</p>
+<p>(Shout-out to <a href="https://www.connectedpapers.com/main/d516daff247f7157fccde6649ace91d969cd1973/The-Mythos-of-Model-Interpretability/">Connected Papers</a> which made navigating the paper landscape for interpretability very bearable.)</p>
+<p>As always, you can find code used to generate the images <a href="https://github.com/owenshen24/interp-exp">here</a> on GitHub.</p>
+<p>In the rest of this post, we&#39;ll go over many ways to formalize what &quot;interpretability&quot; means. Broadly, interpretability focuses on the <em>how</em>; it&#39;s focused on getting some notion of an explanation for the decisions made by our models. Below, each section is operationalized by a concrete question we can ask of our ML model using a specific definition of interpretability. Before that, though, if you&#39;re new to all this, I&#39;ll explain briefly about why we might care about interpretability at all.</p>
+<h2>Why Care About Interpretability?</h2>
+<p>Firstly, interpretability in ML is useful because it can aid in trust. As humans, we may be reluctant to rely on ML models for certain critical tasks , e.g. medical diagnosis, unless we know &quot;how they work&quot;. There&#39;s often a fear of unknown unknowns when trusting in something opaque, which we see when people confront new technology. Approaches to interpretability which focus on transparency could help mitigate some of these fears.</p>
+<p>Secondly, safety. There is almost always some sort of <a href="https://arxiv.org/pdf/1606.06565v1.pdf">shift in distributions</a> between model training and deployment. Failures to generalize or Goodhart&#39;s Law issues like <a href="https://deepmind.com/blog/article/Specification-gaming-the-flip-side-of-AI-ingenuity">specification gaming</a> are still open problems that could lead to issues in the near future. Approaches to interpretability which explain the model&#39;s representations or which features are most relevant could help diagnose these issues earlier and provide more opportunities to intervene.</p>
+<p>Thirdly, and perhaps most interestingly, contestability. As we delegate more decision-making to ML models, it becomes important for people to appeal these decisions made. Black-box models provide no such recourse because they don&#39;t decompose into anything that <em>can</em> be contested. This has already led to major criticism of proprietary recidivism predictors like <a href="https://en.wikipedia.org/wiki/COMPAS_(software)#Critiques_and_legal_rulings">COMPAS</a>. Approaches to interpretability which focus on decomposing the model into sub-models or explicate a chain of reasoning could help with such appeals.</p>
+<h1>Defining Interpretability</h1>
+<p>Lipton&#39;s paper breaks interpretability down into two types, transparency and post-hoc.</p>
+<h2>Transparency Interpretability</h2>
+<p>These three questions are from Lipton&#39;s section on transparency as interpretability, where he features on properties of the model that are useful to understand and can be known before training begins.</p>
 <h3>Can a human walk through the model&#39;s steps? (Simulatibility)</h3>
-<p>This property is about whether or not a human could go through each step of the algorithm and have it make sense to them at each step. Linear models and decision trees are often cited as interpretable models in these domains because the computation they require is simple, no fancy matrix operations or nonlinear transformations. However, Lipton points out that this desiderata is often less about the specific choice of model and more about the <em>size</em> of the model. After all, a decision tree with thousands of nodes would likely still be complicated to understand. Understanding is also about being able to hold most of the model in your mind, which is often about how the model is parameterized.</p>
-<p>Of course, parameterization is itself an imperfect metric. K-Nearest Neighbors, for example, is an algorithm parameterized by your entire dataset–which could be millions of points–but it seems rather feasible for a human to perform the KNN algorithm. Furthermore, KNN has several other desirable properties related to interpretability, like telling you what points in your dataset induced its decision (albeit this is trivially true, given what the algorithm does).</p>
-<ul>
-<li>talk about why linear models and decision trees are favored</li>
-<li>show an example with a thick decision tree model for MNIST</li>
-<li>explain Lipton&#39;s point about how this often really is about model size</li>
-<li>except it&#39;s not always true as KNN makes a lot of sense, and can even answer other questions, but it&#39;s parameterized by the entire dataset</li>
-</ul>
+<p>This property is about whether or not a human could go through each step of the algorithm and have it make sense to them at each step. Linear models and decision trees are often cited as interpretable models using such justifications; the computation they require is simple, no fancy matrix operations or nonlinear transformations.</p>
+<p>Linear models are also nice because the parameters themselves have a very direct mapping–they represent how important different input features are. For example, I trained a linear classifier on MNIST, and here are some of the weights, each of which correspond to a pixel value:</p>
+<pre><code>0.00000000e+00,  0.00000000e+00,  3.90594519e-05,  7.10306823e-05,
+0.00000000e+00,  0.00000000e+00,  0.00000000e+00, -1.47542413e-03,
+-1.67811041e-04, -3.83280468e-02, -8.10846867e-02, -5.01943218e-02,
+-2.90314621e-02, -2.65494116e-02, -8.29385683e-03,  0.00000000e+00,
+0.00000000e+00,  1.67390785e-04,  3.92789141e-04,  0.00000000e+00,
+0.00000000e+00,  0.00000000e+00,  0.00000000e+00,  0.00000000e+00
+</code></pre>
+<p>By themselves, these weights are hard to interpret. Even if we knew which pixels they corresponded to, it&#39;s difficult to try and pin down what a certain pixel even represents for large images. However, there is an easy trick to turn these weights into something interpretable. We simply reshape them into the same shape as our model and view it as an image, with the pixel color represented by the weight value.</p>
+<p>Here are the weights for the model that looks for 0:</p>
+<p><img src="/images/linear-0.png" alt="a picture of a grid with 0 highlighted"></p>
+<p>And here are the weights for the model that looks for 3:</p>
+<p><img src="/images/linear-3.png" alt="a picture of a grid with 3 highlighted"></p>
+<p>In both cases, we can see that the blue regions, which represent positive weight, correspond to a configuration of pixels that look roughly like the digit being detected for. In the case of 0, we can see a distinct blank spot in the center of the image and a curve-like shape around it, whereas the curves of the 3 are also apparent.</p>
+<p>However, Lipton points out that this desiderata can be less about the specific choice of model and more about the <em>size</em> of the model. A decision tree with a billion nodes, for example, may still be difficult to understand. Understanding is also about being able to hold most of the model in your mind, which is often about how the model is parameterized.</p>
+<p>One approach towards achieving this for neural nets is <a href="http://www.shallowmind.co/jekyll/pixyll/2017/12/30/tree-regularization/">tree regularization</a> which adds a regularization term that corresponds (roughly) to the size of the decision tree that can approximate the net being trained. The hope here is to eventually output a shallow decision tree that performs comparably to a neural net. Another approach is <a href="https://arxiv.org/pdf/2004.00221.pdf">neural backed decision trees</a> which use another type of regularization to learn a hierarchy over class labels, which then get used to form a decision tree.</p>
+<p>Of course, parameterization is not the whole story. There are methods like K-Nearest Neighbors which are paramterized by your entire dataset; this could be billions of points. Yet, there is a sense in which KNN is still interpretable despite its massive size. We can cleanly describe what the algorithm does, and we can even see &quot;why&quot; it made such a choice because the algorithm is so simple.</p>
 <h3>Is the model interpretable at every step, or with regards to its sub-components? (Decomposability)</h3>
-<p>Another desirable feature would be to understand what the model is doing at each step. For example, a decision tree whose nodes correspond to easily identifiable factors like age or height. This can sometimes be difficult because model performance is very tightly coupled with the representations used. Raw features are often not very interpretable by themselves, for example the RGB pixel values of an image. Thus, while this seems very useful to have in theory, it seems difficult to achieve.</p>
-<ul>
-<li>explain how this often requires feature-engineering</li>
-<li>show an example w/ MNIST and hand-picked features</li>
-</ul>
-<h3>Does the algorithm itself confer any guarantee? (Algorithmic Transparency)</h3>
-<p>This asks if our learning algorithm has any properties which make it easy to understand. For example, we might know that the algorithm only outputs sparse models, or perhaps it always converges to a certain type of solution. In these cases, the resulting learned model can be more amenable to analysis.</p>
-<ul>
-<li>perhaps show a linear model or an SVM, something with convergence guarantees</li>
-</ul>
-<h1>Post-Hoc Interpretability</h1>
-<p>These four questions are from Lipton&#39;s section on Post-Hoc Interpretability, which are things we learn from the model after training has occurred.</p>
+<p>Another desirable feature would be to understand what the model is doing at each step. For example, imagine a decision tree whose nodes correspond to easily identifiable factors like age or height. This can sometimes be difficult because model performance is very tightly coupled with the representations used. Raw features, e.g. RGB pixel values, are often not very interpretable by themselves, but interpretable features may not be the most informative for the model.</p>
+<p>For example, I trained a decision tree for MNIST using the following interpretable features:</p>
+<ol>
+<li>The average brightness of the image - <code>avg_lumin</code></li>
+<li>The average brightness of the image&#39;s outline (found using an edge detector) - <code>edge_prop</code></li>
+<li>The number of corners found in the image&#39;s outline <code>num_corners</code></li>
+<li>The width of the image - <code>max_width</code></li>
+<li>The height of the image - <code>max_height</code></li>
+</ol>
+<p>It seems like there would be at least <em>some</em> useful information in these features; ones tend to have less area (so <code>avg_lumin</code> would be lower), eights might have more corners, etc. etc. Yet, the resulting decision tree of depth 3, shown below, however, only achieves 33% training accuracy. Going all the way to depth 10 only bumps it to around 50%.</p>
+<p><img src="/images/interp_mnist_decision_tree.png" alt="a decision tree trained on MNIST with interpretable features"></p>
+<p>If we look at the nodes, we can perhaps see what&#39;s going on. At the top, we can see that our model will predict a 1 if the width is less than 7.5 pixels, which makes sense as 1 is likely going to be the thinnest digit. Near the bottom, we see that the number of corners is being used to differentiate between 7 and 4. And 4s do have more visual corners than 7s. But this is very rough, and the overall performance is still not very good.</p>
+<p>To compare this with raw features, I also trained a depth 3 decision tree using direct pixel values, i.e. a vector of 784 grayscale values. The resulting model, shown below, gets 50% train and test accuracy.</p>
+<p><img src="/images/mnist_decision_tree.png" alt="a normal decision tree trained on MNIST"></p>
+<p>Here, it&#39;s not clear at all why these pixel values were chosen to be the splitting points. And yet the resulting decision tree, for the same number of nodes, does much better. In this simple case, the performance vs interpretability trade-off in representation is quite apparent.</p>
+<h3>Does the algorithm itself confer any guarantees? (Algorithmic Transparency)</h3>
+<p>This asks if our learning algorithm has any properties which make it easy to understand. For example, we might know that the algorithm only outputs sparse models, or perhaps it always converges to a certain type of solution. In these cases, the resulting learned model can be more amenable to analysis. For example, the <a href="https://davidrosenberg.github.io/mlcourse/Labs/UniquenessOfSVM.pdf">Hard Margin SVM</a> is guaranteed to find a unique solution which maximizes the margin. In another vein, the <a href="https://owenshen24.github.io/perceptron/">perceptron</a> is guaranteed to find parameters (not necessarily unique ones, though) that achieve a training loss of 0 if the data are linearly separable.</p>
+<p>When it comes to deep learning, I&#39;m less familiar with these kinds of results. My rough understanding is that the equivalence class of models which achieve comparable training error can be quite large, even with regularization, which makes uniqueness results hard to come by.</p>
+<p>As I mentioned earlier with KNN, it seems, aside from mechanical transparency, there&#39;s another level of understanding regarding &quot;what the algorithm actually does in simple terms&quot;. KNN is easy to describe as &quot;it reports the labels of the points closest to the input&quot;. The part of this property that&#39;s doing the most work here is the way we actually do the describing. Obviously most ML models can be abstracted as &quot;it finds parameters which satisfy certain constraints&quot;, but this is very broad. It seems harder to find a description at the same level of granularity for neural nets beyond something like &quot;it learns a high-dimensional manifold that maps onto the input data&quot;.</p>
+<h2>Post-Hoc Interpretability</h2>
+<p>These four questions are from Lipton&#39;s section on post-hoc interpretability, which focus on things we learn from the model after training has occurred.</p>
 <h3>Can the model give an explanation for its decision, after the fact? (Text Explanation)</h3>
 <p>Similar to how humans often give post-hoc justifications for their actions, it could be informative to have models which can also give explanations, perhaps in text. Naive methods of pairing text with decisions, however, are likely going to optimize for something like &quot;how credible the explanation sounds to a human&quot; rather than &quot;how accurate the explanation is at summarizing the internal steps taken&quot;.</p>
-<h3>Can the model identify what is/was important to its decisionmaking? (Visualization/Local Explanations)</h3>
-<p>We can ask a variety of questions about our input and outputs from the model. We might be interested to know which parts of the input are responsible for most of the output or how little the input has to change for the output to change. Other techniques focus on outputting an interpretable model in the neighborhood of the input, so we can at least understand how the model changes locally.</p>
+<p>While this seems clearly desirable, I think research in this area is hard to come by, and Lipton only offers one paper that is RL-focused. On ConnectedPapers, I found that said paper is part of a larger related field of <a href="https://www.connectedpapers.com/main/a32f4d93f7e50aad52210ab464f4d8e360eb7a7d/Newtonian-Action-Advice-Integrating-Human-Verbal-Instruction-with-Reinforcement-Learning/graph">reinforcement learning with human advice</a>. This seems to focus on the converse problem–given human explanations, how can models incorporate them into their decision-making? Maybe insights here can eventually be used in the other direction.</p>
+<h3>Can the model identify what is/was important to its decision-making? (Visualization/Local Explanations)</h3>
+<p>This focuses on how the inputs and outputs change, relative to one another.</p>
+<p>Saliency maps are a broad class of approaches that look at where the inputs change in order to change the outputs. A simple way to do this is to take the derivative of the loss function with respect to the input. Past this, there are many modifications which involve averaging the gradient, perturbing the input, or local approximations. <a href="https://arxiv.org/pdf/1910.08485.pdf">Understanding Deep Networks via Extremal Perturbations and Smooth Masks</a> has a good overview of the work in this area.</p>
+<p>For example, I trained a CNN on MNIST and did a simple gradient visualization on an image of this 3:</p>
+<p><img src="/images/mnist-3-0.png" alt="a picture of a 3 in MNIST"></p>
+<p>Using PyTorch, I took the derivative of the logit that corresponds to the class 3 with respect to the input image. This gave me the image below. Here, the white pixels correspond to parts of the image that would increase the logit value for 3, and the black pixels correspond to the reverse. We can see the rough curves of the three come through.</p>
+<p><img src="/images/mnist-3-grad-7.png" alt="a picture of the gradient for 3"></p>
+<p>Note how this is different from the visualization we previously had with the linear classifier in red and blue in the first section. Those visuals represented the importance in <em>aggregate</em> for the entire input space. The visualization here is only for this specific input. For a different input, e.g. a different 3, the local gradient would look different, as shown below:</p>
+<p>This 3:</p>
+<p><img src="/images/mnist-3-7.png" alt="a picture of another 3 in MNIST"></p>
+<p>yields this gradient:</p>
+<p><img src="/images/mnist-3-grad-7.png" alt="a picture of a gradient for another 3 in MNIST"></p>
+<p>Another group of approaches focus on visualizing with respect to the model parameters themselves, rather than the input. A lot of the work has been done by Chris Olah, Shan Carter, Ludwig Schubert, and others on <a href="https://distill.pub/">distill.pub</a>. Their work in this area has gone from <a href="https://distill.pub/2017/feature-visualization">visualizing the activations of specific neurons and layers</a>, to entire <a href="https://distill.pub/2019/activation-atlas/">maps of activations for many networks</a>, to <a href="https://distill.pub/2020/circuits/zoom-in/">decomposing models into interpretable building blocks</a>. Another great visualization resource for this type of work is the <a href="https://microscope.openai.com/models">OpenAI Microscope</a>. Progress here has been very exciting, but it remains to be seen if similar approaches can be found for neural nets which focus on tasks other than image recognition.</p>
 <h3>Can the model show what else in the training data it thinks are related to this input/output? (Explanation by Example)</h3>
-<p>This is a generalization of what KNN does. We can ask the model for which examples it thinks are similar to the current input. If the similar input had an output similar to the current one, this can sort of be thought as an explanation by analogy.</p>
-<h1>Some more questions</h1>
-<p>These are a mix of other questions I thought of before/after reading the above papers. Some of them are also from Lipton&#39;s paper, but from the earlier sections on interpretability desiderata.</p>
+<p>This asks for what other training examples are similar to the current input. When the similarity metric is just distance in the original feature space, this is akin to KNN with K = 1. More sophisticated methods may look for examples which are similar in whatever representation or latent space the model is using. The human justification for this type of approach is that it is similar to reasoning by analogy, where we present a related scenario to support our actions.</p>
+<p>While I think this is useful, it definitely doesn&#39;t seem like all we need for understanding, or even most of what we&#39;d need.</p>
+<h2>What Else Might Be Important?</h2>
+<p>These are a mix of other questions I thought of before/after reading the above papers. Some of them are also from Lipton&#39;s paper, but from the earlier sections on interpretability desiderata. Because <a href="https://mlu.red/52622266310.html">answering questions is harder than asking them</a>, I&#39;ve also taken the time to give some partial responses to these questions, but these are not well-researched and should be taken as my own thoughts only.</p>
 <ol>
-<li>What are the relevant features for the model? What is superfluous?</li>
-<li>What is the space of inputs for which the model is well-defined?</li>
-<li>How can you describe what the model does in simpler terms?</li>
-<li>What can the model tell you to allow you to approximate its performance in another setting or another model?</li>
-<li>How informative is this model, relative to another more interpretable model?</li>
-<li>What guarantees does the model have to shifts in distribution?</li>
-<li>What trips up the model (and also the human)?</li>
-<li>What trips up the model (but not the human)?</li>
-<li>What does the model know about the data-generation process?</li>
-<li>How much context does the model have?</li>
-<li>Does the model express uncertainty where it should?</li>
-<li>What relationships does the model use?</li>
-<li>How easy can the model be gamed after deployment?</li>
-<li>Are the model&#39;s results contestable, i.e. are they based on claims that can be disproven?</li>
+<li>What are the relevant features for the model? What is superfluous?
+<ul>
+<li>We&#39;ve seen that linear models can easily identify relevant features. Regularization and other approaches to learn sparse models or encodings can also help with this. One interesting direction (that may already be explored) is to evaluate the model on augmented training data that has structured noise or features that correlate with real features and see what happens.</li>
+</ul></li>
+<li>How can you describe what the model does in simpler terms?
+<ul>
+<li>The direct way to approach this question is to focus on approximating the model&#39;s performance using fewer parameters. A more interesting approach is to try and summarize what the model does in plain English or some other language. Having a simplified description could help with understanding, at least for our intuition.</li>
+</ul></li>
+<li>What can the model tell you to allow you to approximate its performance in another setting or another model?
+<ul>
+<li>Another way to think about models which are interpretable is that they are doing some sort of modeling of the world. If you asked a person, for example, why they made some decision, they might tell you relevant facts about the world which could help you come to the same decision. Maybe some sort of teacher-learner RL type scenario where we can formalize knowledge transfer? But ultimately it seems important for the insights to be useful for humans; the feedback loop seems too long to make it an objective to optimize for, but maybe there&#39;s a clever way to approximate it…There might be a way where we instead train a model to output some representation or distribution that, when added to some other interpretable model (which could be a human&#39;s reasoning), leads to improved performance.</li>
+</ul></li>
+<li>How informative is this model, relative to another more interpretable model?
+<ul>
+<li>Currently, deep learning outperforms other more interpretable models on a wide variety of tasks. Past just looking at loss, perhaps there is some way we can formalize how much more information the black box model is using. In the case of learned features versus hand-picked features, it could be useful to understand from an information theory perspective how much more informative the learned features are. Presumably interpretable features would tend to be more correlated with one another.</li>
+</ul></li>
+<li>What guarantees does the model have to shifts in distribution?
+<ul>
+<li>Regularization, data augmentation, and directly training with perturbed examples all help with this issue. But perhaps there are other algorithmic guarantees we could derive for our models.</li>
+</ul></li>
+<li>What trips up the model (and also the human)?
+<ul>
+<li>One interesting sign that our model is reasoning in interpretable ways is to see if examples which trip up humans also trip up the model. There was some work a little while back on adversarial examples which found that certain examples which fooled the network also fooled humans. Lack of divergence on these troubling examples could be a positive sign.</li>
+</ul></li>
+<li>What trips up the model (but not the human)?
+<ul>
+<li>Conversely, we might get better insight into our model by honing in on &quot;easy&quot; examples (for a human) that prove to be difficult for our model. This would likely be indicative of the model using features that we are not, and thus it&#39;s learned a different manifold (or whatever) through the input space.</li>
+</ul></li>
+<li>What does the model know about the data-generation process?
+<ul>
+<li>In most cases, this is encoded by our prior, which is then reflected in the class of models we do empirical risk minimization over. Apart from that, it does seem like there are relevant facts about the world which could be helpful to encode. A lot of the symbolic AI approaches to this seem to have failed, and it&#39;s unclear to me what a hybrid process would look like. Perhaps some of the human-assisted RL stuff could provide a solution for how to weigh between human advice and learned patterns.</li>
+</ul></li>
+<li>Does the model express uncertainty where it should?
+<ul>
+<li>In cases where the input is something completely nonsensical, it seems perhaps desirable for the model to throw its hands up in the air and say &quot;I don&#39;t know&quot;, rather than trying its best to give an answer. Humans do this, where we might object to a question on grounds of a type error. For a model, this might require understanding the space of possible inputs.</li>
+</ul></li>
+<li>What relationships does the model use?
+<ul>
+<li>The model could be using direct correlations found in the data. Or it could be modeling some sort of causal graph. Or it could be using latent factors to build an approximate version of what&#39;s going on. Understanding what relationships in the data are lending themselves to helping the model and what relationships are stored could be useful.</li>
+</ul></li>
+<li>Are the model&#39;s results contestable?
+<ul>
+<li>We touched on this at the very beginning of the post, but there are not many modern approaches which seem to have done this. The most contestable model might look something like an automated theorem prover which uses statements about the world to build an argument. Then we would simply check each line. Past that, one nice-to-have which could facilitate this is to use machine learning systems which build explicit models about the world. In any case, this pushes our models to make their assumptions about the world more explicit.</li>
+</ul></li>
 </ol>
-<p>To conclude, however, I think there is an argument the current landscape of interpretability techniques are not having their desired effect–namely that of improving the decision-making abilities of the people who use them. A large pre-registered <a href="https://arxiv.org/pdf/1802.07810.pdf">study</a> from Microsoft found that models which had additional information (intended to add interpretability) were often not useful in helping users decide how to make more accurate judgments on their own or notice when the model was wrong.</p>
-<p>They find that, <em>&quot;[o]n typical examples, we saw no significant difference between a transparent model with few features and a black-box model with many features in terms of how closely participants followed the model’s predictions. We also saw that people would have been better off simply following the models rather than adjusting their predictions. Even more surprisingly, we found that transparent models had the unwanted effect of impairing people’s ability to correct inaccurate predictions, seemingly due to people being overwhelmed by the additional information that the transparent model presented&quot;</em>.</p>
-<p>Another <a href="http://www.jennwv.com/papers/interp-ds.pdf">study</a> found that even data scientists may not understand what interpretable visualizations tell them, and this can inspire unwarranted confidence in the underlying model.</p>
-<p>Lastly, a recent <a href="https://arxiv.org/pdf/2005.01831.pdf">study</a> of five interpretability techniques and how they help humans with model simulatability found very few benefits from any technique. Of particular note is that explanations which were rated to be higher quality by participants were not very useful in improving human performance.</p>
-<p>Overall, this isn&#39;t too damning if you&#39;re mostly interested in interpretability from the AI safety perspective. Presumably the people using the tools will be more informed about what interpretability results mean, which can sidestep some of these errors. But it does seem problematic that, from a normal user&#39;s perspective, these approaches are not having the intended result, especially with how hot it is to talk about &quot;explainable AI&quot; right now.</p>
+<h2>What&#39;s Next?</h2>
+<p>Broadly, I think there are two main directions that interpretability research should go, outside of the obvious direction of &quot;find better ways to formalize what we mean by interpretability&quot;. These two areas are evaluation and utility.</p>
+<h3>Evaluation</h3>
+<p>The first area is to find better ways of evaluating these numerous interpretability methods. For many of these visualization-based approaches, a default method seems to be sanity-checking with our own eyes, making sure that interpretable features are being highlighted. Indeed, that&#39;s what we did for the MNIST examples above. However, <a href="https://www.arxiv-vanity.com/papers/1810.03292/">Sanity Checks for Saliency Maps</a>, a recent paper, makes a strong case for why this is definitely not enough.</p>
+<p>As mentioned earlier, saliency maps represent a broad class of approaches that try to understand what parts of the input are important for the model&#39;s output, often through some sort of gradient. The outputs of several of these methods are shown below. Upon visual inspection, they might seem reasonable as they all seem to focus on the relevant parts of the image.</p>
+<p><img src="/images/saliency-maps.png" alt="saliency map image"></p>
+<p>However, the very last column is the output, not for a saliency map, but for an edge detector applied to the input. This makes it not a function of the model, but merely the input. Yet, it is able to output &quot;saliency maps&quot; which are visually comparable to these other results. This might cause us to wonder if the other approaches are really telling us something about the model. The authors propose several tests to investigate.</p>
+<p>The first test compares the saliency map of a trained model with a model that has randomly initialized weights. Here, clearly if the saliency maps look similar, then it really is more dependent on the input and not the model&#39;s parameters.</p>
+<p>The second test compares the saliency map of a trained model with a trained model that was given randomly permuted labels. Here, once again, if the saliency maps look similar, this is also a sign of input dependence because the same &quot;salient&quot; features have been used to justify two different labels.</p>
+<p>Overall, the authors find that the basic gradient map shows desired sensitivity to the above tests, whereas certain other approaches like Guided BackProp do not.</p>
+<p>I haven&#39;t looked too deep into each one of the saliency map approaches, but I think the evaluation methods here are very reasonable and yet somehow seem to be missed in previous (and later?) papers. For example, the paper on <a href="https://arxiv.org/pdf/1610.02391.pdf">Grad-CAM</a> goes in-depth over the ways in which their saliency map can help aid in providing explanations or identifying bias for the dataset. But they do not consider the sensitivity of their approach to model parameters.</p>
+<p>In the above paper on sanity-checks, they find that Grad-CAM actually is sensitive to changes in the input, which is good, but I definitely would like to see these sanity-checks being applied more frequently. Outside of new approaches, I think additional benchmarks for interpretability that mimic real-world use cases could be of great value to the field.</p>
+<p>Some other tasks, off the top of my head, which seem possibly useful:</p>
+<p>LIST</p>
+<h3>Utility</h3>
+<p>The second area is to ensure that these interpretability approaches are actually providing value. Even if we find ways of explaining models that are actually sensitive to the learned parameters (and everything else), I think it still remains to be seen if these explanations are actually useful in practice. At least for current techniques, I think the answer is uncertain and possibly even negative.</p>
+<p><a href="https://arxiv.org/pdf/1802.07810.pdf">Manipulating and Measuring Model Interpretability</a>, a large pre-registered from Microsoft Research, found that models which had additional information like model weights were often not useful in helping users decide how to make more accurate judgments on their own or notice when the model was wrong. (Users were given either a black-box model or a more interpretable one.)</p>
+<p>They found that:</p>
+<blockquote>
+<p>&quot;[o]n typical examples, we saw no significant difference between a transparent model with few features and a black-box model with many features in terms of how closely participants followed the model’s predictions. We also saw that people would have been better off simply following the models rather than adjusting their predictions. Even more surprisingly, we found that transparent models had the unwanted effect of impairing people’s ability to correct inaccurate predictions, seemingly due to people being overwhelmed by the additional information that the transparent model presented&quot;</p>
+</blockquote>
+<p>Another paper, <a href="http://www.jennwv.com/papers/interp-ds.pdf">Interpreting Interpretability: Understanding Data Scientists’ Use of Interpretability Tools for MachineLearning</a>, found that even data scientists may not understand what interpretable visualizations tell them, and this can inspire unwarranted confidence in the underlying model, even leading to ad-hoc rationalization of suspicious results.</p>
+<p>Lastly, <a href="https://arxiv.org/pdf/2005.01831.pdf">Evaluating Explainable AI: Which Algorithmic ExplanationsHelp Users Predict Model Behavior?</a>, is a recent study of five interpretability techniques and how they empirically help humans. The authors found very few benefits from any of techniques. Of particular note is that explanations which were rated to be higher quality by participants were not very useful in actually improving human performance.</p>
+<p>All of this points to the difficult road ahead for interpretability research. These approaches and visuals are liable to be misused and misinterpreted. Even once we get improved notions of intepretability with intuitive properties, it still remains to be seen if we can use them to achieve the benefits I listed out in the very beginning. While it certainly seems more difficult to formalize interpretability than to use it well, I&#39;m glad that empirical tests are already being done; they can hopefully also guide where the research goes next.</p>
+<p>Finally, lurking behind all this is the question of decreased performance and adoption. It&#39;s obvious these days that black box models dominate in terms of results for many areas. Any additional work to induce a more interpretable model, or to derive a post-hoc explanation brings an additional cost. At this point in time, all the approaches towards improving interpretability we&#39;ve seen either increase training / processing time, reduce accuracy, or do some combination of both. For those especially worried about competition, arms races, and multipolar traps, the case to adopt these approaches (past whatever token compliance will satisfy the technology ethics boards of the future) seems weak. This is also troubling.</p>
 </div>
 <hr class="comment-spacer">
-<div class="date">Last Updated: 2020-07-19 22:22</div>
+<div class="date">Last Updated: 2020-07-27 18:41</div>
 <div class="date">First Published: 2020-07-19 22:22</div>
 <div id="remarkbox-div">
 <noscript>
