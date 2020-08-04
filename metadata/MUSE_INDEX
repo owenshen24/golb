@@ -851,11 +851,21 @@
     "52906366310": {
         "title": "Interpretability in ML: A Broad Overview",
         "anchor": "52906366310",
-        "summary": "This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. I do not intend for this post to be necessaril...",
-        "word_count": 4435,
-        "date": "2020-07-27 22:43",
-        "last_updated": 1595915005,
+        "summary": "This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. This post isn't comprehensive, but my goal is ...",
+        "word_count": 4428,
+        "date": "2020-08-04 11:53",
+        "last_updated": 1596567238,
         "order": 0,
         "first_published": "2020-07-19 22:22"
+    },
+    "52429966310": {
+        "title": "Immersive Media",
+        "anchor": "52429966310",
+        "summary": "I'm pretty wary of watching movies because I think they're too immersive. I'm also wary of reading good books for the same reason. Doing so is like ag...",
+        "word_count": 55,
+        "date": "2020-08-02 23:46",
+        "last_updated": 1596437179,
+        "order": 0,
+        "first_published": "2020-08-02 23:46"
     }
 }
