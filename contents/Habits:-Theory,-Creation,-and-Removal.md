@@ -1,5 +1,5 @@
-title: Habits 101
-summary: WIP. A comprehensive overview of the literature on habits, how to form them, and how to break them.
+title: Habits: Theory, Creation, and Removal 
+summary:  A comprehensive overview of the literature on habits; covers some theory, how to form them, and how to break them.
 
 ### Outline
 
