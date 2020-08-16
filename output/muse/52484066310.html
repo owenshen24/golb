@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/styles/fonts/hind-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles/base.css">
+<script data-goatcounter="https://mlu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<title>Post-hoc Interpretability Is Not Enough</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer="defer" src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer="defer" src="/scripts/remarkbox.js"></script>
+</head>
+<body>
+<div class="top_bar">
+<div class="logo-holder">
+<a href="/muse/">
+<img src="/images/muse_logo.svg" class="logo">
+</a>
+</div>
+</div>
+<div class="grid">
+<div class="container">
+<div class="post-title">Post-hoc Interpretability Is Not Enough</div>
+<div class="content"><p><a href="https://mlu.red/muse/52906366310.html">Post-hoc intepretability</a> in machine learning is about extracting explanations after the model has already been trained. In many cases, we further relax our assumptions and assume the model is a black-box. I think these sorts of techniques are likely not going to be enough for AI alignment. To be clear, I don&#39;t think anyone is currently claiming the opposite. But I still wanted to list out my reasons, especially as other people may disagree for other reasons.</p>
+<h3>1] Post-hoc interpretability lags behind the forefront of the field</h3>
+<p>Post-hoc methods have yet to scale up to the largest ML models we see today. I don&#39;t think, for example, that we have anything yet for GPT-3. Partially by definition, we require a model to be already trained before we can apply these methods. Especially in the case where we can only do such investigations after deployment, it may be too late to deal with errors in production. Even if we get to investigate the models prior to deployment, there will likely be further progress while we investigate the current model. In either case, post-hoc methods do not put us in a good position to influence what&#39;s happening at the forefront.</p>
+<h3>2] Post-hoc interpretability cannot answer certain types of questions</h3>
+<p>I&#39;ll try to flesh this out later on, but my guess is that there is a large class of questions we can&#39;t answer with post-hoc techniques. One group seems to be questions about the model&#39;s training training trajectory, questions like &quot;Would increasing the prevalence of this data point have led to better performance?&quot; Another group of related questions is counterfactuals about the final ML model, questions like &quot;What would your output hypothesis have looked like if this data point was in your dataset?&quot; There have already been critiques of this form, so this is nothing new.</p>
+<h3>3] Post-hoc interpretability metrics are already gameable</h3>
+<p>Recent work has shown that currently populat perturbation-based methods for extracting post-hoc explanations of black-box models can be gamed. <a href="http://sameersingh.org/files/papers/advlime-aies20.pdf">This work</a>, for example, shows adversarial examples for LIME and SHAP, two popular and lauded approaches for post-hoc explanations. Knowing Goodhart&#39;s Law, this was an expected outcome, sooner or later. I expect there are probably metrics that can be less easily gamed, but still.</p>
+<p>Where, then, do I see post-hoc methods being useful?</p>
+<h3>1] Investigation during training</h3>
+<p>I think post-hoc techniques can help identify how relevant features change during testing. It seems like there could be informative ways to talk about the trajectory of the model throughout testing, how relevant features change, etc. etc. in a way that can better fit the &quot;learning analogy&quot;.</p>
+<h3>2] Actually, post-hoc is useful and the above is false</h3>
+<p>I think the sentiment of Chris Olah, Shan Carter, and others working on interpretability at OpenAI have this sort of sentiment in their <a href="https://distill.pub/2020/circuits/zoom-in/#claim-1">thread on circuits</a>. Here, they seem to claim that (at least certain) neural nets are already modular with respect to their function and composition and that, furthermore, post-hoc visualization techniques can offer insight into their functions. I thnk this is really intriguing, but I&#39;m unsure if this will capture longer-term dependencies if the net isn&#39;t regularized in some way to have interpretable output at each step.</p>
+<h3>3] Revealing what sorts of models we should aim for</h3>
+<p>If the goal of post-hoc interpretability is to tell us things about our model, then maybe it seems good to try and figure out what those are, and then design a model which just makes those things clear from the start. I don&#39;t know about this, as it seems like humans use some sort of not-interpretable thing to make decisions, and then we explain them in terms of concepts. But it&#39;s not clear to me at all that we&#39;re actually manipulating concepts under the hood. If so, then this seems like we might have to deal with messy internals and then look for meaning after the fact.</p>
+</div>
+<hr class="comment-spacer">
+<div class="date">Last Updated: 2020-08-15 22:16</div>
+<div class="date">First Published: 2020-08-15 22:16</div>
+<div id="remarkbox-div">
+<noscript>
+<iframe id="remarkbox-iframe" src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex="0"></iframe>
+</noscript>
+</div>
+</div>
+</div>
+</body>
+</html>

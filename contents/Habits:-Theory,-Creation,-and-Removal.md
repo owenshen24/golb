@@ -14,7 +14,7 @@ This essay is is broken up into 6 sections:
 
 # Introduction
 
-People, as the saying goes, are creatures of habit. Many of our actions every day are repeated often, typically without much thought. A 2002 study where university students were asked to write down their hourly tasks found that around 40% of daily activities were habitual (defined as regularly performed at the same time and location) [^1].
+As the saying goes, peopl are creatures of habit. Many of our actions every day are repeated often, typically without much thought. A 2002 study where university students were asked to write down their hourly tasks found that around 40% of daily activities were habitual (defined as regularly performed at the same time and location) [^1].
 
 ![40% of daily activities are habitual](/images/habits/habits-everyday.svg)
 
@@ -26,7 +26,7 @@ Many people have habits they wish to start or habits they wish to break. My goal
 
 # A Habit Model
 
-There are many definitions of habits which all try to triangulate the term in different ways. The model we'll be working with here, which is often overlapped in these definitions is this: a habit is an automatic behavior that is cued by context from the situation [^2], [^3], [^4].
+There are many definitions of habits which all define the term in different ways. The model we'll be working with here, is this: a habit is an automatic behavior that is cued by context from the situation [^2], [^3], [^4].
 
 Habits can be thought of as your default responses to different situations. This model for habits is composed of two parts: the **context cue** and the **response**.
 

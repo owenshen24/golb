@@ -21,7 +21,7 @@
   margin-top: 1.5rem;
 }
 .logo {
-  height: 4rem;
+  height: 6rem;
   width: auto;
 }
 .logo-wrapper {
@@ -94,7 +94,7 @@
     font-size: 1rem;
   }
   .logo {
-    width: 3rem;
+    width: 5rem;
     height: auto;
   }
 }
