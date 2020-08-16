@@ -892,9 +892,9 @@
         "title": "Post-hoc Interpretability Is Not Enough",
         "anchor": "52484066310",
         "summary": "[Post-hoc intepretability](https://mlu.red/muse/52906366310.html) in machine learning is about extracting explanations after the model has already bee...",
-        "word_count": 643,
-        "date": "2020-08-15 22:16",
-        "last_updated": 1597555016,
+        "word_count": 644,
+        "date": "2020-08-15 22:20",
+        "last_updated": 1597555249,
         "order": 0,
         "first_published": "2020-08-15 22:16"
     }

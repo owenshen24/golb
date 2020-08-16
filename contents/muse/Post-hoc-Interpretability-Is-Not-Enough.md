@@ -4,7 +4,7 @@ title: Post-hoc Interpretability Is Not Enough
 
 ### 1] Post-hoc interpretability lags behind the forefront of the field
 
-Post-hoc methods have yet to scale up to the largest ML models we see today. I don't think, for example, that we have anything yet for GPT-3. Partially by definition, we require a model to be already trained before we can apply these methods. Especially in the case where we can only do such investigations after deployment, it may be too late to deal with errors in production. Even if we get to investigate the models prior to deployment, there will likely be further progress while we investigate the current model. In either case, post-hoc methods do not put us in a good position to influence what's happening at the forefront.
+Post-hoc methods have yet to scale up to the largest ML models we see today. I don't think, for example, that we have anything yet for GPT-3. Also, partially by definition, we require a model to be already trained before we can apply these methods. Especially in the case where we can only do such investigations after deployment, it may be too late to deal with errors in production. Even if we get to investigate the models prior to deployment, there will likely be further progress while we investigate the current model. In either case, post-hoc methods do not put us in a good position to influence what's happening at the forefront.
 
 ### 2] Post-hoc interpretability cannot answer certain types of questions
 
