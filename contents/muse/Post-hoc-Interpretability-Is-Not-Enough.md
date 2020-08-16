@@ -8,11 +8,11 @@ Post-hoc methods have yet to scale up to the largest ML models we see today. I d
 
 ### 2] Post-hoc interpretability cannot answer certain types of questions
 
-I'll try to flesh this out later on, but my guess is that there is a large class of questions we can't answer with post-hoc techniques. One group seems to be questions about the model's training training trajectory, questions like "Would increasing the prevalence of this data point have led to better performance?" Another group of related questions is counterfactuals about the final ML model, questions like "What would your output hypothesis have looked like if this data point was in your dataset?" There have already been critiques of this form, so this is nothing new.
+I'll try to flesh this out later on, but my guess is that there is a large class of questions we can't answer with post-hoc techniques. One group seems to be questions about the model's training  trajectory, questions like "Would increasing the prevalence of this data point have led to better performance?" Another group of related questions is counterfactuals about the final ML model, questions like "What would your output hypothesis have looked like if this data point was in your dataset?" There have already been critiques of this form, so this is nothing new.
 
 ### 3] Post-hoc interpretability metrics are already gameable
 
-Recent work has shown that currently populat perturbation-based methods for extracting post-hoc explanations of black-box models can be gamed. [This work](http://sameersingh.org/files/papers/advlime-aies20.pdf), for example, shows adversarial examples for LIME and SHAP, two popular and lauded approaches for post-hoc explanations. Knowing Goodhart's Law, this was an expected outcome, sooner or later. I expect there are probably metrics that can be less easily gamed, but still.
+Recent work has shown that currently popular perturbation-based methods for extracting post-hoc explanations of black-box models can be gamed. [This work](http://sameersingh.org/files/papers/advlime-aies20.pdf), for example, shows adversarial examples for LIME and SHAP, two popular and lauded approaches for post-hoc explanations. Knowing Goodhart's Law, this was an expected outcome, sooner or later. I expect there are probably metrics that can be less easily gamed, but still.
 
 Where, then, do I see post-hoc methods being useful?
 
