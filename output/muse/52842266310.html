@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/styles/fonts/hind-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles/base.css">
+<script data-goatcounter="https://mlu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<title>Some AI Safety Thoughts</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer="defer" src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer="defer" src="/scripts/remarkbox.js"></script>
+</head>
+<body>
+<div class="top_bar">
+<div class="logo-holder">
+<a href="/muse/">
+<img src="/images/muse_logo.svg" class="logo">
+</a>
+</div>
+</div>
+<div class="grid">
+<div class="container">
+<div class="post-title">Some AI Safety Thoughts</div>
+<div class="content"><p>I had a nice chat with Alex Flint today, and here are some things that came up, which seem worth writing down:</p>
+<p>One view of interpretability is about <em>communication</em> between the model and another model (or person or whatever). Model distillation / approximation is one way to get at this. One possible operationalization is to have a training loop where a stronger learner needs to output something that a weaker learner can also use to do well at the same task. This seems problematic, however. One thing is that this seems just like an inefficient way to train the weak learner. The other thing is that, even if you do this right, you may have accidentally just turned the first learner into an optimizer instead of a model that&#39;s good at communicating to other models. But not necessarily, of course.</p>
+<p>Design versus search. How can we design ML algorithms that do reasoning in a more principled way? How can we make search more like design? One thing is to try to do the learning in more distinct stages. First, train some sort of unsupervised learner to try and cluster/model the underlying data. Then, find some way to encode certain biases about what &quot;reasonable hypotheses&quot; look like. Finally, start the actual supervised training loop where we have some way to optimize the actual hypothesis generation.</p>
+<p>Is the interpretability in the <em>model</em> or in the <em>data</em>? Data seems to start off rather interpretable, but then it often gets transformed into some other representation which is more efficient but also more opaque. Maybe we could train a model and then use the intermediary representations in another model? That is, train a model to try and understand what another model was doing? This is sort of like the auto-encoder paradigm, except that we aren&#39;t doing the two optimization steps in tandem.</p>
+<p>Do models start off interpretable? I guess most initializations are fairly interpretable, as they usually just output 0 or do something that&#39;s largely uninformative. But then they become more opaque?</p>
+</div>
+<hr class="comment-spacer">
+<div class="date">Last Updated: 2020-08-20 19:31</div>
+<div class="date">First Published: 2020-08-20 19:31</div>
+<div id="remarkbox-div">
+<noscript>
+<iframe id="remarkbox-iframe" src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex="0"></iframe>
+</noscript>
+</div>
+</div>
+</div>
+</body>
+</html>

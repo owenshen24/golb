@@ -852,9 +852,9 @@
         "title": "Interpretability in ML: A Broad Overview",
         "anchor": "52906366310",
         "summary": "This blog post is my attempt to give an overview of the sub-field of machine learning interpretability. This post isn't comprehensive, but my goal is ...",
-        "word_count": 4428,
-        "date": "2020-08-04 11:53",
-        "last_updated": 1596567238,
+        "word_count": 4429,
+        "date": "2020-08-17 20:28",
+        "last_updated": 1597721319,
         "order": 0,
         "first_published": "2020-07-19 22:22"
     },
@@ -897,5 +897,15 @@
         "last_updated": 1597559112,
         "order": 0,
         "first_published": "2020-08-15 22:16"
+    },
+    "52842266310": {
+        "title": "Some AI Safety Thoughts",
+        "anchor": "52842266310",
+        "summary": "I had a nice chat with Alex Flint today, and here are some things that came up, which seem worth writing down:\n\nOne view of interpretability is about ...",
+        "word_count": 336,
+        "date": "2020-08-20 19:31",
+        "last_updated": 1597977105,
+        "order": 0,
+        "first_published": "2020-08-20 19:31"
     }
 }
