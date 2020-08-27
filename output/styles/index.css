@@ -36,7 +36,10 @@
   color: #77080D;
   cursor: pointer;
 
-  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
+  
   font-size: 1.35rem;
   letter-spacing: 0.1rem;
 
@@ -58,11 +61,14 @@
   padding: 0.5rem;
 }
 .post-title a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
   font-size: 1.8rem;
-  font-weight: bold;
   text-decoration: none;
   line-height: 2.0rem;
   color: rgb(170, 0, 22);
+  /* text-shadow: 0px 1px, 1px 0px, 1px 1px; */
 }
 .post-title a:hover  {
   color: rgb(65, 8, 11);
@@ -75,9 +81,11 @@
   color: rgb(50, 50, 50);
 }
 .word-count {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
   font-size: 1.0rem;
   color: rgb(80, 80, 80);
-  font-weight: bold;
   padding-bottom: 0.5rem;
 }
 

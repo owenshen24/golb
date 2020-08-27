@@ -20,7 +20,11 @@ img {
 
 /* Post stylings */
 h1, h2, h3, h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
   margin-bottom: -0.25rem;
+  line-height: 140%;
 }
 h1 {
   font-size: 2.3rem;
@@ -39,9 +43,11 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-
 }
 
 .post-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
   text-align: center;
   font-size: 2.75rem;
-  font-weight: bold;
   line-height: 1.25;
   margin-top: -1.35rem;
 }
@@ -94,8 +100,8 @@ blockquote {
 /* For phone width */
 @media only screen and (max-width: 768px) {
   .post-title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
   }
   .date {
     font-size: 0.8rem;

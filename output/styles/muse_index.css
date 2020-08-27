@@ -81,8 +81,11 @@
   padding: 0.5rem;
 }
 .post-title a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
+
   font-size: 1.85rem;
-  font-weight: bold;
   text-decoration: none;
   line-height: 2.0rem;
   color: rgb(41, 41, 41);
@@ -105,9 +108,11 @@
   color: rgb(50, 50, 50);
 }
 .word-count {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
   font-size: 0.95rem;
   color: rgb(80, 80, 80);
-  font-weight: bold;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
