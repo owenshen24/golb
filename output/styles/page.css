@@ -27,7 +27,10 @@
   color: #77080D;
   cursor: pointer;
 
-  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
+
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
 
@@ -45,7 +48,10 @@
 
 /* Page content */
 .page-title {
-  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: condensed;
+  
   font-size: 2.5rem;
   text-align: center;
 }
