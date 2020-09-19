@@ -907,5 +907,15 @@
         "last_updated": 1597977105,
         "order": 0,
         "first_published": "2020-08-20 19:31"
+    },
+    "53040566310": {
+        "title": "Interpretability through insight compression",
+        "anchor": "53040566310",
+        "summary": "In interpretable machine learning, I think one important question we should be able to ask of our models is \u201cWhat is something useful you can tell me ...",
+        "word_count": 364,
+        "date": "2020-09-19 13:42",
+        "last_updated": 1600548129,
+        "order": 0,
+        "first_published": "2020-09-19 13:42"
     }
 }
