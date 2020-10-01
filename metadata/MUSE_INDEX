@@ -917,5 +917,15 @@
         "last_updated": 1600548129,
         "order": 0,
         "first_published": "2020-09-19 13:42"
+    },
+    "53028466310": {
+        "title": "Dynamic NFTs",
+        "anchor": "53028466310",
+        "summary": "So NFTs are really hot right now in the crypto-sphere. If you aren't aware, NFT are non-fungible tokens, which mean that they aren't denominated, like...",
+        "word_count": 535,
+        "date": "2020-09-30 18:48",
+        "last_updated": 1601516921,
+        "order": 0,
+        "first_published": "2020-09-30 18:48"
     }
 }
