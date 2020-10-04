@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/styles/fonts/hind-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles/base.css">
+<script data-goatcounter="https://mlu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<title>NFT Staking with yfBeta</title>
+<link rel="stylesheet" href="/styles/post.css">
+<link rel="stylesheet" href="/styles/muse_post.css">
+<script defer="defer" src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script defer="defer" src="/scripts/remarkbox.js"></script>
+</head>
+<body>
+<div class="top_bar">
+<div class="logo-holder">
+<a href="/muse/">
+<img src="/images/muse_logo.svg" class="logo">
+</a>
+</div>
+</div>
+<div class="grid">
+<div class="container">
+<div class="post-title">NFT Staking with yfBeta</div>
+<div class="content"><p>summary: An overview of NFT staking with yfBeta.</p>
+<h1>Intro</h1>
+<p>If you haven&#39;t already, you probably want to read my short piece about <a href="https://mlu.red/muse/53028466310.html">Dynamic NFTs</a> for some context.</p>
+<p>Well, it&#39;s finally here. After one failed launch, much stress and pain, we&#39;re here for real. NFT staking for yfBeta is now live (or soon to be) on <a href="yflambda.finance">yflambda.finance</a>. Before we go any farther, I want to remind everyone of a few things:</p>
+<ul>
+<li>For now, this is still unofficial. I&#39;ll wait for the community to vote and decide on how integrate this should be with our core platform. That&#39;s why this is hosted on a different domain, rather than the yfbeta site.</li>
+<li>The code is still unaudited. However, I have tested it both on mainnet and testnet, and I&#39;ve also onboarded several early users, all of whom have been able to use the app with no issues. Note that this is not the same thing as saying the code is 100% bug-free, but I&#39;ve put in much more effort this time to test.</li>
+<li>This is not the final version. I still have ideas to improve upon how NFTs can be used; please look forward to an NFT v2 in the near future with even more features and utility.</li>
+</ul>
+<h1>How NFT staking works</h1>
+<p>With that out of the way, how does the current NFT staking work? What do you stake, and what do you get?</p>
+<p>The current NFT staking flow works like this:</p>
+<ol>
+<li>You lock up your yfB by staking into the contract. This is one transaction (two, if you need to approve spending).</li>
+<li>You then mine a Gem that represents your staked yfB. This is one transaction.</li>
+<li>When you want to stop staking, you Withdraw All. This is one transaction.</li>
+</ol>
+<p>The NFT Gem that you mine has a few nifty properties:</p>
+<ol>
+<li>As long as you&#39;re staked, it&#39;ll keep counting up the amount of time staked. This will allow its image to update to new forms, i.e. shinier colors.</li>
+<li>When you unstake, your Gem will be counted as &quot;dead&quot;, and it&#39;ll no longer update. The current iteration will show your Gem in static, gray image.</li>
+<li>As an ERC-721 token, Gems are visible on platforms like OpenSea and Rarible and can even be traded.</li>
+</ol>
+<h1>Gems, explained</h1>
+<p>The ERC-721 standard is unfortunate in that it doesn&#39;t specify a way of defining an on-chain data store. The recommended method is to store data off-chain, at least when you look at the OpenSea docs. I prefer on-chain data when feasible (i.e. images are hard to store, so off-chain makes more sense), so I&#39;ve built info directly into the contract.</p>
+<p>Each Gem keeps track of:</p>
+<ul>
+<li>The amount staked to create the Gem.</li>
+<li>Whether or not the underlying yfB is still being staked.</li>
+<li>The starting block when the stake started.</li>
+<li>The ending block when the stake ended, if applicable.</li>
+<li>The initial miner of the Gem, i.e. the person who originally staked.</li>
+</ul>
+<p>The only information that&#39;s uniquely stored off-chain is the image file. The rest of the attributes are being duplicated from on-chain data. OpenSea gets the data by querying my API endpoint, which I generate by querying on-chain data, and then adding the corresponding image URL.</p>
+<p>For now, I need to manually update the server to give accurate information to OpenSea via the tokenURI, so don&#39;t panic if it takes up to a day or two for it to fully update.</p>
+<h1>Future plans</h1>
+<p>I think that the current NFT staking contract provides a twists on the NFT model that, at the very least, are fun to look at and play with. Past that, I have some ideas for what a v2 would look like in terms of adding more gamification and giving users more options. Some examples of additional features include adding Gem rarity, setting lock-up times, and a built-in marketplace for trading.</p>
+<p>Now that users have these NFTs, I think there are a few ways we can further capitalize on this. My original plan was to fill a need I saw in the community–a lack of use for the native token, and it&#39;s been exciting seeing people take this idea farther. Two such ideas which seem especially exciting are NFT governance and using Gems as a requirement to enter certain future vaults.</p>
+<p>I&#39;ll be pushing out the first set of visual upgrades to the gems, so please stay tuned. This and further updates will be coming soon:tm:.</p>
+<h1>Closing thoughts</h1>
+<p>I told the community that NFT staking was coming in 2-4 weeks, and it&#39;s been only 12 days or so since the original NFT launch. So I beat out even my most optimistic estimate. I&#39;m still reeling over the original bug, but I&#39;ve tested things more thoroughly this time, so I really hope there isn&#39;t another issue.</p>
+<p>Working on this project has been exciting, as I&#39;ve been able to get much more familiar with many new technologies. But it has also been incredibly tiring, both interacting with the community across Discord and Telegram, as well as actually coding this up. I&#39;ll still be around, but please don&#39;t be surprised if I&#39;m around less for a while.</p>
+</div>
+<hr class="comment-spacer">
+<div class="date">Last Updated: 2020-10-04 00:28</div>
+<div class="date">First Published: 2020-10-04 00:28</div>
+<div id="remarkbox-div">
+<noscript>
+<iframe id="remarkbox-iframe" src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex="0"></iframe>
+</noscript>
+</div>
+</div>
+</div>
+</body>
+</html>

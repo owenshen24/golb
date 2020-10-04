@@ -927,5 +927,15 @@
         "last_updated": 1601516921,
         "order": 0,
         "first_published": "2020-09-30 18:48"
+    },
+    "53231966310": {
+        "title": "NFT Staking with yfBeta",
+        "anchor": "53231966310",
+        "summary": "summary: An overview of NFT staking with yfBeta.\n\n# Intro\n\nIf you haven't already, you probably want to read my short piece about [Dynamic NFTs](https...",
+        "word_count": 834,
+        "date": "2020-10-04 00:28",
+        "last_updated": 1601796532,
+        "order": 0,
+        "first_published": "2020-10-04 00:28"
     }
 }
