@@ -1,7 +1,5 @@
 title: NFT Staking with yfBeta
 
-summary: An overview of NFT staking with yfBeta.
-
 # Intro
 
 If you haven't already, you probably want to read my short piece about [Dynamic NFTs](https://mlu.red/muse/53028466310.html) for some context.
