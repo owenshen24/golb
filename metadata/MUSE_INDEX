@@ -947,5 +947,15 @@
         "last_updated": 1601821348,
         "order": 0,
         "first_published": "2020-10-04 00:37"
+    },
+    "53050866310": {
+        "title": "Curation Is Increasingly Valuable",
+        "anchor": "53050866310",
+        "summary": "Something obvious that I don't think I'd fully considered or written down: quality curation becomes more valuable as our collective output increases. ...",
+        "word_count": 203,
+        "date": "2020-12-02 10:46",
+        "last_updated": 1606934794,
+        "order": 0,
+        "first_published": "2020-12-02 10:46"
     }
 }
